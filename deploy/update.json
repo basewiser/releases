@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": { "name": "basewiser-update", "version": "1.1" },
+    "_description": "Updates the Basewiser portal Container App image. Existing configuration (env vars, scaling, ingress, secrets) is preserved via union(reference(...)) — only the container image is bumped. The backend Function App is updated through a separate flow (Kudu zip-deploy), not this template. Linked from the in-portal update banner via a portal.azure.com Custom Deployment deeplink."
+  },
+  "parameters": {
+    "portalAppName": {
+      "type": "string",
+      "metadata": { "description": "Container App hosting the Basewiser portal (e.g. mssp-portal-14e12458)." }
+    },
+    "portalImage": {
+      "type": "string",
+      "metadata": { "description": "Full image reference for the new portal version (e.g. ghcr.io/wigemyr/portal:v20260520.123456)." }
+    }
+  },
+  "variables": {
+    "caApiVersion": "2024-03-01"
+  },
+  "resources": [
+    {
+      "comments": "Portal Container App — image bump. union(reference(...)) merges so env vars, scaling, ingress and secrets are preserved.",
+      "type": "Microsoft.App/containerApps",
+      "apiVersion": "[variables('caApiVersion')]",
+      "name": "[parameters('portalAppName')]",
+      "location": "[resourceGroup().location]",
+      "properties": "[union(reference(resourceId('Microsoft.App/containerApps', parameters('portalAppName')), variables('caApiVersion'), 'Full').properties, createObject('template', union(reference(resourceId('Microsoft.App/containerApps', parameters('portalAppName')), variables('caApiVersion'), 'Full').properties.template, createObject('containers', createArray(union(reference(resourceId('Microsoft.App/containerApps', parameters('portalAppName')), variables('caApiVersion'), 'Full').properties.template.containers[0], createObject('image', parameters('portalImage'))))))))]"
+    }
+  ],
+  "outputs": {
+    "portalImage": { "type": "string", "value": "[parameters('portalImage')]" }
+  }
+}

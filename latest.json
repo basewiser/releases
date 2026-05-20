@@ -1,0 +1,14 @@
+{
+  "portal": {
+    "tag": "portal-v20260520.181953",
+    "releasedAt": "2026-05-20",
+    "notes": [
+      "Re-tag of v20260520.180825 to validate the in-portal update flow",
+      "First end-to-end test of the update banner + ARM deploy button"
+    ]
+  },
+  "backend": {
+    "tag": "backend-v20260520.181953",
+    "releasedAt": "2026-05-20"
+  }
+}
