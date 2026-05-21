@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.151008",
+    "tag": "portal-v20260521.160552",
     "releasedAt": "2026-05-21",
     "notes": [
-      "End-to-end test of the in-portal update flow under the new basewiser/* namespace",
-      "First release that exercises the banner → ARM deploy → version-chip-updates loop on prod",
-      "Same code as portal-v20260520.204204 — re-tag to verify the update mechanism wires end-to-end"
+      "Update banner now proxies the manifest through /api/release-manifest (proper CORS fix)",
+      "No third-party CDN dependency in the customer update path",
+      "Test build to verify end-to-end banner → Azure deploy flow"
     ]
   },
   "backend": {
