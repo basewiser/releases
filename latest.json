@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.160552",
+    "tag": "portal-v20260521.192425",
     "releasedAt": "2026-05-21",
     "notes": [
-      "Update banner now proxies the manifest through /api/release-manifest (proper CORS fix)",
-      "No third-party CDN dependency in the customer update path",
-      "Test build to verify end-to-end banner → Azure deploy flow"
+      "Update banner now does a real in-app update — no Azure Portal redirect",
+      "Runs under your own Azure RBAC, no Basewiser-managed identity needed",
+      "Backend deps trimmed, ARM template deprecated"
     ]
   },
   "backend": {
