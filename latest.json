@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.202232",
-    "releasedAt": "2026-05-21",
+    "tag": "portal-v20260521.225500",
+    "releasedAt": "2026-05-22",
     "notes": [
-      "Banner E2E test, take 2 — with PATCH fix on the route handler",
-      "Same code as portal-v20260521.201921 — re-tag to fire the banner",
-      "Update flow now uses PATCH (not PUT) so Azure won't reject read-only fields"
+      "First-load banner fix — manifest fetched server-side, no useEffect race after sign-in",
+      "Version chip moved to topbar next to the wordmark — click for About popover with portal + backend version",
+      "Six fresh procedure docs in docs/ (architecture, design-system, dev-loop, testing, working-agreement, plus CHANGELOG.md)"
     ]
   },
   "backend": {
