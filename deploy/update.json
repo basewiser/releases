@@ -12,7 +12,7 @@
     },
     "portalImage": {
       "type": "string",
-      "metadata": { "description": "Full image reference for the new portal version (e.g. ghcr.io/wigemyr/portal:v20260520.123456)." }
+      "metadata": { "description": "Full image reference for the new portal version (e.g. ghcr.io/basewiser/portal:v20260520.123456)." }
     }
   },
   "variables": {

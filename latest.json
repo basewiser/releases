@@ -1,10 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260520.181953",
+    "tag": "portal-v20260520.204204",
     "releasedAt": "2026-05-20",
     "notes": [
-      "Re-tag of v20260520.180825 to validate the in-portal update flow",
-      "First end-to-end test of the update banner + ARM deploy button"
+      "Migrated to basewiser/platform — image now published at ghcr.io/basewiser/portal",
+      "Update banner fetches manifest from basewiser/releases (public registry)",
+      "Fixed image tag format so the Update button deploys a real GHCR tag"
     ]
   },
   "backend": {
