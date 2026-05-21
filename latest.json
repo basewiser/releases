@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.192929",
+    "tag": "portal-v20260521.202232",
     "releasedAt": "2026-05-21",
     "notes": [
-      "E2E test of the new backend-mediated update flow",
-      "Same code as portal-v20260521.192425 — re-tag to exercise the banner",
-      "Click Update now → /api/portal-update PATCHes the Container App"
+      "Banner E2E test, take 2 — with PATCH fix on the route handler",
+      "Same code as portal-v20260521.201921 — re-tag to fire the banner",
+      "Update flow now uses PATCH (not PUT) so Azure won't reject read-only fields"
     ]
   },
   "backend": {
