@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.192425",
+    "tag": "portal-v20260521.192929",
     "releasedAt": "2026-05-21",
     "notes": [
-      "Update banner now does a real in-app update — no Azure Portal redirect",
-      "Runs under your own Azure RBAC, no Basewiser-managed identity needed",
-      "Backend deps trimmed, ARM template deprecated"
+      "E2E test of the new backend-mediated update flow",
+      "Same code as portal-v20260521.192425 — re-tag to exercise the banner",
+      "Click Update now → /api/portal-update PATCHes the Container App"
     ]
   },
   "backend": {
