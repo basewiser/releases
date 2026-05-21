@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.225500",
+    "tag": "portal-v20260521.231253",
     "releasedAt": "2026-05-22",
     "notes": [
-      "First-load banner fix — manifest fetched server-side, no useEffect race after sign-in",
-      "Version chip moved to topbar next to the wordmark — click for About popover with portal + backend version",
-      "Six fresh procedure docs in docs/ (architecture, design-system, dev-loop, testing, working-agreement, plus CHANGELOG.md)"
+      "Update button now refreshes the auth token first — works on tabs left open longer than an hour",
+      "Banner and modal show human-readable dates instead of raw version tags",
+      "New modal design: side-by-side from→to version cards with the change at a glance"
     ]
   },
   "backend": {
