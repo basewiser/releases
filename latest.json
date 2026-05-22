@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260521.231253",
+    "tag": "portal-v20260522.000745",
     "releasedAt": "2026-05-22",
     "notes": [
-      "Update button now refreshes the auth token first — works on tabs left open longer than an hour",
-      "Banner and modal show human-readable dates instead of raw version tags",
-      "New modal design: side-by-side from→to version cards with the change at a glance"
+      "Version info moved to the Help drawer — open Help (top-right) to see portal + backend dates, raw tags, and update status",
+      "Topbar is cleaner; no chip next to the wordmark anymore",
+      "Banner stays the at-a-glance signal when an update is available"
     ]
   },
   "backend": {
