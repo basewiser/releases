@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260522.000745",
-    "releasedAt": "2026-05-22",
+    "tag": "portal-v20260523.234847",
+    "releasedAt": "2026-05-24",
     "notes": [
-      "Version info moved to the Help drawer — open Help (top-right) to see portal + backend dates, raw tags, and update status",
-      "Topbar is cleaner; no chip next to the wordmark anymore",
-      "Banner stays the at-a-glance signal when an update is available"
+      "One-click updates everything — the Update Now banner now covers both portal AND backend in a single click, no PowerShell required",
+      "Multi-bundle Stripe checkout — combine product bundles in a single subscription with one bill, one renewal date",
+      "Portal UI polish — sharper text contrast (WCAG AA), more comfortable body type, consistent active-state indicators"
     ]
   },
   "backend": {
-    "tag": "backend-v20260520.181953",
-    "releasedAt": "2026-05-20"
+    "tag": "backend-v20260524.004532",
+    "releasedAt": "2026-05-24"
   }
 }
