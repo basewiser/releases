@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260524.004532",
-    "releasedAt": "2026-05-24",
+    "tag": "portal-v20260522.000745",
+    "releasedAt": "2026-05-22",
     "notes": [
-      "Multi-bundle checkout — combine product bundles in a single Stripe subscription with one bill, one renewal date",
-      "Annual billing now shows savings vs monthly directly on the interval toggle",
-      "Portal UI polish — sharper text contrast (WCAG AA), more comfortable body type, consistent active-state indicators"
+      "Version info moved to the Help drawer — open Help (top-right) to see portal + backend dates, raw tags, and update status",
+      "Topbar is cleaner; no chip next to the wordmark anymore",
+      "Banner stays the at-a-glance signal when an update is available"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.004532",
-    "releasedAt": "2026-05-24"
+    "tag": "backend-v20260520.181953",
+    "releasedAt": "2026-05-20"
   }
 }
