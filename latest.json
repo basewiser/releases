@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260524.021102",
+    "tag": "portal-v20260524.102012",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Invoices & receipts — new 'View invoices & receipts' card in Settings → Licensing opens a Stripe-hosted page with full invoice history, PDF downloads, and subscription management",
-      "Friendlier update errors — failed updates show plain-English guidance and a 'Refresh sign-in & retry' button instead of a wall of Azure JSON",
-      "Per-tenant assignment menu — assign or unassign bundles directly from Settings → Licensing"
+      "Swap to another bundle — per-tenant assignment menu now lets you move a tenant's seat to a different bundle without unassign-then-assign",
+      "Invoices & receipts — 'View invoices & receipts' card in Settings → Licensing opens a Stripe-hosted page with invoice history, PDF downloads, and subscription management",
+      "Friendlier update errors — failed updates show plain-English guidance and a 'Refresh sign-in & retry' button"
     ]
   },
   "backend": {
