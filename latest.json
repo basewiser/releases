@@ -1,15 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260524.184319",
+    "tag": "portal-v20260524.185639",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Receipts + 'Manage subscription' now identify your account by deployment fingerprint instead of sign-in email — fixes the 'no subscription found for your email' error when the operator email and the buyer email differ",
-      "Update banner auto-refreshes on long-open dashboard tabs — no more hard refresh needed to see a new release; a quiet 5-minute poll plus an instant check on tab focus",
-      "Setup note: STRIPE_RESTRICTED_KEY needs checkout_sessions:read added (in addition to invoices:read). customers:read is no longer required by the portal — safe to remove if you want to keep the key minimum-scope"
+      "Fix: purchase history loads correctly — previous release used a Stripe API endpoint that doesn't exist (Stripe's /search isn't available for Checkout Sessions), causing a 400 error on the receipts table. Now uses the regular list + client-side filter on client_reference_id",
+      "No Stripe key change needed compared to the last release — checkout_sessions:write already covers read on the list endpoint"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.184319",
+    "tag": "backend-v20260524.185639",
     "releasedAt": "2026-05-24"
   }
 }
