@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260524.102012",
+    "tag": "portal-v20260524.173158",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Swap to another bundle — per-tenant assignment menu now lets you move a tenant's seat to a different bundle without unassign-then-assign",
-      "Invoices & receipts — 'View invoices & receipts' card in Settings → Licensing opens a Stripe-hosted page with invoice history, PDF downloads, and subscription management",
-      "Friendlier update errors — failed updates show plain-English guidance and a 'Refresh sign-in & retry' button"
+      "Purchase history is now in-portal — invoices with PDF receipts render as a table on Settings → Licensing; the Stripe Customer Portal is a compact 'Manage subscription' link in the footer for cancel / swap / update-card",
+      "Licensing tab polish — tenant domains render in a cleaner readable font, neutral selected state on backup cadence chips, unified outlined-ghost CTAs on top banners",
+      "Setup note: this release lists invoices from Stripe directly. Your STRIPE_RESTRICTED_KEY on the Function App needs customers:read and invoices:read added if you haven't already"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.021102",
+    "tag": "backend-v20260524.173158",
     "releasedAt": "2026-05-24"
   }
 }
