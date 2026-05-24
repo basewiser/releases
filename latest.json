@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260524.173158",
+    "tag": "portal-v20260524.184319",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Purchase history is now in-portal — invoices with PDF receipts render as a table on Settings → Licensing; the Stripe Customer Portal is a compact 'Manage subscription' link in the footer for cancel / swap / update-card",
-      "Licensing tab polish — tenant domains render in a cleaner readable font, neutral selected state on backup cadence chips, unified outlined-ghost CTAs on top banners",
-      "Setup note: this release lists invoices from Stripe directly. Your STRIPE_RESTRICTED_KEY on the Function App needs customers:read and invoices:read added if you haven't already"
+      "Receipts + 'Manage subscription' now identify your account by deployment fingerprint instead of sign-in email — fixes the 'no subscription found for your email' error when the operator email and the buyer email differ",
+      "Update banner auto-refreshes on long-open dashboard tabs — no more hard refresh needed to see a new release; a quiet 5-minute poll plus an instant check on tab focus",
+      "Setup note: STRIPE_RESTRICTED_KEY needs checkout_sessions:read added (in addition to invoices:read). customers:read is no longer required by the portal — safe to remove if you want to keep the key minimum-scope"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.173158",
+    "tag": "backend-v20260524.184319",
     "releasedAt": "2026-05-24"
   }
 }
