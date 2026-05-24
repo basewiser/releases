@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260524.015810",
+    "tag": "portal-v20260524.021102",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Friendlier update errors — failed updates now show plain-English guidance and a 'Refresh sign-in & retry' button instead of a wall of Azure JSON",
-      "Per-tenant assignment menu — assign or unassign bundles directly from Settings → Licensing",
-      "One-click updates everything — Update Now covers both portal AND backend in a single click"
+      "Invoices & receipts — new 'View invoices & receipts' card in Settings → Licensing opens a Stripe-hosted page with full invoice history, PDF downloads, and subscription management",
+      "Friendlier update errors — failed updates show plain-English guidance and a 'Refresh sign-in & retry' button instead of a wall of Azure JSON",
+      "Per-tenant assignment menu — assign or unassign bundles directly from Settings → Licensing"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.013826",
+    "tag": "backend-v20260524.021102",
     "releasedAt": "2026-05-24"
   }
 }
