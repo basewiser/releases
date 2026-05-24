@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260524.013826",
+    "tag": "portal-v20260524.015810",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Per-tenant assignment menu — assign or unassign bundles directly from Settings → Licensing, no more 'coming soon' placeholder",
-      "Banner auto-recovery polish — silent EasyAuth self-heal completes without a hard refresh",
-      "One-click updates everything — Update Now still covers both portal AND backend in a single click"
+      "Friendlier update errors — failed updates now show plain-English guidance and a 'Refresh sign-in & retry' button instead of a wall of Azure JSON",
+      "Per-tenant assignment menu — assign or unassign bundles directly from Settings → Licensing",
+      "One-click updates everything — Update Now covers both portal AND backend in a single click"
     ]
   },
   "backend": {
