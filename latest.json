@@ -1,15 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260524.194640",
+    "tag": "portal-v20260524.204922",
     "releasedAt": "2026-05-24",
     "notes": [
-      "New 'Your subscriptions' section on Settings → Licensing — see what you're paying for, how often (monthly / yearly), how much, and when each renews. One section per active or recently-cancelled subscription",
-      "In-portal cancel — 'Cancel at period end' button per subscription, with a confirmation dialog and an Undo button while the cancellation is pending. No more redirect to Stripe for the common cancel flow",
-      "Setup note: STRIPE_RESTRICTED_KEY needs subscriptions:write added (covers read too). Without it, the new section will show 'Couldn't load subscriptions'"
+      "New 'Billing details' section on Settings → Licensing — see your card on file (brand, last 4, expiry), the email Stripe sends invoices to, and the name on file. Read-only display; edits open the Stripe Customer Portal",
+      "Setup script (Setup-BasewiserPlatform.ps1) now prints the full Stripe restricted-key scope checklist during install, so future deployments don't discover missing scopes through error messages release-by-release"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.194640",
+    "tag": "backend-v20260524.204922",
     "releasedAt": "2026-05-24"
   }
 }
