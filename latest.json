@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260524.185639",
+    "tag": "portal-v20260524.194640",
     "releasedAt": "2026-05-24",
     "notes": [
-      "Fix: purchase history loads correctly — previous release used a Stripe API endpoint that doesn't exist (Stripe's /search isn't available for Checkout Sessions), causing a 400 error on the receipts table. Now uses the regular list + client-side filter on client_reference_id",
-      "No Stripe key change needed compared to the last release — checkout_sessions:write already covers read on the list endpoint"
+      "New 'Your subscriptions' section on Settings → Licensing — see what you're paying for, how often (monthly / yearly), how much, and when each renews. One section per active or recently-cancelled subscription",
+      "In-portal cancel — 'Cancel at period end' button per subscription, with a confirmation dialog and an Undo button while the cancellation is pending. No more redirect to Stripe for the common cancel flow",
+      "Setup note: STRIPE_RESTRICTED_KEY needs subscriptions:write added (covers read too). Without it, the new section will show 'Couldn't load subscriptions'"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.185639",
+    "tag": "backend-v20260524.194640",
     "releasedAt": "2026-05-24"
   }
 }
