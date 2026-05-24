@@ -1,6 +1,6 @@
 {
   "portal": {
-    "tag": "portal-v20260524.005117",
+    "tag": "portal-v20260524.011433",
     "releasedAt": "2026-05-24",
     "notes": [
       "One-click updates everything — the Update Now banner now covers both portal AND backend in a single click, no PowerShell required",
