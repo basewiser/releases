@@ -1,15 +1,16 @@
 {
   "portal": {
-    "tag": "portal-v20260525.121632",
+    "tag": "portal-v20260525.151005",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Settings → Licensing redesign — the tab is now an Active-plan hero (status pill, seats / cadence / renewal / amount, Cancel + Manage in Stripe) sitting above the seat inventory and per-tenant assignments. Seat counts are now sourced live from Stripe instead of derived from Keygen, so the inventory matches what you actually purchased",
-      "Licensing tab split into Products and Billing so the page stops trying to do everything at once. Products = active plan, seats, assignments, upgrade CTA. Billing = billing details, purchase history, past plans, license footer. Old ?tab=licensing deep links auto-redirect to ?tab=products",
-      "Design polish: navy tint removed from dropdowns, popovers, and per-tenant assignment menus — the whole portal now reads on one neutral surface scale. Corners sharpened to match the 4px standard everywhere. Assign-bundle menu header trimmed to the bundle name only (one line, not two)"
+      "Products tab redesigned around per-product cards. Each card shows seats owned/assigned/available, cost per seat + monthly total, renewal date, and a family-coded accent rail (Conditional Access Vault, Identity Health, License Insights). The old single-plan hero is gone — every owned product gets its own row instead of being collapsed into 'primary plan + N more'",
+      "Products tab split into Overview + Assignment sub-tabs. Overview = product cards + buy/upgrade CTA. Assignment = per-tenant bundle table (no longer buried below the cards). Switching tabs preserves your URL and back-button works as expected",
+      "Cancel-at-period-end now sits inline with each card's renewal info instead of in a separate footer row. Status pills only show when something needs your attention (Cancels DATE / Trial) — the decorative 'Active' pill is gone since every card in the list is active anyway",
+      "Every customer-facing 'CA Vault' now reads as 'Conditional Access Vault' in full. The 'New release available' update modal is wider so the portal+backend version diff rows have room to breathe"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.121632",
+    "tag": "backend-v20260525.151005",
     "releasedAt": "2026-05-25"
   }
 }
