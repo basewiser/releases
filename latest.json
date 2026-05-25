@@ -1,15 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260524.235709",
-    "releasedAt": "2026-05-24",
+    "tag": "portal-v20260525.003844",
+    "releasedAt": "2026-05-25",
     "notes": [
-      "Sortable drilldown tables — click any column header on a finding's drilldown (Identity, Conditional Access) to sort ascending, click again for descending, again to reset. Sort state persists per-finding across navigation and reload",
-      "Persistent drilldown column widths — drag a divider to widen a column and that width sticks per-finding, so your preferred layout doesn't reset every time you reopen the row",
-      "Empty-state polish — Tenant Activity tab and the Reports → Export licensing data page now render the same green-check empty treatment as the rest of the portal when there's nothing to show"
+      "Fix: Your subscriptions section now loads — the previous release hit Stripe's expand-depth limit and 400'd. Product names are now hydrated via a separate fetch",
+      "Live seat counts on the Seat inventory cards — replaced the 'coming soon' placeholder with real owned / assigned / available numbers derived from your bundles and assignments; updates in lockstep with the assign / unassign UI below"
     ]
   },
   "backend": {
-    "tag": "backend-v20260524.235709",
-    "releasedAt": "2026-05-24"
+    "tag": "backend-v20260525.003844",
+    "releasedAt": "2026-05-25"
   }
 }
