@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.170115",
+    "tag": "portal-v20260525.171945",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Settings → Products → Overview now has an 'Enable seats for assignment' button (top-right of the section header). Click it after every Stripe purchase to make those seats assignable on the Assignment tab. Idempotent — safe to spam",
-      "Hotfix: the sync endpoint was returning 404 in the previous release because the new function file wasn't registered in the backend's startup index. Both layers ship together this release"
+      "Buying seats now makes them instantly assignable — no manual button to click. The portal silently syncs your Stripe purchases to the Assignment table on every Products tab visit, and immediately after returning from Stripe checkout. Throttled by a 60s in-memory cache so sub-tab flips don't spam the backend",
+      "Manual 'Enable seats for assignment' button removed. A small 'Retry seat sync' affordance only appears if the silent sync errors — happy path stays quiet"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.170115",
+    "tag": "backend-v20260525.171945",
     "releasedAt": "2026-05-25"
   }
 }
