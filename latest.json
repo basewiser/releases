@@ -1,16 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.151005",
+    "tag": "portal-v20260525.164130",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Products tab redesigned around per-product cards. Each card shows seats owned/assigned/available, cost per seat + monthly total, renewal date, and a family-coded accent rail (Conditional Access Vault, Identity Health, License Insights). The old single-plan hero is gone — every owned product gets its own row instead of being collapsed into 'primary plan + N more'",
-      "Products tab split into Overview + Assignment sub-tabs. Overview = product cards + buy/upgrade CTA. Assignment = per-tenant bundle table (no longer buried below the cards). Switching tabs preserves your URL and back-button works as expected",
-      "Cancel-at-period-end now sits inline with each card's renewal info instead of in a separate footer row. Status pills only show when something needs your attention (Cancels DATE / Trial) — the decorative 'Active' pill is gone since every card in the list is active anyway",
-      "Every customer-facing 'CA Vault' now reads as 'Conditional Access Vault' in full. The 'New release available' update modal is wider so the portal+backend version diff rows have room to breathe"
+      "New 'Sync seats from Stripe' button in Settings → Products → Overview. Click it once and every Stripe seat you've purchased gets a matching bundle row in your backend — the per-tenant Assignment tab finally has slots to surface. Idempotent: safe to click repeatedly after every new purchase",
+      "Backend: new POST /api/local/bundles/sync-from-stripe endpoint. Each Stripe subscription item becomes one signed BundleRow with slot counts = quantity. Deterministic JTI from the Stripe item id so re-runs upsert in place instead of duplicating"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.151005",
+    "tag": "backend-v20260525.164130",
     "releasedAt": "2026-05-25"
   }
 }
