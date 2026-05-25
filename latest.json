@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.164130",
+    "tag": "portal-v20260525.170115",
     "releasedAt": "2026-05-25",
     "notes": [
-      "New 'Sync seats from Stripe' button in Settings → Products → Overview. Click it once and every Stripe seat you've purchased gets a matching bundle row in your backend — the per-tenant Assignment tab finally has slots to surface. Idempotent: safe to click repeatedly after every new purchase",
-      "Backend: new POST /api/local/bundles/sync-from-stripe endpoint. Each Stripe subscription item becomes one signed BundleRow with slot counts = quantity. Deterministic JTI from the Stripe item id so re-runs upsert in place instead of duplicating"
+      "Settings → Products → Overview now has an 'Enable seats for assignment' button (top-right of the section header). Click it after every Stripe purchase to make those seats assignable on the Assignment tab. Idempotent — safe to spam",
+      "Hotfix: the sync endpoint was returning 404 in the previous release because the new function file wasn't registered in the backend's startup index. Both layers ship together this release"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.164130",
+    "tag": "backend-v20260525.170115",
     "releasedAt": "2026-05-25"
   }
 }
