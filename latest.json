@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260525.011623",
+    "tag": "portal-v20260525.121632",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Fix: Settings → Licensing no longer crashes — the previous release rendered a generic 'Application error' overlay on some Stripe API versions. Subscription period fields now fall back to the item level (Stripe moved them in newer API versions), and each Stripe section is wrapped in an error boundary so a single bad row shows an inline message instead of taking down the whole page",
-      "Version timestamps in the Help drawer + update banner now respect the timezone you've selected in the topbar picker (no more '23:57 UTC' confusion when you've picked Local +02:00)"
+      "Settings → Licensing redesign — the tab is now an Active-plan hero (status pill, seats / cadence / renewal / amount, Cancel + Manage in Stripe) sitting above the seat inventory and per-tenant assignments. Seat counts are now sourced live from Stripe instead of derived from Keygen, so the inventory matches what you actually purchased",
+      "Licensing tab split into Products and Billing so the page stops trying to do everything at once. Products = active plan, seats, assignments, upgrade CTA. Billing = billing details, purchase history, past plans, license footer. Old ?tab=licensing deep links auto-redirect to ?tab=products",
+      "Design polish: navy tint removed from dropdowns, popovers, and per-tenant assignment menus — the whole portal now reads on one neutral surface scale. Corners sharpened to match the 4px standard everywhere. Assign-bundle menu header trimmed to the bundle name only (one line, not two)"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.011623",
+    "tag": "backend-v20260525.121632",
     "releasedAt": "2026-05-25"
   }
 }
