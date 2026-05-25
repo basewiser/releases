@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.185532",
+    "tag": "portal-v20260525.191912",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Settings → Products → Overview now surfaces a diagnostic chip when the background seat sync runs into trouble. If it can't match a Stripe product name to a known bundle (Conditional Access Vault / Identity Health / License Insights), the unmatched names show up under a Re-run button. Happy path still stays silent",
-      "Classifier relaxed: handles 'CAV' / 'IHM' short forms, hyphenated names ('CA-Vault'), em/en dashes, and UK 'Licence' spelling. CAV products without an explicit tier suffix default to Standard instead of being dropped silently"
+      "Settings → Products → Overview now shows an always-visible diagnostic chip after the background sync runs: 'Synced N from Stripe · portal sees M bundles'. Green when they match (good), amber when they don't (= portal and backend resolving different msspId — the chip tells us exactly where the mismatch is so I can fix the underlying gap)",
+      "Portal now passes its own msspId to the sync endpoint so writes always land where the portal is reading. Eliminates a silent failure mode when BASEWISER_MSSP_ID env var is set to a value different from the Deployment table singleton"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.185532",
+    "tag": "backend-v20260525.191912",
     "releasedAt": "2026-05-25"
   }
 }
