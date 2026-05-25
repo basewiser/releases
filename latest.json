@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.194211",
+    "tag": "portal-v20260525.200133",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Root-cause fix for the empty Assignment tab: the portal now reads msspId from the same source the backend writes to (Deployment singleton). Previously it preferred the BASEWISER_MSSP_ID env var, which resolved to a different value on this deployment — backend wrote bundle rows to partition A, portal queried partition B, the two never met. After this release the diagnostic chip should turn green ('Synced 3 · portal sees 3 bundles') and the Assignment tab should finally surface the Assign dropdowns",
-      "Diagnostic chip now also calls out msspId divergence explicitly ('portal=X ≠ backend=Y') if it ever drifts again"
+      "Actual root cause of the empty Assignment tab found and fixed. fetchBundles / fetchAssignmentsForBundle were using relative URLs that worked client-side via the portal proxy but failed silently server-side from page.tsx. Sync was writing bundles fine the whole time; the portal just couldn't read them during SSR. After this release the diagnostic chip should turn green and the Assignment tab should finally show Assign dropdowns",
+      "Refactored: centralised URL resolution for local-* fetches into a shared helper so any future endpoint follows the same client-vs-server pattern automatically"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.194211",
+    "tag": "backend-v20260525.200133",
     "releasedAt": "2026-05-25"
   }
 }
