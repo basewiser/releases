@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260525.191912",
+    "tag": "portal-v20260525.194211",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Settings → Products → Overview now shows an always-visible diagnostic chip after the background sync runs: 'Synced N from Stripe · portal sees M bundles'. Green when they match (good), amber when they don't (= portal and backend resolving different msspId — the chip tells us exactly where the mismatch is so I can fix the underlying gap)",
-      "Portal now passes its own msspId to the sync endpoint so writes always land where the portal is reading. Eliminates a silent failure mode when BASEWISER_MSSP_ID env var is set to a value different from the Deployment table singleton"
+      "Root-cause fix for the empty Assignment tab: the portal now reads msspId from the same source the backend writes to (Deployment singleton). Previously it preferred the BASEWISER_MSSP_ID env var, which resolved to a different value on this deployment — backend wrote bundle rows to partition A, portal queried partition B, the two never met. After this release the diagnostic chip should turn green ('Synced 3 · portal sees 3 bundles') and the Assignment tab should finally surface the Assign dropdowns",
+      "Diagnostic chip now also calls out msspId divergence explicitly ('portal=X ≠ backend=Y') if it ever drifts again"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.191912",
+    "tag": "backend-v20260525.194211",
     "releasedAt": "2026-05-25"
   }
 }
