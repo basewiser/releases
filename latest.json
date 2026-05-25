@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260525.201920",
+    "tag": "portal-v20260525.203955",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Diagnostic page at /dashboard/bundle-diagnostic — dumps the full state of bundle sync (portal msspId, backend msspId, fetchBundles result, raw Bundles table contents) as JSON so we can spot where the bug actually lives. Internal-only; remove after the underlying bug is locked down"
+      "Actual root cause of the empty Assignment tab found and fixed. The backend's local-bundle-list function file existed but was never imported in the startup index, so Azure Functions never registered the /local/license/bundles route. Every fetchBundles call has been returning HTTP 404 since the file was first added — the portal swallowed it as bundles=[] and the Assignment tab stayed empty regardless of what was in storage. One missing import. Assignment tab should now finally surface the Assign dropdowns"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.201920",
+    "tag": "backend-v20260525.203955",
     "releasedAt": "2026-05-25"
   }
 }
