@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260525.203955",
+    "tag": "portal-v20260525.212328",
     "releasedAt": "2026-05-25",
     "notes": [
-      "Actual root cause of the empty Assignment tab found and fixed. The backend's local-bundle-list function file existed but was never imported in the startup index, so Azure Functions never registered the /local/license/bundles route. Every fetchBundles call has been returning HTTP 404 since the file was first added — the portal swallowed it as bundles=[] and the Assignment tab stayed empty regardless of what was in storage. One missing import. Assignment tab should now finally surface the Assign dropdowns"
+      "Internal preview page at /dashboard/products-card-preview — three layout candidates for the aggregated Active products view. Pick one and the next release ships that style across the real Products tab. Throwaway page, will be removed after the choice is locked in"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.203955",
+    "tag": "backend-v20260525.212328",
     "releasedAt": "2026-05-25"
   }
 }
