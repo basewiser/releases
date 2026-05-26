@@ -1,15 +1,16 @@
 {
   "portal": {
-    "tag": "portal-v20260526.132437",
+    "tag": "portal-v20260526.140005",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Settings → Products tab redesigned. Each row is one product family + tier with a utilization bar showing assigned vs available seats. Two purchases of the same product on different days now collapse into ONE row with summed seats and cost, instead of duplicate cards",
-      "New 'Ending soon' section appears below the products list when any product is set to cancel. Each row spells out: which product, end date, seat count, monthly cost, AND which managed tenants lose coverage on that date. Undo cancel and Manage in Stripe buttons live next to each entry",
-      "Assignment tab now shows expiry indicators from the tenant angle: a top banner counts tenants with ending products, a 'Ending' chip appears next to affected tenant names, and the per-cell pill turns amber with the end date when the assignment uses a cancelling subscription"
+      "Settings → Products tab: each row now shows its total seat count as a small tag next to the product name, so the count is visible even when the utilisation bar is empty. Meta line under the bar now reads '0 of 4 seats deployed' instead of just 'Nothing deployed yet'",
+      "Top-right header restructured: Manage subscription in Stripe is the primary button on top; the Re-run seat sync chip (only visible if sync errors) stacks below it. Both align on the right rail",
+      "Assignment dropdown finally aggregates by tier. Two CAV Pro purchases used to show 'Pro · 3 left' and 'Pro · 1 left' as separate entries — now you see one 'Pro · 4 left'",
+      "Throwaway preview pages (/dashboard/products-card-preview, /dashboard/bundle-diagnostic) removed now that their job is done"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.132437",
+    "tag": "backend-v20260526.140005",
     "releasedAt": "2026-05-26"
   }
 }
