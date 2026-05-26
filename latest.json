@@ -1,14 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260526.190342",
+    "tag": "portal-v20260526.201635",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Consent-callback page polish: tenant identifier now renders as a TENANT NAME / TENANT ID key/value list (name bold + bright, GUID muted) instead of a run-on sentence. Easier to scan, GUID wraps on its own row without breaking the prose",
-      "Close this tab button restyled to match the portal's outlined buttons (the same recipe used by Manage subscription in Stripe in the settings page) — smaller, muted text that brightens on hover. Button centered under the card content; the redundant 'You can also close it manually' hint and the internal 'Onboarding consent callback' footnote both dropped"
+      "Sync now diagnostics — when the refresh call's inner Graph fetches fail (org info, CA policies), the backend now returns the exact error per call instead of swallowing it and returning 200. The portal surfaces these as a red inline block below the button, so the operator sees why 'Last sync' stayed 'Never' instead of guessing",
+      "Hides bundles whose admin consent is already granted from the global consent panel. When every assigned bundle is consented, the whole panel disappears — no more taking up vertical space for actions that aren't actionable",
+      "Grant admin consent, Activate, and What's new buttons restyled to use white text on the blue accent tint (matches the Add tenant button). The previous blue-on-blue treatment had low contrast",
+      "Body text now bolds the literal button label when telling you to click something: 'click What's new for the details' and 'the Grant admin consent button opens Microsoft's consent page' both highlight the control name. Reads cleaner and the eye lands on the action",
+      "'Synced X' relabelled to 'Last sync X' so it reads as label/value instead of a verb",
+      "Consent-callback polish: TENANT NAME / TENANT ID rendered as a key/value list (name bold, GUID muted), Close button matches the portal's outlined buttons, dropped the redundant manual-close hint and internal footnote"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.184744",
+    "tag": "backend-v20260526.201635",
     "releasedAt": "2026-05-26"
   }
 }
