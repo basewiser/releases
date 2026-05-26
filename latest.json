@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260525.212328",
-    "releasedAt": "2026-05-25",
+    "tag": "portal-v20260526.080310",
+    "releasedAt": "2026-05-26",
     "notes": [
-      "Internal preview page at /dashboard/products-card-preview — three layout candidates for the aggregated Active products view. Pick one and the next release ships that style across the real Products tab. Throwaway page, will be removed after the choice is locked in"
+      "Two more layout candidates on the internal /dashboard/products-card-preview page — Variant D (operator-focused with 'in N days' urgency cue + click-to-preview affected-tenants cancel overlay) and Variant E (wide single-line row). Pick one of A through E and we ship that style across the real Products tab"
     ]
   },
   "backend": {
-    "tag": "backend-v20260525.212328",
-    "releasedAt": "2026-05-25"
+    "tag": "backend-v20260526.080310",
+    "releasedAt": "2026-05-26"
   }
 }
