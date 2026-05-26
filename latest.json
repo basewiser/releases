@@ -1,14 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260526.201635",
+    "tag": "portal-v20260526.210450",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Sync now diagnostics — when the refresh call's inner Graph fetches fail (org info, CA policies), the backend now returns the exact error per call instead of swallowing it and returning 200. The portal surfaces these as a red inline block below the button, so the operator sees why 'Last sync' stayed 'Never' instead of guessing",
-      "Hides bundles whose admin consent is already granted from the global consent panel. When every assigned bundle is consented, the whole panel disappears — no more taking up vertical space for actions that aren't actionable",
-      "Grant admin consent, Activate, and What's new buttons restyled to use white text on the blue accent tint (matches the Add tenant button). The previous blue-on-blue treatment had low contrast",
-      "Body text now bolds the literal button label when telling you to click something: 'click What's new for the details' and 'the Grant admin consent button opens Microsoft's consent page' both highlight the control name. Reads cleaner and the eye lands on the action",
-      "'Synced X' relabelled to 'Last sync X' so it reads as label/value instead of a verb",
-      "Consent-callback polish: TENANT NAME / TENANT ID rendered as a key/value list (name bold, GUID muted), Close button matches the portal's outlined buttons, dropped the redundant manual-close hint and internal footnote"
+      "Re-grant link beside the green 'Consent granted' pill on each bundle row. Clicking it re-opens Microsoft's consent flow so you can refresh appRoleAssignments when Graph calls are 403ing on missing scopes (the 'permission drift' case where the app's declared scopes changed since the customer admin's first Accept)",
+      "Consented bundle rows are no longer hidden from the consent panel — they stay visible alongside un-consented ones so the Re-grant escape hatch is always reachable. Reverses the brief stretch where the panel disappeared when every bundle was already consented"
     ]
   },
   "backend": {
