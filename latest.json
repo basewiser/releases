@@ -1,10 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260526.152355",
+    "tag": "portal-v20260526.161236",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Bundles that aren't yet activated on this deployment now show an Activate button on the tenant consent panel (was inert text before). Click → creates the multi-tenant Entra app in your home tenant → the row flips to 'Grant admin consent' so you can complete the consent flow in one place",
-      "Activation failure (most often: missing Application.ReadWrite.OwnedBy on the Function App's managed identity, which Setup-BasewiserPlatform.ps1 grants at install time) surfaces inline as a red error message so you can see why it failed"
+      "After granting admin consent the new tab now lands on a confirmation page instead of a 404 — backend pointed the consent redirect at /api/onboarding/consent-callback all along, the portal just didn't have a handler there. Success shows the consenting tenant + a Close this tab button; failures show the Microsoft error code and description so you know what went wrong",
+      "Activation errors now show the actual Microsoft Graph reason (e.g. Authorization_RequestDenied — Insufficient privileges to complete the operation) instead of the generic 'Bundle activation failed during Microsoft Graph operations' wrapper, plus a one-liner pointing at Setup-BasewiserPlatform.ps1 step 3 which is where the missing identity scopes get granted. Button label flips to Retry activate after a failure"
     ]
   },
   "backend": {
