@@ -1,10 +1,12 @@
 {
   "portal": {
-    "tag": "portal-v20260526.170026",
+    "tag": "portal-v20260526.182231",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Design preview for the consent-callback landing — navigate to /dashboard/dev/consent-callback-preview/ to compare three candidate designs (auto-redirect into portal, branded standalone confirmation, hybrid with countdown). Pick one and the production callback gets rewritten to match",
-      "Internal: this is a dev-only preview page and is not linked from the main navigation; the production callback at /api/onboarding/consent-callback is unchanged in this release"
+      "Consent-callback page rewrite: real Basewiser SVG wordmark instead of placeholder text, success icon flipped from blue accent to green to match the rest of the portal, Close this tab button switched to secondary/outlined style, single centered column (wordmark + card + footnote) instead of corner-anchored header bar and footer band",
+      "The consent-done page now reads tenant identifier as 'Soprasteriautv (14e12458-…)' when the name is available — name in plain text, GUID in mono — instead of just the raw GUID. The portal embeds the display name in the consent URL's state parameter; Microsoft echoes it back to the callback",
+      "Bundle labels in the consent panel render as 'Conditional Access Vault Pro' (full name) instead of 'CAV Pro' — internal data layer keeps the shorter form, only the user-facing display changes. Operator directive: never abbreviate as 'CA' (ambiguous with Certificate Authority)",
+      "Internal: /dashboard/dev/wordmark-preview/ and /dashboard/dev/consent-banner-preview/ added as dev-only design preview pages, not linked from main nav"
     ]
   },
   "backend": {
