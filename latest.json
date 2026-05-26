@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.150345",
+    "tag": "portal-v20260526.152355",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Every tenant detail page now shows a 'Grant admin consent' panel above the tabs. One button per assigned bundle (Conditional Access Vault, Identity Health, License Insights). Click → opens Microsoft's hosted consent URL in a new tab, scoped to that tenant's Entra directory → sign in as an admin → accept → return to the portal and click Sync now",
-      "Without admin consent, the bundle's Entra app can't read Graph data from the target tenant and 'Sync now' silently fails. This panel gives the operator the clear path to unblock data flow"
+      "Bundles that aren't yet activated on this deployment now show an Activate button on the tenant consent panel (was inert text before). Click → creates the multi-tenant Entra app in your home tenant → the row flips to 'Grant admin consent' so you can complete the consent flow in one place",
+      "Activation failure (most often: missing Application.ReadWrite.OwnedBy on the Function App's managed identity, which Setup-BasewiserPlatform.ps1 grants at install time) surfaces inline as a red error message so you can see why it failed"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.150345",
+    "tag": "backend-v20260526.152355",
     "releasedAt": "2026-05-26"
   }
 }
