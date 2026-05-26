@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.144254",
+    "tag": "portal-v20260526.150345",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Unassigning a product no longer 500s. The backend used to reject revokes on assignment rows missing the optional 'origin' metadata; that check is gone. 'Already revoked' is now idempotent (returns OK) so a double-click during the UI refresh window doesn't make a cleanly-revoked assignment look broken",
-      "Settings tabs and Products sub-tabs are now in the URL. Hard-refreshing on Products → Assignment lands back on Products → Assignment (not the default Backup defaults tab), and you can paste a link to a colleague and they'll land on the same view"
+      "Every tenant detail page now shows a 'Grant admin consent' panel above the tabs. One button per assigned bundle (Conditional Access Vault, Identity Health, License Insights). Click → opens Microsoft's hosted consent URL in a new tab, scoped to that tenant's Entra directory → sign in as an admin → accept → return to the portal and click Sync now",
+      "Without admin consent, the bundle's Entra app can't read Graph data from the target tenant and 'Sync now' silently fails. This panel gives the operator the clear path to unblock data flow"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.144254",
+    "tag": "backend-v20260526.150345",
     "releasedAt": "2026-05-26"
   }
 }
