@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260526.092503",
+    "tag": "portal-v20260526.120902",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Variant F on the preview page refined — proper 4-column grid alignment, real outlined Cancel button (no longer reads like plain text), 'Cancelling' chip moved next to the product name so it stops disrupting the cost/renews row, and a section-level 'Ending soon' banner that lists products with pending cancellations. Renews column turns amber when the product is ending, so trouble is visible from a column scan"
+      "Internal preview page at /dashboard/products-card-preview now mocks the dedicated 'Ending soon' section under Variant F (per-cancellation rows with affected tenants + Undo cancel + Manage in Stripe buttons), plus a separate Assignment-tab preview that shows the per-tenant expiry indicators (amber cell pills, per-row warning chip, top-of-table banner). Throwaway — used to lock down the design before it ships across the real Settings tabs"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.092503",
+    "tag": "backend-v20260526.120902",
     "releasedAt": "2026-05-26"
   }
 }
