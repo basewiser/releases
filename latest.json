@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.140752",
+    "tag": "portal-v20260526.142346",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Billing → Purchase history: each multi-line invoice row now click-expands to reveal every line item with its amount. The '+N more' hint always has a backing list — caret indicator on rows that have detail, single-line invoices stay non-interactive. Opening the PDF receipt doesn't accidentally toggle the row underneath",
-      "Stripe line descriptions display 'Conditional Access Vault' in full instead of the 'CA Vault' shorthand in the in-portal view (the underlying invoice PDF keeps Stripe's wording for legal/finance reasons)"
+      "Update banner copy: drops 'Basewiser' (the company name) from the headline. Inline banner now reads 'A new portal version is available'; the update modal headline reads 'The portal is ready to update'",
+      "Inline preview under the banner headline replaced with a one-line generic ('N changes in this release — click What's new for the details') instead of dumping the full first release note, which was making the banner wrap and crowd the page"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.140752",
+    "tag": "backend-v20260526.142346",
     "releasedAt": "2026-05-26"
   }
 }
