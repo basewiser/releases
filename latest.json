@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260526.080310",
+    "tag": "portal-v20260526.084637",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Two more layout candidates on the internal /dashboard/products-card-preview page — Variant D (operator-focused with 'in N days' urgency cue + click-to-preview affected-tenants cancel overlay) and Variant E (wide single-line row). Pick one of A through E and we ship that style across the real Products tab"
+      "Three more visually distinct candidates on the internal /dashboard/products-card-preview page — F (utilization bars), G (pricing-table columns), H (visual seat grid where each block is a seat). These are different mental models, not card-chrome variations on A-E. Pick one of the eight and we ship that style"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.080310",
+    "tag": "backend-v20260526.084637",
     "releasedAt": "2026-05-26"
   }
 }
