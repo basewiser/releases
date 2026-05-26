@@ -1,16 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.140005",
+    "tag": "portal-v20260526.140752",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Settings → Products tab: each row now shows its total seat count as a small tag next to the product name, so the count is visible even when the utilisation bar is empty. Meta line under the bar now reads '0 of 4 seats deployed' instead of just 'Nothing deployed yet'",
-      "Top-right header restructured: Manage subscription in Stripe is the primary button on top; the Re-run seat sync chip (only visible if sync errors) stacks below it. Both align on the right rail",
-      "Assignment dropdown finally aggregates by tier. Two CAV Pro purchases used to show 'Pro · 3 left' and 'Pro · 1 left' as separate entries — now you see one 'Pro · 4 left'",
-      "Throwaway preview pages (/dashboard/products-card-preview, /dashboard/bundle-diagnostic) removed now that their job is done"
+      "Billing → Purchase history: each multi-line invoice row now click-expands to reveal every line item with its amount. The '+N more' hint always has a backing list — caret indicator on rows that have detail, single-line invoices stay non-interactive. Opening the PDF receipt doesn't accidentally toggle the row underneath",
+      "Stripe line descriptions display 'Conditional Access Vault' in full instead of the 'CA Vault' shorthand in the in-portal view (the underlying invoice PDF keeps Stripe's wording for legal/finance reasons)"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.140005",
+    "tag": "backend-v20260526.140752",
     "releasedAt": "2026-05-26"
   }
 }
