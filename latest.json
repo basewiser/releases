@@ -1,10 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260526.184744",
+    "tag": "portal-v20260526.190342",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Already-consented bundles now show a green 'Consent granted' pill instead of the Grant admin consent button. The backend probes each customer tenant by asking Microsoft for a client_credentials token for the bundle's app — if Microsoft hands back a token, the service principal exists in the customer tenant and consent has been granted. 60-second in-memory cache so the tenant page doesn't hammer the OAuth endpoint",
-      "Bundle labels now render as 'Conditional Access - Pro' (drop 'Vault', tier separated by ' - '). 'CAV X' was ambiguous and didn't match the Conditional Access tab name. Internal storage keys unchanged"
+      "Consent-callback page polish: tenant identifier now renders as a TENANT NAME / TENANT ID key/value list (name bold + bright, GUID muted) instead of a run-on sentence. Easier to scan, GUID wraps on its own row without breaking the prose",
+      "Close this tab button restyled to match the portal's outlined buttons (the same recipe used by Manage subscription in Stripe in the settings page) — smaller, muted text that brightens on hover. Button centered under the card content; the redundant 'You can also close it manually' hint and the internal 'Onboarding consent callback' footnote both dropped"
     ]
   },
   "backend": {
