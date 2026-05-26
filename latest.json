@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.142346",
+    "tag": "portal-v20260526.144254",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Update banner copy: drops 'Basewiser' (the company name) from the headline. Inline banner now reads 'A new portal version is available'; the update modal headline reads 'The portal is ready to update'",
-      "Inline preview under the banner headline replaced with a one-line generic ('N changes in this release — click What's new for the details') instead of dumping the full first release note, which was making the banner wrap and crowd the page"
+      "Unassigning a product no longer 500s. The backend used to reject revokes on assignment rows missing the optional 'origin' metadata; that check is gone. 'Already revoked' is now idempotent (returns OK) so a double-click during the UI refresh window doesn't make a cleanly-revoked assignment look broken",
+      "Settings tabs and Products sub-tabs are now in the URL. Hard-refreshing on Products → Assignment lands back on Products → Assignment (not the default Backup defaults tab), and you can paste a link to a colleague and they'll land on the same view"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.142346",
+    "tag": "backend-v20260526.144254",
     "releasedAt": "2026-05-26"
   }
 }
