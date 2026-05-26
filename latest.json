@@ -1,13 +1,13 @@
 {
   "portal": {
-    "tag": "portal-v20260526.084637",
+    "tag": "portal-v20260526.092503",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Three more visually distinct candidates on the internal /dashboard/products-card-preview page — F (utilization bars), G (pricing-table columns), H (visual seat grid where each block is a seat). These are different mental models, not card-chrome variations on A-E. Pick one of the eight and we ship that style"
+      "Variant F on the preview page refined — proper 4-column grid alignment, real outlined Cancel button (no longer reads like plain text), 'Cancelling' chip moved next to the product name so it stops disrupting the cost/renews row, and a section-level 'Ending soon' banner that lists products with pending cancellations. Renews column turns amber when the product is ending, so trouble is visible from a column scan"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.084637",
+    "tag": "backend-v20260526.092503",
     "releasedAt": "2026-05-26"
   }
 }
