@@ -1,16 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260526.182231",
+    "tag": "portal-v20260526.184744",
     "releasedAt": "2026-05-26",
     "notes": [
-      "Consent-callback page rewrite: real Basewiser SVG wordmark instead of placeholder text, success icon flipped from blue accent to green to match the rest of the portal, Close this tab button switched to secondary/outlined style, single centered column (wordmark + card + footnote) instead of corner-anchored header bar and footer band",
-      "The consent-done page now reads tenant identifier as 'Soprasteriautv (14e12458-…)' when the name is available — name in plain text, GUID in mono — instead of just the raw GUID. The portal embeds the display name in the consent URL's state parameter; Microsoft echoes it back to the callback",
-      "Bundle labels in the consent panel render as 'Conditional Access Vault Pro' (full name) instead of 'CAV Pro' — internal data layer keeps the shorter form, only the user-facing display changes. Operator directive: never abbreviate as 'CA' (ambiguous with Certificate Authority)",
-      "Internal: /dashboard/dev/wordmark-preview/ and /dashboard/dev/consent-banner-preview/ added as dev-only design preview pages, not linked from main nav"
+      "Already-consented bundles now show a green 'Consent granted' pill instead of the Grant admin consent button. The backend probes each customer tenant by asking Microsoft for a client_credentials token for the bundle's app — if Microsoft hands back a token, the service principal exists in the customer tenant and consent has been granted. 60-second in-memory cache so the tenant page doesn't hammer the OAuth endpoint",
+      "Bundle labels now render as 'Conditional Access - Pro' (drop 'Vault', tier separated by ' - '). 'CAV X' was ambiguous and didn't match the Conditional Access tab name. Internal storage keys unchanged"
     ]
   },
   "backend": {
-    "tag": "backend-v20260526.152355",
+    "tag": "backend-v20260526.184744",
     "releasedAt": "2026-05-26"
   }
 }
