@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260602.122227",
+    "tag": "portal-v20260602.181138",
     "releasedAt": "2026-06-02",
     "notes": [
-      "Tenant detail page: new kebab in the header with Edit display name and Remove tenant. The display name you set now sticks across every Sync now — Microsoft Graph stops overwriting it. The rename modal has a Reset to Microsoft name button for one-click revert.",
-      "Remove tenant runs the full backend cleanup (revokes active bundle assignments, audit-logs tenant.offboarded, clears the cached Graph token, deletes the row), then drops you back to the customer list. The tenant ID becomes free to re-onboard cleanly via Add tenant — fixes the 'already exists' wall you hit before."
+      "Conditional Access Vault is now a single product with every feature included — backups, restore, continuous drift detection, auto-restore, investigation timeline, and 1-year audit retention. The old Standard / Pro / Premium tiers are gone; the purchase page and per-tenant assignment now show one Conditional Access Vault that's either active or not.",
+      "Bundle naming uses the full 'Conditional Access Vault' everywhere instead of the 'CAV' shorthand, and the per-tenant assignment row shows a clean 'Active' state instead of a tier badge."
     ]
   },
   "backend": {
-    "tag": "backend-v20260602.122227",
+    "tag": "backend-v20260602.181138",
     "releasedAt": "2026-06-02"
   }
 }
