@@ -1,15 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260602.185842",
+    "tag": "portal-v20260602.191730",
     "releasedAt": "2026-06-02",
     "notes": [
-      "Sync now works for tenants where only some products are set up — basic tenant info syncs through whichever product you've consented, instead of failing when Conditional Access Vault isn't activated. And a Sync that 403'd right after you granted consent now self-heals: a token cached before consent finished is no longer reused for the rest of the hour.",
-      "The Grant admin consent panel only nags about products that still need action — once a product is consented it drops out of the prompt, and when everything's consented the panel collapses to a quiet confirmation with a Manage consent option for re-granting later.",
-      "Tenant actions menu (Edit display name / Remove tenant) rows are aligned."
+      "Sync now refreshes Identity findings too, not just tenant info and Conditional Access. Previously identity data only appeared after the nightly scan, so a freshly-consented tenant looked empty until the next morning — now one Sync runs the identity scan for that tenant on the spot.",
+      "Sync now reloads the page when it finishes, so the data it just fetched actually shows up without a manual refresh. Partial results (a product not yet activated, or a scan step your tenant plan doesn't cover) no longer turn the whole Sync red."
     ]
   },
   "backend": {
-    "tag": "backend-v20260602.185842",
+    "tag": "backend-v20260602.191730",
     "releasedAt": "2026-06-02"
   }
 }
