@@ -1,10 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260526.210450",
-    "releasedAt": "2026-05-26",
+    "tag": "portal-v20260602.091257",
+    "releasedAt": "2026-06-02",
     "notes": [
-      "Re-grant link beside the green 'Consent granted' pill on each bundle row. Clicking it re-opens Microsoft's consent flow so you can refresh appRoleAssignments when Graph calls are 403ing on missing scopes (the 'permission drift' case where the app's declared scopes changed since the customer admin's first Accept)",
-      "Consented bundle rows are no longer hidden from the consent panel — they stay visible alongside un-consented ones so the Re-grant escape hatch is always reachable. Reverses the brief stretch where the panel disappeared when every bundle was already consented"
+      "Vertically center labels in topbar pills, tab bars, status chips, and CTA banners. Asymmetric default line-height was visibly pushing text above the center of every fixed-height button; switching the shared button class to leading-none fixes primary/secondary/destructive actions across the portal in one shot",
+      "Settings → Billing → Purchase history: lock the 'NOK' prefix at the column's left edge and right-align the digits with tabular-nums so ones stack under ones, tens under tens — magnitude differences (NOK 990.00 vs NOK 13,200.00) are immediately visible. Also drops the duplicated '× N' suffix on line items since Stripe descriptions already carry the tenant count"
     ]
   },
   "backend": {
