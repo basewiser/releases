@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260602.181138",
+    "tag": "portal-v20260602.185842",
     "releasedAt": "2026-06-02",
     "notes": [
-      "Conditional Access Vault is now a single product with every feature included — backups, restore, continuous drift detection, auto-restore, investigation timeline, and 1-year audit retention. The old Standard / Pro / Premium tiers are gone; the purchase page and per-tenant assignment now show one Conditional Access Vault that's either active or not.",
-      "Bundle naming uses the full 'Conditional Access Vault' everywhere instead of the 'CAV' shorthand, and the per-tenant assignment row shows a clean 'Active' state instead of a tier badge."
+      "Sync now works for tenants where only some products are set up — basic tenant info syncs through whichever product you've consented, instead of failing when Conditional Access Vault isn't activated. And a Sync that 403'd right after you granted consent now self-heals: a token cached before consent finished is no longer reused for the rest of the hour.",
+      "The Grant admin consent panel only nags about products that still need action — once a product is consented it drops out of the prompt, and when everything's consented the panel collapses to a quiet confirmation with a Manage consent option for re-granting later.",
+      "Tenant actions menu (Edit display name / Remove tenant) rows are aligned."
     ]
   },
   "backend": {
-    "tag": "backend-v20260602.181138",
+    "tag": "backend-v20260602.185842",
     "releasedAt": "2026-06-02"
   }
 }
