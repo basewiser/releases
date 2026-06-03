@@ -1,14 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260602.191730",
-    "releasedAt": "2026-06-02",
+    "tag": "portal-v20260603.055557",
+    "releasedAt": "2026-06-03",
     "notes": [
-      "Sync now refreshes Identity findings too, not just tenant info and Conditional Access. Previously identity data only appeared after the nightly scan, so a freshly-consented tenant looked empty until the next morning — now one Sync runs the identity scan for that tenant on the spot.",
-      "Sync now reloads the page when it finishes, so the data it just fetched actually shows up without a manual refresh. Partial results (a product not yet activated, or a scan step your tenant plan doesn't cover) no longer turn the whole Sync red."
+      "Sync now can no longer spin forever — it has a hard time limit and always finishes, reloading to show whatever refreshed (tenant info and Conditional Access are saved before the identity scan, so they show even if the scan runs long). If a scan gets cut short or hits an error, a dismissible note now explains what was incomplete instead of leaving a silent empty result.",
+      "The standing 'all products consented' banner is gone. Re-granting admin consent now lives in the tenant's ⋯ menu under 'Re-grant admin consent', so the page stays clean and re-consent is one click away when you need it."
     ]
   },
   "backend": {
-    "tag": "backend-v20260602.191730",
-    "releasedAt": "2026-06-02"
+    "tag": "backend-v20260603.055557",
+    "releasedAt": "2026-06-03"
   }
 }
