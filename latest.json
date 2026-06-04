@@ -1,10 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260603.055557",
-    "releasedAt": "2026-06-03",
+    "tag": "portal-v20260604.120019",
+    "releasedAt": "2026-06-04",
     "notes": [
-      "Sync now can no longer spin forever — it has a hard time limit and always finishes, reloading to show whatever refreshed (tenant info and Conditional Access are saved before the identity scan, so they show even if the scan runs long). If a scan gets cut short or hits an error, a dismissible note now explains what was incomplete instead of leaving a silent empty result.",
-      "The standing 'all products consented' banner is gone. Re-granting admin consent now lives in the tenant's ⋯ menu under 'Re-grant admin consent', so the page stays clean and re-consent is one click away when you need it."
+      "The Guard Mode allowlist is now editable. In a tenant's Conditional Access Vault → Guard Mode, you can add or remove the accounts (admins, service principals, automation) whose policy changes Guard should ignore — previously the list was read-only.",
+      "Allowlist edits save immediately and are recorded in the tenant's activity feed."
     ]
   },
   "backend": {
