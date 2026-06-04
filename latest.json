@@ -1,10 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260604.120019",
+    "tag": "portal-v20260604.125908",
     "releasedAt": "2026-06-04",
     "notes": [
-      "The Guard Mode allowlist is now editable. In a tenant's Conditional Access Vault → Guard Mode, you can add or remove the accounts (admins, service principals, automation) whose policy changes Guard should ignore — previously the list was read-only.",
-      "Allowlist edits save immediately and are recorded in the tenant's activity feed."
+      "Changing Guard Mode now saves. Switching a tenant between Off, Monitor, and Auto-Restore in the Conditional Access Vault persists immediately (with a Saving/Saved indicator) and updates the status banner — previously the choice could be lost on reload.",
+      "The Guard Mode allowlist is editable too: add or remove the accounts whose policy changes Guard should ignore, recorded in the tenant's activity feed."
     ]
   },
   "backend": {
