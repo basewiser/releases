@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260604.125908",
+    "tag": "portal-v20260604.194519",
     "releasedAt": "2026-06-04",
     "notes": [
-      "Changing Guard Mode now saves. Switching a tenant between Off, Monitor, and Auto-Restore in the Conditional Access Vault persists immediately (with a Saving/Saved indicator) and updates the status banner — previously the choice could be lost on reload.",
-      "The Guard Mode allowlist is editable too: add or remove the accounts whose policy changes Guard should ignore, recorded in the tenant's activity feed."
+      "Guard Mode allowlist now has a directory search — type a name or UPN to find and add a real Entra user instead of typing it by hand, with a raw-value option for service accounts and app IDs.",
+      "Allowlisted actors are shown as a sortable table with name, UPN, when they were added, and by whom. Requires the matching backend update for live search and added-dates to appear.",
+      "Changing Guard Mode (Off / Monitor / Auto-Restore) saves immediately with a Saving/Saved indicator."
     ]
   },
   "backend": {
-    "tag": "backend-v20260603.055557",
-    "releasedAt": "2026-06-03"
+    "tag": "backend-v20260604.194519",
+    "releasedAt": "2026-06-04"
   }
 }
