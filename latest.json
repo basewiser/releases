@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260605.073106",
+    "tag": "portal-v20260605.075551",
     "releasedAt": "2026-06-05",
     "notes": [
-      "Conditional Access → Backup & Restore can now run a backup on demand: a 'Run first backup' button on the empty state and a 'Run backup' button in the header.",
-      "Edit the backup schedule right from the Backup & Restore header — turn automatic backups on/off, pick daily or weekly (with days), and set the UTC time."
+      "Restore a snapshot from Conditional Access → Backup & Restore: each backup now has a Restore button that re-applies that snapshot over the tenant's live policies (with a confirmation, since it replaces live policies). Microsoft-managed policies are left untouched.",
+      "Backup list rows redesigned — clearer layout with Captured / Policies columns and Details + Restore actions.",
+      "Run a backup on demand and edit the backup schedule (daily/weekly + UTC time) right from the Backup & Restore header."
     ]
   },
   "backend": {
-    "tag": "backend-v20260604.211303",
-    "releasedAt": "2026-06-04"
+    "tag": "backend-v20260605.075551",
+    "releasedAt": "2026-06-05"
   }
 }
