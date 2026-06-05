@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260605.075551",
+    "tag": "portal-v20260605.083822",
     "releasedAt": "2026-06-05",
     "notes": [
-      "Restore a snapshot from Conditional Access → Backup & Restore: each backup now has a Restore button that re-applies that snapshot over the tenant's live policies (with a confirmation, since it replaces live policies). Microsoft-managed policies are left untouched.",
-      "Backup list rows redesigned — clearer layout with Captured / Policies columns and Details + Restore actions.",
-      "Run a backup on demand and edit the backup schedule (daily/weekly + UTC time) right from the Backup & Restore header."
+      "Run backup now actually captures a snapshot on demand — previously the button queued a request that was never run. It records the snapshot and refreshes the list.",
+      "Restore a snapshot from Conditional Access → Backup & Restore: each backup has a Restore button that re-applies it over the tenant's live policies (with a confirmation). Microsoft-managed policies are left untouched.",
+      "Backup list rows redesigned — clearer Captured / Policies columns with Details + Restore actions; plus on-demand run and an editable daily/weekly schedule."
     ]
   },
   "backend": {
-    "tag": "backend-v20260605.075551",
+    "tag": "backend-v20260605.083822",
     "releasedAt": "2026-06-05"
   }
 }
