@@ -1,11 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260604.194519",
-    "releasedAt": "2026-06-04",
+    "tag": "portal-v20260605.073106",
+    "releasedAt": "2026-06-05",
     "notes": [
-      "Guard Mode allowlist now has a directory search — type a name or UPN to find and add a real Entra user instead of typing it by hand, with a raw-value option for service accounts and app IDs.",
-      "Allowlisted actors are shown as a sortable table with name, UPN, when they were added, and by whom. Requires the matching backend update for live search and added-dates to appear.",
-      "Changing Guard Mode (Off / Monitor / Auto-Restore) saves immediately with a Saving/Saved indicator."
+      "Conditional Access → Backup & Restore can now run a backup on demand: a 'Run first backup' button on the empty state and a 'Run backup' button in the header.",
+      "Edit the backup schedule right from the Backup & Restore header — turn automatic backups on/off, pick daily or weekly (with days), and set the UTC time."
     ]
   },
   "backend": {
