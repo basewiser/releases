@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260605.083822",
+    "tag": "portal-v20260605.215341",
     "releasedAt": "2026-06-05",
     "notes": [
-      "Run backup now actually captures a snapshot on demand — previously the button queued a request that was never run. It records the snapshot and refreshes the list.",
-      "Restore a snapshot from Conditional Access → Backup & Restore: each backup has a Restore button that re-applies it over the tenant's live policies (with a confirmation). Microsoft-managed policies are left untouched.",
-      "Backup list rows redesigned — clearer Captured / Policies columns with Details + Restore actions; plus on-demand run and an editable daily/weekly schedule."
+      "Fixed the backup Contents tab getting stuck on 'Loading snapshot contents…' — it now loads the snapshot's policies, named locations, and authentication strengths.",
+      "The Contents tab count now shows the policy count (matching the row) instead of summing in named locations and auth strengths.",
+      "Run a backup on demand, restore any snapshot, and edit the daily/weekly schedule from Conditional Access → Backup & Restore."
     ]
   },
   "backend": {
