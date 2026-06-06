@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260605.215341",
-    "releasedAt": "2026-06-05",
+    "tag": "portal-v20260606.191121",
+    "releasedAt": "2026-06-06",
     "notes": [
-      "Fixed the backup Contents tab getting stuck on 'Loading snapshot contents…' — it now loads the snapshot's policies, named locations, and authentication strengths.",
-      "The Contents tab count now shows the policy count (matching the row) instead of summing in named locations and auth strengths.",
+      "Conditional Access now shows your named locations and authentication strengths: counts in the stat row and a new 'Infrastructure' tab listing each one read-only.",
+      "Authentication strengths show their actual allowed sign-in method combinations (e.g. Windows Hello for Business, FIDO2, certificate-based MFA) instead of an unlabelled count.",
       "Run a backup on demand, restore any snapshot, and edit the daily/weekly schedule from Conditional Access → Backup & Restore."
     ]
   },
   "backend": {
-    "tag": "backend-v20260605.083822",
-    "releasedAt": "2026-06-05"
+    "tag": "backend-v20260606.191121",
+    "releasedAt": "2026-06-06"
   }
 }
