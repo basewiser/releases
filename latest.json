@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260606.191121",
-    "releasedAt": "2026-06-06",
+    "tag": "portal-v20260607.154755",
+    "releasedAt": "2026-06-07",
     "notes": [
-      "Conditional Access now shows your named locations and authentication strengths: counts in the stat row and a new 'Infrastructure' tab listing each one read-only.",
-      "Authentication strengths show their actual allowed sign-in method combinations (e.g. Windows Hello for Business, FIDO2, certificate-based MFA) instead of an unlabelled count.",
+      "Conditional Access now flags named locations that aren't doing anything: a country list referenced by no enabled policy (the geo-restriction isn't actually enforced) or an unused IP/trusted location. They appear in Policy hygiene / Findings, so you can wire them into a policy or remove them.",
+      "Removed the read-only Infrastructure tab — it didn't drive action; the useful signal is now the finding above.",
       "Run a backup on demand, restore any snapshot, and edit the daily/weekly schedule from Conditional Access → Backup & Restore."
     ]
   },
   "backend": {
-    "tag": "backend-v20260606.191121",
-    "releasedAt": "2026-06-06"
+    "tag": "backend-v20260607.154755",
+    "releasedAt": "2026-06-07"
   }
 }
