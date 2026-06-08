@@ -1,16 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260608.204645",
+    "tag": "portal-v20260608.210000",
     "releasedAt": "2026-06-08",
     "notes": [
-      "Identity → Break-glass is new: declare your emergency-access Global Admins, track their 90-day validation, and follow a built-in best-practice guide for setting one up correctly.",
-      "Break-glass accounts no longer trip false alerts — they're excluded from the stale sign-in, Global Administrator count, and permanent-role drift findings.",
-      "Declared break-glass accounts are tagged with a Break-glass chip on every finding they appear in (Global Admins, privileged roles, MFA, stale identities), so you can spot them at a glance — updating instantly when you declare or remove one.",
-      "Identity-health findings now deep-link straight to the exact finding inside the tenant, not just the Identity tab."
+      "Identity findings now add up: the headline Findings and High counts match the category tabs, and the 'No break-glass account declared' finding is reachable from its tab instead of being counted but hidden.",
+      "The fleet 'Active alerts' figure now reflects open work and matches the per-tenant counts on the customers page, instead of only ever climbing.",
+      "Customer Health is now a real signal — each tenant's pill is computed from the severity and volume of its open Identity and Conditional Access findings, with a hover breakdown, replacing the old fixed label."
     ]
   },
   "backend": {
-    "tag": "backend-v20260608.204645",
+    "tag": "backend-v20260608.210000",
     "releasedAt": "2026-06-08"
   }
 }
