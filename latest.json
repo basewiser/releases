@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260608.115603",
+    "tag": "portal-v20260608.200422",
     "releasedAt": "2026-06-08",
     "notes": [
-      "Settings → Appearance is new: choose your portal cursor — Onyx (default), Snow, or Basewiser blue — or switch to your system cursor.",
-      "The cursor set (pointer, hand, and text I-beam) is larger with finer outlines, and the text cursor now shows over selectable text again.",
-      "Light mode is in the works — Settings → Appearance now shows its progress."
+      "Identity → Break-glass is new: declare your emergency-access Global Admins, track their 90-day validation, and follow a built-in best-practice guide for setting one up correctly.",
+      "Break-glass accounts no longer trip false alerts — they're excluded from the stale sign-in, Global Administrator count, and permanent-role drift findings, and marked with a green or amber Break-glass chip wherever they appear.",
+      "Identity-health findings now deep-link straight to the exact finding inside the tenant, not just the Identity tab."
     ]
   },
   "backend": {
-    "tag": "backend-v20260607.171905",
-    "releasedAt": "2026-06-07"
+    "tag": "backend-v20260608.200422",
+    "releasedAt": "2026-06-08"
   }
 }
