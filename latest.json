@@ -1,11 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260607.174444",
-    "releasedAt": "2026-06-07",
+    "tag": "portal-v20260608.115603",
+    "releasedAt": "2026-06-08",
     "notes": [
-      "The 'Named locations' tab now sits right after Policy Coverage in Conditional Access.",
-      "Named locations show every IP range and country list, each marked Enforced or Not enforced (no enabled policy references it) — with a matching Policy hygiene finding for the unenforced ones.",
-      "Run a backup on demand, restore any snapshot, and edit the daily/weekly schedule from Conditional Access → Backup & Restore."
+      "Settings → Appearance is new: choose your portal cursor — Onyx (default), Snow, or Basewiser blue — or switch to your system cursor.",
+      "The cursor set (pointer, hand, and text I-beam) is larger with finer outlines, and the text cursor now shows over selectable text again.",
+      "Light mode is in the works — Settings → Appearance now shows its progress."
     ]
   },
   "backend": {
