@@ -1,15 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260608.210000",
-    "releasedAt": "2026-06-08",
+    "tag": "portal-v20260608.224135",
+    "releasedAt": "2026-06-09",
     "notes": [
-      "Identity findings now add up: the headline Findings and High counts match the category tabs, and the 'No break-glass account declared' finding is reachable from its tab instead of being counted but hidden.",
-      "The fleet 'Active alerts' figure now reflects open work and matches the per-tenant counts on the customers page, instead of only ever climbing.",
-      "Customer Health is now a real signal — each tenant's pill is computed from the severity and volume of its open Identity and Conditional Access findings, with a hover breakdown, replacing the old fixed label."
+      "Conditional Access drift now shows on a tenant's Drift tab. It was reading a backend endpoint that doesn't exist, so it sat permanently on 'No drift detected' even when the fleet view and the Findings count showed drift — it now lists the real policy-change drift findings, reconciled across both views.",
+      "Investigation notes now persist: operator working notes on an incident survive a page reload instead of resetting to zero."
     ]
   },
   "backend": {
-    "tag": "backend-v20260608.210000",
-    "releasedAt": "2026-06-08"
+    "tag": "backend-v20260608.224135",
+    "releasedAt": "2026-06-09"
   }
 }
