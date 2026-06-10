@@ -1,13 +1,14 @@
 {
   "portal": {
-    "tag": "portal-v20260610.195534",
+    "tag": "portal-v20260610.203122",
     "releasedAt": "2026-06-10",
     "notes": [
-      "A Conditional Access policy's 'Coverage' tab now shows real Zero-Trust verdicts based on the policy's actual state (enabled = enforcing, report-only = logging only, disabled = inactive) instead of fabricated pass/fail dots — what you see reflects the real policy, not a placeholder."
+      "The Conditional Access fleet page now counts only successfully-scanned tenants in its 'X of Y tenants' coverage fraction, and is labelled honestly as 'your managed tenants' rather than implying every tenant is a Conditional Access Vault subscriber.",
+      "A non-CAV tenant's Active-alerts badge now stays current after each Identity scan instead of going stale."
     ]
   },
   "backend": {
-    "tag": "backend-v20260610.200639",
+    "tag": "backend-v20260610.203122",
     "releasedAt": "2026-06-10"
   }
 }
