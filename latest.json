@@ -1,10 +1,11 @@
 {
   "portal": {
-    "tag": "portal-v20260610.203122",
-    "releasedAt": "2026-06-10",
+    "tag": "portal-v20260610.220658",
+    "releasedAt": "2026-06-11",
     "notes": [
-      "The Conditional Access fleet page now counts only successfully-scanned tenants in its 'X of Y tenants' coverage fraction, and is labelled honestly as 'your managed tenants' rather than implying every tenant is a Conditional Access Vault subscriber.",
-      "A non-CAV tenant's Active-alerts badge now stays current after each Identity scan instead of going stale."
+      "New printable Conditional Access report: 'Export report' on the tenant CA tab produces a customer-ready document with posture summary, open findings, policy inventory, and backup history.",
+      "Conditional Access findings are now deep-linkable end-to-end — fleet rows, stat cards, and inbox incidents land on the exact expanded finding, and drift findings link straight to the latest backup's diff.",
+      "Zero Trust coverage on the policy page is judged from what a policy actually does, not its display name — renamed policies keep their coverage mapping."
     ]
   },
   "backend": {
