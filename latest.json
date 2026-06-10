@@ -1,10 +1,9 @@
 {
   "portal": {
-    "tag": "portal-v20260610.193135",
+    "tag": "portal-v20260610.195534",
     "releasedAt": "2026-06-10",
     "notes": [
-      "Identity privileged-access charts now spell out their unit: the donuts count role assignments (someone with two roles counts twice), with a caption pointing to the findings below that count distinct people — so the donut and finding numbers no longer look like they disagree.",
-      "Guest and standard-user MFA charts gained captions clarifying the 180-vs-90-day stale window and that the MFA chart is a 500-user sample when capped."
+      "A Conditional Access policy's 'Coverage' tab now shows real Zero-Trust verdicts based on the policy's actual state (enabled = enforcing, report-only = logging only, disabled = inactive) instead of fabricated pass/fail dots — what you see reflects the real policy, not a placeholder."
     ]
   },
   "backend": {
