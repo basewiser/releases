@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260608.224135",
-    "releasedAt": "2026-06-09",
+    "tag": "portal-v20260610.192111",
+    "releasedAt": "2026-06-10",
     "notes": [
-      "Conditional Access drift now shows on a tenant's Drift tab. It was reading a backend endpoint that doesn't exist, so it sat permanently on 'No drift detected' even when the fleet view and the Findings count showed drift — it now lists the real policy-change drift findings, reconciled across both views.",
-      "Investigation notes now persist: operator working notes on an incident survive a page reload instead of resetting to zero."
+      "License Insights: the 'Stale users' card is now 'Stale licenses' — it counts license seats, and no longer contradicts the reclaim queue's user count beside it.",
+      "The reclaim queue now reflects the full saving for users who hold more than one license, so the 'money on the table' headline, the action tiles, and the queue total all agree.",
+      "The fleet reclaimable/stale total no longer counts tenants with missing sign-in data as zero. It shows '—' and how many tenants are missing, instead of presenting a partial number as complete."
     ]
   },
   "backend": {
-    "tag": "backend-v20260608.224135",
-    "releasedAt": "2026-06-09"
+    "tag": "backend-v20260610.192111",
+    "releasedAt": "2026-06-10"
   }
 }
