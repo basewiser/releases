@@ -1,11 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260610.192111",
+    "tag": "portal-v20260610.193135",
     "releasedAt": "2026-06-10",
     "notes": [
-      "License Insights: the 'Stale users' card is now 'Stale licenses' — it counts license seats, and no longer contradicts the reclaim queue's user count beside it.",
-      "The reclaim queue now reflects the full saving for users who hold more than one license, so the 'money on the table' headline, the action tiles, and the queue total all agree.",
-      "The fleet reclaimable/stale total no longer counts tenants with missing sign-in data as zero. It shows '—' and how many tenants are missing, instead of presenting a partial number as complete."
+      "Identity privileged-access charts now spell out their unit: the donuts count role assignments (someone with two roles counts twice), with a caption pointing to the findings below that count distinct people — so the donut and finding numbers no longer look like they disagree.",
+      "Guest and standard-user MFA charts gained captions clarifying the 180-vs-90-day stale window and that the MFA chart is a 500-user sample when capped."
     ]
   },
   "backend": {
