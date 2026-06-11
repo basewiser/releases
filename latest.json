@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260611.225913",
+    "tag": "portal-v20260611.234216",
     "releasedAt": "2026-06-11",
     "notes": [
-      "Role-grant alerts now cover every directory role with three severity tiers that follow the Identity → Privileged tab: Global Administrator highest, Tier 0 high, all other roles a tier lower (permanent medium, eligible low).",
-      "Net-new only: PIM activations and re-grants to accounts that already hold or are eligible for the role are suppressed — while converting an eligibility into a permanent assignment is flagged as the escalation it is.",
-      "Severity always follows your change allowlist: a sanctioned granter logs as low for the audit trail, regardless of role."
+      "Role-grant alerts no longer reference an allowlist - there is no role allowlist; severity is purely tier-driven (GA above Tier 0, other roles lower). The change allowlist keeps governing guard-mode alerts, where it belongs.",
+      "Granter resolution is now three layers deep: the admin's own audit footprint resolves instantly, PIM schedule requests confirm intent (activation vs admin grant), and granter-less rows backfill for 24 hours - the WHO tile updates itself with a journal note.",
+      "Findings move with events: a role grant triggers the tenant's identity rescan immediately, and the active-alert badge updates the moment an incident is resolved."
     ]
   },
   "backend": {
-    "tag": "backend-v20260611.232711",
+    "tag": "backend-v20260611.234216",
     "releasedAt": "2026-06-11"
   }
 }
