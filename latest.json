@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260611.201905",
+    "tag": "portal-v20260611.210845",
     "releasedAt": "2026-06-11",
     "notes": [
-      "Incident pages now lead with the verdict: a plain-language summary of who changed what and how it ended, who/when/where/exposure cards, and a Security impact panel that translates every change into risk language — honest in both directions (weakened vs stricter).",
-      "New exposure check: after a drift change is restored, Basewiser correlates the sign-in log for the accounts the change un-covered. Sign-ins inside the window are flagged with per-sign-in evidence (single-factor vs MFA held by another policy), an inbox escalation, and a required review step.",
-      "Triage hardening: inbox rows carry the verdicts (Auto-restored, Review sign-ins), resolving past required playbook steps now demands a noted override, and the incident shows how a change was made (portal vs script) when the audit log names the client app."
+      "New alert family: Global Administrator and Tier 0 role grants are detected from the audit stream within minutes — not on the next snapshot sweep. Permanent grants and PIM eligibilities each get their own playbook, and the incident shows who granted, to whom, the assignment kind, and how (portal vs script).",
+      "Severity follows your change allowlist, the same rule as guard-mode alerts: an unsanctioned GA grant is high, a Tier 0 PIM eligibility is medium, and an allowlisted granter logs as low for the audit trail.",
+      "Role buckets follow the Identity → Privileged tab exactly: Global Administrator stands above Tier 0, and Tier 0 is the curated set of roles that can pivot to GA."
     ]
   },
   "backend": {
-    "tag": "backend-v20260611.201905",
+    "tag": "backend-v20260611.210845",
     "releasedAt": "2026-06-11"
   }
 }
