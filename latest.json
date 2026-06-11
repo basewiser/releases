@@ -1,14 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260611.112025",
+    "tag": "portal-v20260611.201905",
     "releasedAt": "2026-06-11",
     "notes": [
-      "The incident timeline reads cleaner: offsets are worded ('+9m later'), the anchor event drops its stray '0', and timestamps lose their ISO noise.",
-      "A restored incident's Live policy state now explains itself: it shows the backed-up baseline and says so, instead of leaving the absence of change highlights open to interpretation."
+      "Incident pages now lead with the verdict: a plain-language summary of who changed what and how it ended, who/when/where/exposure cards, and a Security impact panel that translates every change into risk language — honest in both directions (weakened vs stricter).",
+      "New exposure check: after a drift change is restored, Basewiser correlates the sign-in log for the accounts the change un-covered. Sign-ins inside the window are flagged with per-sign-in evidence (single-factor vs MFA held by another policy), an inbox escalation, and a required review step.",
+      "Triage hardening: inbox rows carry the verdicts (Auto-restored, Review sign-ins), resolving past required playbook steps now demands a noted override, and the incident shows how a change was made (portal vs script) when the audit log names the client app."
     ]
   },
   "backend": {
-    "tag": "backend-v20260611.011752",
+    "tag": "backend-v20260611.201905",
     "releasedAt": "2026-06-11"
   }
 }
