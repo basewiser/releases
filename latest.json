@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260611.223918",
+    "tag": "portal-v20260611.225913",
     "releasedAt": "2026-06-11",
     "notes": [
-      "Privileged role-grant alerts are now net-new only: PIM activations of existing eligibility never alert, and re-grants to accounts that already hold or are already eligible for the role are suppressed with the reason logged.",
-      "Converting an account's gated PIM eligibility into a permanent assignment is flagged as the escalation it is — the incident names the removed activation gate, on the sentence, the Assignment card and the alert row.",
-      "Pre-fix activation alerts self-heal: rows whose granter was MS-PIM auto-resolve with the reclassification reason in the case journal."
+      "Role-grant alerts now cover every directory role with three severity tiers that follow the Identity → Privileged tab: Global Administrator highest, Tier 0 high, all other roles a tier lower (permanent medium, eligible low).",
+      "Net-new only: PIM activations and re-grants to accounts that already hold or are eligible for the role are suppressed — while converting an eligibility into a permanent assignment is flagged as the escalation it is.",
+      "Severity always follows your change allowlist: a sanctioned granter logs as low for the audit trail, regardless of role."
     ]
   },
   "backend": {
-    "tag": "backend-v20260611.223918",
+    "tag": "backend-v20260611.225913",
     "releasedAt": "2026-06-11"
   }
 }
