@@ -1,15 +1,15 @@
 {
   "portal": {
-    "tag": "portal-v20260611.210845",
+    "tag": "portal-v20260611.223918",
     "releasedAt": "2026-06-11",
     "notes": [
-      "New alert family: Global Administrator and Tier 0 role grants are detected from the audit stream within minutes — not on the next snapshot sweep. Permanent grants and PIM eligibilities each get their own playbook, and the incident shows who granted, to whom, the assignment kind, and how (portal vs script).",
-      "Severity follows your change allowlist, the same rule as guard-mode alerts: an unsanctioned GA grant is high, a Tier 0 PIM eligibility is medium, and an allowlisted granter logs as low for the audit trail.",
-      "Role buckets follow the Identity → Privileged tab exactly: Global Administrator stands above Tier 0, and Tier 0 is the curated set of roles that can pivot to GA."
+      "Privileged role-grant alerts are now net-new only: PIM activations of existing eligibility never alert, and re-grants to accounts that already hold or are already eligible for the role are suppressed with the reason logged.",
+      "Converting an account's gated PIM eligibility into a permanent assignment is flagged as the escalation it is — the incident names the removed activation gate, on the sentence, the Assignment card and the alert row.",
+      "Pre-fix activation alerts self-heal: rows whose granter was MS-PIM auto-resolve with the reclassification reason in the case journal."
     ]
   },
   "backend": {
-    "tag": "backend-v20260611.222543",
+    "tag": "backend-v20260611.223918",
     "releasedAt": "2026-06-11"
   }
 }
