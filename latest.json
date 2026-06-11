@@ -1,11 +1,10 @@
 {
   "portal": {
-    "tag": "portal-v20260611.011752",
+    "tag": "portal-v20260611.112025",
     "releasedAt": "2026-06-11",
     "notes": [
-      "Redesigned incident workspace: the verdict up front (restore latency in seconds, live state vs backup), human-readable per-policy change sections instead of raw JSON, one merged timeline, a self-verifying playbook step — and restore from backup without leaving the incident.",
-      "Drift findings now know when Guard or an operator already restored a change, and scope changes show WHO was added or excluded by name — not just '1 user → 3 users'.",
-      "Live policy state highlights exactly what an incident changed: added entries in green, removed entries struck red, changed settings amber, and old → new state on every affected policy."
+      "The incident timeline reads cleaner: offsets are worded ('+9m later'), the anchor event drops its stray '0', and timestamps lose their ISO noise.",
+      "A restored incident's Live policy state now explains itself: it shows the backed-up baseline and says so, instead of leaving the absence of change highlights open to interpretation."
     ]
   },
   "backend": {
