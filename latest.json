@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260612.152321",
+    "tag": "portal-v20260612.185150",
     "releasedAt": "2026-06-12",
     "notes": [
-      "The Fleet overview is rebuilt: richer stat cards with honest trend badges, an alert-volume chart that stacks the four incident categories (Privilege escalation, Policy guard, Identity hygiene, Operations) from your real investigation log over the selected window, and an Open-cases table linking straight into each incident.",
-      "The whole portal now uses wide screens: the dashboard, Inbox, Customers, Identity health and Conditional Access pages widen to the same cap the incident page got - more data, fewer dead margins.",
-      "Status gets a face: open cases carry the new status pill (dashed circle = new, spinner = in progress, green check = resolved) - the first piece of the refreshed component language."
+      "The 'update available' banner is calmer and gently animated, and the What's-new window is now a release timeline - every release since your version, newest first, with its change count.",
+      "Installing an update now shows real progress with an estimated time remaining instead of a plain spinner."
     ],
     "history": [
+      {
+        "tag": "portal-v20260612.185150",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "The 'update available' banner is calmer and gently animated, and the What's-new window is now a release timeline - every release since your version, newest first, with its change count.",
+          "Installing an update now shows real progress with an estimated time remaining instead of a plain spinner."
+        ]
+      },
       {
         "tag": "portal-v20260612.152321",
         "releasedAt": "2026-06-12",
