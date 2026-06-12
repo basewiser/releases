@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260612.185150",
+    "tag": "portal-v20260612.220920",
     "releasedAt": "2026-06-12",
     "notes": [
-      "The 'update available' banner is calmer and gently animated, and the What's-new window is now a release timeline - every release since your version, newest first, with its change count.",
-      "Installing an update now shows real progress with an estimated time remaining instead of a plain spinner."
+      "The incident page is redesigned: a calmer header with the owner shown by name (never a raw object-id), and Live policy state as a flat spec sheet - assignments collapse to clickable type counts and expand to a searchable list showing display names and sign-in addresses.",
+      "Small grey text across the portal is raised to a readable floor - sign-in addresses, owner names and customer tenant ids are no longer micro-print.",
+      "Audit attribution now records the operator's email even when the sign-in only carried a display name."
     ],
     "history": [
+      {
+        "tag": "portal-v20260612.220920",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "The incident page is redesigned: a calmer header with the owner shown by name (never a raw object-id), and Live policy state as a flat spec sheet - assignments collapse to clickable type counts and expand to a searchable list showing display names and sign-in addresses.",
+          "Small grey text across the portal is raised to a readable floor - sign-in addresses, owner names and customer tenant ids are no longer micro-print.",
+          "Audit attribution now records the operator's email even when the sign-in only carried a display name."
+        ]
+      },
       {
         "tag": "portal-v20260612.185150",
         "releasedAt": "2026-06-12",
