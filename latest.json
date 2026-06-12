@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260612.150139",
+    "tag": "portal-v20260612.152321",
     "releasedAt": "2026-06-12",
     "notes": [
-      "Tab strips across the portal hug their content again instead of stretching edge to edge - the compact form reads better on wide screens."
+      "The Fleet overview is rebuilt: richer stat cards with honest trend badges, an alert-volume chart that stacks the four incident categories (Privilege escalation, Policy guard, Identity hygiene, Operations) from your real investigation log over the selected window, and an Open-cases table linking straight into each incident.",
+      "The whole portal now uses wide screens: the dashboard, Inbox, Customers, Identity health and Conditional Access pages widen to the same cap the incident page got - more data, fewer dead margins.",
+      "Status gets a face: open cases carry the new status pill (dashed circle = new, spinner = in progress, green check = resolved) - the first piece of the refreshed component language."
     ],
     "history": [
+      {
+        "tag": "portal-v20260612.152321",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "The Fleet overview is rebuilt: richer stat cards with honest trend badges, an alert-volume chart that stacks the four incident categories (Privilege escalation, Policy guard, Identity hygiene, Operations) from your real investigation log over the selected window, and an Open-cases table linking straight into each incident.",
+          "The whole portal now uses wide screens: the dashboard, Inbox, Customers, Identity health and Conditional Access pages widen to the same cap the incident page got - more data, fewer dead margins.",
+          "Status gets a face: open cases carry the new status pill (dashed circle = new, spinner = in progress, green check = resolved) - the first piece of the refreshed component language."
+        ]
+      },
       {
         "tag": "portal-v20260612.150139",
         "releasedAt": "2026-06-12",
