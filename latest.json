@@ -4,6 +4,33 @@
     "releasedAt": "2026-06-12",
     "notes": [
       "The Basewiser B is now the browser tab icon - the brand mark on a card tile matching the portal design, crisp from pinned tabs up to full-size bookmarks. If your tab still shows the old icon, a hard refresh clears the cached one."
+    ],
+    "history": [
+      {
+        "tag": "portal-v20260612.122420",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "The Basewiser B is now the browser tab icon - the brand mark on a card tile matching the portal design, crisp from pinned tabs up to full-size bookmarks. If your tab still shows the old icon, a hard refresh clears the cached one."
+        ]
+      },
+      {
+        "tag": "portal-v20260612.020056",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "The inbox is rebuilt for triage: every incident is its own card with sortable columns (severity, tenant, owner, age), an incident category on each row (Privilege escalation, Policy guard, Identity hygiene, Operations), and a quick-actions menu - assign to me, take over, open the customer, copy the link - without opening the case.",
+          "Filters speak one language everywhere: multi-select pills with built-in search and one-click clear on the Inbox, Customers, Identity health and Conditional Access pages. Filter to two tenants and a category in three clicks; the X on the pill undoes it in one.",
+          "The Customers list gains search and sortable columns - sort by Alerts for the what's-on-fire view - and secondary tab rows across the portal are now full-width segmented strips, with the Identity tab reclaiming the space the old side table-of-contents held."
+        ]
+      },
+      {
+        "tag": "portal-v20260611.234216",
+        "releasedAt": "2026-06-11",
+        "notes": [
+          "Role-grant alerts no longer reference an allowlist - there is no role allowlist; severity is purely tier-driven (GA above Tier 0, other roles lower). The change allowlist keeps governing guard-mode alerts, where it belongs.",
+          "Granter resolution is now three layers deep: the admin's own audit footprint resolves instantly, PIM schedule requests confirm intent (activation vs admin grant), and granter-less rows backfill for 24 hours - the WHO tile updates itself with a journal note.",
+          "Findings move with events: a role grant triggers the tenant's identity rescan immediately, and the active-alert badge updates the moment an incident is resolved."
+        ]
+      }
     ]
   },
   "backend": {
