@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260612.145006",
+    "tag": "portal-v20260612.150139",
     "releasedAt": "2026-06-12",
     "notes": [
-      "What's new now accumulates: skip a release and its notes carry into the next banner. The portal shows everything since YOUR running version, grouped per release - no more updates silently replacing the notes you never read.",
-      "The incident page uses big screens properly: evidence and impact cards take the extra width while the playbook and timeline keep their comfortable size - no more content squeezed between dead margins.",
-      "Quiet polish: tab count badges stay the same calm grey whether or not the tab is active - selection reads from the tab itself. Severity-tinted finding counts keep their red and amber."
+      "Tab strips across the portal hug their content again instead of stretching edge to edge - the compact form reads better on wide screens."
     ],
     "history": [
+      {
+        "tag": "portal-v20260612.150139",
+        "releasedAt": "2026-06-12",
+        "notes": [
+          "Tab strips across the portal hug their content again instead of stretching edge to edge - the compact form reads better on wide screens."
+        ]
+      },
       {
         "tag": "portal-v20260612.145006",
         "releasedAt": "2026-06-12",
