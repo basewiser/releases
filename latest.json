@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260612.233908",
-    "releasedAt": "2026-06-12",
+    "tag": "portal-v20260614.002915",
+    "releasedAt": "2026-06-14",
     "notes": [
-      "Every incident now tells its change story as a ledger on the affected policy: baseline, while the change was live, and now - with counts first (+ 5 excluded), names on demand, and the outcome stated outright (all removed - back at baseline). Readable in seconds even for big changes.",
-      "What-changed slims to the verdict and the raw diff - the story is told once, right next to the live state it explains. Timeline icons now match the portal's squared corners."
+      "Selected filters are readable again - the active state is now a calm neutral highlight instead of blue text on a blue fill, across the Inbox, Customers, Identity health and Conditional Access.",
+      "The Customers and Inbox lists read as a single table now, with the column header attached to its rows like Identity and Licenses. Inbox rows are calmer too: verdict tags (Auto-restored, Review sign-ins, GA) line up in their own column instead of crowding the title, the owner always shows a name rather than a raw id, and the description is trimmed so tenant, owner and age have room.",
+      "More squared-corner polish and faster triage: avatars and the resolved check-marks pick up the portal's squared corners, the Identity health summary cards are clickable (click Critical to filter to critical findings, worst first), the Licenses cards match the rest of the portal, and customer tenant IDs show a short head…tail you can click to copy the full id."
     ],
     "history": [
+      {
+        "tag": "portal-v20260614.002915",
+        "releasedAt": "2026-06-14",
+        "notes": [
+          "Selected filters are readable again - the active state is now a calm neutral highlight instead of blue text on a blue fill, across the Inbox, Customers, Identity health and Conditional Access.",
+          "The Customers and Inbox lists read as a single table now, with the column header attached to its rows like Identity and Licenses. Inbox rows are calmer too: verdict tags (Auto-restored, Review sign-ins, GA) line up in their own column instead of crowding the title, the owner always shows a name rather than a raw id, and the description is trimmed so tenant, owner and age have room.",
+          "More squared-corner polish and faster triage: avatars and the resolved check-marks pick up the portal's squared corners, the Identity health summary cards are clickable (click Critical to filter to critical findings, worst first), the Licenses cards match the rest of the portal, and customer tenant IDs show a short head…tail you can click to copy the full id."
+        ]
+      },
       {
         "tag": "portal-v20260612.233908",
         "releasedAt": "2026-06-12",
