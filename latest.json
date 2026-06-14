@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260614.021423",
+    "tag": "portal-v20260614.030532",
     "releasedAt": "2026-06-14",
     "notes": [
-      "Status and empty-state icons now match the portal's squared corners - the 'all clear' check and the case-status glyphs (resolved, new) are squared instead of round."
+      "The tenant ID on Customers only copies from the copy icon now - the id itself is plain, selectable text, so a stray click no longer copies it.",
+      "Table columns are spread evenly across the width - the reclaim queue, fleet licensing and the licensing report no longer leave a big gap before the right-hand columns."
     ],
     "history": [
+      {
+        "tag": "portal-v20260614.030532",
+        "releasedAt": "2026-06-14",
+        "notes": [
+          "The tenant ID on Customers only copies from the copy icon now - the id itself is plain, selectable text, so a stray click no longer copies it.",
+          "Table columns are spread evenly across the width - the reclaim queue, fleet licensing and the licensing report no longer leave a big gap before the right-hand columns."
+        ]
+      },
       {
         "tag": "portal-v20260614.021423",
         "releasedAt": "2026-06-14",
