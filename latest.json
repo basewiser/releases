@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260614.012323",
+    "tag": "portal-v20260614.021423",
     "releasedAt": "2026-06-14",
     "notes": [
-      "Text across the portal is easier to read: descriptions, names, email and sign-in addresses, tenant IDs and other body text now sit at a consistent, comfortable size with a readable colour floor, instead of fine print. The break-glass section and the dense detail pages benefit most.",
-      "Layout lines up: the tenant detail and Zero Trust pages now use the same wide column as the rest of the portal, and the update / license banners match the page width instead of floating narrower.",
-      "On Customers, the tenant ID shows in full again - monospace, click to copy - instead of being cropped mid-string."
+      "Status and empty-state icons now match the portal's squared corners - the 'all clear' check and the case-status glyphs (resolved, new) are squared instead of round."
     ],
     "history": [
+      {
+        "tag": "portal-v20260614.021423",
+        "releasedAt": "2026-06-14",
+        "notes": [
+          "Status and empty-state icons now match the portal's squared corners - the 'all clear' check and the case-status glyphs (resolved, new) are squared instead of round."
+        ]
+      },
       {
         "tag": "portal-v20260614.012323",
         "releasedAt": "2026-06-14",
