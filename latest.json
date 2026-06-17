@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260617.220946",
+    "tag": "portal-v20260617.222150",
     "releasedAt": "2026-06-17",
     "notes": [
-      "Sending an email invite now spells out the steps - copy the email, open a new message, paste it in - and adds an 'or just send the link' option for sharing the consent link over Teams, chat or an existing thread.",
-      "The invite email itself is redesigned: clearer layout with the Basewiser wordmark, a stronger call-to-action button, and labelled sections (it reads well in both light and dark mail clients).",
-      "Once the Basewiser app is set up, the panel states it's been created and ready to onboard tenants, and lists the app's name and App ID."
+      "The email invite now says where it sends - Open in mail launches a new message in your default mail app (Outlook, etc.) - and adds a 'What this does' explainer covering what you send, what the customer's Global Admin approves, and what Basewiser can (and can't) see.",
+      "You can also just share the consent link instead of sending the full email - over Teams, chat, or an existing thread."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.222150",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "The email invite now says where it sends - Open in mail launches a new message in your default mail app (Outlook, etc.) - and adds a 'What this does' explainer covering what you send, what the customer's Global Admin approves, and what Basewiser can (and can't) see.",
+          "You can also just share the consent link instead of sending the full email - over Teams, chat, or an existing thread."
+        ]
+      },
       {
         "tag": "portal-v20260617.220946",
         "releasedAt": "2026-06-17",
