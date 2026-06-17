@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260617.211608",
+    "tag": "portal-v20260617.220946",
     "releasedAt": "2026-06-17",
     "notes": [
-      "The first-run setup screen now matches the rest of the portal - same components, and once the Basewiser app is set up it shows the green Active panel with the app's name and App ID."
+      "Sending an email invite now spells out the steps - copy the email, open a new message, paste it in - and adds an 'or just send the link' option for sharing the consent link over Teams, chat or an existing thread.",
+      "The invite email itself is redesigned: clearer layout with the Basewiser wordmark, a stronger call-to-action button, and labelled sections (it reads well in both light and dark mail clients).",
+      "Once the Basewiser app is set up, the panel states it's been created and ready to onboard tenants, and lists the app's name and App ID."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.220946",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Sending an email invite now spells out the steps - copy the email, open a new message, paste it in - and adds an 'or just send the link' option for sharing the consent link over Teams, chat or an existing thread.",
+          "The invite email itself is redesigned: clearer layout with the Basewiser wordmark, a stronger call-to-action button, and labelled sections (it reads well in both light and dark mail clients).",
+          "Once the Basewiser app is set up, the panel states it's been created and ready to onboard tenants, and lists the app's name and App ID."
+        ]
+      },
       {
         "tag": "portal-v20260617.211608",
         "releasedAt": "2026-06-17",
@@ -182,7 +193,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.205919",
+    "tag": "backend-v20260617.220946",
     "releasedAt": "2026-06-17"
   }
 }
