@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260617.013015",
+    "tag": "portal-v20260617.020854",
     "releasedAt": "2026-06-17",
     "notes": [
-      "New Onboarding page: connect a managed tenant two ways - onboard it directly when you hold an admin account in it, or generate a branded email invite that the customer's own admin approves in one click. Either way, the tenant registers itself in the portal once consent is granted.",
-      "Onboarding now runs on a single Basewiser app, so each customer approves one consent screen instead of one per feature.",
-      "Set the name customers see on the invite under Settings - Partner identity; it's pre-filled from your subscription and editable."
+      "Adding a tenant now starts with a choice, right from the Add tenant button: send a branded email invite the customer's own admin approves in one click, or add the tenant directly when you already hold an admin account in it."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.020854",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Adding a tenant now starts with a choice, right from the Add tenant button: send a branded email invite the customer's own admin approves in one click, or add the tenant directly when you already hold an admin account in it."
+        ]
+      },
       {
         "tag": "portal-v20260617.013015",
         "releasedAt": "2026-06-17",
