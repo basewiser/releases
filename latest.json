@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260617.225216",
+    "tag": "portal-v20260617.230909",
     "releasedAt": "2026-06-17",
     "notes": [
-      "Once the Basewiser app is set up, the confirmation matches the version-update banner - a single blue mark with the app's name and ID - instead of a green 'Active' card."
+      "Onboarding step 1 now checks off with a green tick and stays aligned with step 2 once the Basewiser app is set up - showing the app's name and ID without a heavy card. The setup button matches the portal's other buttons."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.230909",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Onboarding step 1 now checks off with a green tick and stays aligned with step 2 once the Basewiser app is set up - showing the app's name and ID without a heavy card. The setup button matches the portal's other buttons."
+        ]
+      },
       {
         "tag": "portal-v20260617.225216",
         "releasedAt": "2026-06-17",
