@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260617.020854",
+    "tag": "portal-v20260617.142928",
     "releasedAt": "2026-06-17",
     "notes": [
-      "Adding a tenant now starts with a choice, right from the Add tenant button: send a branded email invite the customer's own admin approves in one click, or add the tenant directly when you already hold an admin account in it."
+      "Partner identity (Settings) is simpler: set your display name and a support contact for tenant invite emails - the logo field is gone, invites use Basewiser branding."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.142928",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Partner identity (Settings) is simpler: set your display name and a support contact for tenant invite emails - the logo field is gone, invites use Basewiser branding."
+        ]
+      },
       {
         "tag": "portal-v20260617.020854",
         "releasedAt": "2026-06-17",
