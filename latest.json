@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260617.142928",
+    "tag": "portal-v20260617.162025",
     "releasedAt": "2026-06-17",
     "notes": [
-      "Partner identity (Settings) is simpler: set your display name and a support contact for tenant invite emails - the logo field is gone, invites use Basewiser branding."
+      "Adding a tenant is now a guided two-step flow: set up the Basewiser app once (it's the single app every managed tenant consents to - one consent screen per customer instead of one per feature), then onboard tenants by branded email invite or directly. The onboarding panel is wider and spells out what each choice is for.",
+      "If app setup hits an error, the dialog now shows the actual reason inline instead of the button appearing to do nothing."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.162025",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Adding a tenant is now a guided two-step flow: set up the Basewiser app once (it's the single app every managed tenant consents to - one consent screen per customer instead of one per feature), then onboard tenants by branded email invite or directly. The onboarding panel is wider and spells out what each choice is for.",
+          "If app setup hits an error, the dialog now shows the actual reason inline instead of the button appearing to do nothing."
+        ]
+      },
       {
         "tag": "portal-v20260617.142928",
         "releasedAt": "2026-06-17",
@@ -140,7 +149,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.142250",
+    "tag": "backend-v20260617.162025",
     "releasedAt": "2026-06-17"
   }
 }
