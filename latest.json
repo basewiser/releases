@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260617.223809",
+    "tag": "portal-v20260617.225216",
     "releasedAt": "2026-06-17",
     "notes": [
-      "The Add-tenant dialog buttons now match the rest of the portal - calm neutral buttons instead of a bold blue fill.",
-      "The email-invite instructions are clearer and harder to misread: labelled Option 1 (email the invite) and Option 2 (just send the link), step-by-step guidance that names each button and your mail app (e.g. Outlook), and a 'What this does' summary of what you send and what the customer's Global Administrator approves."
+      "Once the Basewiser app is set up, the confirmation matches the version-update banner - a single blue mark with the app's name and ID - instead of a green 'Active' card."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.225216",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "Once the Basewiser app is set up, the confirmation matches the version-update banner - a single blue mark with the app's name and ID - instead of a green 'Active' card."
+        ]
+      },
       {
         "tag": "portal-v20260617.223809",
         "releasedAt": "2026-06-17",
