@@ -1,13 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260617.175713",
+    "tag": "portal-v20260617.193809",
     "releasedAt": "2026-06-17",
     "notes": [
-      "The onboarding dialog now notices if you delete the Basewiser app in Entra - it flips back to 'set up needed' instead of staying stuck on active, so you can re-create it cleanly.",
-      "Sending an email invite opens your own mail app with the subject and message (including the consent link) already filled in - just add recipients from your contacts and send. The in-portal recipient box is gone.",
-      "Polish: the two onboarding method cards line up, and the empty-state 'Add your first tenant' button is neutral grey like the rest of the portal."
+      "First-run setup: opening a fresh portal now walks you through naming your organisation (the name customers see on invites) and setting up the Basewiser app - one screen, two steps.",
+      "After setup, the onboarding dialog shows your Basewiser app's name and App ID, with a spinner while it provisions.",
+      "Invite emails are branded now: Copy email gives you a formatted Basewiser message to paste into your mail client, and the invite reminds you which Partner identity it's sent as.",
+      "If app setup fails, the dialog names the exact Microsoft Graph permission the backend needs."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.193809",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "First-run setup: opening a fresh portal now walks you through naming your organisation (the name customers see on invites) and setting up the Basewiser app - one screen, two steps.",
+          "After setup, the onboarding dialog shows your Basewiser app's name and App ID, with a spinner while it provisions.",
+          "Invite emails are branded now: Copy email gives you a formatted Basewiser message to paste into your mail client, and the invite reminds you which Partner identity it's sent as.",
+          "If app setup fails, the dialog names the exact Microsoft Graph permission the backend needs."
+        ]
+      },
       {
         "tag": "portal-v20260617.175713",
         "releasedAt": "2026-06-17",
@@ -159,7 +170,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.175713",
+    "tag": "backend-v20260617.193809",
     "releasedAt": "2026-06-17"
   }
 }
