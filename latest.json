@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260617.162025",
+    "tag": "portal-v20260617.175713",
     "releasedAt": "2026-06-17",
     "notes": [
-      "Adding a tenant is now a guided two-step flow: set up the Basewiser app once (it's the single app every managed tenant consents to - one consent screen per customer instead of one per feature), then onboard tenants by branded email invite or directly. The onboarding panel is wider and spells out what each choice is for.",
-      "If app setup hits an error, the dialog now shows the actual reason inline instead of the button appearing to do nothing."
+      "The onboarding dialog now notices if you delete the Basewiser app in Entra - it flips back to 'set up needed' instead of staying stuck on active, so you can re-create it cleanly.",
+      "Sending an email invite opens your own mail app with the subject and message (including the consent link) already filled in - just add recipients from your contacts and send. The in-portal recipient box is gone.",
+      "Polish: the two onboarding method cards line up, and the empty-state 'Add your first tenant' button is neutral grey like the rest of the portal."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.175713",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "The onboarding dialog now notices if you delete the Basewiser app in Entra - it flips back to 'set up needed' instead of staying stuck on active, so you can re-create it cleanly.",
+          "Sending an email invite opens your own mail app with the subject and message (including the consent link) already filled in - just add recipients from your contacts and send. The in-portal recipient box is gone.",
+          "Polish: the two onboarding method cards line up, and the empty-state 'Add your first tenant' button is neutral grey like the rest of the portal."
+        ]
+      },
       {
         "tag": "portal-v20260617.162025",
         "releasedAt": "2026-06-17",
@@ -149,7 +159,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.162025",
+    "tag": "backend-v20260617.175713",
     "releasedAt": "2026-06-17"
   }
 }
