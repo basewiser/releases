@@ -1,14 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260617.193809",
+    "tag": "portal-v20260617.205919",
     "releasedAt": "2026-06-17",
     "notes": [
-      "First-run setup: opening a fresh portal now walks you through naming your organisation (the name customers see on invites) and setting up the Basewiser app - one screen, two steps.",
-      "After setup, the onboarding dialog shows your Basewiser app's name and App ID, with a spinner while it provisions.",
-      "Invite emails are branded now: Copy email gives you a formatted Basewiser message to paste into your mail client, and the invite reminds you which Partner identity it's sent as.",
-      "If app setup fails, the dialog names the exact Microsoft Graph permission the backend needs."
+      "The Add-tenant dialog is polished and consistent with the rest of the portal: once the Basewiser app is set up it shows as an Active panel with the app's name and App ID (copyable), and the email-invite step is a single 'Open in mail' action that carries the branded message.",
+      "Invite emails render correctly in dark mode now (Outlook included) - the Basewiser wordmark adapts to the reader's theme instead of washing out."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.205919",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "The Add-tenant dialog is polished and consistent with the rest of the portal: once the Basewiser app is set up it shows as an Active panel with the app's name and App ID (copyable), and the email-invite step is a single 'Open in mail' action that carries the branded message.",
+          "Invite emails render correctly in dark mode now (Outlook included) - the Basewiser wordmark adapts to the reader's theme instead of washing out."
+        ]
+      },
       {
         "tag": "portal-v20260617.193809",
         "releasedAt": "2026-06-17",
@@ -170,7 +176,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.193809",
+    "tag": "backend-v20260617.205919",
     "releasedAt": "2026-06-17"
   }
 }
