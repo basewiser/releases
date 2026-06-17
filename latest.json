@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260617.205919",
+    "tag": "portal-v20260617.211608",
     "releasedAt": "2026-06-17",
     "notes": [
-      "The Add-tenant dialog is polished and consistent with the rest of the portal: once the Basewiser app is set up it shows as an Active panel with the app's name and App ID (copyable), and the email-invite step is a single 'Open in mail' action that carries the branded message.",
-      "Invite emails render correctly in dark mode now (Outlook included) - the Basewiser wordmark adapts to the reader's theme instead of washing out."
+      "The first-run setup screen now matches the rest of the portal - same components, and once the Basewiser app is set up it shows the green Active panel with the app's name and App ID."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.211608",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "The first-run setup screen now matches the rest of the portal - same components, and once the Basewiser app is set up it shows the green Active panel with the app's name and App ID."
+        ]
+      },
       {
         "tag": "portal-v20260617.205919",
         "releasedAt": "2026-06-17",
