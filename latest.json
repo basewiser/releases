@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260617.222150",
+    "tag": "portal-v20260617.223809",
     "releasedAt": "2026-06-17",
     "notes": [
-      "The email invite now says where it sends - Open in mail launches a new message in your default mail app (Outlook, etc.) - and adds a 'What this does' explainer covering what you send, what the customer's Global Admin approves, and what Basewiser can (and can't) see.",
-      "You can also just share the consent link instead of sending the full email - over Teams, chat, or an existing thread."
+      "The Add-tenant dialog buttons now match the rest of the portal - calm neutral buttons instead of a bold blue fill.",
+      "The email-invite instructions are clearer and harder to misread: labelled Option 1 (email the invite) and Option 2 (just send the link), step-by-step guidance that names each button and your mail app (e.g. Outlook), and a 'What this does' summary of what you send and what the customer's Global Administrator approves."
     ],
     "history": [
+      {
+        "tag": "portal-v20260617.223809",
+        "releasedAt": "2026-06-17",
+        "notes": [
+          "The Add-tenant dialog buttons now match the rest of the portal - calm neutral buttons instead of a bold blue fill.",
+          "The email-invite instructions are clearer and harder to misread: labelled Option 1 (email the invite) and Option 2 (just send the link), step-by-step guidance that names each button and your mail app (e.g. Outlook), and a 'What this does' summary of what you send and what the customer's Global Administrator approves."
+        ]
+      },
       {
         "tag": "portal-v20260617.222150",
         "releasedAt": "2026-06-17",
