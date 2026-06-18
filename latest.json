@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260617.230909",
-    "releasedAt": "2026-06-17",
+    "tag": "portal-v20260618.100707",
+    "releasedAt": "2026-06-18",
     "notes": [
-      "Onboarding step 1 now checks off with a green tick and stays aligned with step 2 once the Basewiser app is set up - showing the app's name and ID without a heavy card. The setup button matches the portal's other buttons."
+      "Copying an invite now confirms it worked - Copy email, the consent link and the App ID show a 'Copied' tick when you click them.",
+      "The 'Set up the Basewiser app' step adds a plain-language 'What this does' explainer (the app and its credentials stay in your own Microsoft Entra tenant, each customer approves it once, you get read-only visibility plus Conditional Access remediation), and the setup button matches the rest of the portal."
     ],
     "history": [
+      {
+        "tag": "portal-v20260618.100707",
+        "releasedAt": "2026-06-18",
+        "notes": [
+          "Copying an invite now confirms it worked - Copy email, the consent link and the App ID show a 'Copied' tick when you click them.",
+          "The 'Set up the Basewiser app' step adds a plain-language 'What this does' explainer (the app and its credentials stay in your own Microsoft Entra tenant, each customer approves it once, you get read-only visibility plus Conditional Access remediation), and the setup button matches the rest of the portal."
+        ]
+      },
       {
         "tag": "portal-v20260617.230909",
         "releasedAt": "2026-06-17",
