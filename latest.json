@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260618.100707",
-    "releasedAt": "2026-06-18",
+    "tag": "portal-v20260619.200539",
+    "releasedAt": "2026-06-19",
     "notes": [
-      "Copying an invite now confirms it worked - Copy email, the consent link and the App ID show a 'Copied' tick when you click them.",
-      "The 'Set up the Basewiser app' step adds a plain-language 'What this does' explainer (the app and its credentials stay in your own Microsoft Entra tenant, each customer approves it once, you get read-only visibility plus Conditional Access remediation), and the setup button matches the rest of the portal."
+      "New per-tenant billing: onboard tenants for free, then activate the ones you want from the Activate tenants page - each priced by its measured size. Replaces buying bundles and assigning seats.",
+      "One Basewiser product: Conditional Access Vault, Identity Health and License Insights are now a single product with every feature included.",
+      "Cleaner billing: the old per-tenant bundle-assignment page is gone - activation is the single, simpler flow."
     ],
     "history": [
+      {
+        "tag": "portal-v20260619.200539",
+        "releasedAt": "2026-06-19",
+        "notes": [
+          "New per-tenant billing: onboard tenants for free, then activate the ones you want from the Activate tenants page - each priced by its measured size. Replaces buying bundles and assigning seats.",
+          "One Basewiser product: Conditional Access Vault, Identity Health and License Insights are now a single product with every feature included.",
+          "Cleaner billing: the old per-tenant bundle-assignment page is gone - activation is the single, simpler flow."
+        ]
+      },
       {
         "tag": "portal-v20260618.100707",
         "releasedAt": "2026-06-18",
@@ -230,7 +240,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260617.220946",
-    "releasedAt": "2026-06-17"
+    "tag": "backend-v20260619.122649",
+    "releasedAt": "2026-06-19"
   }
 }
