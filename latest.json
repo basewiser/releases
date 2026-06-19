@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260619.200539",
-    "releasedAt": "2026-06-19",
+    "tag": "portal-v20260619.235541",
+    "releasedAt": "2026-06-20",
     "notes": [
-      "New per-tenant billing: onboard tenants for free, then activate the ones you want from the Activate tenants page - each priced by its measured size. Replaces buying bundles and assigning seats.",
-      "One Basewiser product: Conditional Access Vault, Identity Health and License Insights are now a single product with every feature included.",
-      "Cleaner billing: the old per-tenant bundle-assignment page is gone - activation is the single, simpler flow."
+      "Active tenants now unlock every feature: the Identity, Conditional Access and Licenses tabs open as soon as a tenant is activated - no more locked tabs after you've paid.",
+      "The 'No tenants active yet' banner clears once at least one tenant is active."
     ],
     "history": [
+      {
+        "tag": "portal-v20260619.235541",
+        "releasedAt": "2026-06-20",
+        "notes": [
+          "Active tenants now unlock every feature: the Identity, Conditional Access and Licenses tabs open as soon as a tenant is activated - no more locked tabs after you've paid.",
+          "The 'No tenants active yet' banner clears once at least one tenant is active."
+        ]
+      },
       {
         "tag": "portal-v20260619.200539",
         "releasedAt": "2026-06-19",
