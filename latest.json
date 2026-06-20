@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260620.001031",
+    "tag": "portal-v20260620.145641",
     "releasedAt": "2026-06-20",
     "notes": [
-      "Active tenants now have every feature fully working: the Identity, Conditional Access and Licenses tabs unlock AND load their data the moment a tenant is activated.",
-      "The 'No tenants active yet' banner clears once at least one tenant is active."
+      "Preview: four redesign options for the Products billing card are viewable at /dashboard/dev/products-redesign-preview - open it and pick the one you like."
     ],
     "history": [
+      {
+        "tag": "portal-v20260620.145641",
+        "releasedAt": "2026-06-20",
+        "notes": [
+          "Preview: four redesign options for the Products billing card are viewable at /dashboard/dev/products-redesign-preview - open it and pick the one you like."
+        ]
+      },
       {
         "tag": "portal-v20260620.001031",
         "releasedAt": "2026-06-20",
