@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260619.235541",
+    "tag": "portal-v20260620.001031",
     "releasedAt": "2026-06-20",
     "notes": [
-      "Active tenants now unlock every feature: the Identity, Conditional Access and Licenses tabs open as soon as a tenant is activated - no more locked tabs after you've paid.",
+      "Active tenants now have every feature fully working: the Identity, Conditional Access and Licenses tabs unlock AND load their data the moment a tenant is activated.",
       "The 'No tenants active yet' banner clears once at least one tenant is active."
     ],
     "history": [
+      {
+        "tag": "portal-v20260620.001031",
+        "releasedAt": "2026-06-20",
+        "notes": [
+          "Active tenants now have every feature fully working: the Identity, Conditional Access and Licenses tabs unlock AND load their data the moment a tenant is activated.",
+          "The 'No tenants active yet' banner clears once at least one tenant is active."
+        ]
+      },
       {
         "tag": "portal-v20260619.235541",
         "releasedAt": "2026-06-20",
