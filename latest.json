@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260622.191258",
+    "tag": "portal-v20260622.222759",
     "releasedAt": "2026-06-22",
     "notes": [
-      "Customers you’ve just connected now show “Pending” on the Customers list until their first security scan completes — instead of an alarming “Warning”. It clears to a real Healthy, Warning or Critical status on its own, usually within minutes.",
-      "Hover a customer’s Health status to see what it means in plain language, plus that customer’s own open finding counts — critical, high, medium, low — and the risk score behind it."
+      "A cleaner, more consistent look across the portal: every status tag — health, billing, severity, backup and more — now shares one style, and the columns line up.",
+      "Calmer charts: the identity and conditional-access breakdowns and the alert-volume chart use a coordinated, muted palette instead of loud primary colours, so they read as data rather than alarms. Status colours (like red “Critical”) are kept where they carry meaning."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.222759",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "A cleaner, more consistent look across the portal: every status tag — health, billing, severity, backup and more — now shares one style, and the columns line up.",
+          "Calmer charts: the identity and conditional-access breakdowns and the alert-volume chart use a coordinated, muted palette instead of loud primary colours, so they read as data rather than alarms. Status colours (like red “Critical”) are kept where they carry meaning."
+        ]
+      },
       {
         "tag": "portal-v20260622.191258",
         "releasedAt": "2026-06-22",
