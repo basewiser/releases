@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260622.170206",
+    "tag": "portal-v20260622.191258",
     "releasedAt": "2026-06-22",
     "notes": [
-      "Incident owners now show the analyst's name instead of an internal ID — across the inbox list, open cases and the incident page.",
-      "Manage subscription in Stripe now opens in a new tab, so you stay in the portal while updating billing and payment details.",
-      "In-app notifications now match the portal's design — the same card surface, the standard green check, and squared corners."
+      "Customers you’ve just connected now show “Pending” on the Customers list until their first security scan completes — instead of an alarming “Warning”. It clears to a real Healthy, Warning or Critical status on its own, usually within minutes.",
+      "Hover a customer’s Health status to see what it means in plain language, plus that customer’s own open finding counts — critical, high, medium, low — and the risk score behind it."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.191258",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "Customers you’ve just connected now show “Pending” on the Customers list until their first security scan completes — instead of an alarming “Warning”. It clears to a real Healthy, Warning or Critical status on its own, usually within minutes.",
+          "Hover a customer’s Health status to see what it means in plain language, plus that customer’s own open finding counts — critical, high, medium, low — and the risk score behind it."
+        ]
+      },
       {
         "tag": "portal-v20260622.170206",
         "releasedAt": "2026-06-22",
@@ -274,7 +281,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260622.170206",
+    "tag": "backend-v20260622.191258",
     "releasedAt": "2026-06-22"
   }
 }
