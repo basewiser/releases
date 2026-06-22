@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260620.001031",
-    "releasedAt": "2026-06-20",
+    "tag": "portal-v20260622.001848",
+    "releasedAt": "2026-06-22",
     "notes": [
-      "Active tenants now have every feature fully working: the Identity, Conditional Access and Licenses tabs unlock AND load their data the moment a tenant is activated.",
-      "The 'No tenants active yet' banner clears once at least one tenant is active."
+      "New Backup & Restore section: see your whole fleet's backup health at a glance — protected, stale, or no backup — and jump straight to any tenant's restore page.",
+      "Settings is tidier: Billing and Backup now have their own top-level sections instead of living inside Settings, which goes back to just configuration.",
+      "When a new customer grants consent, the welcome page now greets them by their organisation name and domain instead of a raw tenant ID."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.001848",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "New Backup & Restore section: see your whole fleet's backup health at a glance — protected, stale, or no backup — and jump straight to any tenant's restore page.",
+          "Settings is tidier: Billing and Backup now have their own top-level sections instead of living inside Settings, which goes back to just configuration.",
+          "When a new customer grants consent, the welcome page now greets them by their organisation name and domain instead of a raw tenant ID."
+        ]
+      },
       {
         "tag": "portal-v20260620.001031",
         "releasedAt": "2026-06-20",
@@ -255,7 +265,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260619.231641",
-    "releasedAt": "2026-06-20"
+    "tag": "backend-v20260622.001848",
+    "releasedAt": "2026-06-22"
   }
 }
