@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260622.230216",
+    "tag": "portal-v20260622.232742",
     "releasedAt": "2026-06-22",
     "notes": [
-      "Design polish: the “High” severity tag now matches the others (filled, not outlined), and every column on the Identity Health and Conditional Access lists clearly shows it can be sorted."
+      "Severity tags now read as a proper heat scale — Critical (red) and High (orange) are clearly distinct, then Medium (amber) and Low (grey).",
+      "Sorting is consistent across every list now: all columns are click-sortable through one shared header. Customers' Billing, the Inbox incident column, and the Backup and Licenses fleet tables are now sortable too (their default order is unchanged until you click a header)."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.232742",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "Severity tags now read as a proper heat scale — Critical (red) and High (orange) are clearly distinct, then Medium (amber) and Low (grey).",
+          "Sorting is consistent across every list now: all columns are click-sortable through one shared header. Customers' Billing, the Inbox incident column, and the Backup and Licenses fleet tables are now sortable too (their default order is unchanged until you click a header)."
+        ]
+      },
       {
         "tag": "portal-v20260622.230216",
         "releasedAt": "2026-06-22",
