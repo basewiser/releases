@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260622.001848",
+    "tag": "portal-v20260622.170206",
     "releasedAt": "2026-06-22",
     "notes": [
-      "New Backup & Restore section: see your whole fleet's backup health at a glance — protected, stale, or no backup — and jump straight to any tenant's restore page.",
-      "Settings is tidier: Billing and Backup now have their own top-level sections instead of living inside Settings, which goes back to just configuration.",
-      "When a new customer grants consent, the welcome page now greets them by their organisation name and domain instead of a raw tenant ID."
+      "Incident owners now show the analyst's name instead of an internal ID — across the inbox list, open cases and the incident page.",
+      "Manage subscription in Stripe now opens in a new tab, so you stay in the portal while updating billing and payment details.",
+      "In-app notifications now match the portal's design — the same card surface, the standard green check, and squared corners."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.170206",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "Incident owners now show the analyst's name instead of an internal ID — across the inbox list, open cases and the incident page.",
+          "Manage subscription in Stripe now opens in a new tab, so you stay in the portal while updating billing and payment details.",
+          "In-app notifications now match the portal's design — the same card surface, the standard green check, and squared corners."
+        ]
+      },
       {
         "tag": "portal-v20260622.001848",
         "releasedAt": "2026-06-22",
@@ -265,7 +274,7 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260622.132506",
+    "tag": "backend-v20260622.170206",
     "releasedAt": "2026-06-22"
   }
 }
