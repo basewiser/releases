@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260622.224627",
+    "tag": "portal-v20260622.230216",
     "releasedAt": "2026-06-22",
     "notes": [
-      "The portal-wide design refresh is complete: section headings, tables and the last status tags are now aligned across Settings, Licenses, Billing, Backup and the incident pages — every page follows one consistent system."
+      "Design polish: the “High” severity tag now matches the others (filled, not outlined), and every column on the Identity Health and Conditional Access lists clearly shows it can be sorted."
     ],
     "history": [
+      {
+        "tag": "portal-v20260622.230216",
+        "releasedAt": "2026-06-22",
+        "notes": [
+          "Design polish: the “High” severity tag now matches the others (filled, not outlined), and every column on the Identity Health and Conditional Access lists clearly shows it can be sorted."
+        ]
+      },
       {
         "tag": "portal-v20260622.224627",
         "releasedAt": "2026-06-22",
