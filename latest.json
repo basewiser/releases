@@ -332,7 +332,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260622.191258",
-    "releasedAt": "2026-06-22"
+    "tag": "backend-v20260623.195912",
+    "releasedAt": "2026-06-23",
+    "notes": [
+      "Detection fix: a routine PIM-eligible Global Administrator activation — including one delivered through an eligible group membership — no longer raises a false 'converted to standing access' incident. Genuine eligible→permanent conversions made by another admin still alert."
+    ]
   }
 }
