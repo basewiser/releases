@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260623.020404",
+    "tag": "portal-v20260623.114645",
     "releasedAt": "2026-06-23",
     "notes": [
-      "Customers list: more breathing room between the Customer, Health and Status columns (the 'Billing' column is now 'Status'), Health sits a little further to the right, and the Alerts column is a clean count instead of a dot.",
-      "Opening an incident now shows the same severity tag as the rest of the portal (the High orange), instead of an off-palette one."
+      "Customers list: even breathing room across the left columns — the gap between Customer and Health now matches the Health-to-Status gap, and the table still fits narrower windows without clipping."
     ],
     "history": [
+      {
+        "tag": "portal-v20260623.114645",
+        "releasedAt": "2026-06-23",
+        "notes": [
+          "Customers list: even breathing room across the left columns — the gap between Customer and Health now matches the Health-to-Status gap, and the table still fits narrower windows without clipping."
+        ]
+      },
       {
         "tag": "portal-v20260623.020404",
         "releasedAt": "2026-06-23",
