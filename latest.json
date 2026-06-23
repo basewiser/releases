@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260623.114645",
+    "tag": "portal-v20260623.163911",
     "releasedAt": "2026-06-23",
     "notes": [
-      "Customers list: even breathing room across the left columns — the gap between Customer and Health now matches the Health-to-Status gap, and the table still fits narrower windows without clipping."
+      "Inbox triage at fleet scale: a default 'By priority' view (most-critical first, so a Critical is never hidden) and an opt-in 'By customer' view that groups cases per tenant — worst-first, with a per-customer severity rollup and the customers that need action auto-expanded. Every column stays sortable, like the other tables."
     ],
     "history": [
+      {
+        "tag": "portal-v20260623.163911",
+        "releasedAt": "2026-06-23",
+        "notes": [
+          "Inbox triage at fleet scale: a default 'By priority' view (most-critical first, so a Critical is never hidden) and an opt-in 'By customer' view that groups cases per tenant — worst-first, with a per-customer severity rollup and the customers that need action auto-expanded. Every column stays sortable, like the other tables."
+        ]
+      },
       {
         "tag": "portal-v20260623.114645",
         "releasedAt": "2026-06-23",
