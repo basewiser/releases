@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260623.163911",
+    "tag": "portal-v20260623.213727",
     "releasedAt": "2026-06-23",
     "notes": [
-      "Inbox triage at fleet scale: a default 'By priority' view (most-critical first, so a Critical is never hidden) and an opt-in 'By customer' view that groups cases per tenant — worst-first, with a per-customer severity rollup and the customers that need action auto-expanded. Every column stays sortable, like the other tables."
+      "Customers: the tenant ID now renders in JetBrains Mono, so the GUID's glyphs (0/O, 1/l/I) read unambiguously — easier to scan and copy — while the column spacing stays exactly where it was."
     ],
     "history": [
+      {
+        "tag": "portal-v20260623.213727",
+        "releasedAt": "2026-06-23",
+        "notes": [
+          "Customers: the tenant ID now renders in JetBrains Mono, so the GUID's glyphs (0/O, 1/l/I) read unambiguously — easier to scan and copy — while the column spacing stays exactly where it was."
+        ]
+      },
       {
         "tag": "portal-v20260623.163911",
         "releasedAt": "2026-06-23",
