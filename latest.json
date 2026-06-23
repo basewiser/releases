@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260622.232742",
-    "releasedAt": "2026-06-22",
+    "tag": "portal-v20260623.020404",
+    "releasedAt": "2026-06-23",
     "notes": [
-      "Severity tags now read as a proper heat scale — Critical (red) and High (orange) are clearly distinct, then Medium (amber) and Low (grey).",
-      "Sorting is consistent across every list now: all columns are click-sortable through one shared header. Customers' Billing, the Inbox incident column, and the Backup and Licenses fleet tables are now sortable too (their default order is unchanged until you click a header)."
+      "Customers list: more breathing room between the Customer, Health and Status columns (the 'Billing' column is now 'Status'), Health sits a little further to the right, and the Alerts column is a clean count instead of a dot.",
+      "Opening an incident now shows the same severity tag as the rest of the portal (the High orange), instead of an off-palette one."
     ],
     "history": [
+      {
+        "tag": "portal-v20260623.020404",
+        "releasedAt": "2026-06-23",
+        "notes": [
+          "Customers list: more breathing room between the Customer, Health and Status columns (the 'Billing' column is now 'Status'), Health sits a little further to the right, and the Alerts column is a clean count instead of a dot.",
+          "Opening an incident now shows the same severity tag as the rest of the portal (the High orange), instead of an off-palette one."
+        ]
+      },
       {
         "tag": "portal-v20260622.232742",
         "releasedAt": "2026-06-22",
