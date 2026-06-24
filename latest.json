@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260623.213727",
-    "releasedAt": "2026-06-23",
+    "tag": "portal-v20260624.005229",
+    "releasedAt": "2026-06-24",
     "notes": [
-      "Customers: the tenant ID now renders in JetBrains Mono, so the GUID's glyphs (0/O, 1/l/I) read unambiguously — easier to scan and copy — while the column spacing stays exactly where it was."
+      "Fleet overview redesigned: each KPI card now draws its own trend as a smooth, colour-coded sparkline; Open cases moved up under the cards for faster triage; and Alert volume is now an on-demand overlay where you can show, hide or isolate any incident category.",
+      "Customer Overview cards refreshed: colour-coded Active alerts, Identity findings, Conditional Access (policy count + guard mode) and Last backup — replacing the old Bundles and the duplicate Last-sync tile.",
+      "Polish throughout: incident owners always resolve to a name instead of a raw id, the customer search dropdown matches the portal (no typewriter font or off-palette blue), the Identity Health and Conditional Access tables breathe better, and scrollbars are themed to the dark UI."
     ],
     "history": [
+      {
+        "tag": "portal-v20260624.005229",
+        "releasedAt": "2026-06-24",
+        "notes": [
+          "Fleet overview redesigned: each KPI card now draws its own trend as a smooth, colour-coded sparkline; Open cases moved up under the cards for faster triage; and Alert volume is now an on-demand overlay where you can show, hide or isolate any incident category.",
+          "Customer Overview cards refreshed: colour-coded Active alerts, Identity findings, Conditional Access (policy count + guard mode) and Last backup — replacing the old Bundles and the duplicate Last-sync tile.",
+          "Polish throughout: incident owners always resolve to a name instead of a raw id, the customer search dropdown matches the portal (no typewriter font or off-palette blue), the Identity Health and Conditional Access tables breathe better, and scrollbars are themed to the dark UI."
+        ]
+      },
       {
         "tag": "portal-v20260623.213727",
         "releasedAt": "2026-06-23",
@@ -339,10 +350,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260623.195912",
-    "releasedAt": "2026-06-23",
+    "tag": "backend-v20260624.005229",
+    "releasedAt": "2026-06-24",
     "notes": [
-      "Detection fix: a routine PIM-eligible Global Administrator activation — including one delivered through an eligible group membership — no longer raises a false 'converted to standing access' incident. Genuine eligible→permanent conversions made by another admin still alert."
+      "Incident owners now resolve to a real name even when it wasn't captured at assignment: the backend looks the operator up in your team directory, so the inbox and Open cases show a person instead of an object id."
     ]
   }
 }
