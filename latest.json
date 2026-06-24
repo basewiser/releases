@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260624.005229",
+    "tag": "portal-v20260624.125457",
     "releasedAt": "2026-06-24",
     "notes": [
-      "Fleet overview redesigned: each KPI card now draws its own trend as a smooth, colour-coded sparkline; Open cases moved up under the cards for faster triage; and Alert volume is now an on-demand overlay where you can show, hide or isolate any incident category.",
-      "Customer Overview cards refreshed: colour-coded Active alerts, Identity findings, Conditional Access (policy count + guard mode) and Last backup — replacing the old Bundles and the duplicate Last-sync tile.",
-      "Polish throughout: incident owners always resolve to a name instead of a raw id, the customer search dropdown matches the portal (no typewriter font or off-palette blue), the Identity Health and Conditional Access tables breathe better, and scrollbars are themed to the dark UI."
+      "New currency selector in the top bar: switch the whole portal between NOK (default), SEK, DKK, EUR, USD and GBP. License cost and waste figures convert instantly; your actual Stripe billing stays in NOK.",
+      "License Insights is clearer: the SKU inventory now shows clean product names with an Active / Stale / Unassigned colour key, sharper utilisation bars and larger, more legible figures.",
+      "The per-customer Cost trend is now a sparkline card matching the fleet overview — smooth line, subtle glow and a hover tooltip — and the Reclaim candidates' recommended action reads as a proper status tag."
     ],
     "history": [
+      {
+        "tag": "portal-v20260624.125457",
+        "releasedAt": "2026-06-24",
+        "notes": [
+          "New currency selector in the top bar: switch the whole portal between NOK (default), SEK, DKK, EUR, USD and GBP. License cost and waste figures convert instantly; your actual Stripe billing stays in NOK.",
+          "License Insights is clearer: the SKU inventory now shows clean product names with an Active / Stale / Unassigned colour key, sharper utilisation bars and larger, more legible figures.",
+          "The per-customer Cost trend is now a sparkline card matching the fleet overview — smooth line, subtle glow and a hover tooltip — and the Reclaim candidates' recommended action reads as a proper status tag."
+        ]
+      },
       {
         "tag": "portal-v20260624.005229",
         "releasedAt": "2026-06-24",
