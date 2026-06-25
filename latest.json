@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260624.125457",
-    "releasedAt": "2026-06-24",
+    "tag": "portal-v20260625.092243",
+    "releasedAt": "2026-06-25",
     "notes": [
-      "New currency selector in the top bar: switch the whole portal between NOK (default), SEK, DKK, EUR, USD and GBP. License cost and waste figures convert instantly; your actual Stripe billing stays in NOK.",
-      "License Insights is clearer: the SKU inventory now shows clean product names with an Active / Stale / Unassigned colour key, sharper utilisation bars and larger, more legible figures.",
-      "The per-customer Cost trend is now a sparkline card matching the fleet overview — smooth line, subtle glow and a hover tooltip — and the Reclaim candidates' recommended action reads as a proper status tag."
+      "A customer's Activity log no longer scrolls on forever: it now shows the 10 most recent events with a 'Show more' button to expand (and 'Show fewer' to collapse), plus a running 'Showing X of Y' count. Switching the bundle or action filter resets it to the latest 10."
     ],
     "history": [
+      {
+        "tag": "portal-v20260625.092243",
+        "releasedAt": "2026-06-25",
+        "notes": [
+          "A customer's Activity log no longer scrolls on forever: it now shows the 10 most recent events with a 'Show more' button to expand (and 'Show fewer' to collapse), plus a running 'Showing X of Y' count. Switching the bundle or action filter resets it to the latest 10."
+        ]
+      },
       {
         "tag": "portal-v20260624.125457",
         "releasedAt": "2026-06-24",
