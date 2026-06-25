@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260625.092243",
+    "tag": "portal-v20260625.102617",
     "releasedAt": "2026-06-25",
     "notes": [
-      "A customer's Activity log no longer scrolls on forever: it now shows the 10 most recent events with a 'Show more' button to expand (and 'Show fewer' to collapse), plus a running 'Showing X of Y' count. Switching the bundle or action filter resets it to the latest 10."
+      "On a customer's Identity tab, the Findings and Categories cards now report the same number of categories (matching the tabs below), and clicking the Critical or High card jumps you straight to the relevant findings instead of force-opening one.",
+      "Finding drill-downs now match the rest of the portal: every column shows it can be sorted at a glance (not only on hover), and the 'How to fix' guides use the standard squared step markers and type."
     ],
     "history": [
+      {
+        "tag": "portal-v20260625.102617",
+        "releasedAt": "2026-06-25",
+        "notes": [
+          "On a customer's Identity tab, the Findings and Categories cards now report the same number of categories (matching the tabs below), and clicking the Critical or High card jumps you straight to the relevant findings instead of force-opening one.",
+          "Finding drill-downs now match the rest of the portal: every column shows it can be sorted at a glance (not only on hover), and the 'How to fix' guides use the standard squared step markers and type."
+        ]
+      },
       {
         "tag": "portal-v20260625.092243",
         "releasedAt": "2026-06-25",
