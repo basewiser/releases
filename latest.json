@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260625.102617",
-    "releasedAt": "2026-06-25",
+    "tag": "portal-v20260626.000502",
+    "releasedAt": "2026-06-26",
     "notes": [
-      "On a customer's Identity tab, the Findings and Categories cards now report the same number of categories (matching the tabs below), and clicking the Critical or High card jumps you straight to the relevant findings instead of force-opening one.",
-      "Finding drill-downs now match the rest of the portal: every column shows it can be sorted at a glance (not only on hover), and the 'How to fix' guides use the standard squared step markers and type."
+      "Every fleet page (Identity, Conditional Access, Licenses, Backup) now has the same colour-coded summary cards as the dashboard — a subtle per-metric hue and glow instead of flat grey.",
+      "Billing is sortable: both the Subscription and Invoices tables sort by any column (tenant, cost, date, amount, status…), matching the rest of the portal.",
+      "A portal-wide typography pass — every page now uses one consistent text scale, so titles, body, labels and table headers line up in size and colour across the whole portal."
     ],
     "history": [
+      {
+        "tag": "portal-v20260626.000502",
+        "releasedAt": "2026-06-26",
+        "notes": [
+          "Every fleet page (Identity, Conditional Access, Licenses, Backup) now has the same colour-coded summary cards as the dashboard — a subtle per-metric hue and glow instead of flat grey.",
+          "Billing is sortable: both the Subscription and Invoices tables sort by any column (tenant, cost, date, amount, status…), matching the rest of the portal.",
+          "A portal-wide typography pass — every page now uses one consistent text scale, so titles, body, labels and table headers line up in size and colour across the whole portal."
+        ]
+      },
       {
         "tag": "portal-v20260625.102617",
         "releasedAt": "2026-06-25",
