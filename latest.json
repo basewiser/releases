@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260626.230108",
+    "tag": "portal-v20260626.234253",
     "releasedAt": "2026-06-26",
     "notes": [
-      "Billing now has a 'Re-check license' button — re-validate your license on demand instead of waiting for the daily sync. Handy if a renewal or change hasn't propagated yet, or to clear a stale 'license expiring soon' banner.",
-      "The summary cards on Identity, Conditional Access and Licenses now draw their own recent history as a small trend line under the number — open findings, criticals and total monthly license cost over time, matching the dashboard cards. The lines fill in as history accrues."
+      "More room in the fleet Identity Health table: the Category column is wider, so long names like 'Multi-factor authentication' sit on a single line instead of wrapping onto two."
     ],
     "history": [
+      {
+        "tag": "portal-v20260626.234253",
+        "releasedAt": "2026-06-26",
+        "notes": [
+          "More room in the fleet Identity Health table: the Category column is wider, so long names like 'Multi-factor authentication' sit on a single line instead of wrapping onto two."
+        ]
+      },
       {
         "tag": "portal-v20260626.230108",
         "releasedAt": "2026-06-26",
