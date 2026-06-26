@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260626.111858",
+    "tag": "portal-v20260626.230108",
     "releasedAt": "2026-06-26",
     "notes": [
-      "Fleet overview counts are live again: Active alerts and Open cases update the instant you resolve a case — no lag — and each headline now matches its own 'new / in progress' and 'assigned to you' subline.",
-      "Visual consistency: the colour-key dots on the overview, Licenses and Conditional Access cards are now squared to match the rest of the design, and a placeholder '?' tier badge was removed from the top bar."
+      "Billing now has a 'Re-check license' button — re-validate your license on demand instead of waiting for the daily sync. Handy if a renewal or change hasn't propagated yet, or to clear a stale 'license expiring soon' banner.",
+      "The summary cards on Identity, Conditional Access and Licenses now draw their own recent history as a small trend line under the number — open findings, criticals and total monthly license cost over time, matching the dashboard cards. The lines fill in as history accrues."
     ],
     "history": [
+      {
+        "tag": "portal-v20260626.230108",
+        "releasedAt": "2026-06-26",
+        "notes": [
+          "Billing now has a 'Re-check license' button — re-validate your license on demand instead of waiting for the daily sync. Handy if a renewal or change hasn't propagated yet, or to clear a stale 'license expiring soon' banner.",
+          "The summary cards on Identity, Conditional Access and Licenses now draw their own recent history as a small trend line under the number — open findings, criticals and total monthly license cost over time, matching the dashboard cards. The lines fill in as history accrues."
+        ]
+      },
       {
         "tag": "portal-v20260626.111858",
         "releasedAt": "2026-06-26",
@@ -390,10 +398,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260626.111858",
+    "tag": "backend-v20260626.230108",
     "releasedAt": "2026-06-26",
     "notes": [
-      "Your license now auto-refreshes reliably even when it was activated from the portal (by pasting a key) rather than at install — renewals, expiry and revocations propagate within a day instead of getting stuck on a stale state."
+      "Added an on-demand license re-check behind the portal's new 'Re-check license' button, so a renewal, expiry or revocation can be pulled immediately instead of waiting for the daily refresh.",
+      "The fleet now records a little more history each cycle — identity criticals and affected tenants, Conditional Access findings, and daily total license cost — to power the new trend lines on the summary cards. It accrues going forward (no backfill)."
     ]
   }
 }
