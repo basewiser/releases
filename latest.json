@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260626.000502",
+    "tag": "portal-v20260626.111858",
     "releasedAt": "2026-06-26",
     "notes": [
-      "Every fleet page (Identity, Conditional Access, Licenses, Backup) now has the same colour-coded summary cards as the dashboard — a subtle per-metric hue and glow instead of flat grey.",
-      "Billing is sortable: both the Subscription and Invoices tables sort by any column (tenant, cost, date, amount, status…), matching the rest of the portal.",
-      "A portal-wide typography pass — every page now uses one consistent text scale, so titles, body, labels and table headers line up in size and colour across the whole portal."
+      "Fleet overview counts are live again: Active alerts and Open cases update the instant you resolve a case — no lag — and each headline now matches its own 'new / in progress' and 'assigned to you' subline.",
+      "Visual consistency: the colour-key dots on the overview, Licenses and Conditional Access cards are now squared to match the rest of the design, and a placeholder '?' tier badge was removed from the top bar."
     ],
     "history": [
+      {
+        "tag": "portal-v20260626.111858",
+        "releasedAt": "2026-06-26",
+        "notes": [
+          "Fleet overview counts are live again: Active alerts and Open cases update the instant you resolve a case — no lag — and each headline now matches its own 'new / in progress' and 'assigned to you' subline.",
+          "Visual consistency: the colour-key dots on the overview, Licenses and Conditional Access cards are now squared to match the rest of the design, and a placeholder '?' tier badge was removed from the top bar."
+        ]
+      },
       {
         "tag": "portal-v20260626.000502",
         "releasedAt": "2026-06-26",
@@ -383,10 +390,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260624.005229",
-    "releasedAt": "2026-06-24",
+    "tag": "backend-v20260626.111858",
+    "releasedAt": "2026-06-26",
     "notes": [
-      "Incident owners now resolve to a real name even when it wasn't captured at assignment: the backend looks the operator up in your team directory, so the inbox and Open cases show a person instead of an object id."
+      "Your license now auto-refreshes reliably even when it was activated from the portal (by pasting a key) rather than at install — renewals, expiry and revocations propagate within a day instead of getting stuck on a stale state."
     ]
   }
 }
