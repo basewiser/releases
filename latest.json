@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260626.234253",
-    "releasedAt": "2026-06-26",
+    "tag": "portal-v20260627.010114",
+    "releasedAt": "2026-06-27",
     "notes": [
-      "More room in the fleet Identity Health table: the Category column is wider, so long names like 'Multi-factor authentication' sit on a single line instead of wrapping onto two."
+      "The portal no longer locks you out when the backend is briefly unreachable (restarting or mid-deploy). It stays usable behind a small notice that clears itself once the backend responds again — and the rare 'license service unavailable' dialog is now centered and on-brand."
     ],
     "history": [
+      {
+        "tag": "portal-v20260627.010114",
+        "releasedAt": "2026-06-27",
+        "notes": [
+          "The portal no longer locks you out when the backend is briefly unreachable (restarting or mid-deploy). It stays usable behind a small notice that clears itself once the backend responds again — and the rare 'license service unavailable' dialog is now centered and on-brand."
+        ]
+      },
       {
         "tag": "portal-v20260626.234253",
         "releasedAt": "2026-06-26",
