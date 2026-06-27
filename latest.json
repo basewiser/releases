@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260627.010114",
+    "tag": "portal-v20260627.125627",
     "releasedAt": "2026-06-27",
     "notes": [
-      "The portal no longer locks you out when the backend is briefly unreachable (restarting or mid-deploy). It stays usable behind a small notice that clears itself once the backend responds again — and the rare 'license service unavailable' dialog is now centered and on-brand."
+      "Replace your license key on demand: a 'Replace key' button on the Billing page opens a dialog to paste a current Keygen key and activate it immediately — handy when a key was removed or replaced and the deployment is stuck on a stale one.",
+      "License re-check errors are clearer now — a plain-language reason (e.g. the key was rejected by Keygen) instead of a raw error dump."
     ],
     "history": [
+      {
+        "tag": "portal-v20260627.125627",
+        "releasedAt": "2026-06-27",
+        "notes": [
+          "Replace your license key on demand: a 'Replace key' button on the Billing page opens a dialog to paste a current Keygen key and activate it immediately — handy when a key was removed or replaced and the deployment is stuck on a stale one.",
+          "License re-check errors are clearer now — a plain-language reason (e.g. the key was rejected by Keygen) instead of a raw error dump."
+        ]
+      },
       {
         "tag": "portal-v20260627.010114",
         "releasedAt": "2026-06-27",
@@ -411,11 +420,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260627.003904",
+    "tag": "backend-v20260627.125627",
     "releasedAt": "2026-06-27",
     "notes": [
-      "Critical fix: the previous backend release (backend-v20260626.230108) could fail to start because two internal functions shared a name, which surfaced as 'License service unavailable' and locked the portal. This release resolves the clash so the backend boots normally — install it if you hit that error.",
-      "Also includes (from the prior release) the on-demand 'Re-check license' button and the accruing trend-line history behind the Identity, Conditional Access and Licenses summary cards."
+      "Clearer license errors: when Keygen rejects a re-check or a key activation (e.g. a key that was removed or replaced), the portal now shows a plain-language reason instead of a raw error.",
+      "Hardening: a build-time guard now prevents a duplicate internal function name from ever shipping again — that name clash was the cause of the recent 'License service unavailable' startup outage."
     ]
   }
 }
