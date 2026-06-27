@@ -404,11 +404,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260626.230108",
-    "releasedAt": "2026-06-26",
+    "tag": "backend-v20260627.003904",
+    "releasedAt": "2026-06-27",
     "notes": [
-      "Added an on-demand license re-check behind the portal's new 'Re-check license' button, so a renewal, expiry or revocation can be pulled immediately instead of waiting for the daily refresh.",
-      "The fleet now records a little more history each cycle — identity criticals and affected tenants, Conditional Access findings, and daily total license cost — to power the new trend lines on the summary cards. It accrues going forward (no backfill)."
+      "Critical fix: the previous backend release (backend-v20260626.230108) could fail to start because two internal functions shared a name, which surfaced as 'License service unavailable' and locked the portal. This release resolves the clash so the backend boots normally — install it if you hit that error.",
+      "Also includes (from the prior release) the on-demand 'Re-check license' button and the accruing trend-line history behind the Identity, Conditional Access and Licenses summary cards."
     ]
   }
 }
