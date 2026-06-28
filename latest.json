@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260627.125627",
-    "releasedAt": "2026-06-27",
+    "tag": "portal-v20260628.002549",
+    "releasedAt": "2026-06-28",
     "notes": [
-      "Replace your license key on demand: a 'Replace key' button on the Billing page opens a dialog to paste a current Keygen key and activate it immediately — handy when a key was removed or replaced and the deployment is stuck on a stale one.",
-      "License re-check errors are clearer now — a plain-language reason (e.g. the key was rejected by Keygen) instead of a raw error dump."
+      "The portal is now free to use — no license key and no license screens at all. The only thing you pay for is activating a customer tenant (a 'seat').",
+      "Onboarding a tenant and seeing its size and price stays free; that tenant's Identity, Conditional Access, Licenses and Backup data unlocks the moment you activate its seat."
     ],
     "history": [
+      {
+        "tag": "portal-v20260628.002549",
+        "releasedAt": "2026-06-28",
+        "notes": [
+          "The portal is now free to use — no license key and no license screens at all. The only thing you pay for is activating a customer tenant (a 'seat').",
+          "Onboarding a tenant and seeing its size and price stays free; that tenant's Identity, Conditional Access, Licenses and Backup data unlocks the moment you activate its seat."
+        ]
+      },
       {
         "tag": "portal-v20260627.125627",
         "releasedAt": "2026-06-27",
@@ -420,11 +428,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260627.125627",
-    "releasedAt": "2026-06-27",
+    "tag": "backend-v20260628.002549",
+    "releasedAt": "2026-06-28",
     "notes": [
-      "Clearer license errors: when Keygen rejects a re-check or a key activation (e.g. a key that was removed or replaced), the portal now shows a plain-language reason instead of a raw error.",
-      "Hardening: a build-time guard now prevents a duplicate internal function name from ever shipping again — that name clash was the cause of the recent 'License service unavailable' startup outage."
+      "Licensing is now per-tenant seats only — the deployment-level license is gone entirely. Onboarding and measuring a tenant stays free; streaming a tenant's security data requires an active (paid) seat, enforced by default."
     ]
   }
 }
