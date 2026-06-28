@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260628.002549",
+    "tag": "portal-v20260628.182852",
     "releasedAt": "2026-06-28",
     "notes": [
-      "The portal is now free to use — no license key and no license screens at all. The only thing you pay for is activating a customer tenant (a 'seat').",
-      "Onboarding a tenant and seeing its size and price stays free; that tenant's Identity, Conditional Access, Licenses and Backup data unlocks the moment you activate its seat."
+      "New Help center — open 'Get help' for pricing, a catalogue of every security finding and what it means, a getting-started guide, and an FAQ.",
+      "The Customers list now shows each customer's plan — size band and price — in its own column, and you can sort by it.",
+      "Prices across the portal now follow your currency picker, with the real NOK charge noted on billing."
     ],
     "history": [
+      {
+        "tag": "portal-v20260628.182852",
+        "releasedAt": "2026-06-28",
+        "notes": [
+          "New Help center — open 'Get help' for pricing, a catalogue of every security finding and what it means, a getting-started guide, and an FAQ.",
+          "The Customers list now shows each customer's plan — size band and price — in its own column, and you can sort by it.",
+          "Prices across the portal now follow your currency picker, with the real NOK charge noted on billing."
+        ]
+      },
       {
         "tag": "portal-v20260628.002549",
         "releasedAt": "2026-06-28",
