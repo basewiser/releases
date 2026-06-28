@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260628.182852",
+    "tag": "portal-v20260628.202822",
     "releasedAt": "2026-06-28",
     "notes": [
-      "New Help center — open 'Get help' for pricing, a catalogue of every security finding and what it means, a getting-started guide, and an FAQ.",
-      "The Customers list now shows each customer's plan — size band and price — in its own column, and you can sort by it.",
-      "Prices across the portal now follow your currency picker, with the real NOK charge noted on billing."
+      "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer.",
+      "Re-open the tour any time from Get help → 'Take the tour'."
     ],
     "history": [
+      {
+        "tag": "portal-v20260628.202822",
+        "releasedAt": "2026-06-28",
+        "notes": [
+          "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer.",
+          "Re-open the tour any time from Get help → 'Take the tour'."
+        ]
+      },
       {
         "tag": "portal-v20260628.182852",
         "releasedAt": "2026-06-28",
