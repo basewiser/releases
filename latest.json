@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260628.202822",
-    "releasedAt": "2026-06-28",
+    "tag": "portal-v20260629.085034",
+    "releasedAt": "2026-06-29",
     "notes": [
-      "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer.",
-      "Re-open the tour any time from Get help → 'Take the tour'."
+      "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer. Re-open it any time from Get help → 'Take the tour'.",
+      "Its currency and timezone pickers use the portal's own on-theme dropdowns."
     ],
     "history": [
+      {
+        "tag": "portal-v20260629.085034",
+        "releasedAt": "2026-06-29",
+        "notes": [
+          "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer. Re-open it any time from Get help → 'Take the tour'.",
+          "Its currency and timezone pickers use the portal's own on-theme dropdowns."
+        ]
+      },
       {
         "tag": "portal-v20260628.202822",
         "releasedAt": "2026-06-28",
