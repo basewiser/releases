@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260629.085034",
+    "tag": "portal-v20260629.094347",
     "releasedAt": "2026-06-29",
     "notes": [
-      "A first-run welcome the first time you open the portal — set your display currency and timezone, then take a quick guided tour of how to onboard a customer. Re-open it any time from Get help → 'Take the tour'.",
-      "Its currency and timezone pickers use the portal's own on-theme dropdowns."
+      "On the Customers list, a customer's monthly cost and size band each get their own column now — and the size band uses the same tag style as Health and Status, so the three line up as one clean row instead of a small tag squeezed under the price. Sort by cost or by size."
     ],
     "history": [
+      {
+        "tag": "portal-v20260629.094347",
+        "releasedAt": "2026-06-29",
+        "notes": [
+          "On the Customers list, a customer's monthly cost and size band each get their own column now — and the size band uses the same tag style as Health and Status, so the three line up as one clean row instead of a small tag squeezed under the price. Sort by cost or by size."
+        ]
+      },
       {
         "tag": "portal-v20260629.085034",
         "releasedAt": "2026-06-29",
