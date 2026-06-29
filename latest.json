@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260629.094347",
+    "tag": "portal-v20260629.193122",
     "releasedAt": "2026-06-29",
     "notes": [
-      "On the Customers list, a customer's monthly cost and size band each get their own column now — and the size band uses the same tag style as Health and Status, so the three line up as one clean row instead of a small tag squeezed under the price. Sort by cost or by size."
+      "Getting started in the Help center is now a set of click-by-click walkthroughs — onboarding a customer, activating a seat, offboarding, break-glass accounts, backup & restore, triaging an Inbox alert, and restoring a Conditional Access change — each showing the exact controls to use.",
+      "Every dashboard and fleet summary card now carries a clear icon, and the tenant counts use a building icon instead of a people one.",
+      "Summary cards now build in when you open a page — the colour glow and the trend line rise into place — for a little more life."
     ],
     "history": [
+      {
+        "tag": "portal-v20260629.193122",
+        "releasedAt": "2026-06-29",
+        "notes": [
+          "Getting started in the Help center is now a set of click-by-click walkthroughs — onboarding a customer, activating a seat, offboarding, break-glass accounts, backup & restore, triaging an Inbox alert, and restoring a Conditional Access change — each showing the exact controls to use.",
+          "Every dashboard and fleet summary card now carries a clear icon, and the tenant counts use a building icon instead of a people one.",
+          "Summary cards now build in when you open a page — the colour glow and the trend line rise into place — for a little more life."
+        ]
+      },
       {
         "tag": "portal-v20260629.094347",
         "releasedAt": "2026-06-29",
