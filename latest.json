@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260629.193122",
+    "tag": "portal-v20260629.224248",
     "releasedAt": "2026-06-29",
     "notes": [
-      "Getting started in the Help center is now a set of click-by-click walkthroughs — onboarding a customer, activating a seat, offboarding, break-glass accounts, backup & restore, triaging an Inbox alert, and restoring a Conditional Access change — each showing the exact controls to use.",
-      "Every dashboard and fleet summary card now carries a clear icon, and the tenant counts use a building icon instead of a people one.",
-      "Summary cards now build in when you open a page — the colour glow and the trend line rise into place — for a little more life."
+      "Customers: the Size column now leads the table, and a customer's user count stays readable even for very large tenants without crowding the next column. The old bundles filter — which no longer matched anything — is now a Status filter (Active, Pending or Not active).",
+      "Backup: the fleet schedule dialog is cleaner and uses plain wording, and you can now set the exact time backups run, shown in the timezone you picked in the top bar."
     ],
     "history": [
+      {
+        "tag": "portal-v20260629.224248",
+        "releasedAt": "2026-06-29",
+        "notes": [
+          "Customers: the Size column now leads the table, and a customer's user count stays readable even for very large tenants without crowding the next column. The old bundles filter — which no longer matched anything — is now a Status filter (Active, Pending or Not active).",
+          "Backup: the fleet schedule dialog is cleaner and uses plain wording, and you can now set the exact time backups run, shown in the timezone you picked in the top bar."
+        ]
+      },
       {
         "tag": "portal-v20260629.193122",
         "releasedAt": "2026-06-29",
