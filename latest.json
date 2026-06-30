@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260629.224248",
-    "releasedAt": "2026-06-29",
+    "tag": "portal-v20260630.103325",
+    "releasedAt": "2026-06-30",
     "notes": [
-      "Customers: the Size column now leads the table, and a customer's user count stays readable even for very large tenants without crowding the next column. The old bundles filter — which no longer matched anything — is now a Status filter (Active, Pending or Not active).",
-      "Backup: the fleet schedule dialog is cleaner and uses plain wording, and you can now set the exact time backups run, shown in the timezone you picked in the top bar."
+      "The Feedback panel is reworked — cleaner and on-theme, with a reply-to email and a clear list of what's attached. You can now paste a screenshot straight in (e.g. from Greenshot) or add an image file.",
+      "The Help drawer gained the missing FAQ link, and now switches topics correctly even when you're already on the Help page.",
+      "The dashboard's Open cases table now sorts on every column, like the other lists."
     ],
     "history": [
+      {
+        "tag": "portal-v20260630.103325",
+        "releasedAt": "2026-06-30",
+        "notes": [
+          "The Feedback panel is reworked — cleaner and on-theme, with a reply-to email and a clear list of what's attached. You can now paste a screenshot straight in (e.g. from Greenshot) or add an image file.",
+          "The Help drawer gained the missing FAQ link, and now switches topics correctly even when you're already on the Help page.",
+          "The dashboard's Open cases table now sorts on every column, like the other lists."
+        ]
+      },
       {
         "tag": "portal-v20260629.224248",
         "releasedAt": "2026-06-29",
