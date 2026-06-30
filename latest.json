@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260630.103325",
+    "tag": "portal-v20260630.150020",
     "releasedAt": "2026-06-30",
     "notes": [
-      "The Feedback panel is reworked — cleaner and on-theme, with a reply-to email and a clear list of what's attached. You can now paste a screenshot straight in (e.g. from Greenshot) or add an image file.",
-      "The Help drawer gained the missing FAQ link, and now switches topics correctly even when you're already on the Help page.",
-      "The dashboard's Open cases table now sorts on every column, like the other lists."
+      "The Conditional Access page now matches the rest of the portal — consistent status tags and colours throughout, and the policy list is a proper sortable table (sort by policy, who it applies to, when it changed, or on/report/off). The cramped text on the right of each row has been cleaned up.",
+      "Tooltips on the Conditional Access page now use the portal's own styled tooltip instead of the plain grey system one.",
+      "Blue buttons and selected states left over from the old look are now neutral across the portal — for example Run backup, Activate, the active-tab underline, and the Licenses 'reclaimable' card's glow."
     ],
     "history": [
+      {
+        "tag": "portal-v20260630.150020",
+        "releasedAt": "2026-06-30",
+        "notes": [
+          "The Conditional Access page now matches the rest of the portal — consistent status tags and colours throughout, and the policy list is a proper sortable table (sort by policy, who it applies to, when it changed, or on/report/off). The cramped text on the right of each row has been cleaned up.",
+          "Tooltips on the Conditional Access page now use the portal's own styled tooltip instead of the plain grey system one.",
+          "Blue buttons and selected states left over from the old look are now neutral across the portal — for example Run backup, Activate, the active-tab underline, and the Licenses 'reclaimable' card's glow."
+        ]
+      },
       {
         "tag": "portal-v20260630.103325",
         "releasedAt": "2026-06-30",
