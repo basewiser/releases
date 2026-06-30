@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260630.150020",
+    "tag": "portal-v20260630.211259",
     "releasedAt": "2026-06-30",
     "notes": [
-      "The Conditional Access page now matches the rest of the portal — consistent status tags and colours throughout, and the policy list is a proper sortable table (sort by policy, who it applies to, when it changed, or on/report/off). The cramped text on the right of each row has been cleaned up.",
-      "Tooltips on the Conditional Access page now use the portal's own styled tooltip instead of the plain grey system one.",
-      "Blue buttons and selected states left over from the old look are now neutral across the portal — for example Run backup, Activate, the active-tab underline, and the Licenses 'reclaimable' card's glow."
+      "When you open a finding, its fix guide is much clearer to follow: the failed check now stands out in red, the steps read as one numbered procedure, and the 'How to fix' part sits in its own box, separated from the finding above it.",
+      "This applies everywhere a finding has a fix guide — Conditional Access, Identity and break-glass."
     ],
     "history": [
+      {
+        "tag": "portal-v20260630.211259",
+        "releasedAt": "2026-06-30",
+        "notes": [
+          "When you open a finding, its fix guide is much clearer to follow: the failed check now stands out in red, the steps read as one numbered procedure, and the 'How to fix' part sits in its own box, separated from the finding above it.",
+          "This applies everywhere a finding has a fix guide — Conditional Access, Identity and break-glass."
+        ]
+      },
       {
         "tag": "portal-v20260630.150020",
         "releasedAt": "2026-06-30",
