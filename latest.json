@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260630.211259",
-    "releasedAt": "2026-06-30",
+    "tag": "portal-v20260701.112141",
+    "releasedAt": "2026-07-01",
     "notes": [
-      "When you open a finding, its fix guide is much clearer to follow: the failed check now stands out in red, the steps read as one numbered procedure, and the 'How to fix' part sits in its own box, separated from the finding above it.",
-      "This applies everywhere a finding has a fix guide — Conditional Access, Identity and break-glass."
+      "When no tenant has an active seat yet, a banner now points you to buy one — the portal stays free until you do.",
+      "Dashboard: the 'Open cases' card (which just repeated Active alerts) is now 'Active seats' — how many tenants are actively streaming data. A tenant's Identity tab swaps the 'Categories' tile for 'Affected accounts'.",
+      "The summary-card trend tags now show '0%' when a metric is steady instead of hiding, and hovering one tells you the window it compares against (e.g. 'vs 24 hours ago')."
     ],
     "history": [
+      {
+        "tag": "portal-v20260701.112141",
+        "releasedAt": "2026-07-01",
+        "notes": [
+          "When no tenant has an active seat yet, a banner now points you to buy one — the portal stays free until you do.",
+          "Dashboard: the 'Open cases' card (which just repeated Active alerts) is now 'Active seats' — how many tenants are actively streaming data. A tenant's Identity tab swaps the 'Categories' tile for 'Affected accounts'.",
+          "The summary-card trend tags now show '0%' when a metric is steady instead of hiding, and hovering one tells you the window it compares against (e.g. 'vs 24 hours ago')."
+        ]
+      },
       {
         "tag": "portal-v20260630.211259",
         "releasedAt": "2026-06-30",
@@ -503,10 +513,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260628.002549",
-    "releasedAt": "2026-06-28",
+    "tag": "backend-v20260701.112141",
+    "releasedAt": "2026-07-01",
     "notes": [
-      "Licensing is now per-tenant seats only — the deployment-level license is gone entirely. Onboarding and measuring a tenant stays free; streaming a tenant's security data requires an active (paid) seat, enforced by default."
+      "License seat totals — unassigned seats, seat utilisation and paid seats — now exclude free licences (e.g. Microsoft Power Automate Free, which ships thousands of free seats). Free products have no cost and were inflating the paid-licence picture; they still show in the per-SKU breakdown."
     ]
   }
 }
