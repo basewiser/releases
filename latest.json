@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260701.112141",
+    "tag": "portal-v20260701.125542",
     "releasedAt": "2026-07-01",
     "notes": [
-      "When no tenant has an active seat yet, a banner now points you to buy one — the portal stays free until you do.",
-      "Dashboard: the 'Open cases' card (which just repeated Active alerts) is now 'Active seats' — how many tenants are actively streaming data. A tenant's Identity tab swaps the 'Categories' tile for 'Affected accounts'.",
-      "The summary-card trend tags now show '0%' when a metric is steady instead of hiding, and hovering one tells you the window it compares against (e.g. 'vs 24 hours ago')."
+      "The fleet Identity Health, Conditional Access and Licenses cards now show the same up/down trend tag as the dashboard, so you can tell at a glance whether a number is rising or falling. Hover it to see the window it compares against — 7 days on Identity and Conditional Access, 30 days for license cost.",
+      "Inbox: the table header now sits on the same background as the rows, matching the other lists (it had a faint lighter band before)."
     ],
     "history": [
+      {
+        "tag": "portal-v20260701.125542",
+        "releasedAt": "2026-07-01",
+        "notes": [
+          "The fleet Identity Health, Conditional Access and Licenses cards now show the same up/down trend tag as the dashboard, so you can tell at a glance whether a number is rising or falling. Hover it to see the window it compares against — 7 days on Identity and Conditional Access, 30 days for license cost.",
+          "Inbox: the table header now sits on the same background as the rows, matching the other lists (it had a faint lighter band before)."
+        ]
+      },
       {
         "tag": "portal-v20260701.112141",
         "releasedAt": "2026-07-01",
