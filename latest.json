@@ -1,12 +1,32 @@
 {
   "portal": {
-    "tag": "portal-v20260701.125542",
-    "releasedAt": "2026-07-01",
+    "tag": "portal-v20260702.175150",
+    "releasedAt": "2026-07-02",
     "notes": [
-      "The fleet Identity Health, Conditional Access and Licenses cards now show the same up/down trend tag as the dashboard, so you can tell at a glance whether a number is rising or falling. Hover it to see the window it compares against — 7 days on Identity and Conditional Access, 30 days for license cost.",
-      "Inbox: the table header now sits on the same background as the rows, matching the other lists (it had a faint lighter band before)."
+      "New Opportunities page: the portal now turns what its scans find into ready-to-sell projects — each with the evidence behind it, a suggested effort, and a price from your own rate card (an hourly rate, or a fixed price per project type — editable right on the page).",
+      "One click generates a client-ready proposal for any opportunity: live evidence from the customer's own tenant, plain-language scope, and the investment — with payback math when the project saves the customer money. Print it or save as PDF.",
+      "Track each lead from new → proposed → won (or dismiss it). When a won project's evidence clears, it moves to Delivered — the value story you can show the customer at the next review.",
+      "Nothing is padded: opportunities only appear when there is enough real evidence to justify a project, and the page says so when your tenants are in good shape."
     ],
     "history": [
+      {
+        "tag": "portal-v20260702.175150",
+        "releasedAt": "2026-07-02",
+        "notes": [
+          "New Opportunities page: the portal now turns what its scans find into ready-to-sell projects — each with the evidence behind it, a suggested effort, and a price from your own rate card (an hourly rate, or a fixed price per project type — editable right on the page).",
+          "One click generates a client-ready proposal for any opportunity: live evidence from the customer's own tenant, plain-language scope, and the investment — with payback math when the project saves the customer money. Print it or save as PDF.",
+          "Track each lead from new → proposed → won (or dismiss it). When a won project's evidence clears, it moves to Delivered — the value story you can show the customer at the next review.",
+          "Nothing is padded: opportunities only appear when there is enough real evidence to justify a project, and the page says so when your tenants are in good shape."
+        ]
+      },
+      {
+        "tag": "portal-v20260701.125542",
+        "releasedAt": "2026-07-01",
+        "notes": [
+          "The fleet Identity Health, Conditional Access and Licenses cards now show the same up/down trend tag as the dashboard, so you can tell at a glance whether a number is rising or falling. Hover it to see the window it compares against — 7 days on Identity and Conditional Access, 30 days for license cost.",
+          "Inbox: the table header now sits on the same background as the rows, matching the other lists (it had a faint lighter band before)."
+        ]
+      },
       {
         "tag": "portal-v20260701.125542",
         "releasedAt": "2026-07-01",
@@ -520,10 +540,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260701.112141",
-    "releasedAt": "2026-07-01",
+    "tag": "backend-v20260702.175150",
+    "releasedAt": "2026-07-02",
     "notes": [
-      "License seat totals — unassigned seats, seat utilisation and paid seats — now exclude free licences (e.g. Microsoft Power Automate Free, which ships thousands of free seats). Free products have no cost and were inflating the paid-licence picture; they still show in the per-SKU breakdown."
+      "New opportunities engine: already-collected scan data (identity, Conditional Access, licenses) is analysed into sellable projects, priced from your rate card — no extra calls to your customers' tenants.",
+      "The daily license snapshot now also records stale and unassigned seat totals, so license-saving opportunities appear from the first nightly snapshot after this update."
     ]
   }
 }
