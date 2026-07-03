@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260703.141500",
+    "tag": "portal-v20260703.205821",
     "releasedAt": "2026-07-03",
     "notes": [
-      "The Opportunities page is redesigned to match the rest of the portal — a sortable table, the same status tags and colour key, and a clearer rate card: choose an hourly rate or a fixed price per project type, set starting and maximum hours in plain terms, and see the rate in your chosen display currency as you type.",
-      "Every opportunity now opens on its own page with room to read it: the full evidence from the customer's own tenant — each line linking straight to where it was found (Identity, Conditional Access or Licenses) — what the project covers, an internal note, and editable hours and price.",
-      "The client proposal now carries the portal's dark, branded look, ready to print or save as PDF and hand to the customer. Every figure across Opportunities follows the currency picker in the top bar."
+      "Each opportunity now opens on a full-width page that puts the whole sales story on one screen: the pitch to read to the customer — the same words as the proposal — beside a private 'why it sells' note, the evidence with the hours each finding adds to the estimate, the full project scope and its outcome, and a plain price build-up (starting hours plus what the evidence adds).",
+      "A new 'More at this customer' panel shows the other open opportunities on the same tenant and their combined value, so you can propose them together and save the customer a second round.",
+      "Severity now uses the same tags as the rest of the portal (Critical, High, Medium, Low), and a layout pass tidied the page — the action buttons line up with the title, the small section notes sit under their headings, and the middot separators are gone."
     ],
     "history": [
+      {
+        "tag": "portal-v20260703.205821",
+        "releasedAt": "2026-07-03",
+        "notes": [
+          "Each opportunity now opens on a full-width page that puts the whole sales story on one screen: the pitch to read to the customer — the same words as the proposal — beside a private 'why it sells' note, the evidence with the hours each finding adds to the estimate, the full project scope and its outcome, and a plain price build-up (starting hours plus what the evidence adds).",
+          "A new 'More at this customer' panel shows the other open opportunities on the same tenant and their combined value, so you can propose them together and save the customer a second round.",
+          "Severity now uses the same tags as the rest of the portal (Critical, High, Medium, Low), and a layout pass tidied the page — the action buttons line up with the title, the small section notes sit under their headings, and the middot separators are gone."
+        ]
+      },
       {
         "tag": "portal-v20260703.141500",
         "releasedAt": "2026-07-03",
