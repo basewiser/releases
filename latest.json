@@ -548,11 +548,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260702.175150",
-    "releasedAt": "2026-07-02",
+    "tag": "backend-v20260703.163256",
+    "releasedAt": "2026-07-03",
     "notes": [
-      "New opportunities engine: already-collected scan data (identity, Conditional Access, licenses) is analysed into sellable projects, priced from your rate card — no extra calls to your customers' tenants.",
-      "The daily license snapshot now also records stale and unassigned seat totals, so license-saving opportunities appear from the first nightly snapshot after this update."
+      "The tenant Activity Log no longer records an entry for every routine identity scan — it now shows only real events (new findings, resolutions, policy and guard-mode changes, backups, commands), so the history that matters isn't buried under 'sync completed' rows.",
+      "Each tenant's Activity feed also loads only its most recent activity, keeping the page fast no matter how much history builds up."
     ]
   }
 }
