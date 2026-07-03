@@ -1,14 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260702.175150",
-    "releasedAt": "2026-07-02",
+    "tag": "portal-v20260703.141500",
+    "releasedAt": "2026-07-03",
     "notes": [
-      "New Opportunities page: the portal now turns what its scans find into ready-to-sell projects — each with the evidence behind it, a suggested effort, and a price from your own rate card (an hourly rate, or a fixed price per project type — editable right on the page).",
-      "One click generates a client-ready proposal for any opportunity: live evidence from the customer's own tenant, plain-language scope, and the investment — with payback math when the project saves the customer money. Print it or save as PDF.",
-      "Track each lead from new → proposed → won (or dismiss it). When a won project's evidence clears, it moves to Delivered — the value story you can show the customer at the next review.",
-      "Nothing is padded: opportunities only appear when there is enough real evidence to justify a project, and the page says so when your tenants are in good shape."
+      "The Opportunities page is redesigned to match the rest of the portal — a sortable table, the same status tags and colour key, and a clearer rate card: choose an hourly rate or a fixed price per project type, set starting and maximum hours in plain terms, and see the rate in your chosen display currency as you type.",
+      "Every opportunity now opens on its own page with room to read it: the full evidence from the customer's own tenant — each line linking straight to where it was found (Identity, Conditional Access or Licenses) — what the project covers, an internal note, and editable hours and price.",
+      "The client proposal now carries the portal's dark, branded look, ready to print or save as PDF and hand to the customer. Every figure across Opportunities follows the currency picker in the top bar."
     ],
     "history": [
+      {
+        "tag": "portal-v20260703.141500",
+        "releasedAt": "2026-07-03",
+        "notes": [
+          "The Opportunities page is redesigned to match the rest of the portal — a sortable table, the same status tags and colour key, and a clearer rate card: choose an hourly rate or a fixed price per project type, set starting and maximum hours in plain terms, and see the rate in your chosen display currency as you type.",
+          "Every opportunity now opens on its own page with room to read it: the full evidence from the customer's own tenant — each line linking straight to where it was found (Identity, Conditional Access or Licenses) — what the project covers, an internal note, and editable hours and price.",
+          "The client proposal now carries the portal's dark, branded look, ready to print or save as PDF and hand to the customer. Every figure across Opportunities follows the currency picker in the top bar."
+        ]
+      },
       {
         "tag": "portal-v20260702.175150",
         "releasedAt": "2026-07-02",
