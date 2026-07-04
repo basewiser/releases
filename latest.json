@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260704.154900",
+    "tag": "portal-v20260704.212445",
     "releasedAt": "2026-07-04",
     "notes": [
-      "Conditional Access: a policy's Include and Exclude assignment cards now share one clean, aligned design. Every target — users, groups, roles and 'All users' — gets a proper icon (the old 'All users' asterisk is gone), and the two columns line up at matching heights.",
-      "Opportunities: the 'Outcome' line on a project, and the Won and Status tiles, now use the same squared check mark as the rest of the portal — one consistent success mark everywhere."
+      "Reports is now a full surface: three new reports join Licensing — Posture (each customer's health status, Zero Trust score, findings by severity, alerts and backup freshness, worst-first), Identity (findings by severity and category — MFA gaps, stale identities, privileged access — with how many accounts they touch), and Conditional Access (findings split into drift versus policy hygiene). Every report works the same way: pick one customer, several or the whole fleet, download an Excel-ready CSV.",
+      "The Reports overview page is now a proper hub — one card per report showing the question it answers and what's inside — and the unfinished 'Custom reports' and 'Query performance' placeholders are gone.",
+      "The guided tour's Reports step now describes exactly what reports do."
     ],
     "history": [
+      {
+        "tag": "portal-v20260704.212445",
+        "releasedAt": "2026-07-04",
+        "notes": [
+          "Reports is now a full surface: three new reports join Licensing — Posture (each customer's health status, Zero Trust score, findings by severity, alerts and backup freshness, worst-first), Identity (findings by severity and category — MFA gaps, stale identities, privileged access — with how many accounts they touch), and Conditional Access (findings split into drift versus policy hygiene). Every report works the same way: pick one customer, several or the whole fleet, download an Excel-ready CSV.",
+          "The Reports overview page is now a proper hub — one card per report showing the question it answers and what's inside — and the unfinished 'Custom reports' and 'Query performance' placeholders are gone.",
+          "The guided tour's Reports step now describes exactly what reports do."
+        ]
+      },
       {
         "tag": "portal-v20260704.154900",
         "releasedAt": "2026-07-04",
