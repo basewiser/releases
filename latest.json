@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260704.212445",
+    "tag": "portal-v20260704.230642",
     "releasedAt": "2026-07-04",
     "notes": [
-      "Reports is now a full surface: three new reports join Licensing — Posture (each customer's health status, Zero Trust score, findings by severity, alerts and backup freshness, worst-first), Identity (findings by severity and category — MFA gaps, stale identities, privileged access — with how many accounts they touch), and Conditional Access (findings split into drift versus policy hygiene). Every report works the same way: pick one customer, several or the whole fleet, download an Excel-ready CSV.",
-      "The Reports overview page is now a proper hub — one card per report showing the question it answers and what's inside — and the unfinished 'Custom reports' and 'Query performance' placeholders are gone.",
-      "The guided tour's Reports step now describes exactly what reports do."
+      "The report tables now speak the same design language as the rest of the portal: a customer's status shows as the standard status tag (like the Customers list), zero-counts render as a clean dash instead of rows of grey zeros, and only real signals carry colour — critical in red, high and drift in amber."
     ],
     "history": [
+      {
+        "tag": "portal-v20260704.230642",
+        "releasedAt": "2026-07-04",
+        "notes": [
+          "The report tables now speak the same design language as the rest of the portal: a customer's status shows as the standard status tag (like the Customers list), zero-counts render as a clean dash instead of rows of grey zeros, and only real signals carry colour — critical in red, high and drift in amber."
+        ]
+      },
       {
         "tag": "portal-v20260704.212445",
         "releasedAt": "2026-07-04",
