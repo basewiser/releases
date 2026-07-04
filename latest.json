@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260704.010247",
+    "tag": "portal-v20260704.031409",
     "releasedAt": "2026-07-04",
     "notes": [
-      "The first-run guided tour now walks through the whole portal, not just onboarding. After adding a customer and activating a seat, it points out each place you'll work — the fleet Dashboard, Identity, Conditional Access, Licenses, Backup & Restore, the Inbox, Opportunities and Reports — one short step each, so a new operator sees everything the platform does from day one. Re-open it any time from Get help → 'Take the tour'."
+      "Clearer wording when you stop billing a customer. You can cancel one tenant on its own without touching the others, and the portal now says exactly what happens: streaming stops right away, while billing stops at the end of the current period with no further charges. The same wording is corrected in the cancel confirmation, the Help center FAQ and the offboarding walkthrough."
     ],
     "history": [
+      {
+        "tag": "portal-v20260704.031409",
+        "releasedAt": "2026-07-04",
+        "notes": [
+          "Clearer wording when you stop billing a customer. You can cancel one tenant on its own without touching the others, and the portal now says exactly what happens: streaming stops right away, while billing stops at the end of the current period with no further charges. The same wording is corrected in the cancel confirmation, the Help center FAQ and the offboarding walkthrough."
+        ]
+      },
       {
         "tag": "portal-v20260704.010247",
         "releasedAt": "2026-07-04",
