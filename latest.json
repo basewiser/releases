@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260704.230642",
-    "releasedAt": "2026-07-04",
+    "tag": "portal-v20260705.225618",
+    "releasedAt": "2026-07-05",
     "notes": [
-      "The report tables now speak the same design language as the rest of the portal: a customer's status shows as the standard status tag (like the Customers list), zero-counts render as a clean dash instead of rows of grey zeros, and only real signals carry colour — critical in red, high and drift in amber."
+      "New Authentication methods view on each customer's Identity tab: see who has registered which methods — Microsoft Authenticator, FIDO2 / passkeys, Windows Hello, certificates, hardware and software OATH tokens, Temporary Access Pass, SMS and phone — plus third-party and external providers shown by name. Each user carries a strength rating, a phishing-resistant marker, admin and SSPR (self-service password reset) flags, and last sign-in. Sort any column, filter by method (including 'No methods') or strength, and search by name; large tenants open on a weakest-first triage view with Show all.",
+      "Export CSV covers every user in the tenant — not just the on-screen sample — for compliance and audits. It's sourced from Microsoft's registration report, so it stays complete even for very large tenants.",
+      "Removed the unfinished Zero Trust tab from the customer view."
     ],
     "history": [
+      {
+        "tag": "portal-v20260705.225618",
+        "releasedAt": "2026-07-05",
+        "notes": [
+          "New Authentication methods view on each customer's Identity tab: see who has registered which methods — Microsoft Authenticator, FIDO2 / passkeys, Windows Hello, certificates, hardware and software OATH tokens, Temporary Access Pass, SMS and phone — plus third-party and external providers shown by name. Each user carries a strength rating, a phishing-resistant marker, admin and SSPR (self-service password reset) flags, and last sign-in. Sort any column, filter by method (including 'No methods') or strength, and search by name; large tenants open on a weakest-first triage view with Show all.",
+          "Export CSV covers every user in the tenant — not just the on-screen sample — for compliance and audits. It's sourced from Microsoft's registration report, so it stays complete even for very large tenants.",
+          "Removed the unfinished Zero Trust tab from the customer view."
+        ]
+      },
       {
         "tag": "portal-v20260704.230642",
         "releasedAt": "2026-07-04",
@@ -593,11 +604,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260703.163256",
-    "releasedAt": "2026-07-03",
+    "tag": "backend-v20260705.225618",
+    "releasedAt": "2026-07-05",
     "notes": [
-      "The tenant Activity Log no longer records an entry for every routine identity scan — it now shows only real events (new findings, resolutions, policy and guard-mode changes, backups, commands), so the history that matters isn't buried under 'sync completed' rows.",
-      "Each tenant's Activity feed also loads only its most recent activity, keeping the page fast no matter how much history builds up."
+      "Identity scans now capture each user's registered authentication methods — including third-party and external providers by name, and newer method types automatically — along with self-service password reset registration. This powers the portal's new Authentication methods view.",
+      "A full-coverage export endpoint lists every user's method registration from Microsoft's report in one pass, so the portal's CSV export stays complete regardless of tenant size."
     ]
   }
 }
