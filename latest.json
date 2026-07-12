@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260705.225618",
-    "releasedAt": "2026-07-05",
+    "tag": "portal-v20260712.034944",
+    "releasedAt": "2026-07-12",
     "notes": [
-      "New Authentication methods view on each customer's Identity tab: see who has registered which methods — Microsoft Authenticator, FIDO2 / passkeys, Windows Hello, certificates, hardware and software OATH tokens, Temporary Access Pass, SMS and phone — plus third-party and external providers shown by name. Each user carries a strength rating, a phishing-resistant marker, admin and SSPR (self-service password reset) flags, and last sign-in. Sort any column, filter by method (including 'No methods') or strength, and search by name; large tenants open on a weakest-first triage view with Show all.",
-      "Export CSV covers every user in the tenant — not just the on-screen sample — for compliance and audits. It's sourced from Microsoft's registration report, so it stays complete even for very large tenants.",
-      "Removed the unfinished Zero Trust tab from the customer view."
+      "New Group hygiene tab on each customer's Identity page. It surfaces the groups that can be granted Microsoft Entra directory roles (role-assignable groups): the roles each one grants (or none yet), its members and owners, and whether it is Tier-0. Empty groups that still grant a privileged role, and role-assignable groups with no owner, are flagged as the ones to review first.",
+      "Renamed the Identity 'Active risk' category to 'Risky users'."
     ],
     "history": [
+      {
+        "tag": "portal-v20260712.034944",
+        "releasedAt": "2026-07-12",
+        "notes": [
+          "New Group hygiene tab on each customer's Identity page. It surfaces the groups that can be granted Microsoft Entra directory roles (role-assignable groups): the roles each one grants (or none yet), its members and owners, and whether it is Tier-0. Empty groups that still grant a privileged role, and role-assignable groups with no owner, are flagged as the ones to review first.",
+          "Renamed the Identity 'Active risk' category to 'Risky users'."
+        ]
+      },
       {
         "tag": "portal-v20260705.225618",
         "releasedAt": "2026-07-05",
@@ -604,11 +611,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260705.225618",
-    "releasedAt": "2026-07-05",
+    "tag": "backend-v20260712.034944",
+    "releasedAt": "2026-07-12",
     "notes": [
-      "Identity scans now capture each user's registered authentication methods — including third-party and external providers by name, and newer method types automatically — along with self-service password reset registration. This powers the portal's new Authentication methods view.",
-      "A full-coverage export endpoint lists every user's method registration from Microsoft's report in one pass, so the portal's CSV export stays complete regardless of tenant size."
+      "The identity scan now reports role-assignable and role-granting groups for the new Group hygiene view, including role-assignable groups that hold no role yet, each with its owner count."
     ]
   }
 }
