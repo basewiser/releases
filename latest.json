@@ -1,12 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260712.034944",
-    "releasedAt": "2026-07-12",
+    "tag": "portal-v20260713.164554",
+    "releasedAt": "2026-07-13",
     "notes": [
-      "New Group hygiene tab on each customer's Identity page. It surfaces the groups that can be granted Microsoft Entra directory roles (role-assignable groups): the roles each one grants (or none yet), its members and owners, and whether it is Tier-0. Empty groups that still grant a privileged role, and role-assignable groups with no owner, are flagged as the ones to review first.",
-      "Renamed the Identity 'Active risk' category to 'Risky users'."
+      "The Inbox incident page was redesigned for faster scanning. Case facts sit on one line under the title, three cards answer who made the change, where, and how long the exposure window was, and the policy view tells each setting's story in full sentences: baseline, while the change was live, now.",
+      "New incident timeline: events grouped by date with aligned clock times, quiet stretches shown as labelled breaks, and the sign-in check's completion as its own event. Sign-ins during the exposure window get their own card under the timeline, and an account whose name could not be resolved shows as Unresolved account with a copy button for its id, never a raw id.",
+      "The person behind a change shows with their display name, and while the audit lookup is still running the page says Identifying instead of claiming the actor is unknown.",
+      "On the Identity page's Privileged access tab, Permanent assignments now carry a red tag matching the green Eligible one, and rows line up at the same height."
     ],
     "history": [
+      {
+        "tag": "portal-v20260713.164554",
+        "releasedAt": "2026-07-13",
+        "notes": [
+          "The Inbox incident page was redesigned for faster scanning. Case facts sit on one line under the title, three cards answer who made the change, where, and how long the exposure window was, and the policy view tells each setting's story in full sentences: baseline, while the change was live, now.",
+          "New incident timeline: events grouped by date with aligned clock times, quiet stretches shown as labelled breaks, and the sign-in check's completion as its own event. Sign-ins during the exposure window get their own card under the timeline, and an account whose name could not be resolved shows as Unresolved account with a copy button for its id, never a raw id.",
+          "The person behind a change shows with their display name, and while the audit lookup is still running the page says Identifying instead of claiming the actor is unknown.",
+          "On the Identity page's Privileged access tab, Permanent assignments now carry a red tag matching the green Eligible one, and rows line up at the same height."
+        ]
+      },
       {
         "tag": "portal-v20260712.034944",
         "releasedAt": "2026-07-12",
@@ -611,10 +623,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260712.034944",
-    "releasedAt": "2026-07-12",
+    "tag": "backend-v20260713.164554",
+    "releasedAt": "2026-07-13",
     "notes": [
-      "The identity scan now reports role-assignable and role-granting groups for the new Group hygiene view, including role-assignable groups that hold no role yet, each with its owner count."
+      "Activating a PIM role for a time window can no longer raise a false permanent-assignment incident. The classification checks retry on temporary Microsoft Graph failures, an activated or time-bound assignment is never labeled permanent, and any incident raised this way earlier closes itself with an explanatory note.",
+      "Incident data now carries the actor's display name from the audit event, so the portal shows names instead of sign-in addresses."
     ]
   }
 }
