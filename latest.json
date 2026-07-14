@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260714.194204",
+    "tag": "portal-v20260714.221337",
     "releasedAt": "2026-07-14",
     "notes": [
-      "Activate tenants: the user count and the size chip now line up in their own columns. They were right-aligned together as one group, so a shorter count or a shorter chip pushed the whole pair sideways and no two rows lined up. The already-active list uses the same columns, so both lists read as one table.",
-      "The Annual option now reads \"2 months free\" instead of the abbreviated, all-caps \"2 MO FREE\"."
+      "Fixed the Alert volume chart. It was drawing a smoothed curve that spread a single alert across the whole week, so a day with no alerts could still show a peak. It now draws one bar per day matching the actual number of alerts.",
+      "Fixed the licence cost graph on the Licenses page. A day with no snapshot was recorded as zero, which dropped the line to the floor and showed a false 100% decrease. A day without a snapshot now carries the last known cost instead.",
+      "The cost sparkline now prints the dates it covers at each end, so it is clear which period the graph is from."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.221337",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "Fixed the Alert volume chart. It was drawing a smoothed curve that spread a single alert across the whole week, so a day with no alerts could still show a peak. It now draws one bar per day matching the actual number of alerts.",
+          "Fixed the licence cost graph on the Licenses page. A day with no snapshot was recorded as zero, which dropped the line to the floor and showed a false 100% decrease. A day without a snapshot now carries the last known cost instead.",
+          "The cost sparkline now prints the dates it covers at each end, so it is clear which period the graph is from."
+        ]
+      },
       {
         "tag": "portal-v20260714.194204",
         "releasedAt": "2026-07-14",
@@ -673,10 +683,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.171250",
+    "tag": "backend-v20260714.221337",
     "releasedAt": "2026-07-14",
     "notes": [
-      "Fix: in the Applications and Group hygiene findings, cells that list several values (an app's permissions or scopes, a group's roles) now show each value on its own line. They were briefly showing raw text like {\"lines\":[...]} for real tenant data. Demo data was unaffected."
+      "Fixed the Alert volume chart. It was drawing a smoothed curve that spread a single alert across the whole week, so a day with no alerts could still show a peak. It now draws one bar per day matching the actual number of alerts.",
+      "Fixed the licence cost graph on the Licenses page. A day with no snapshot was recorded as zero, which dropped the line to the floor and showed a false 100% decrease. A day without a snapshot now carries the last known cost instead.",
+      "The cost sparkline now prints the dates it covers at each end, so it is clear which period the graph is from."
     ]
   }
 }
