@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260714.172407",
+    "tag": "portal-v20260714.194204",
     "releasedAt": "2026-07-14",
     "notes": [
-      "Fleet reports now download as a formatted Excel file with a proper header row and aligned columns. You can also pick a plain CSV for European or US Excel, and amounts follow your selected currency.",
-      "Fixed the Identity and Conditional Access reports, which were showing empty counts for every customer. They now show each customer's real findings.",
-      "On a customer's Licenses tab, seat utilisation now measures assigned seats against paid seats, so the percentage lines up with the seat counts next to it."
+      "Activate tenants: the user count and the size chip now line up in their own columns. They were right-aligned together as one group, so a shorter count or a shorter chip pushed the whole pair sideways and no two rows lined up. The already-active list uses the same columns, so both lists read as one table.",
+      "The Annual option now reads \"2 months free\" instead of the abbreviated, all-caps \"2 MO FREE\"."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.194204",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "Activate tenants: the user count and the size chip now line up in their own columns. They were right-aligned together as one group, so a shorter count or a shorter chip pushed the whole pair sideways and no two rows lined up. The already-active list uses the same columns, so both lists read as one table.",
+          "The Annual option now reads \"2 months free\" instead of the abbreviated, all-caps \"2 MO FREE\"."
+        ]
+      },
       {
         "tag": "portal-v20260714.172407",
         "releasedAt": "2026-07-14",
