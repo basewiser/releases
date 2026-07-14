@@ -1,14 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260713.164554",
-    "releasedAt": "2026-07-13",
+    "tag": "portal-v20260714.013750",
+    "releasedAt": "2026-07-14",
     "notes": [
-      "The Inbox incident page was redesigned for faster scanning. Case facts sit on one line under the title, three cards answer who made the change, where, and how long the exposure window was, and the policy view tells each setting's story in full sentences: baseline, while the change was live, now.",
-      "New incident timeline: events grouped by date with aligned clock times, quiet stretches shown as labelled breaks, and the sign-in check's completion as its own event. Sign-ins during the exposure window get their own card under the timeline, and an account whose name could not be resolved shows as Unresolved account with a copy button for its id, never a raw id.",
-      "The person behind a change shows with their display name, and while the audit lookup is still running the page says Identifying instead of claiming the actor is unknown.",
-      "On the Identity page's Privileged access tab, Permanent assignments now carry a red tag matching the green Eligible one, and rows line up at the same height."
+      "The incident page now shows the policy as a side-by-side Before change and After the change comparison, so you can read what each setting was and what it became at a glance. When Guard reverted an unauthorized change, the column that is live now is outlined in green.",
+      "Include and Exclude lists open in a searchable members explorer: switch between the before and after rosters, see the accounts that were added (green) or removed (red) floated to the top, and search or filter without the list resizing as you toggle.",
+      "The sign-ins-during-the-window card now shows each sign-in method and the location it came from, and every status tag across the page shares one size and shape, differing only in colour."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.013750",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "The incident page now shows the policy as a side-by-side Before change and After the change comparison, so you can read what each setting was and what it became at a glance. When Guard reverted an unauthorized change, the column that is live now is outlined in green.",
+          "Include and Exclude lists open in a searchable members explorer: switch between the before and after rosters, see the accounts that were added (green) or removed (red) floated to the top, and search or filter without the list resizing as you toggle.",
+          "The sign-ins-during-the-window card now shows each sign-in method and the location it came from, and every status tag across the page shares one size and shape, differing only in colour."
+        ]
+      },
       {
         "tag": "portal-v20260713.164554",
         "releasedAt": "2026-07-13",
@@ -623,11 +631,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260713.164554",
-    "releasedAt": "2026-07-13",
+    "tag": "backend-v20260714.013750",
+    "releasedAt": "2026-07-14",
     "notes": [
-      "Activating a PIM role for a time window can no longer raise a false permanent-assignment incident. The classification checks retry on temporary Microsoft Graph failures, an activated or time-bound assignment is never labeled permanent, and any incident raised this way earlier closes itself with an explanatory note.",
-      "Incident data now carries the actor's display name from the audit event, so the portal shows names instead of sign-in addresses."
+      "Sign-in records gathered during an exposure window now carry the location (city and country) each sign-in came from, shown under the user on the incident page."
     ]
   }
 }
