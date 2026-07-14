@@ -658,11 +658,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.164654",
+    "tag": "backend-v20260714.171250",
     "releasedAt": "2026-07-14",
     "notes": [
-      "New Applications scanner for the Identity area, covering Entra app registrations and enterprise apps: expiring credentials, over-privileged permissions, insecure redirect URLs, risky consent grants, new credentials on privileged apps, legacy authentication flows, unverified publishers, and stale or unused apps.",
-      "Stale-app detection is false-positive-safe by design. It requires the Entra sign-in activity report (Microsoft Entra ID P1 or P2) and only flags an app when both its usage history and its credentials indicate it is dead. An app that could still authenticate, or that cannot be measured, is never flagged. No new Graph permissions are required."
+      "Fix: in the Applications and Group hygiene findings, cells that list several values (an app's permissions or scopes, a group's roles) now show each value on its own line. They were briefly showing raw text like {\"lines\":[...]} for real tenant data. Demo data was unaffected."
     ]
   }
 }
