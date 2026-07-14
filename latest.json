@@ -638,10 +638,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.104536",
+    "tag": "backend-v20260714.115049",
     "releasedAt": "2026-07-14",
     "notes": [
-      "The fleet overview sparklines and their trend tags now treat each number as a live gauge. A metric that has not changed shows a flat line and a 0% trend instead of a false dip to zero between readings, so a tenant that has been quiet no longer looks like it is swinging up and down."
+      "A newly onboarded customer now shows its real organisation name on its own. Before, if Microsoft hadn't finished granting the app permission at the moment consent was given, the customer could stay labelled \"New tenant\"; the portal now fills in the real name automatically once the permission lands.",
+      "A newly onboarded customer's size (its billing band) now measures on its own within a page load or two, instead of sometimes staying on \"Measuring…\" until the next nightly run."
     ]
   }
 }
