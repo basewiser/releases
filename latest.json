@@ -1,12 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260714.121947",
+    "tag": "portal-v20260714.164654",
     "releasedAt": "2026-07-14",
     "notes": [
-      "The \"You're connected\" confirmation page a customer sees after granting consent now shows the Basewiser logo correctly, and no longer displays a \"New tenant\" placeholder as the organisation name.",
-      "The Customers page has a Refresh button next to Add tenant. Use it to pull in a customer that just finished onboarding, or whose name and size just resolved, without reloading the whole page."
+      "The Identity area has a new Applications section. It reviews the app registrations and enterprise apps in each customer's Microsoft Entra tenant and surfaces security risks, with the same drill-down and step-by-step fixes as the other findings.",
+      "Applications covers eight checks: credentials about to expire, apps holding tenant-wide permissions, insecure sign-in redirect URLs, risky consent grants, a new secret added to a privileged app, legacy sign-in flows, apps from unverified publishers, and stale or unused apps.",
+      "Stale apps are judged conservatively so an app that is quietly still in use is never flagged. An app is only listed when both its sign-in history and its credentials say it is no longer live.",
+      "Display fix: where a finding lists several values in one cell, such as the permissions an app holds or the roles a group grants, they now stack on separate lines instead of a \"+N\" badge, and the Guest and Member labels read as plain text."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.164654",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "The Identity area has a new Applications section. It reviews the app registrations and enterprise apps in each customer's Microsoft Entra tenant and surfaces security risks, with the same drill-down and step-by-step fixes as the other findings.",
+          "Applications covers eight checks: credentials about to expire, apps holding tenant-wide permissions, insecure sign-in redirect URLs, risky consent grants, a new secret added to a privileged app, legacy sign-in flows, apps from unverified publishers, and stale or unused apps.",
+          "Stale apps are judged conservatively so an app that is quietly still in use is never flagged. An app is only listed when both its sign-in history and its credentials say it is no longer live.",
+          "Display fix: where a finding lists several values in one cell, such as the permissions an app holds or the roles a group grants, they now stack on separate lines instead of a \"+N\" badge, and the Guest and Member labels read as plain text."
+        ]
+      },
       {
         "tag": "portal-v20260714.121947",
         "releasedAt": "2026-07-14",
@@ -646,11 +658,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.115049",
+    "tag": "backend-v20260714.164654",
     "releasedAt": "2026-07-14",
     "notes": [
-      "A newly onboarded customer now shows its real organisation name on its own. Before, if Microsoft hadn't finished granting the app permission at the moment consent was given, the customer could stay labelled \"New tenant\"; the portal now fills in the real name automatically once the permission lands.",
-      "A newly onboarded customer's size (its billing band) now measures on its own within a page load or two, instead of sometimes staying on \"Measuring…\" until the next nightly run."
+      "New Applications scanner for the Identity area, covering Entra app registrations and enterprise apps: expiring credentials, over-privileged permissions, insecure redirect URLs, risky consent grants, new credentials on privileged apps, legacy authentication flows, unverified publishers, and stale or unused apps.",
+      "Stale-app detection is false-positive-safe by design. It requires the Entra sign-in activity report (Microsoft Entra ID P1 or P2) and only flags an app when both its usage history and its credentials indicate it is dead. An app that could still authenticate, or that cannot be measured, is never flagged. No new Graph permissions are required."
     ]
   }
 }
