@@ -1,14 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260714.164654",
+    "tag": "portal-v20260714.172407",
     "releasedAt": "2026-07-14",
     "notes": [
-      "The Identity area has a new Applications section. It reviews the app registrations and enterprise apps in each customer's Microsoft Entra tenant and surfaces security risks, with the same drill-down and step-by-step fixes as the other findings.",
-      "Applications covers eight checks: credentials about to expire, apps holding tenant-wide permissions, insecure sign-in redirect URLs, risky consent grants, a new secret added to a privileged app, legacy sign-in flows, apps from unverified publishers, and stale or unused apps.",
-      "Stale apps are judged conservatively so an app that is quietly still in use is never flagged. An app is only listed when both its sign-in history and its credentials say it is no longer live.",
-      "Display fix: where a finding lists several values in one cell, such as the permissions an app holds or the roles a group grants, they now stack on separate lines instead of a \"+N\" badge, and the Guest and Member labels read as plain text."
+      "Fleet reports now download as a formatted Excel file with a proper header row and aligned columns. You can also pick a plain CSV for European or US Excel, and amounts follow your selected currency.",
+      "Fixed the Identity and Conditional Access reports, which were showing empty counts for every customer. They now show each customer's real findings.",
+      "On a customer's Licenses tab, seat utilisation now measures assigned seats against paid seats, so the percentage lines up with the seat counts next to it."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.172407",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "Fleet reports now download as a formatted Excel file with a proper header row and aligned columns. You can also pick a plain CSV for European or US Excel, and amounts follow your selected currency.",
+          "Fixed the Identity and Conditional Access reports, which were showing empty counts for every customer. They now show each customer's real findings.",
+          "On a customer's Licenses tab, seat utilisation now measures assigned seats against paid seats, so the percentage lines up with the seat counts next to it."
+        ]
+      },
       {
         "tag": "portal-v20260714.164654",
         "releasedAt": "2026-07-14",
