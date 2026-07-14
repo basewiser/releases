@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260714.013750",
+    "tag": "portal-v20260714.104536",
     "releasedAt": "2026-07-14",
     "notes": [
-      "The incident page now shows the policy as a side-by-side Before change and After the change comparison, so you can read what each setting was and what it became at a glance. When Guard reverted an unauthorized change, the column that is live now is outlined in green.",
-      "Include and Exclude lists open in a searchable members explorer: switch between the before and after rosters, see the accounts that were added (green) or removed (red) floated to the top, and search or filter without the list resizing as you toggle.",
-      "The sign-ins-during-the-window card now shows each sign-in method and the location it came from, and every status tag across the page shares one size and shape, differing only in colour."
+      "On an incident, the policy membership explorer now shows the change only on the After side: Before is the plain baseline, and After marks what changed, with added accounts in green and removed accounts in red. A removed account reads as a normal row in Before and a red row in After.",
+      "Small layout fix on an incident's Live policy state: the Show technical changes and Open in tenant actions now sit at the bottom of the header, aligned with the description."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.104536",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "On an incident, the policy membership explorer now shows the change only on the After side: Before is the plain baseline, and After marks what changed, with added accounts in green and removed accounts in red. A removed account reads as a normal row in Before and a red row in After.",
+          "Small layout fix on an incident's Live policy state: the Show technical changes and Open in tenant actions now sit at the bottom of the header, aligned with the description."
+        ]
+      },
       {
         "tag": "portal-v20260714.013750",
         "releasedAt": "2026-07-14",
@@ -631,10 +638,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.013750",
+    "tag": "backend-v20260714.104536",
     "releasedAt": "2026-07-14",
     "notes": [
-      "Sign-in records gathered during an exposure window now carry the location (city and country) each sign-in came from, shown under the user on the incident page."
+      "The fleet overview sparklines and their trend tags now treat each number as a live gauge. A metric that has not changed shows a flat line and a 0% trend instead of a false dip to zero between readings, so a tenant that has been quiet no longer looks like it is swinging up and down."
     ]
   }
 }
