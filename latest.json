@@ -683,12 +683,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.221337",
+    "tag": "backend-v20260714.234927",
     "releasedAt": "2026-07-14",
     "notes": [
-      "Fixed the Alert volume chart. It was drawing a smoothed curve that spread a single alert across the whole week, so a day with no alerts could still show a peak. It now draws one bar per day matching the actual number of alerts.",
-      "Fixed the licence cost graph on the Licenses page. A day with no snapshot was recorded as zero, which dropped the line to the floor and showed a false 100% decrease. A day without a snapshot now carries the last known cost instead.",
-      "The cost sparkline now prints the dates it covers at each end, so it is clear which period the graph is from."
+      "Privileged role findings now read a role you activate through PIM (for example Global Admin for a few hours) as just-in-time access, not as a permanent assignment. It uses PIM's own assigned-versus-activated signal, so it no longer depends on a separate eligibility lookup that could come back incomplete.",
+      "The same correction applies to groups: a group whose privileged role is activated rather than permanently assigned is no longer reported as a permanent group grant."
     ]
   }
 }
