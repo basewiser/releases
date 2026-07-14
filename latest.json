@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260714.104536",
+    "tag": "portal-v20260714.121947",
     "releasedAt": "2026-07-14",
     "notes": [
-      "On an incident, the policy membership explorer now shows the change only on the After side: Before is the plain baseline, and After marks what changed, with added accounts in green and removed accounts in red. A removed account reads as a normal row in Before and a red row in After.",
-      "Small layout fix on an incident's Live policy state: the Show technical changes and Open in tenant actions now sit at the bottom of the header, aligned with the description."
+      "The \"You're connected\" confirmation page a customer sees after granting consent now shows the Basewiser logo correctly, and no longer displays a \"New tenant\" placeholder as the organisation name.",
+      "The Customers page has a Refresh button next to Add tenant. Use it to pull in a customer that just finished onboarding, or whose name and size just resolved, without reloading the whole page."
     ],
     "history": [
+      {
+        "tag": "portal-v20260714.121947",
+        "releasedAt": "2026-07-14",
+        "notes": [
+          "The \"You're connected\" confirmation page a customer sees after granting consent now shows the Basewiser logo correctly, and no longer displays a \"New tenant\" placeholder as the organisation name.",
+          "The Customers page has a Refresh button next to Add tenant. Use it to pull in a customer that just finished onboarding, or whose name and size just resolved, without reloading the whole page."
+        ]
+      },
       {
         "tag": "portal-v20260714.104536",
         "releasedAt": "2026-07-14",
