@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260715.004548",
+    "tag": "portal-v20260715.102425",
     "releasedAt": "2026-07-15",
     "notes": [
-      "On the Identity category charts, hovering a segment whose label wraps to two lines no longer nudges the legend and the rest of the card down. The number-and-label readout beside the honeycomb now keeps the same height whether it shows the one-line total or a two-line hovered label."
+      "The Inbox now flags exclusion-group changes: when an account (or a whole group) is added to a group that an enabled Conditional Access policy excludes, a case opens naming who was added, by whom, which policies no longer cover the account, and whether it signed in while outside them. The case page never suggests a backup restore for these, because a restore cannot undo a membership change; removing the member from the group closes the gap, and doing so resolves the case automatically.",
+      "Sparkline curves on the dashboard and licenses cards no longer overshoot: a flat series stays flat and a spike settles without dipping past its baseline."
     ],
     "history": [
+      {
+        "tag": "portal-v20260715.102425",
+        "releasedAt": "2026-07-15",
+        "notes": [
+          "The Inbox now flags exclusion-group changes: when an account (or a whole group) is added to a group that an enabled Conditional Access policy excludes, a case opens naming who was added, by whom, which policies no longer cover the account, and whether it signed in while outside them. The case page never suggests a backup restore for these, because a restore cannot undo a membership change; removing the member from the group closes the gap, and doing so resolves the case automatically.",
+          "Sparkline curves on the dashboard and licenses cards no longer overshoot: a flat series stays flat and a spike settles without dipping past its baseline."
+        ]
+      },
       {
         "tag": "portal-v20260715.004548",
         "releasedAt": "2026-07-15",
@@ -697,11 +706,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260714.234927",
-    "releasedAt": "2026-07-14",
+    "tag": "backend-v20260715.102425",
+    "releasedAt": "2026-07-15",
     "notes": [
-      "Privileged role findings now read a role you activate through PIM (for example Global Admin for a few hours) as just-in-time access, not as a permanent assignment. It uses PIM's own assigned-versus-activated signal, so it no longer depends on a separate eligibility lookup that could come back incomplete.",
-      "The same correction applies to groups: a group whose privileged role is activated rather than permanently assigned is no longer reported as a permanent group grant."
+      "New watcher: the scanner checks group-membership changes against your Conditional Access exclusions every few minutes. Accounts already excluded through another path (like a break-glass account excluded directly on the policy) are recognised and skipped, so the alert only fires when protection actually got weaker.",
+      "Fixed drift severity: removing protections like Require compliant device or Require password change from a policy now raises the alert severity as intended."
     ]
   }
 }
