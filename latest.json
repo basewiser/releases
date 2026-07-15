@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260715.001514",
+    "tag": "portal-v20260715.004548",
     "releasedAt": "2026-07-15",
     "notes": [
-      "The Identity category charts (Multi-factor authentication, Stale identities, Privileged access, Group hygiene) now use a fixed-size honeycomb ribbon instead of one hexagon per person. Every chart is the same compact height, so a pair of charts lines up and their totals sit on one line, and a large tenant no longer draws a wall of hexagons. The exact numbers stay in the total beside the chart and in the legend.",
-      "The chart legend now sits in two tidy columns packed to the left, so short labels no longer leave a large empty gap across the card, and a long factor name still fits without running the card's full width.",
-      "The fleet Licenses \"Total monthly cost\" card no longer prints the start and end dates under its sparkline."
+      "On the Identity category charts, hovering a segment whose label wraps to two lines no longer nudges the legend and the rest of the card down. The number-and-label readout beside the honeycomb now keeps the same height whether it shows the one-line total or a two-line hovered label."
     ],
     "history": [
+      {
+        "tag": "portal-v20260715.004548",
+        "releasedAt": "2026-07-15",
+        "notes": [
+          "On the Identity category charts, hovering a segment whose label wraps to two lines no longer nudges the legend and the rest of the card down. The number-and-label readout beside the honeycomb now keeps the same height whether it shows the one-line total or a two-line hovered label."
+        ]
+      },
       {
         "tag": "portal-v20260715.001514",
         "releasedAt": "2026-07-15",
