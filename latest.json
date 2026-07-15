@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260714.221337",
-    "releasedAt": "2026-07-14",
+    "tag": "portal-v20260715.001514",
+    "releasedAt": "2026-07-15",
     "notes": [
-      "Fixed the Alert volume chart. It was drawing a smoothed curve that spread a single alert across the whole week, so a day with no alerts could still show a peak. It now draws one bar per day matching the actual number of alerts.",
-      "Fixed the licence cost graph on the Licenses page. A day with no snapshot was recorded as zero, which dropped the line to the floor and showed a false 100% decrease. A day without a snapshot now carries the last known cost instead.",
-      "The cost sparkline now prints the dates it covers at each end, so it is clear which period the graph is from."
+      "The Identity category charts (Multi-factor authentication, Stale identities, Privileged access, Group hygiene) now use a fixed-size honeycomb ribbon instead of one hexagon per person. Every chart is the same compact height, so a pair of charts lines up and their totals sit on one line, and a large tenant no longer draws a wall of hexagons. The exact numbers stay in the total beside the chart and in the legend.",
+      "The chart legend now sits in two tidy columns packed to the left, so short labels no longer leave a large empty gap across the card, and a long factor name still fits without running the card's full width.",
+      "The fleet Licenses \"Total monthly cost\" card no longer prints the start and end dates under its sparkline."
     ],
     "history": [
+      {
+        "tag": "portal-v20260715.001514",
+        "releasedAt": "2026-07-15",
+        "notes": [
+          "The Identity category charts (Multi-factor authentication, Stale identities, Privileged access, Group hygiene) now use a fixed-size honeycomb ribbon instead of one hexagon per person. Every chart is the same compact height, so a pair of charts lines up and their totals sit on one line, and a large tenant no longer draws a wall of hexagons. The exact numbers stay in the total beside the chart and in the legend.",
+          "The chart legend now sits in two tidy columns packed to the left, so short labels no longer leave a large empty gap across the card, and a long factor name still fits without running the card's full width.",
+          "The fleet Licenses \"Total monthly cost\" card no longer prints the start and end dates under its sparkline."
+        ]
+      },
       {
         "tag": "portal-v20260714.221337",
         "releasedAt": "2026-07-14",
