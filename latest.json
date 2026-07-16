@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260715.102425",
-    "releasedAt": "2026-07-15",
+    "tag": "portal-v20260716.113818",
+    "releasedAt": "2026-07-16",
     "notes": [
-      "The Inbox now flags exclusion-group changes: when an account (or a whole group) is added to a group that an enabled Conditional Access policy excludes, a case opens naming who was added, by whom, which policies no longer cover the account, and whether it signed in while outside them. The case page never suggests a backup restore for these, because a restore cannot undo a membership change; removing the member from the group closes the gap, and doing so resolves the case automatically.",
-      "Sparkline curves on the dashboard and licenses cards no longer overshoot: a flat series stays flat and a spike settles without dipping past its baseline."
+      "New on the Identity tab under Privileged access: 'Administrators added in the last 30 days'. A rolling review list of accounts granted Global Administrator or a Tier-0 role recently, showing permanent versus eligible and whether the grant came directly or through a group. Entries drop off on their own once a grant is older than the window."
     ],
     "history": [
+      {
+        "tag": "portal-v20260716.113818",
+        "releasedAt": "2026-07-16",
+        "notes": [
+          "New on the Identity tab under Privileged access: 'Administrators added in the last 30 days'. A rolling review list of accounts granted Global Administrator or a Tier-0 role recently, showing permanent versus eligible and whether the grant came directly or through a group. Entries drop off on their own once a grant is older than the window."
+        ]
+      },
       {
         "tag": "portal-v20260715.102425",
         "releasedAt": "2026-07-15",
@@ -706,11 +712,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260715.102425",
-    "releasedAt": "2026-07-15",
+    "tag": "backend-v20260716.113818",
+    "releasedAt": "2026-07-16",
     "notes": [
-      "New watcher: the scanner checks group-membership changes against your Conditional Access exclusions every few minutes. Accounts already excluded through another path (like a break-glass account excluded directly on the policy) are recognised and skipped, so the alert only fires when protection actually got weaker.",
-      "Fixed drift severity: removing protections like Require compliant device or Require password change from a policy now raises the alert severity as intended."
+      "The identity scan now records when each admin role assignment started, using PIM's own assignment record, and reports 'Administrators added in the last 30 days' as a finding. Your own PIM activations never appear on the list — only the underlying grant, once. It also covers grants made before Basewiser was installed, which the real-time grant alert cannot see."
     ]
   }
 }
