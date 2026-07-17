@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260716.113818",
-    "releasedAt": "2026-07-16",
+    "tag": "portal-v20260717.094321",
+    "releasedAt": "2026-07-17",
     "notes": [
-      "New on the Identity tab under Privileged access: 'Administrators added in the last 30 days'. A rolling review list of accounts granted Global Administrator or a Tier-0 role recently, showing permanent versus eligible and whether the grant came directly or through a group. Entries drop off on their own once a grant is older than the window."
+      "The Identity tab's recent-admins list now covers every privileged role Microsoft flags, not just Global Admin and Tier-0, with a new Tier column showing each role's blast radius. It's renamed 'Privileged roles added in the last 30 days'.",
+      "Turning Guard off, or down from Auto-Restore to Monitor, now opens an inbox case so the change is acknowledged — not just a quiet line in the activity feed.",
+      "New inbox case when someone is added to a group that grants a privileged role (for example a group that holds Global Admin). They inherit the role with no direct role-assignment record, so the normal grant alert can't see it — this closes that gap."
     ],
     "history": [
+      {
+        "tag": "portal-v20260717.094321",
+        "releasedAt": "2026-07-17",
+        "notes": [
+          "The Identity tab's recent-admins list now covers every privileged role Microsoft flags, not just Global Admin and Tier-0, with a new Tier column showing each role's blast radius. It's renamed 'Privileged roles added in the last 30 days'.",
+          "Turning Guard off, or down from Auto-Restore to Monitor, now opens an inbox case so the change is acknowledged — not just a quiet line in the activity feed.",
+          "New inbox case when someone is added to a group that grants a privileged role (for example a group that holds Global Admin). They inherit the role with no direct role-assignment record, so the normal grant alert can't see it — this closes that gap."
+        ]
+      },
       {
         "tag": "portal-v20260716.113818",
         "releasedAt": "2026-07-16",
@@ -712,10 +723,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260716.113818",
-    "releasedAt": "2026-07-16",
+    "tag": "backend-v20260717.094321",
+    "releasedAt": "2026-07-17",
     "notes": [
-      "The identity scan now records when each admin role assignment started, using PIM's own assignment record, and reports 'Administrators added in the last 30 days' as a finding. Your own PIM activations never appear on the list — only the underlying grant, once. It also covers grants made before Basewiser was installed, which the real-time grant alert cannot see."
+      "The identity scan reports 'Privileged roles added in the last 30 days' across every Microsoft-privileged role (not only Global Admin / Tier-0), tagged by tier.",
+      "New real-time alerts: Guard turned off or downgraded, a scheduled backup failing, and a member added to a group that grants a privileged directory role. All three were previously invisible or feed-only."
     ]
   }
 }
