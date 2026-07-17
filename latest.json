@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260717.094321",
+    "tag": "portal-v20260717.102827",
     "releasedAt": "2026-07-17",
     "notes": [
-      "The Identity tab's recent-admins list now covers every privileged role Microsoft flags, not just Global Admin and Tier-0, with a new Tier column showing each role's blast radius. It's renamed 'Privileged roles added in the last 30 days'.",
-      "Turning Guard off, or down from Auto-Restore to Monitor, now opens an inbox case so the change is acknowledged — not just a quiet line in the activity feed.",
-      "New inbox case when someone is added to a group that grants a privileged role (for example a group that holds Global Admin). They inherit the role with no direct role-assignment record, so the normal grant alert can't see it — this closes that gap."
+      "New Identity finding under Risky users: 'Users flagged at risk'. It surfaces the accounts Microsoft Entra ID Protection flags as at risk, with each account's recent risky sign-ins and a one-click link into Entra to investigate. Needs Entra ID P2; on tenants without it the card stays hidden."
     ],
     "history": [
+      {
+        "tag": "portal-v20260717.102827",
+        "releasedAt": "2026-07-17",
+        "notes": [
+          "New Identity finding under Risky users: 'Users flagged at risk'. It surfaces the accounts Microsoft Entra ID Protection flags as at risk, with each account's recent risky sign-ins and a one-click link into Entra to investigate. Needs Entra ID P2; on tenants without it the card stays hidden."
+        ]
+      },
       {
         "tag": "portal-v20260717.094321",
         "releasedAt": "2026-07-17",
@@ -723,11 +728,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260717.094321",
+    "tag": "backend-v20260717.102827",
     "releasedAt": "2026-07-17",
     "notes": [
-      "The identity scan reports 'Privileged roles added in the last 30 days' across every Microsoft-privileged role (not only Global Admin / Tier-0), tagged by tier.",
-      "New real-time alerts: Guard turned off or downgraded, a scheduled backup failing, and a member added to a group that grants a privileged directory role. All three were previously invisible or feed-only."
+      "New identity scan: risky users from Microsoft Entra ID Protection, gated on Entra ID P2 and degrading quietly when the risk data isn't available or consent hasn't been granted, so it never breaks a scan."
     ]
   }
 }
