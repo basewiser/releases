@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260717.102827",
+    "tag": "portal-v20260717.215834",
     "releasedAt": "2026-07-17",
     "notes": [
-      "New Identity finding under Risky users: 'Users flagged at risk'. It surfaces the accounts Microsoft Entra ID Protection flags as at risk, with each account's recent risky sign-ins and a one-click link into Entra to investigate. Needs Entra ID P2; on tenants without it the card stays hidden."
+      "New: a monthly customer report for every tenant, opened from the tenant menu as Monthly report. One page a customer can read: the security posture score with a 30-day trend, what was caught and handled this period with response times, open cases and findings, what is monitored, and backup status.",
+      "The report is a designed document in the Basewiser brand, and Print / Save as PDF turns it into a dark A4 PDF. Every figure is read from the same live data the dashboard shows, so the report can never disagree with the portal."
     ],
     "history": [
+      {
+        "tag": "portal-v20260717.215834",
+        "releasedAt": "2026-07-17",
+        "notes": [
+          "New: a monthly customer report for every tenant, opened from the tenant menu as Monthly report. One page a customer can read: the security posture score with a 30-day trend, what was caught and handled this period with response times, open cases and findings, what is monitored, and backup status.",
+          "The report is a designed document in the Basewiser brand, and Print / Save as PDF turns it into a dark A4 PDF. Every figure is read from the same live data the dashboard shows, so the report can never disagree with the portal."
+        ]
+      },
       {
         "tag": "portal-v20260717.102827",
         "releasedAt": "2026-07-17",
@@ -728,10 +737,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260717.102827",
+    "tag": "backend-v20260717.215834",
     "releasedAt": "2026-07-17",
     "notes": [
-      "New identity scan: risky users from Microsoft Entra ID Protection, gated on Entra ID P2 and degrading quietly when the risk data isn't available or consent hasn't been granted, so it never breaks a scan."
+      "New endpoint: each tenant can now assemble its monthly customer report (score trend, period activity with response times, open findings and cases, coverage and backup status) from the same stores the dashboard reads."
     ]
   }
 }
