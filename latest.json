@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260717.215834",
-    "releasedAt": "2026-07-17",
+    "tag": "portal-v20260718.230330",
+    "releasedAt": "2026-07-18",
     "notes": [
-      "New: a monthly customer report for every tenant, opened from the tenant menu as Monthly report. One page a customer can read: the security posture score with a 30-day trend, what was caught and handled this period with response times, open cases and findings, what is monitored, and backup status.",
-      "The report is a designed document in the Basewiser brand, and Print / Save as PDF turns it into a dark A4 PDF. Every figure is read from the same live data the dashboard shows, so the report can never disagree with the portal."
+      "The fleet tables now share one consistent design: Identity Health, Conditional Access, Backup & Restore, Opportunities and the Billing Subscription and Invoices tables use the same column layout, sorting and spacing, so every list reads and behaves the same way.",
+      "Fixed the Invoices table alignment — the amount now shows its currency right beside the value, and the Amount, Status and Receipt columns sit neatly together instead of drifting apart on wide screens."
     ],
     "history": [
+      {
+        "tag": "portal-v20260718.230330",
+        "releasedAt": "2026-07-18",
+        "notes": [
+          "The fleet tables now share one consistent design: Identity Health, Conditional Access, Backup & Restore, Opportunities and the Billing Subscription and Invoices tables use the same column layout, sorting and spacing, so every list reads and behaves the same way.",
+          "Fixed the Invoices table alignment — the amount now shows its currency right beside the value, and the Amount, Status and Receipt columns sit neatly together instead of drifting apart on wide screens."
+        ]
+      },
       {
         "tag": "portal-v20260717.215834",
         "releasedAt": "2026-07-17",
