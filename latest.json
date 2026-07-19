@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260719.192440",
+    "tag": "portal-v20260719.210420",
     "releasedAt": "2026-07-19",
     "notes": [
-      "New Tenant settings category in Identity: flags user consent open to all apps, guest invites open to everyone, self-service app registration, and tenants running with no Conditional Access and no security defaults.",
-      "Privileged access now also flags guest accounts holding privileged roles and AD-synced accounts holding privileged roles (cloud-only admin guidance)."
+      "Demo mode now previews the full Identity detection set, including the new Tenant settings findings and the guest / AD-synced privileged-account cards, so evaluations show everything the scanners can find."
     ],
     "history": [
+      {
+        "tag": "portal-v20260719.210420",
+        "releasedAt": "2026-07-19",
+        "notes": [
+          "Demo mode now previews the full Identity detection set, including the new Tenant settings findings and the guest / AD-synced privileged-account cards, so evaluations show everything the scanners can find."
+        ]
+      },
       {
         "tag": "portal-v20260719.192440",
         "releasedAt": "2026-07-19",
