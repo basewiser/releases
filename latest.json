@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260718.230330",
-    "releasedAt": "2026-07-18",
+    "tag": "portal-v20260719.123429",
+    "releasedAt": "2026-07-19",
     "notes": [
-      "The fleet tables now share one consistent design: Identity Health, Conditional Access, Backup & Restore, Opportunities and the Billing Subscription and Invoices tables use the same column layout, sorting and spacing, so every list reads and behaves the same way.",
-      "Fixed the Invoices table alignment — the amount now shows its currency right beside the value, and the Amount, Status and Receipt columns sit neatly together instead of drifting apart on wide screens."
+      "The fleet Identity Health list now shows each finding's count in parentheses after its name (for example \"Stale guest accounts (12)\"), matching the Conditional Access list so the two read the same way."
     ],
     "history": [
+      {
+        "tag": "portal-v20260719.123429",
+        "releasedAt": "2026-07-19",
+        "notes": [
+          "The fleet Identity Health list now shows each finding's count in parentheses after its name (for example \"Stale guest accounts (12)\"), matching the Conditional Access list so the two read the same way."
+        ]
+      },
       {
         "tag": "portal-v20260718.230330",
         "releasedAt": "2026-07-18",
