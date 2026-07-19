@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260719.123429",
+    "tag": "portal-v20260719.192440",
     "releasedAt": "2026-07-19",
     "notes": [
-      "The fleet Identity Health list now shows each finding's count in parentheses after its name (for example \"Stale guest accounts (12)\"), matching the Conditional Access list so the two read the same way."
+      "New Tenant settings category in Identity: flags user consent open to all apps, guest invites open to everyone, self-service app registration, and tenants running with no Conditional Access and no security defaults.",
+      "Privileged access now also flags guest accounts holding privileged roles and AD-synced accounts holding privileged roles (cloud-only admin guidance)."
     ],
     "history": [
+      {
+        "tag": "portal-v20260719.192440",
+        "releasedAt": "2026-07-19",
+        "notes": [
+          "New Tenant settings category in Identity: flags user consent open to all apps, guest invites open to everyone, self-service app registration, and tenants running with no Conditional Access and no security defaults.",
+          "Privileged access now also flags guest accounts holding privileged roles and AD-synced accounts holding privileged roles (cloud-only admin guidance)."
+        ]
+      },
       {
         "tag": "portal-v20260719.123429",
         "releasedAt": "2026-07-19",
@@ -751,10 +760,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260717.215834",
-    "releasedAt": "2026-07-17",
+    "tag": "backend-v20260719.192440",
+    "releasedAt": "2026-07-19",
     "notes": [
-      "New endpoint: each tenant can now assemble its monthly customer report (score trend, period activity with response times, open findings and cases, coverage and backup status) from the same stores the dashboard reads."
+      "New tenant-settings scanner: user consent, guest invites, app registration and the no-CA/no-security-defaults baseline — each finding clears automatically once the setting is fixed.",
+      "Privilege sweep adds guest-with-privileged-role and hybrid-synced-privileged findings, sliced from the existing role inventory (no extra Graph walks)."
     ]
   }
 }
