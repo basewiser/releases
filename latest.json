@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260719.210420",
-    "releasedAt": "2026-07-19",
+    "tag": "portal-v20260721.011329",
+    "releasedAt": "2026-07-21",
     "notes": [
-      "Demo mode now previews the full Identity detection set, including the new Tenant settings findings and the guest / AD-synced privileged-account cards, so evaluations show everything the scanners can find."
+      "Redesigned tenant sidebar with section navigation, inline customer switcher with health indicators, and wider page layouts for larger monitors."
     ],
     "history": [
+      {
+        "tag": "portal-v20260721.011329",
+        "releasedAt": "2026-07-21",
+        "notes": [
+          "Redesigned tenant sidebar with section navigation, inline customer switcher with health indicators, and wider page layouts for larger monitors."
+        ]
+      },
       {
         "tag": "portal-v20260719.210420",
         "releasedAt": "2026-07-19",
