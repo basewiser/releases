@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260721.011329",
+    "tag": "portal-v20260721.222332",
     "releasedAt": "2026-07-21",
     "notes": [
-      "Redesigned tenant sidebar with section navigation, inline customer switcher with health indicators, and wider page layouts for larger monitors."
+      "The onboarding tour now follows a logical first-run flow and highlights the currency and timezone controls in the header bar. When the account has no tenants yet, a demo row appears during the tour so every step has something to point at.",
+      "Report pages now use the same full width as the rest of the portal. The pipeline report is renamed to Opportunities.",
+      "Feature descriptions across the portal and marketing site now reflect the full scanning scope — including application security, auth weaknesses, and tenant hardening."
     ],
     "history": [
+      {
+        "tag": "portal-v20260721.222332",
+        "releasedAt": "2026-07-21",
+        "notes": [
+          "The onboarding tour now follows a logical first-run flow and highlights the currency and timezone controls in the header bar. When the account has no tenants yet, a demo row appears during the tour so every step has something to point at.",
+          "Report pages now use the same full width as the rest of the portal. The pipeline report is renamed to Opportunities.",
+          "Feature descriptions across the portal and marketing site now reflect the full scanning scope — including application security, auth weaknesses, and tenant hardening."
+        ]
+      },
       {
         "tag": "portal-v20260721.011329",
         "releasedAt": "2026-07-21",
