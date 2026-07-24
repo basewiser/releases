@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260724.170840",
+    "tag": "portal-v20260724.181453",
     "releasedAt": "2026-07-24",
     "notes": [
-      "Fixed a false \"A backend update is available\" banner that kept showing for a backend version you already run. The portal now reads the installed backend version reliably.",
-      "Installing an update now waits until the new version is actually serving before it finishes, instead of reloading on a timer."
+      "The first-run experience now runs in the right order. You finish naming your identity and setting up the Basewiser app first, and only then does the welcome and guided tour appear. Before, the tour could be missed behind the setup screen.",
+      "The setup screen is clearer. It now says your display name can be changed later in Settings, and explains that the Basewiser app is the single app each customer you onboard consents to, which is what lets Basewiser read their tenant data.",
+      "Guided tour polish. The step footer uses a progress bar instead of a row of dots that overflowed the card, the Back and Next buttons now match, and the highlight around each step sits a little tighter."
     ],
     "history": [
+      {
+        "tag": "portal-v20260724.181453",
+        "releasedAt": "2026-07-24",
+        "notes": [
+          "The first-run experience now runs in the right order. You finish naming your identity and setting up the Basewiser app first, and only then does the welcome and guided tour appear. Before, the tour could be missed behind the setup screen.",
+          "The setup screen is clearer. It now says your display name can be changed later in Settings, and explains that the Basewiser app is the single app each customer you onboard consents to, which is what lets Basewiser read their tenant data.",
+          "Guided tour polish. The step footer uses a progress bar instead of a row of dots that overflowed the card, the Back and Next buttons now match, and the highlight around each step sits a little tighter."
+        ]
+      },
       {
         "tag": "portal-v20260724.170840",
         "releasedAt": "2026-07-24",
