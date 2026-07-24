@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260724.182709",
+    "tag": "portal-v20260724.193617",
     "releasedAt": "2026-07-24",
     "notes": [
-      "During the guided tour, when you have no customers yet, a sample customer row now appears again so the 'Size and price' step has something to point at. It could go missing when the tour opened the Customers page for you."
+      "The prompt shown when no customer is streaming data yet is reworked. It drops the word 'seat' and lays out the real two steps, add a customer then activate it, lighting the step you're on. With no customers yet it points you to add your first one; once one is onboarded it points you straight to activating it.",
+      "That banner can now be dismissed just for the current session and comes back next time you open the portal, so the only next step is never hidden for good."
     ],
     "history": [
+      {
+        "tag": "portal-v20260724.193617",
+        "releasedAt": "2026-07-24",
+        "notes": [
+          "The prompt shown when no customer is streaming data yet is reworked. It drops the word 'seat' and lays out the real two steps, add a customer then activate it, lighting the step you're on. With no customers yet it points you to add your first one; once one is onboarded it points you straight to activating it.",
+          "That banner can now be dismissed just for the current session and comes back next time you open the portal, so the only next step is never hidden for good."
+        ]
+      },
       {
         "tag": "portal-v20260724.182709",
         "releasedAt": "2026-07-24",
