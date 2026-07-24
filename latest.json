@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260721.222332",
-    "releasedAt": "2026-07-21",
+    "tag": "portal-v20260724.170840",
+    "releasedAt": "2026-07-24",
     "notes": [
-      "The onboarding tour now follows a logical first-run flow and highlights the currency and timezone controls in the header bar. When the account has no tenants yet, a demo row appears during the tour so every step has something to point at.",
-      "Report pages now use the same full width as the rest of the portal. The pipeline report is renamed to Opportunities.",
-      "Feature descriptions across the portal and marketing site now reflect the full scanning scope — including application security, auth weaknesses, and tenant hardening."
+      "Fixed a false \"A backend update is available\" banner that kept showing for a backend version you already run. The portal now reads the installed backend version reliably.",
+      "Installing an update now waits until the new version is actually serving before it finishes, instead of reloading on a timer."
     ],
     "history": [
+      {
+        "tag": "portal-v20260724.170840",
+        "releasedAt": "2026-07-24",
+        "notes": [
+          "Fixed a false \"A backend update is available\" banner that kept showing for a backend version you already run. The portal now reads the installed backend version reliably.",
+          "Installing an update now waits until the new version is actually serving before it finishes, instead of reloading on a timer."
+        ]
+      },
       {
         "tag": "portal-v20260721.222332",
         "releasedAt": "2026-07-21",
