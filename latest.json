@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260724.181453",
+    "tag": "portal-v20260724.182709",
     "releasedAt": "2026-07-24",
     "notes": [
-      "The first-run experience now runs in the right order. You finish naming your identity and setting up the Basewiser app first, and only then does the welcome and guided tour appear. Before, the tour could be missed behind the setup screen.",
-      "The setup screen is clearer. It now says your display name can be changed later in Settings, and explains that the Basewiser app is the single app each customer you onboard consents to, which is what lets Basewiser read their tenant data.",
-      "Guided tour polish. The step footer uses a progress bar instead of a row of dots that overflowed the card, the Back and Next buttons now match, and the highlight around each step sits a little tighter."
+      "During the guided tour, when you have no customers yet, a sample customer row now appears again so the 'Size and price' step has something to point at. It could go missing when the tour opened the Customers page for you."
     ],
     "history": [
+      {
+        "tag": "portal-v20260724.182709",
+        "releasedAt": "2026-07-24",
+        "notes": [
+          "During the guided tour, when you have no customers yet, a sample customer row now appears again so the 'Size and price' step has something to point at. It could go missing when the tour opened the Customers page for you."
+        ]
+      },
       {
         "tag": "portal-v20260724.181453",
         "releasedAt": "2026-07-24",
