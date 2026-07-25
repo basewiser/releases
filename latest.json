@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260724.193617",
-    "releasedAt": "2026-07-24",
+    "tag": "portal-v20260725.143606",
+    "releasedAt": "2026-07-25",
     "notes": [
-      "The prompt shown when no customer is streaming data yet is reworked. It drops the word 'seat' and lays out the real two steps, add a customer then activate it, lighting the step you're on. With no customers yet it points you to add your first one; once one is onboarded it points you straight to activating it.",
-      "That banner can now be dismissed just for the current session and comes back next time you open the portal, so the only next step is never hidden for good."
+      "Adding a customer now asks for consent once, for the single Basewiser app. The tenant page used to run three separate checks, and a check that failed could show a consent warning on a customer that was actually fine.",
+      "The 24 hour graphs now draw one point per hour instead of eight, so the line matches the range you picked.",
+      "The activity feed filter is now called Area instead of Bundle."
     ],
     "history": [
+      {
+        "tag": "portal-v20260725.143606",
+        "releasedAt": "2026-07-25",
+        "notes": [
+          "Adding a customer now asks for consent once, for the single Basewiser app. The tenant page used to run three separate checks, and a check that failed could show a consent warning on a customer that was actually fine.",
+          "The 24 hour graphs now draw one point per hour instead of eight, so the line matches the range you picked.",
+          "The activity feed filter is now called Area instead of Bundle."
+        ]
+      },
       {
         "tag": "portal-v20260724.193617",
         "releasedAt": "2026-07-24",
@@ -815,11 +825,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260719.192440",
-    "releasedAt": "2026-07-19",
+    "tag": "backend-v20260725.143606",
+    "releasedAt": "2026-07-25",
     "notes": [
-      "New tenant-settings scanner: user consent, guest invites, app registration and the no-CA/no-security-defaults baseline — each finding clears automatically once the setting is fixed.",
-      "Privilege sweep adds guest-with-privileged-role and hybrid-synced-privileged findings, sliced from the existing role inventory (no extra Graph walks)."
+      "The nightly identity scan now runs. On deployments set up the current way it was covering no customers at all, so identity findings were never refreshed in the background.",
+      "Every paid customer now gets the full detail scan. Some were quietly limited before: auto restore did not run, drift showed raw ids instead of names, and alerts did not say who made the change."
     ]
   }
 }
