@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260725.143606",
-    "releasedAt": "2026-07-25",
+    "tag": "portal-v20260727.223920",
+    "releasedAt": "2026-07-27",
     "notes": [
-      "Adding a customer now asks for consent once, for the single Basewiser app. The tenant page used to run three separate checks, and a check that failed could show a consent warning on a customer that was actually fine.",
-      "The 24 hour graphs now draw one point per hour instead of eight, so the line matches the range you picked.",
-      "The activity feed filter is now called Area instead of Bundle."
+      "A policy's History tab now shows its real change log. It used to ask for a record the backend never served, so the tab stayed empty. A renamed policy keeps its history, and a deleted policy shows the deletion instead of quietly dropping out.",
+      "Closed cases no longer push open ones off the Inbox list, and the Closed tab now says when it is only showing the most recent cases.",
+      "The portal now has a proper error page with a retry, and a proper Not found page. A customer that is missing is reported as missing and a backend that is down is reported as down, instead of the two looking the same."
     ],
     "history": [
+      {
+        "tag": "portal-v20260727.223920",
+        "releasedAt": "2026-07-27",
+        "notes": [
+          "A policy's History tab now shows its real change log. It used to ask for a record the backend never served, so the tab stayed empty. A renamed policy keeps its history, and a deleted policy shows the deletion instead of quietly dropping out.",
+          "Closed cases no longer push open ones off the Inbox list, and the Closed tab now says when it is only showing the most recent cases.",
+          "The portal now has a proper error page with a retry, and a proper Not found page. A customer that is missing is reported as missing and a backend that is down is reported as down, instead of the two looking the same."
+        ]
+      },
       {
         "tag": "portal-v20260725.143606",
         "releasedAt": "2026-07-25",
@@ -825,11 +834,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260725.143606",
-    "releasedAt": "2026-07-25",
+    "tag": "backend-v20260727.223920",
+    "releasedAt": "2026-07-27",
     "notes": [
-      "The nightly identity scan now runs. On deployments set up the current way it was covering no customers at all, so identity findings were never refreshed in the background.",
-      "Every paid customer now gets the full detail scan. Some were quietly limited before: auto restore did not run, drift showed raw ids instead of names, and alerts did not say who made the change."
+      "The policy change log is now served, which is what fills a policy's History tab.",
+      "Detection no longer slows down as you add customers. The guard scan used to check tenants one after another, so the more you managed the longer each round took.",
+      "A customer without an active seat no longer has its findings counted in the fleet totals or its cases shown in the Inbox."
     ]
   }
 }
