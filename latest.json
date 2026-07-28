@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260727.223920",
-    "releasedAt": "2026-07-27",
+    "tag": "portal-v20260728.001454",
+    "releasedAt": "2026-07-28",
     "notes": [
-      "A policy's History tab now shows its real change log. It used to ask for a record the backend never served, so the tab stayed empty. A renamed policy keeps its history, and a deleted policy shows the deletion instead of quietly dropping out.",
-      "Closed cases no longer push open ones off the Inbox list, and the Closed tab now says when it is only showing the most recent cases.",
-      "The portal now has a proper error page with a retry, and a proper Not found page. A customer that is missing is reported as missing and a backend that is down is reported as down, instead of the two looking the same."
+      "A customer's Health pill now shows how serious their open cases are. A customer with one critical case no longer looks the same as one with only minor ones."
     ],
     "history": [
+      {
+        "tag": "portal-v20260728.001454",
+        "releasedAt": "2026-07-28",
+        "notes": [
+          "A customer's Health pill now shows how serious their open cases are. A customer with one critical case no longer looks the same as one with only minor ones."
+        ]
+      },
       {
         "tag": "portal-v20260727.223920",
         "releasedAt": "2026-07-27",
@@ -834,12 +839,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260727.223920",
-    "releasedAt": "2026-07-27",
+    "tag": "backend-v20260728.001454",
+    "releasedAt": "2026-07-28",
     "notes": [
-      "The policy change log is now served, which is what fills a policy's History tab.",
-      "Detection no longer slows down as you add customers. The guard scan used to check tenants one after another, so the more you managed the longer each round took.",
-      "A customer without an active seat no longer has its findings counted in the fleet totals or its cases shown in the Inbox."
+      "Health scoring now counts how serious a customer's open cases are, not only how many there are."
     ]
   }
 }
