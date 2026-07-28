@@ -839,10 +839,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260728.001454",
+    "tag": "backend-v20260728.003918",
     "releasedAt": "2026-07-28",
     "notes": [
-      "Health scoring now counts how serious a customer's open cases are, not only how many there are."
+      "Activating a customer now works on a brand new install. The price for each size band is read straight from Basewiser's Stripe account, so there is nothing to set up by hand after install."
     ]
   }
 }
