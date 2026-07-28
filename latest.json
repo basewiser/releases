@@ -839,10 +839,10 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260728.003918",
+    "tag": "backend-v20260728.010754",
     "releasedAt": "2026-07-28",
     "notes": [
-      "Activating a customer now works on a brand new install. The price for each size band is read straight from Basewiser's Stripe account, so there is nothing to set up by hand after install."
+      "A brand new install no longer shows a false 'a backend update is available' straight after setup. The backend now reports its own version instead of being told which version it is at install time."
     ]
   }
 }
