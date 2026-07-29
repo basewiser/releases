@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260729.123541",
+    "tag": "portal-v20260729.171834",
     "releasedAt": "2026-07-29",
     "notes": [
-      "Housekeeping only. The sample customers and email addresses used in the built-in demo data are now made-up names. Nothing about how the portal works has changed."
+      "The Inbox list is rebuilt. Cases are now grouped under Critical, High, Medium and Low headings, each row carries at most one status word instead of up to four coloured tags, and Category is a sortable column. The column header stays put as you scroll.",
+      "By customer now ranks customers by how much work they hold, not just by their single worst case, so a customer with a pile of medium cases no longer sits below one with a single high. A summary at the top shows where the work is and jumps you to any customer.",
+      "Case titles now start with what changed rather than an account name, so a title reads \"Global Administrator granted to ola@example.com\" instead of leading with the address. Only new cases use the new wording."
     ],
     "history": [
+      {
+        "tag": "portal-v20260729.171834",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "The Inbox list is rebuilt. Cases are now grouped under Critical, High, Medium and Low headings, each row carries at most one status word instead of up to four coloured tags, and Category is a sortable column. The column header stays put as you scroll.",
+          "By customer now ranks customers by how much work they hold, not just by their single worst case, so a customer with a pile of medium cases no longer sits below one with a single high. A summary at the top shows where the work is and jumps you to any customer.",
+          "Case titles now start with what changed rather than an account name, so a title reads \"Global Administrator granted to ola@example.com\" instead of leading with the address. Only new cases use the new wording."
+        ]
+      },
       {
         "tag": "portal-v20260729.123541",
         "releasedAt": "2026-07-29",
@@ -864,10 +875,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260728.010754",
-    "releasedAt": "2026-07-28",
+    "tag": "backend-v20260729.171834",
+    "releasedAt": "2026-07-29",
     "notes": [
-      "A brand new install no longer shows a false 'a backend update is available' straight after setup. The backend now reports its own version instead of being told which version it is at install time."
+      "New cases are now titled by what changed rather than by the account it happened to, so the Inbox reads consistently. Existing cases keep the wording they were created with.",
+      "Multi-factor and authentication-weakness findings now clear once they are fixed, instead of staying on the list after the problem is gone."
     ]
   }
 }
