@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260729.171834",
+    "tag": "portal-v20260729.173215",
     "releasedAt": "2026-07-29",
     "notes": [
-      "The Inbox list is rebuilt. Cases are now grouped under Critical, High, Medium and Low headings, each row carries at most one status word instead of up to four coloured tags, and Category is a sortable column. The column header stays put as you scroll.",
-      "By customer now ranks customers by how much work they hold, not just by their single worst case, so a customer with a pile of medium cases no longer sits below one with a single high. A summary at the top shows where the work is and jumps you to any customer.",
-      "Case titles now start with what changed rather than an account name, so a title reads \"Global Administrator granted to ola@example.com\" instead of leading with the address. Only new cases use the new wording."
+      "The portal now calls a piece of work you triage a case everywhere, instead of switching between case and incident depending on the screen. The Dashboard's open-work table and the search box wording follow the Inbox."
     ],
     "history": [
+      {
+        "tag": "portal-v20260729.173215",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "The portal now calls a piece of work you triage a case everywhere, instead of switching between case and incident depending on the screen. The Dashboard's open-work table and the search box wording follow the Inbox."
+        ]
+      },
       {
         "tag": "portal-v20260729.171834",
         "releasedAt": "2026-07-29",
