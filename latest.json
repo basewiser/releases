@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260728.001454",
-    "releasedAt": "2026-07-28",
+    "tag": "portal-v20260729.005111",
+    "releasedAt": "2026-07-29",
     "notes": [
-      "A customer's Health pill now shows how serious their open cases are. A customer with one critical case no longer looks the same as one with only minor ones."
+      "Setting up the portal is now one flow instead of two separate windows that competed over which showed first. It greets you, asks only for the things still missing, and hands you to the tour at the end.",
+      "The tour now starts when you finish setup. It used to open behind the setup window, so it looked like nothing happened.",
+      "You pick your currency and timezone during setup, so prices and times read the way you expect from the first screen."
     ],
     "history": [
+      {
+        "tag": "portal-v20260729.005111",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "Setting up the portal is now one flow instead of two separate windows that competed over which showed first. It greets you, asks only for the things still missing, and hands you to the tour at the end.",
+          "The tour now starts when you finish setup. It used to open behind the setup window, so it looked like nothing happened.",
+          "You pick your currency and timezone during setup, so prices and times read the way you expect from the first screen."
+        ]
+      },
       {
         "tag": "portal-v20260728.001454",
         "releasedAt": "2026-07-28",
