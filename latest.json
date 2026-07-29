@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260729.173215",
+    "tag": "portal-v20260729.174459",
     "releasedAt": "2026-07-29",
     "notes": [
-      "The portal now calls a piece of work you triage a case everywhere, instead of switching between case and incident depending on the screen. The Dashboard's open-work table and the search box wording follow the Inbox."
+      "Severity now looks the same everywhere. Identity, Conditional Access, the per-customer finding tabs, the Dashboard and the monthly customer report all show a small colour square and the word, matching the Inbox, instead of a filled coloured tag. In a list where every row has a severity, the filled tags drowned each other out."
     ],
     "history": [
+      {
+        "tag": "portal-v20260729.174459",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "Severity now looks the same everywhere. Identity, Conditional Access, the per-customer finding tabs, the Dashboard and the monthly customer report all show a small colour square and the word, matching the Inbox, instead of a filled coloured tag. In a list where every row has a severity, the filled tags drowned each other out."
+        ]
+      },
       {
         "tag": "portal-v20260729.173215",
         "releasedAt": "2026-07-29",
