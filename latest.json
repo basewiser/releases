@@ -1,13 +1,27 @@
 {
   "portal": {
-    "tag": "portal-v20260729.005111",
+    "tag": "portal-v20260729.123541",
     "releasedAt": "2026-07-29",
     "notes": [
-      "Setting up the portal is now one flow instead of two separate windows that competed over which showed first. It greets you, asks only for the things still missing, and hands you to the tour at the end.",
-      "The tour now starts when you finish setup. It used to open behind the setup window, so it looked like nothing happened.",
-      "You pick your currency and timezone during setup, so prices and times read the way you expect from the first screen."
+      "Housekeeping only. The sample customers and email addresses used in the built-in demo data are now made-up names. Nothing about how the portal works has changed."
     ],
     "history": [
+      {
+        "tag": "portal-v20260729.123541",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "Housekeeping only. The sample customers and email addresses used in the built-in demo data are now made-up names. Nothing about how the portal works has changed."
+        ]
+      },
+      {
+        "tag": "portal-v20260729.005111",
+        "releasedAt": "2026-07-29",
+        "notes": [
+          "Setting up the portal is now one flow instead of two separate windows that competed over which showed first. It greets you, asks only for the things still missing, and hands you to the tour at the end.",
+          "The tour now starts when you finish setup. It used to open behind the setup window, so it looked like nothing happened.",
+          "You pick your currency and timezone during setup, so prices and times read the way you expect from the first screen."
+        ]
+      },
       {
         "tag": "portal-v20260729.005111",
         "releasedAt": "2026-07-29",
