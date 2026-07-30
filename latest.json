@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260730.054449",
+    "tag": "portal-v20260730.172019",
     "releasedAt": "2026-07-30",
     "notes": [
-      "Every list now leads with its verdict, and the column header stays put as you scroll. Identity and Conditional Access lead with severity, Licenses with how much of its spend is wasted (Heavy, Some, Minor, Clean), Opportunities with how strong the case is (Strong, Good, Thin). The Inbox no longer splits cases into severity headings: severity is a sortable column instead, so a critical case can never sit inside a collapsed section.",
-      "Fixed a Licenses data-trust hole. A customer whose license data failed to load used to render as an ordinary row with nothing to reclaim, and its missing spend was quietly added into the fleet total. The page now says when a customer's data is incomplete, and the totals say so too.",
-      "Tidier list pages. In the By customer views the per-customer severity tally now sits next to the customer name instead of floating out over the other columns, the explanatory paragraph above the Licenses and Opportunities tables is gone, and the By severity / By customer switch no longer stretches across the page."
+      "The currency and timezone pickers are redesigned, and the two places they appear — the top bar and the first-run setup — now use the same one. Region headings stay put while you scroll the timezone list, each row carries its UTC offset as a small badge, and the raw zone name (\"Europe/Oslo\") no longer sits under every city: it is stated once at the foot of the list instead.",
+      "In first-run setup, \"How you read the portal\" now shows currency and timezone as two aligned rows. The timezone dropdown used to run wider than the currency buttons above it, and the note about rates being indicative was hidden behind a hover — both are fixed."
     ],
     "history": [
+      {
+        "tag": "portal-v20260730.172019",
+        "releasedAt": "2026-07-30",
+        "notes": [
+          "The currency and timezone pickers are redesigned, and the two places they appear — the top bar and the first-run setup — now use the same one. Region headings stay put while you scroll the timezone list, each row carries its UTC offset as a small badge, and the raw zone name (\"Europe/Oslo\") no longer sits under every city: it is stated once at the foot of the list instead.",
+          "In first-run setup, \"How you read the portal\" now shows currency and timezone as two aligned rows. The timezone dropdown used to run wider than the currency buttons above it, and the note about rates being indicative was hidden behind a hover — both are fixed."
+        ]
+      },
       {
         "tag": "portal-v20260730.054449",
         "releasedAt": "2026-07-30",
