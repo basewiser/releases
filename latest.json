@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260729.174459",
-    "releasedAt": "2026-07-29",
+    "tag": "portal-v20260730.054449",
+    "releasedAt": "2026-07-30",
     "notes": [
-      "Severity now looks the same everywhere. Identity, Conditional Access, the per-customer finding tabs, the Dashboard and the monthly customer report all show a small colour square and the word, matching the Inbox, instead of a filled coloured tag. In a list where every row has a severity, the filled tags drowned each other out."
+      "Every list now leads with its verdict, and the column header stays put as you scroll. Identity and Conditional Access lead with severity, Licenses with how much of its spend is wasted (Heavy, Some, Minor, Clean), Opportunities with how strong the case is (Strong, Good, Thin). The Inbox no longer splits cases into severity headings: severity is a sortable column instead, so a critical case can never sit inside a collapsed section.",
+      "Fixed a Licenses data-trust hole. A customer whose license data failed to load used to render as an ordinary row with nothing to reclaim, and its missing spend was quietly added into the fleet total. The page now says when a customer's data is incomplete, and the totals say so too.",
+      "Tidier list pages. In the By customer views the per-customer severity tally now sits next to the customer name instead of floating out over the other columns, the explanatory paragraph above the Licenses and Opportunities tables is gone, and the By severity / By customer switch no longer stretches across the page."
     ],
     "history": [
+      {
+        "tag": "portal-v20260730.054449",
+        "releasedAt": "2026-07-30",
+        "notes": [
+          "Every list now leads with its verdict, and the column header stays put as you scroll. Identity and Conditional Access lead with severity, Licenses with how much of its spend is wasted (Heavy, Some, Minor, Clean), Opportunities with how strong the case is (Strong, Good, Thin). The Inbox no longer splits cases into severity headings: severity is a sortable column instead, so a critical case can never sit inside a collapsed section.",
+          "Fixed a Licenses data-trust hole. A customer whose license data failed to load used to render as an ordinary row with nothing to reclaim, and its missing spend was quietly added into the fleet total. The page now says when a customer's data is incomplete, and the totals say so too.",
+          "Tidier list pages. In the By customer views the per-customer severity tally now sits next to the customer name instead of floating out over the other columns, the explanatory paragraph above the Licenses and Opportunities tables is gone, and the By severity / By customer switch no longer stretches across the page."
+        ]
+      },
       {
         "tag": "portal-v20260729.174459",
         "releasedAt": "2026-07-29",
