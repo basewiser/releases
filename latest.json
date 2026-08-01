@@ -1,12 +1,28 @@
 {
   "portal": {
-    "tag": "portal-v20260730.172019",
-    "releasedAt": "2026-07-30",
+    "tag": "portal-v20260801.135230",
+    "releasedAt": "2026-08-01",
     "notes": [
-      "The currency and timezone pickers are redesigned, and the two places they appear — the top bar and the first-run setup — now use the same one. Region headings stay put while you scroll the timezone list, each row carries its UTC offset as a small badge, and the raw zone name (\"Europe/Oslo\") no longer sits under every city: it is stated once at the foot of the list instead.",
-      "In first-run setup, \"How you read the portal\" now shows currency and timezone as two aligned rows. The timezone dropdown used to run wider than the currency buttons above it, and the note about rates being indicative was hidden behind a hover — both are fixed."
+      "The Customers list is now split by who you are paying for. Customers on a seat sit in the main table; the ones you have consented but are not billing yet sit in their own dashed section below it, headed “Connected, not billed”, with the same look the Billing page already uses for them. That section replaces the per-row Status column, which repeated “Active” down every row of a healthy fleet to say something the split now says once.",
+      "A customer you are not billing shows an em-dash for Health and Alerts rather than an invented verdict, because nothing is scanned until you activate it — and its row now takes you to the activation flow instead of a page the seat gate would refuse. If you opened a checkout and never finished it, that row is marked “Checkout open”, since nothing else in the portal tells you that work is still hanging.",
+      "Status on Backup & Restore and on Customers is drawn the way severity has been since the last release: a small colour swatch and the word, not a filled chip. A column where every row carries a chip is a wall of colour in which nothing stands out; the swatch keeps the signal and lets the things that need attention be the things you see. Size bands keep their chip — they are labels, not verdicts.",
+      "Backup & Restore and Customers both gain the customer filter pill that Licenses and Opportunities already had, so every fleet page narrows to a named customer the same way.",
+      "On Licenses, the reclaimable-spend card now trends its own series instead of borrowing the total-cost line, so the sparkline matches the number above it.",
+      "Prices are stated as NOK-anchored and charged in your local currency, and the currency shown across the portal follows that."
     ],
     "history": [
+      {
+        "tag": "portal-v20260801.135230",
+        "releasedAt": "2026-08-01",
+        "notes": [
+          "The Customers list is now split by who you are paying for. Customers on a seat sit in the main table; the ones you have consented but are not billing yet sit in their own dashed section below it, headed “Connected, not billed”, with the same look the Billing page already uses for them. That section replaces the per-row Status column, which repeated “Active” down every row of a healthy fleet to say something the split now says once.",
+          "A customer you are not billing shows an em-dash for Health and Alerts rather than an invented verdict, because nothing is scanned until you activate it — and its row now takes you to the activation flow instead of a page the seat gate would refuse. If you opened a checkout and never finished it, that row is marked “Checkout open”, since nothing else in the portal tells you that work is still hanging.",
+          "Status on Backup & Restore and on Customers is drawn the way severity has been since the last release: a small colour swatch and the word, not a filled chip. A column where every row carries a chip is a wall of colour in which nothing stands out; the swatch keeps the signal and lets the things that need attention be the things you see. Size bands keep their chip — they are labels, not verdicts.",
+          "Backup & Restore and Customers both gain the customer filter pill that Licenses and Opportunities already had, so every fleet page narrows to a named customer the same way.",
+          "On Licenses, the reclaimable-spend card now trends its own series instead of borrowing the total-cost line, so the sparkline matches the number above it.",
+          "Prices are stated as NOK-anchored and charged in your local currency, and the currency shown across the portal follows that."
+        ]
+      },
       {
         "tag": "portal-v20260730.172019",
         "releasedAt": "2026-07-30",
