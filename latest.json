@@ -1,16 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260801.135230",
-    "releasedAt": "2026-08-01",
+    "tag": "portal-v20260802.012433",
+    "releasedAt": "2026-08-02",
     "notes": [
-      "The Customers list is now split by who you are paying for. Customers on a seat sit in the main table; the ones you have consented but are not billing yet sit in their own dashed section below it, headed “Connected, not billed”, with the same look the Billing page already uses for them. That section replaces the per-row Status column, which repeated “Active” down every row of a healthy fleet to say something the split now says once.",
-      "A customer you are not billing shows an em-dash for Health and Alerts rather than an invented verdict, because nothing is scanned until you activate it — and its row now takes you to the activation flow instead of a page the seat gate would refuse. If you opened a checkout and never finished it, that row is marked “Checkout open”, since nothing else in the portal tells you that work is still hanging.",
-      "Status on Backup & Restore and on Customers is drawn the way severity has been since the last release: a small colour swatch and the word, not a filled chip. A column where every row carries a chip is a wall of colour in which nothing stands out; the swatch keeps the signal and lets the things that need attention be the things you see. Size bands keep their chip — they are labels, not verdicts.",
-      "Backup & Restore and Customers both gain the customer filter pill that Licenses and Opportunities already had, so every fleet page narrows to a named customer the same way.",
-      "On Licenses, the reclaimable-spend card now trends its own series instead of borrowing the total-cost line, so the sparkline matches the number above it.",
-      "Prices are stated as NOK-anchored and charged in your local currency, and the currency shown across the portal follows that."
+      "Update the portal and the backend together for this one. The address the portal uses to ask the backend for data has changed, so a portal on this version talking to a backend on the previous one cannot load anything — every page will say it failed. Both updates are offered under Get help; run them one after the other and the portal comes back. Reinstalling from the setup script does both at once.",
+      "Everywhere the portal said “fleet”, it now says “portfolio”. The Dashboard is headed Portfolio overview, the Licenses table totals read Portfolio total, and the backup schedule your customers inherit is the Portfolio default. A fleet is a set of vehicles; what the word actually named here is the set of customers you carry, and it read oddly next to “Customer health” on the same screen.",
+      "Where a sentence can name the thing itself, it now does that instead: the Dashboard cards read “Across all customers” rather than reaching for a word for the group. A deployment set up to call them environments rather than customers gets that word — the wording follows the label you chose.",
+      "Your dashboard sparklines start empty after this update, and the backup default schedule and the Opportunities rate card go back to their defaults. They are kept under names that changed with this release, so the old ones are no longer read. The sparklines refill on their own over the next day or so; the schedule and the rate card need setting once more."
     ],
     "history": [
+      {
+        "tag": "portal-v20260802.012433",
+        "releasedAt": "2026-08-02",
+        "notes": [
+          "Update the portal and the backend together for this one. The address the portal uses to ask the backend for data has changed, so a portal on this version talking to a backend on the previous one cannot load anything — every page will say it failed. Both updates are offered under Get help; run them one after the other and the portal comes back. Reinstalling from the setup script does both at once.",
+          "Everywhere the portal said “fleet”, it now says “portfolio”. The Dashboard is headed Portfolio overview, the Licenses table totals read Portfolio total, and the backup schedule your customers inherit is the Portfolio default. A fleet is a set of vehicles; what the word actually named here is the set of customers you carry, and it read oddly next to “Customer health” on the same screen.",
+          "Where a sentence can name the thing itself, it now does that instead: the Dashboard cards read “Across all customers” rather than reaching for a word for the group. A deployment set up to call them environments rather than customers gets that word — the wording follows the label you chose.",
+          "Your dashboard sparklines start empty after this update, and the backup default schedule and the Opportunities rate card go back to their defaults. They are kept under names that changed with this release, so the old ones are no longer read. The sparklines refill on their own over the next day or so; the schedule and the rate card need setting once more."
+        ]
+      },
       {
         "tag": "portal-v20260801.135230",
         "releasedAt": "2026-08-01",
@@ -921,11 +929,11 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260729.171834",
-    "releasedAt": "2026-07-29",
+    "tag": "backend-v20260802.012433",
+    "releasedAt": "2026-08-02",
     "notes": [
-      "New cases are now titled by what changed rather than by the account it happened to, so the Inbox reads consistently. Existing cases keep the wording they were created with.",
-      "Multi-factor and authentication-weakness findings now clear once they are fixed, instead of staying on the list after the problem is gone."
+      "Update this together with the portal. The addresses the portal calls have been renamed from fleet to portfolio, so a backend on this version and a portal on the previous one — or the other way round — cannot talk to each other, and every page reports a failure until both are on this release.",
+      "The stored history behind the dashboard sparklines, the default backup schedule and the Opportunities rate card moved to new names with the same change. Nothing is deleted, but the new ones start empty: sparklines rebuild themselves over the next day or so, and the schedule and rate card return to their defaults until you set them again."
     ]
   }
 }
