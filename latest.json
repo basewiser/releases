@@ -1,14 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260802.012433",
-    "releasedAt": "2026-08-02",
+    "tag": "portal-v20260806.235612",
+    "releasedAt": "2026-08-06",
     "notes": [
-      "Update the portal and the backend together for this one. The address the portal uses to ask the backend for data has changed, so a portal on this version talking to a backend on the previous one cannot load anything — every page will say it failed. Both updates are offered under Get help; run them one after the other and the portal comes back. Reinstalling from the setup script does both at once.",
-      "Everywhere the portal said “fleet”, it now says “portfolio”. The Dashboard is headed Portfolio overview, the Licenses table totals read Portfolio total, and the backup schedule your customers inherit is the Portfolio default. A fleet is a set of vehicles; what the word actually named here is the set of customers you carry, and it read oddly next to “Customer health” on the same screen.",
-      "Where a sentence can name the thing itself, it now does that instead: the Dashboard cards read “Across all customers” rather than reaching for a word for the group. A deployment set up to call them environments rather than customers gets that word — the wording follows the label you chose.",
-      "Your dashboard sparklines start empty after this update, and the backup default schedule and the Opportunities rate card go back to their defaults. They are kept under names that changed with this release, so the old ones are no longer read. The sparklines refill on their own over the next day or so; the schedule and the rate card need setting once more."
+      "Install this together with the backend release of the same date. This pair changes how the Deployment signs in to its own storage, and a portal from before it cannot read the setting that replaces the old one — the Get help page's backend update would report the storage account as missing.",
+      "Nothing changes in what you see or do. The work is underneath: your Deployment now proves who it is to its own database and message queue using the identity Azure gives it, instead of holding copies of the account keys in its settings. Those keys have been removed."
     ],
     "history": [
+      {
+        "tag": "portal-v20260806.235612",
+        "releasedAt": "2026-08-06",
+        "notes": [
+          "Install this together with the backend release of the same date. This pair changes how the Deployment signs in to its own storage, and a portal from before it cannot read the setting that replaces the old one — the Get help page's backend update would report the storage account as missing.",
+          "Nothing changes in what you see or do. The work is underneath: your Deployment now proves who it is to its own database and message queue using the identity Azure gives it, instead of holding copies of the account keys in its settings. Those keys have been removed."
+        ]
+      },
       {
         "tag": "portal-v20260802.012433",
         "releasedAt": "2026-08-02",
@@ -929,11 +935,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260802.012433",
-    "releasedAt": "2026-08-02",
+    "tag": "backend-v20260806.235612",
+    "releasedAt": "2026-08-06",
     "notes": [
-      "Update this together with the portal. The addresses the portal calls have been renamed from fleet to portfolio, so a backend on this version and a portal on the previous one — or the other way round — cannot talk to each other, and every page reports a failure until both are on this release.",
-      "The stored history behind the dashboard sparklines, the default backup schedule and the Opportunities rate card moved to new names with the same change. Nothing is deleted, but the new ones start empty: sparklines rebuild themselves over the next day or so, and the schedule and rate card return to their defaults until you set them again."
+      "This release is required. Installations made with a setup script from 2026-08-06 or later will not start without it — the script stopped writing the storage password that older backends needed, so an older backend loads none of its functions and every address answers \"not found\". Re-run the setup script after updating; it reuses everything already created.",
+      "Your Deployment now authenticates to its own table storage and its message queue with the identity Azure issues it, rather than with account keys copied into its settings. The keys are gone from the settings, and the message queue no longer accepts key-based sign-in at all.",
+      "One key remains, narrowed to a single job: the file share the Function App runs from has no identity-based equivalent on this hosting plan, so it keeps a key of its own. Nothing else reads it."
     ]
   }
 }
