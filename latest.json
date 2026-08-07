@@ -935,12 +935,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260806.235612",
-    "releasedAt": "2026-08-06",
+    "tag": "backend-v20260807.104353",
+    "releasedAt": "2026-08-07",
     "notes": [
-      "This release is required. Installations made with a setup script from 2026-08-06 or later will not start without it — the script stopped writing the storage password that older backends needed, so an older backend loads none of its functions and every address answers \"not found\". Re-run the setup script after updating; it reuses everything already created.",
-      "Your Deployment now authenticates to its own table storage and its message queue with the identity Azure issues it, rather than with account keys copied into its settings. The keys are gone from the settings, and the message queue no longer accepts key-based sign-in at all.",
-      "One key remains, narrowed to a single job: the file share the Function App runs from has no identity-based equivalent on this hosting plan, so it keeps a key of its own. Nothing else reads it."
+      "Fixes \"App activation failed during Microsoft Graph operations\" when setting up the Basewiser app. The app registration was being created correctly, but Microsoft Entra takes a moment to make a brand-new registration usable, and the setup gave up during that gap instead of waiting. It now waits, so the step completes on the first try.",
+      "If you hit this, nothing was left broken and nothing was duplicated: the registration that was already created is reused when you try again.",
+      "The portal is unchanged in this release — you only need to update the backend."
     ]
   }
 }
