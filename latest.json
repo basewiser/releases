@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260806.235612",
-    "releasedAt": "2026-08-06",
+    "tag": "portal-v20260808.105454",
+    "releasedAt": "2026-08-08",
     "notes": [
-      "Install this together with the backend release of the same date. This pair changes how the Deployment signs in to its own storage, and a portal from before it cannot read the setting that replaces the old one — the Get help page's backend update would report the storage account as missing.",
-      "Nothing changes in what you see or do. The work is underneath: your Deployment now proves who it is to its own database and message queue using the identity Azure gives it, instead of holding copies of the account keys in its settings. Those keys have been removed."
+      "Install this together with the backend release of the same date. The portal's Azure pages call backend routes that a backend from before this release does not have.",
+      "Connect a customer's Azure. Onboarding now carries both invites on one screen: Microsoft 365 as before, and a new Azure one that a subscription Owner opens to grant Basewiser read-only access. Reopen it as often as you like — it shows how far each customer has got, and connecting Azure does not change their Azure bill.",
+      "A customer nobody can look at now says so. Access that has lapsed gets its own health band on both the Microsoft 365 and Azure halves, instead of quietly looking healthy."
     ],
     "history": [
+      {
+        "tag": "portal-v20260808.105454",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "Install this together with the backend release of the same date. The portal's Azure pages call backend routes that a backend from before this release does not have.",
+          "Connect a customer's Azure. Onboarding now carries both invites on one screen: Microsoft 365 as before, and a new Azure one that a subscription Owner opens to grant Basewiser read-only access. Reopen it as often as you like — it shows how far each customer has got, and connecting Azure does not change their Azure bill.",
+          "A customer nobody can look at now says so. Access that has lapsed gets its own health band on both the Microsoft 365 and Azure halves, instead of quietly looking healthy."
+        ]
+      },
       {
         "tag": "portal-v20260806.235612",
         "releasedAt": "2026-08-06",
@@ -935,12 +945,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260807.104353",
-    "releasedAt": "2026-08-07",
+    "tag": "backend-v20260808.105454",
+    "releasedAt": "2026-08-08",
     "notes": [
-      "Fixes \"App activation failed during Microsoft Graph operations\" when setting up the Basewiser app. The app registration was being created correctly, but Microsoft Entra takes a moment to make a brand-new registration usable, and the setup gave up during that gap instead of waiting. It now waits, so the step completes on the first try.",
-      "If you hit this, nothing was left broken and nothing was duplicated: the registration that was already created is reused when you try again.",
-      "The portal is unchanged in this release — you only need to update the backend."
+      "Install this together with the portal release of the same date.",
+      "Approval is now measured by what a customer actually granted, not by whether a sign-in succeeded. A tenant that only half-approved is flagged instead of being reported as done.",
+      "Log ingestion is cut at the source — trace level raised, request sampling corrected, and the workspace capped. The same visibility into failures, at materially less volume."
     ]
   }
 }
