@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260808.105454",
+    "tag": "portal-v20260808.123038",
     "releasedAt": "2026-08-08",
     "notes": [
-      "Install this together with the backend release of the same date. The portal's Azure pages call backend routes that a backend from before this release does not have.",
-      "Connect a customer's Azure. Onboarding now carries both invites on one screen: Microsoft 365 as before, and a new Azure one that a subscription Owner opens to grant Basewiser read-only access. Reopen it as often as you like — it shows how far each customer has got, and connecting Azure does not change their Azure bill.",
-      "A customer nobody can look at now says so. Access that has lapsed gets its own health band on both the Microsoft 365 and Azure halves, instead of quietly looking healthy."
+      "Install this together with the backend release of the same date.",
+      "Settings has a new Basewiser app tab. From it you can re-activate the app, which is how it picks up permissions Basewiser has added since you first set it up — previously there was no way to do this once the app existed. It tells you what will change before you confirm.",
+      "If re-activating ever creates a second app registration instead of updating yours, the portal now says so plainly and tells you to stop, rather than reporting it as a success."
     ],
     "history": [
+      {
+        "tag": "portal-v20260808.123038",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "Install this together with the backend release of the same date.",
+          "Settings has a new Basewiser app tab. From it you can re-activate the app, which is how it picks up permissions Basewiser has added since you first set it up — previously there was no way to do this once the app existed. It tells you what will change before you confirm.",
+          "If re-activating ever creates a second app registration instead of updating yours, the portal now says so plainly and tells you to stop, rather than reporting it as a success."
+        ]
+      },
       {
         "tag": "portal-v20260808.105454",
         "releasedAt": "2026-08-08",
@@ -945,12 +954,12 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260808.105454",
+    "tag": "backend-v20260808.123038",
     "releasedAt": "2026-08-08",
     "notes": [
       "Install this together with the portal release of the same date.",
-      "Approval is now measured by what a customer actually granted, not by whether a sign-in succeeded. A tenant that only half-approved is flagged instead of being reported as done.",
-      "Log ingestion is cut at the source — trace level raised, request sampling corrected, and the workspace capped. The same visibility into failures, at materially less volume."
+      "Re-activating the Basewiser app is now safe to repeat. It finds your app by its application ID rather than its name, so renaming it in Entra can no longer create a duplicate alongside the one your customers approved.",
+      "Each re-activation used to leave its old client secret valid for two years. The secrets it replaces are now removed; any you created yourself are left alone."
     ]
   }
 }
