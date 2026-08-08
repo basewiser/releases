@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260808.123038",
+    "tag": "portal-v20260808.150002",
     "releasedAt": "2026-08-08",
     "notes": [
-      "Install this together with the backend release of the same date.",
-      "Settings has a new Basewiser app tab. From it you can re-activate the app, which is how it picks up permissions Basewiser has added since you first set it up — previously there was no way to do this once the app existed. It tells you what will change before you confirm.",
-      "If re-activating ever creates a second app registration instead of updating yours, the portal now says so plainly and tells you to stop, rather than reporting it as a success."
+      "A customer whose Azure is connected no longer reads \"Pending\" on their Overview. It now reads \"Connected\", with a line saying that Basewiser does not scan Azure yet — so there is nothing there to wait for. Microsoft 365 still reads \"Pending\" until its first scan finishes, because that one does finish."
     ],
     "history": [
+      {
+        "tag": "portal-v20260808.150002",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "A customer whose Azure is connected no longer reads \"Pending\" on their Overview. It now reads \"Connected\", with a line saying that Basewiser does not scan Azure yet — so there is nothing there to wait for. Microsoft 365 still reads \"Pending\" until its first scan finishes, because that one does finish."
+        ]
+      },
       {
         "tag": "portal-v20260808.123038",
         "releasedAt": "2026-08-08",
