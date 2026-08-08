@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260808.150002",
+    "tag": "portal-v20260808.151910",
     "releasedAt": "2026-08-08",
     "notes": [
-      "A customer whose Azure is connected no longer reads \"Pending\" on their Overview. It now reads \"Connected\", with a line saying that Basewiser does not scan Azure yet — so there is nothing there to wait for. Microsoft 365 still reads \"Pending\" until its first scan finishes, because that one does finish."
+      "Fixes a fault that would have stopped your first customer connecting their Azure. If your deployment was installed before Azure onboarding shipped, the page Microsoft returns the customer to was still behind the portal sign-in — so the customer met a login screen they have no account for, and the invite was used up. Nothing showed this until it happened.",
+      "No action needed. The portal now checks and repairs its own sign-in exclusions when an administrator opens it, and again whenever you install an update. It only ever adds the two onboarding pages, and only those two."
     ],
     "history": [
+      {
+        "tag": "portal-v20260808.151910",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "Fixes a fault that would have stopped your first customer connecting their Azure. If your deployment was installed before Azure onboarding shipped, the page Microsoft returns the customer to was still behind the portal sign-in — so the customer met a login screen they have no account for, and the invite was used up. Nothing showed this until it happened.",
+          "No action needed. The portal now checks and repairs its own sign-in exclusions when an administrator opens it, and again whenever you install an update. It only ever adds the two onboarding pages, and only those two."
+        ]
+      },
       {
         "tag": "portal-v20260808.150002",
         "releasedAt": "2026-08-08",
