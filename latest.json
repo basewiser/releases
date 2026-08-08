@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260808.151910",
+    "tag": "portal-v20260808.160256",
     "releasedAt": "2026-08-08",
     "notes": [
-      "Fixes a fault that would have stopped your first customer connecting their Azure. If your deployment was installed before Azure onboarding shipped, the page Microsoft returns the customer to was still behind the portal sign-in — so the customer met a login screen they have no account for, and the invite was used up. Nothing showed this until it happened.",
-      "No action needed. The portal now checks and repairs its own sign-in exclusions when an administrator opens it, and again whenever you install an update. It only ever adds the two onboarding pages, and only those two."
+      "Your portal now stays on the version you installed. Until now a deployment could quietly swap itself to a newer build whenever Azure restarted it — mid-session, unannounced, and with nothing in Azure recording that it had happened. From this release it stays where it is until you choose to update.",
+      "You can also now see which build a deployment is on by looking at it in Azure. Previously the only way to answer that was to sign in to the portal and read the version in the sidebar, which meant support could not check it for you.",
+      "No action needed. The first time an administrator opens the portal after this update, it records the version it is already running and stops following the moving reference. The code that is serving does not change — only the label Azure keeps. New installations get this from the start."
     ],
     "history": [
+      {
+        "tag": "portal-v20260808.160256",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "Your portal now stays on the version you installed. Until now a deployment could quietly swap itself to a newer build whenever Azure restarted it — mid-session, unannounced, and with nothing in Azure recording that it had happened. From this release it stays where it is until you choose to update.",
+          "You can also now see which build a deployment is on by looking at it in Azure. Previously the only way to answer that was to sign in to the portal and read the version in the sidebar, which meant support could not check it for you.",
+          "No action needed. The first time an administrator opens the portal after this update, it records the version it is already running and stops following the moving reference. The code that is serving does not change — only the label Azure keeps. New installations get this from the start."
+        ]
+      },
       {
         "tag": "portal-v20260808.151910",
         "releasedAt": "2026-08-08",
