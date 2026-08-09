@@ -978,12 +978,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260808.123038",
-    "releasedAt": "2026-08-08",
+    "tag": "backend-v20260809.100016",
+    "releasedAt": "2026-08-09",
     "notes": [
-      "Install this together with the portal release of the same date.",
-      "Re-activating the Basewiser app is now safe to repeat. It finds your app by its application ID rather than its name, so renaming it in Entra can no longer create a duplicate alongside the one your customers approved.",
-      "Each re-activation used to leave its old client secret valid for two years. The secrets it replaces are now removed; any you created yourself are left alone."
+      "Basewiser now scans your customers' Azure. Twenty-four checks run every night at 01:00 UTC against the read-only access a customer granted when they connected Azure — public exposure, encryption and transport, Azure role assignments, Defender coverage, logging, and resources you are paying for and not using. No portal update is needed and nothing changes on the customer's Azure bill; the sweep only reads.",
+      "You will not see the findings yet. There is no Azure section in the portal in this release — this update starts the nightly collection so the pages have real history to show the day they arrive. Nothing for you to do.",
+      "One thing does surface now. A customer's Azure subscription Owners are checked against their Microsoft 365 multi-factor registration, so an account holding Owner with no MFA registered appears under Opportunities by name, with the subscriptions it holds."
+    ],
+    "history": [
+      {
+        "tag": "backend-v20260808.123038",
+        "releasedAt": "2026-08-08",
+        "notes": [
+          "Install this together with the portal release of the same date.",
+          "Re-activating the Basewiser app is now safe to repeat. It finds your app by its application ID rather than its name, so renaming it in Entra can no longer create a duplicate alongside the one your customers approved.",
+          "Each re-activation used to leave its old client secret valid for two years. The secrets it replaces are now removed; any you created yourself are left alone."
+        ]
+      }
     ]
   }
 }
