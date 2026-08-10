@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260810.005557",
+    "tag": "portal-v20260810.234101",
     "releasedAt": "2026-08-10",
     "notes": [
-      "Azure is in the portal. Every customer who has connected Azure now has Azure pages beside their Microsoft 365 ones — findings grouped into the six themes and broken down per subscription, an inventory of every subscription Basewiser can read, and a Mute for the ones you do not want counted or shown to the customer. The nightly sweep has been collecting since 9 August, so these pages open with history behind them rather than empty. You can also set how often the sweep runs across your whole portfolio — daily, every two days, or weekly — and the two Azure opportunities, exposure and cost, now appear beside the Microsoft 365 ones.",
-      "A half-connected customer now says so. When Azure was approved on some of a customer's subscriptions and not others, the connection window showed a green tick and the words \"Nothing to do\" — directly above the sentence saying a subscription was not being monitored. It now counts that customer as half-connected, names the subscriptions nobody granted, and shows the exact command their Azure Owner runs to finish the job. No new invite is needed, and running it twice changes nothing.",
-      "You can ask Azure directly whether access landed. A new \"Re-check access in Azure\" asks Azure itself what Basewiser can read, rather than repeating what was last stored — so when a customer runs the command and says \"done\", you can confirm it in seconds instead of waiting for the next nightly sweep. The button beside it is now called Refresh, because re-reading is what it always did."
+      "Every customer page now says which customer it is. The name sits at the top as a proper heading, with the domain, tenant ID and the last Conditional Access backup listed under it. Until now the only thing naming the customer was the highlighted item in the side menu, so two customers' pages looked identical at a glance.",
+      "The connection window is now a screen you can come back to. It opens with one sentence answering the whole thing, separates what is settled from what is still outstanding rather than walking you through steps you have already done, and a finished half collapses to a single dated line instead of a green tick. It is also reachable from the customer list and the side menu, not just the customer overview. The command you hand a customer to confirm their Azure access no longer reports an error when it has in fact worked.",
+      "Azure findings are on the customer overview, and the two Azure projects read as projects. The overview's fourth tile is now Azure findings — a dash rather than a zero until a sweep has run — and both it and Identity findings click through to what the number is made of. Azure exposure and Azure cost now carry their own pitch and proposal text rather than appearing with the section blank."
     ],
     "history": [
+      {
+        "tag": "portal-v20260810.234101",
+        "releasedAt": "2026-08-10",
+        "notes": [
+          "Every customer page now says which customer it is. The name sits at the top as a proper heading, with the domain, tenant ID and the last Conditional Access backup listed under it. Until now the only thing naming the customer was the highlighted item in the side menu, so two customers' pages looked identical at a glance.",
+          "The connection window is now a screen you can come back to. It opens with one sentence answering the whole thing, separates what is settled from what is still outstanding rather than walking you through steps you have already done, and a finished half collapses to a single dated line instead of a green tick. It is also reachable from the customer list and the side menu, not just the customer overview. The command you hand a customer to confirm their Azure access no longer reports an error when it has in fact worked.",
+          "Azure findings are on the customer overview, and the two Azure projects read as projects. The overview's fourth tile is now Azure findings — a dash rather than a zero until a sweep has run — and both it and Identity findings click through to what the number is made of. Azure exposure and Azure cost now carry their own pitch and proposal text rather than appearing with the section blank."
+        ]
+      },
       {
         "tag": "portal-v20260810.005557",
         "releasedAt": "2026-08-10",
