@@ -987,14 +987,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260810.005557",
+    "tag": "backend-v20260810.170659",
     "releasedAt": "2026-08-10",
     "notes": [
-      "The Azure pages in your portal read this. Findings from the nightly sweep are now served joined to the subscriptions and resources they belong to, and written in plain language rather than check names — so the new Azure section has something to show. Update the backend as well as the portal, or those pages will be empty.",
-      "A connection that was only ever half-granted now reports itself as one. The subscriptions that were visible when the customer approved Azure and were never granted are named, along with the role-assignment command that completes them, so the portal can stop calling a half-monitored customer finished.",
-      "Setting up the Basewiser app now removes the client secret it replaces. Every attempt to retire an old one had been refused by Entra and quietly ignored, so a customer's app registration could accumulate up to three live two-year credentials. It now retries the removal and confirms it, and it will tidy the ones already there on the next setup."
+      "Upgrading a customer to the root management group now tidies up after itself. When a customer who connected Azure one subscription at a time re-opens the invite as someone with rights at the root management group, Basewiser removes the narrower Reader assignment it no longer needs — so their Access control (IAM) shows one Basewiser assignment instead of two, and a security reviewer looking at it does not have to work out why there were ever two.",
+      "This is the only thing Basewiser ever deletes in a customer's tenant, and it is deliberately narrow. It removes only the assignment Basewiser itself wrote, only during the invite the customer has just approved, and only after confirming the wider access actually works — so it can never take away access the customer still needs. If the removal is refused, the assignment is left exactly where it is and the connection window says so; it grants nothing beyond what the root management group already covers.",
+      "Re-checking access no longer records scopes it could not verify. When \"Re-check access in Azure\" could not reach Azure to ask about the root management group, it recorded the narrower per-subscription scopes as though it had checked them. It now records nothing when it cannot answer, which is what the rest of the re-check already did."
     ],
     "history": [
+      {
+        "tag": "backend-v20260810.170659",
+        "releasedAt": "2026-08-10",
+        "notes": [
+          "Upgrading a customer to the root management group now tidies up after itself. When a customer who connected Azure one subscription at a time re-opens the invite as someone with rights at the root management group, Basewiser removes the narrower Reader assignment it no longer needs — so their Access control (IAM) shows one Basewiser assignment instead of two, and a security reviewer looking at it does not have to work out why there were ever two.",
+          "This is the only thing Basewiser ever deletes in a customer's tenant, and it is deliberately narrow. It removes only the assignment Basewiser itself wrote, only during the invite the customer has just approved, and only after confirming the wider access actually works — so it can never take away access the customer still needs. If the removal is refused, the assignment is left exactly where it is and the connection window says so; it grants nothing beyond what the root management group already covers.",
+          "Re-checking access no longer records scopes it could not verify. When \"Re-check access in Azure\" could not reach Azure to ask about the root management group, it recorded the narrower per-subscription scopes as though it had checked them. It now records nothing when it cannot answer, which is what the rest of the re-check already did."
+        ]
+      },
       {
         "tag": "backend-v20260810.005557",
         "releasedAt": "2026-08-10",
