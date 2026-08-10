@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260808.160256",
-    "releasedAt": "2026-08-08",
+    "tag": "portal-v20260810.005557",
+    "releasedAt": "2026-08-10",
     "notes": [
-      "Your portal now stays on the version you installed. Until now a deployment could quietly swap itself to a newer build whenever Azure restarted it — mid-session, unannounced, and with nothing in Azure recording that it had happened. From this release it stays where it is until you choose to update.",
-      "You can also now see which build a deployment is on by looking at it in Azure. Previously the only way to answer that was to sign in to the portal and read the version in the sidebar, which meant support could not check it for you.",
-      "No action needed. The first time an administrator opens the portal after this update, it records the version it is already running and stops following the moving reference. The code that is serving does not change — only the label Azure keeps. New installations get this from the start."
+      "Azure is in the portal. Every customer who has connected Azure now has Azure pages beside their Microsoft 365 ones — findings grouped into the six themes and broken down per subscription, an inventory of every subscription Basewiser can read, and a Mute for the ones you do not want counted or shown to the customer. The nightly sweep has been collecting since 9 August, so these pages open with history behind them rather than empty. You can also set how often the sweep runs across your whole portfolio — daily, every two days, or weekly — and the two Azure opportunities, exposure and cost, now appear beside the Microsoft 365 ones.",
+      "A half-connected customer now says so. When Azure was approved on some of a customer's subscriptions and not others, the connection window showed a green tick and the words \"Nothing to do\" — directly above the sentence saying a subscription was not being monitored. It now counts that customer as half-connected, names the subscriptions nobody granted, and shows the exact command their Azure Owner runs to finish the job. No new invite is needed, and running it twice changes nothing.",
+      "You can ask Azure directly whether access landed. A new \"Re-check access in Azure\" asks Azure itself what Basewiser can read, rather than repeating what was last stored — so when a customer runs the command and says \"done\", you can confirm it in seconds instead of waiting for the next nightly sweep. The button beside it is now called Refresh, because re-reading is what it always did."
     ],
     "history": [
+      {
+        "tag": "portal-v20260810.005557",
+        "releasedAt": "2026-08-10",
+        "notes": [
+          "Azure is in the portal. Every customer who has connected Azure now has Azure pages beside their Microsoft 365 ones — findings grouped into the six themes and broken down per subscription, an inventory of every subscription Basewiser can read, and a Mute for the ones you do not want counted or shown to the customer. The nightly sweep has been collecting since 9 August, so these pages open with history behind them rather than empty. You can also set how often the sweep runs across your whole portfolio — daily, every two days, or weekly — and the two Azure opportunities, exposure and cost, now appear beside the Microsoft 365 ones.",
+          "A half-connected customer now says so. When Azure was approved on some of a customer's subscriptions and not others, the connection window showed a green tick and the words \"Nothing to do\" — directly above the sentence saying a subscription was not being monitored. It now counts that customer as half-connected, names the subscriptions nobody granted, and shows the exact command their Azure Owner runs to finish the job. No new invite is needed, and running it twice changes nothing.",
+          "You can ask Azure directly whether access landed. A new \"Re-check access in Azure\" asks Azure itself what Basewiser can read, rather than repeating what was last stored — so when a customer runs the command and says \"done\", you can confirm it in seconds instead of waiting for the next nightly sweep. The button beside it is now called Refresh, because re-reading is what it always did."
+        ]
+      },
       {
         "tag": "portal-v20260808.160256",
         "releasedAt": "2026-08-08",
@@ -978,14 +987,32 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260809.100016",
-    "releasedAt": "2026-08-09",
+    "tag": "backend-v20260810.005557",
+    "releasedAt": "2026-08-10",
     "notes": [
-      "Basewiser now scans your customers' Azure. Twenty-four checks run every night at 01:00 UTC against the read-only access a customer granted when they connected Azure — public exposure, encryption and transport, Azure role assignments, Defender coverage, logging, and resources you are paying for and not using. No portal update is needed and nothing changes on the customer's Azure bill; the sweep only reads.",
-      "You will not see the findings yet. There is no Azure section in the portal in this release — this update starts the nightly collection so the pages have real history to show the day they arrive. Nothing for you to do.",
-      "One thing does surface now. A customer's Azure subscription Owners are checked against their Microsoft 365 multi-factor registration, so an account holding Owner with no MFA registered appears under Opportunities by name, with the subscriptions it holds."
+      "The Azure pages in your portal read this. Findings from the nightly sweep are now served joined to the subscriptions and resources they belong to, and written in plain language rather than check names — so the new Azure section has something to show. Update the backend as well as the portal, or those pages will be empty.",
+      "A connection that was only ever half-granted now reports itself as one. The subscriptions that were visible when the customer approved Azure and were never granted are named, along with the role-assignment command that completes them, so the portal can stop calling a half-monitored customer finished.",
+      "Setting up the Basewiser app now removes the client secret it replaces. Every attempt to retire an old one had been refused by Entra and quietly ignored, so a customer's app registration could accumulate up to three live two-year credentials. It now retries the removal and confirms it, and it will tidy the ones already there on the next setup."
     ],
     "history": [
+      {
+        "tag": "backend-v20260810.005557",
+        "releasedAt": "2026-08-10",
+        "notes": [
+          "The Azure pages in your portal read this. Findings from the nightly sweep are now served joined to the subscriptions and resources they belong to, and written in plain language rather than check names — so the new Azure section has something to show. Update the backend as well as the portal, or those pages will be empty.",
+          "A connection that was only ever half-granted now reports itself as one. The subscriptions that were visible when the customer approved Azure and were never granted are named, along with the role-assignment command that completes them, so the portal can stop calling a half-monitored customer finished.",
+          "Setting up the Basewiser app now removes the client secret it replaces. Every attempt to retire an old one had been refused by Entra and quietly ignored, so a customer's app registration could accumulate up to three live two-year credentials. It now retries the removal and confirms it, and it will tidy the ones already there on the next setup."
+        ]
+      },
+      {
+        "tag": "backend-v20260809.100016",
+        "releasedAt": "2026-08-09",
+        "notes": [
+          "Basewiser now scans your customers' Azure. Twenty-four checks run every night at 01:00 UTC against the read-only access a customer granted when they connected Azure — public exposure, encryption and transport, Azure role assignments, Defender coverage, logging, and resources you are paying for and not using. No portal update is needed and nothing changes on the customer's Azure bill; the sweep only reads.",
+          "You will not see the findings yet. There is no Azure section in the portal in this release — this update starts the nightly collection so the pages have real history to show the day they arrive. Nothing for you to do.",
+          "One thing does surface now. A customer's Azure subscription Owners are checked against their Microsoft 365 multi-factor registration, so an account holding Owner with no MFA registered appears under Opportunities by name, with the subscriptions it holds."
+        ]
+      },
       {
         "tag": "backend-v20260808.123038",
         "releasedAt": "2026-08-08",
