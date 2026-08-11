@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260810.234101",
-    "releasedAt": "2026-08-10",
+    "tag": "portal-v20260811.012309",
+    "releasedAt": "2026-08-11",
     "notes": [
-      "Every customer page now says which customer it is. The name sits at the top as a proper heading, with the domain, tenant ID and the last Conditional Access backup listed under it. Until now the only thing naming the customer was the highlighted item in the side menu, so two customers' pages looked identical at a glance.",
-      "The connection window is now a screen you can come back to. It opens with one sentence answering the whole thing, separates what is settled from what is still outstanding rather than walking you through steps you have already done, and a finished half collapses to a single dated line instead of a green tick. It is also reachable from the customer list and the side menu, not just the customer overview. The command you hand a customer to confirm their Azure access no longer reports an error when it has in fact worked.",
-      "Azure findings are on the customer overview, and the two Azure projects read as projects. The overview's fourth tile is now Azure findings — a dash rather than a zero until a sweep has run — and both it and Identity findings click through to what the number is made of. Azure exposure and Azure cost now carry their own pitch and proposal text rather than appearing with the section blank."
+      "Every customer now has an Opportunities entry in their side menu. It opens your pipeline filtered to that customer: the same page, the same rate card and the same proposal flow, narrowed to them — so the figure you quote a customer cannot disagree with the one in your portfolio.",
+      "The filters on Opportunities now narrow the four totals at the top, not just the tables beneath them. Filtered to one customer, the open pipeline, proposed value and won-this-quarter figures are that customer's. A customer with nothing worth selling yet is told by name rather than shown an empty table. Install the backend release of the same date first, or won totals will read low.",
+      "A section heading in a customer's side menu now closes the section you are inside. Clicking Identity, Azure or Conditional Access while already in it returns you to that customer's overview and collapses it; until now it did nothing at all."
     ],
     "history": [
+      {
+        "tag": "portal-v20260811.012309",
+        "releasedAt": "2026-08-11",
+        "notes": [
+          "Every customer now has an Opportunities entry in their side menu. It opens your pipeline filtered to that customer: the same page, the same rate card and the same proposal flow, narrowed to them — so the figure you quote a customer cannot disagree with the one in your portfolio.",
+          "The filters on Opportunities now narrow the four totals at the top, not just the tables beneath them. Filtered to one customer, the open pipeline, proposed value and won-this-quarter figures are that customer's. A customer with nothing worth selling yet is told by name rather than shown an empty table. Install the backend release of the same date first, or won totals will read low.",
+          "A section heading in a customer's side menu now closes the section you are inside. Clicking Identity, Azure or Conditional Access while already in it returns you to that customer's overview and collapses it; until now it did nothing at all."
+        ]
+      },
       {
         "tag": "portal-v20260810.234101",
         "releasedAt": "2026-08-10",
@@ -996,14 +1005,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260810.170659",
-    "releasedAt": "2026-08-10",
+    "tag": "backend-v20260811.012143",
+    "releasedAt": "2026-08-11",
     "notes": [
-      "Upgrading a customer to the root management group now tidies up after itself. When a customer who connected Azure one subscription at a time re-opens the invite as someone with rights at the root management group, Basewiser removes the narrower Reader assignment it no longer needs — so their Access control (IAM) shows one Basewiser assignment instead of two, and a security reviewer looking at it does not have to work out why there were ever two.",
-      "This is the only thing Basewiser ever deletes in a customer's tenant, and it is deliberately narrow. It removes only the assignment Basewiser itself wrote, only during the invite the customer has just approved, and only after confirming the wider access actually works — so it can never take away access the customer still needs. If the removal is refused, the assignment is left exactly where it is and the connection window says so; it grants nothing beyond what the root management group already covers.",
-      "Re-checking access no longer records scopes it could not verify. When \"Re-check access in Azure\" could not reach Azure to ask about the root management group, it recorded the narrower per-subscription scopes as though it had checked them. It now records nothing when it cannot answer, which is what the rest of the re-check already did."
+      "Won projects now keep the price they were actually agreed at. A project won three months ago held only a figure recalculated from today's evidence and today's rate card, so what you had sold appeared to move on its own; the agreed price is now carried alongside it.",
+      "Install this before the portal release of the same date. That release totals won work per customer and reads this price to do it — against an older backend those totals come out short, with no sign that anything is missing."
     ],
     "history": [
+      {
+        "tag": "backend-v20260811.012143",
+        "releasedAt": "2026-08-11",
+        "notes": [
+          "Won projects now keep the price they were actually agreed at. A project won three months ago held only a figure recalculated from today's evidence and today's rate card, so what you had sold appeared to move on its own; the agreed price is now carried alongside it.",
+          "Install this before the portal release of the same date. That release totals won work per customer and reads this price to do it — against an older backend those totals come out short, with no sign that anything is missing."
+        ]
+      },
       {
         "tag": "backend-v20260810.170659",
         "releasedAt": "2026-08-10",
