@@ -1,13 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260811.012309",
-    "releasedAt": "2026-08-11",
+    "tag": "portal-v20260812.000904",
+    "releasedAt": "2026-08-12",
     "notes": [
-      "Every customer now has an Opportunities entry in their side menu. It opens your pipeline filtered to that customer: the same page, the same rate card and the same proposal flow, narrowed to them — so the figure you quote a customer cannot disagree with the one in your portfolio.",
-      "The filters on Opportunities now narrow the four totals at the top, not just the tables beneath them. Filtered to one customer, the open pipeline, proposed value and won-this-quarter figures are that customer's. A customer with nothing worth selling yet is told by name rather than shown an empty table. Install the backend release of the same date first, or won totals will read low.",
-      "A section heading in a customer's side menu now closes the section you are inside. Clicking Identity, Azure or Conditional Access while already in it returns you to that customer's overview and collapses it; until now it did nothing at all."
+      "Onboarding a customer is now a page rather than a window. It opens with one line saying what onboarding is, the steps laid out so you can see where you are, and what approving grants written out beside the work instead of folded behind a link. The old window was cramped, and a stray click outside it lost whatever you were part-way through; this one has its own address, so you can leave it, go and do something in Azure, and come back to where you were.",
+      "Onboarding now asks how much Azure to ask for, because the two answers are not the same thing. Per subscription covers only the subscriptions the person who approves is an Owner on — anything they are not an Owner on is silently left out. All subscriptions, and future ones covers every subscription in the tenant including ones created later, and needs a Global Administrator who has raised their own Azure access first: the page names the toggle they turn on, where to find it, and tells them they can turn it back off once you are connected. Microsoft 365 is step one and is a complete onboarding on its own. Azure is step two, and Skip is a normal answer — you can send that link from the customer's page whenever they are ready.",
+      "Adding a customer by typing in their tenant ID is gone. It never opened a consent screen: it created an empty row that collected nothing until the customer approved anyway, which is the same approval the link asks for. If you used it to keep track of customers you had invited but who had not consented yet, that is a real gap and it is being fixed properly rather than left to a hand-typed row.",
+      "The first-run setup screen and the onboarding page now match: the same step list down the left, and the buttons on a bar at the foot of the screen. On setup those buttons could previously shift down the page when a step grew, so they were never quite where you last left them."
     ],
     "history": [
+      {
+        "tag": "portal-v20260812.000904",
+        "releasedAt": "2026-08-12",
+        "notes": [
+          "Onboarding a customer is now a page rather than a window. It opens with one line saying what onboarding is, the steps laid out so you can see where you are, and what approving grants written out beside the work instead of folded behind a link. The old window was cramped, and a stray click outside it lost whatever you were part-way through; this one has its own address, so you can leave it, go and do something in Azure, and come back to where you were.",
+          "Onboarding now asks how much Azure to ask for, because the two answers are not the same thing. Per subscription covers only the subscriptions the person who approves is an Owner on — anything they are not an Owner on is silently left out. All subscriptions, and future ones covers every subscription in the tenant including ones created later, and needs a Global Administrator who has raised their own Azure access first: the page names the toggle they turn on, where to find it, and tells them they can turn it back off once you are connected. Microsoft 365 is step one and is a complete onboarding on its own. Azure is step two, and Skip is a normal answer — you can send that link from the customer's page whenever they are ready.",
+          "Adding a customer by typing in their tenant ID is gone. It never opened a consent screen: it created an empty row that collected nothing until the customer approved anyway, which is the same approval the link asks for. If you used it to keep track of customers you had invited but who had not consented yet, that is a real gap and it is being fixed properly rather than left to a hand-typed row.",
+          "The first-run setup screen and the onboarding page now match: the same step list down the left, and the buttons on a bar at the foot of the screen. On setup those buttons could previously shift down the page when a step grew, so they were never quite where you last left them."
+        ]
+      },
       {
         "tag": "portal-v20260811.012309",
         "releasedAt": "2026-08-11",
