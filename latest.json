@@ -1,14 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260812.000904",
-    "releasedAt": "2026-08-12",
+    "tag": "portal-v20260814.105316",
+    "releasedAt": "2026-08-14",
     "notes": [
-      "Onboarding a customer is now a page rather than a window. It opens with one line saying what onboarding is, the steps laid out so you can see where you are, and what approving grants written out beside the work instead of folded behind a link. The old window was cramped, and a stray click outside it lost whatever you were part-way through; this one has its own address, so you can leave it, go and do something in Azure, and come back to where you were.",
-      "Onboarding now asks how much Azure to ask for, because the two answers are not the same thing. Per subscription covers only the subscriptions the person who approves is an Owner on — anything they are not an Owner on is silently left out. All subscriptions, and future ones covers every subscription in the tenant including ones created later, and needs a Global Administrator who has raised their own Azure access first: the page names the toggle they turn on, where to find it, and tells them they can turn it back off once you are connected. Microsoft 365 is step one and is a complete onboarding on its own. Azure is step two, and Skip is a normal answer — you can send that link from the customer's page whenever they are ready.",
-      "Adding a customer by typing in their tenant ID is gone. It never opened a consent screen: it created an empty row that collected nothing until the customer approved anyway, which is the same approval the link asks for. If you used it to keep track of customers you had invited but who had not consented yet, that is a real gap and it is being fixed properly rather than left to a hand-typed row.",
-      "The first-run setup screen and the onboarding page now match: the same step list down the left, and the buttons on a bar at the foot of the screen. On setup those buttons could previously shift down the page when a step grew, so they were never quite where you last left them."
+      "Azure now has a page of its own across your whole portfolio, beside Entra ID. It shows your worst Azure exposure across every connected customer, worst first, and a row clicks through to the customer and the theme it came from. Subscriptions are counted rather than listed: the page is already grouped by customer, and stacking subscriptions underneath would be a second level of grouping in one flat table. There is no Critical card, because Azure has no Critical severity and a card that could only ever read zero tells you nothing. A portfolio with no Azure connected is told so in a sentence, never shown a zero that reads as clean. Install the backend release of the same date first, or the page opens empty.",
+      "The side menu now says Entra ID where it said Identity — in your portfolio menu, in each customer's menu, and on the Entra ID health heading. What sits under that name is Tenant settings, Applications, Group hygiene and Auth weakness, which Identity only ever described about half of. Nothing about the addresses has changed, so your existing links and bookmarks still work, and Identity Health stays the name of the product you are billed for.",
+      "The update banner has moved to the bottom-right corner and now tells you what it is doing. It used to be a strip across the top that pushed the page down when it appeared and back up when it went, moving whatever you were reading at the time. It now sits over the page instead, so nothing shifts. While an update runs it names each step as it happens — the portal, the backend, then waiting for the new build to serve — and it waits for the new version to actually answer before reloading, rather than reloading on a timer. An update that fails now keeps the card, says what went wrong in the words the server used, and offers Try again, instead of disappearing and leaving you to guess."
     ],
     "history": [
+      {
+        "tag": "portal-v20260814.105316",
+        "releasedAt": "2026-08-14",
+        "notes": [
+          "Azure now has a page of its own across your whole portfolio, beside Entra ID. It shows your worst Azure exposure across every connected customer, worst first, and a row clicks through to the customer and the theme it came from. Subscriptions are counted rather than listed: the page is already grouped by customer, and stacking subscriptions underneath would be a second level of grouping in one flat table. There is no Critical card, because Azure has no Critical severity and a card that could only ever read zero tells you nothing. A portfolio with no Azure connected is told so in a sentence, never shown a zero that reads as clean. Install the backend release of the same date first, or the page opens empty.",
+          "The side menu now says Entra ID where it said Identity — in your portfolio menu, in each customer's menu, and on the Entra ID health heading. What sits under that name is Tenant settings, Applications, Group hygiene and Auth weakness, which Identity only ever described about half of. Nothing about the addresses has changed, so your existing links and bookmarks still work, and Identity Health stays the name of the product you are billed for.",
+          "The update banner has moved to the bottom-right corner and now tells you what it is doing. It used to be a strip across the top that pushed the page down when it appeared and back up when it went, moving whatever you were reading at the time. It now sits over the page instead, so nothing shifts. While an update runs it names each step as it happens — the portal, the backend, then waiting for the new build to serve — and it waits for the new version to actually answer before reloading, rather than reloading on a timer. An update that fails now keeps the card, says what went wrong in the words the server used, and offers Try again, instead of disappearing and leaving you to guess."
+        ]
+      },
       {
         "tag": "portal-v20260812.000904",
         "releasedAt": "2026-08-12",
@@ -1016,13 +1024,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260811.012143",
-    "releasedAt": "2026-08-11",
+    "tag": "backend-v20260814.105316",
+    "releasedAt": "2026-08-14",
     "notes": [
-      "Won projects now keep the price they were actually agreed at. A project won three months ago held only a figure recalculated from today's evidence and today's rate card, so what you had sold appeared to move on its own; the agreed price is now carried alongside it.",
-      "Install this before the portal release of the same date. That release totals won work per customer and reads this price to do it — against an older backend those totals come out short, with no sign that anything is missing."
+      "Install this before the portal release of the same date. It adds the portfolio-wide Azure rollup that the new Azure page reads — against an older backend that page opens empty, with nothing saying why."
     ],
     "history": [
+      {
+        "tag": "backend-v20260814.105316",
+        "releasedAt": "2026-08-14",
+        "notes": [
+          "Install this before the portal release of the same date. It adds the portfolio-wide Azure rollup that the new Azure page reads — against an older backend that page opens empty, with nothing saying why."
+        ]
+      },
       {
         "tag": "backend-v20260811.012143",
         "releasedAt": "2026-08-11",
