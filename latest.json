@@ -1038,12 +1038,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260814.105316",
-    "releasedAt": "2026-08-14",
+    "tag": "backend-v20260815.193927",
+    "releasedAt": "2026-08-15",
     "notes": [
-      "Install this before the portal release of the same date. It adds the portfolio-wide Azure rollup that the new Azure page reads — against an older backend that page opens empty, with nothing saying why."
+      "A customer you have lost access to is named again, rather than shown as a bare identifier. Reading a customer's name relies on a permission that deliberately sits outside the set your customers are asked to approve — it is not on their consent screen, and should not be. The side effect was that approving consent in your own tenant quietly removed it again each time, so a disconnected customer could come back as a long identifier with nothing to say which one it was. That permission is now checked and put back automatically: once straight after a consent is approved, and once more on the nightly sweep, so it repairs itself whether it went missing through a consent or was removed by hand. Nothing about what your customers approve has changed, and no new credential is created in the process."
     ],
     "history": [
+      {
+        "tag": "backend-v20260815.193927",
+        "releasedAt": "2026-08-15",
+        "notes": [
+          "A customer you have lost access to is named again, rather than shown as a bare identifier. Reading a customer's name relies on a permission that deliberately sits outside the set your customers are asked to approve — it is not on their consent screen, and should not be. The side effect was that approving consent in your own tenant quietly removed it again each time, so a disconnected customer could come back as a long identifier with nothing to say which one it was. That permission is now checked and put back automatically: once straight after a consent is approved, and once more on the nightly sweep, so it repairs itself whether it went missing through a consent or was removed by hand. Nothing about what your customers approve has changed, and no new credential is created in the process."
+        ]
+      },
       {
         "tag": "backend-v20260814.105316",
         "releasedAt": "2026-08-14",
