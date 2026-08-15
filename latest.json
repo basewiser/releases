@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260814.190159",
-    "releasedAt": "2026-08-14",
+    "tag": "portal-v20260815.192216",
+    "releasedAt": "2026-08-15",
     "notes": [
-      "What's new is now a history rather than a single list. Every release you have not installed yet gets its own section, newest first, with its date, how many changes it carries and the changes written out in full — so if you have skipped a few, you can read what each one was instead of only the newest. Above them it names the build you are running and the build you would be on, portal and backend side by side, so you can see exactly what the update moves. Starting the update from in there now closes it and leaves the job with the card in the corner, which was already showing you the same progress.",
-      "The update card's progress no longer runs ahead of itself. The percentage used to leap to 95 and then sit there for the best part of a minute while the new build came up, which reads as though it has stalled when it has not; the number and the bar now move together and both follow the stage the update is actually in. While an update is waiting for you the card shows a marker travelling along its top edge, and the step in progress is marked as it happens.",
-      "Opening Opportunities from inside a customer no longer looks like the page reloading. The menu on the left stayed on that customer, but on the way there it visibly flicked out to the main menu and back, which made a normal click look like something had gone wrong. It stays put now, and opening one of that customer's deals keeps it too. The main menu still returns when you open Opportunities across the whole portfolio, or widen the customer filter past the one you came in with."
+      "The side menu now shows how much each findings section holds. Entra ID, Azure and Conditional Access each carry a number beside them, the way the Inbox already did and the way a customer's own menu already does, so you can see where the work is without opening each section to find out. The numbers are the same totals the section pages themselves show, so a number in the menu cannot disagree with the page it takes you to. A section sitting at zero shows no number at all, because a zero reads as a measurement and a section can be empty either because it is clean or because nothing is connected to it yet — the page tells you which. The Inbox keeps its red number and is still the only one shown when the menu is collapsed to the narrow rail, because several red numerals down a narrow column read as several alarms rather than one."
     ],
     "history": [
+      {
+        "tag": "portal-v20260815.192216",
+        "releasedAt": "2026-08-15",
+        "notes": [
+          "The side menu now shows how much each findings section holds. Entra ID, Azure and Conditional Access each carry a number beside them, the way the Inbox already did and the way a customer's own menu already does, so you can see where the work is without opening each section to find out. The numbers are the same totals the section pages themselves show, so a number in the menu cannot disagree with the page it takes you to. A section sitting at zero shows no number at all, because a zero reads as a measurement and a section can be empty either because it is clean or because nothing is connected to it yet — the page tells you which. The Inbox keeps its red number and is still the only one shown when the menu is collapsed to the narrow rail, because several red numerals down a narrow column read as several alarms rather than one."
+        ]
+      },
       {
         "tag": "portal-v20260814.190159",
         "releasedAt": "2026-08-14",
