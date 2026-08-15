@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20260815.192216",
+    "tag": "portal-v20260815.211000",
     "releasedAt": "2026-08-15",
     "notes": [
-      "The side menu now shows how much each findings section holds. Entra ID, Azure and Conditional Access each carry a number beside them, the way the Inbox already did and the way a customer's own menu already does, so you can see where the work is without opening each section to find out. The numbers are the same totals the section pages themselves show, so a number in the menu cannot disagree with the page it takes you to. A section sitting at zero shows no number at all, because a zero reads as a measurement and a section can be empty either because it is clean or because nothing is connected to it yet — the page tells you which. The Inbox keeps its red number and is still the only one shown when the menu is collapsed to the narrow rail, because several red numerals down a narrow column read as several alarms rather than one."
+      "A customer you have invited to Microsoft 365 but who has not approved yet now has a row of their own. Until now they had none — the approval link is the same for every customer, so nothing about handing it over recorded who it went to, and a customer only exists once they approve, leaving days in which the portal showed nothing at all. Type their address when you hand the link over and they appear under Invited on the Customers list, with how long they have been waiting and who sent it. The row clears itself when they approve, and Dismiss is there for one that landed somewhere it could not see. The address stays optional — leave it blank and you get the same link and the same three actions, with nothing recorded. Install the backend update first: without it the address is accepted and quietly not kept."
     ],
     "history": [
+      {
+        "tag": "portal-v20260815.211000",
+        "releasedAt": "2026-08-15",
+        "notes": [
+          "A customer you have invited to Microsoft 365 but who has not approved yet now has a row of their own. Until now they had none — the approval link is the same for every customer, so nothing about handing it over recorded who it went to, and a customer only exists once they approve, leaving days in which the portal showed nothing at all. Type their address when you hand the link over and they appear under Invited on the Customers list, with how long they have been waiting and who sent it. The row clears itself when they approve, and Dismiss is there for one that landed somewhere it could not see. The address stays optional — leave it blank and you get the same link and the same three actions, with nothing recorded. Install the backend update first: without it the address is accepted and quietly not kept."
+        ]
+      },
       {
         "tag": "portal-v20260815.192216",
         "releasedAt": "2026-08-15",
@@ -1038,12 +1045,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260815.193927",
+    "tag": "backend-v20260815.211000",
     "releasedAt": "2026-08-15",
     "notes": [
-      "A customer you have lost access to is named again, rather than shown as a bare identifier. Reading a customer's name relies on a permission that deliberately sits outside the set your customers are asked to approve — it is not on their consent screen, and should not be. The side effect was that approving consent in your own tenant quietly removed it again each time, so a disconnected customer could come back as a long identifier with nothing to say which one it was. That permission is now checked and put back automatically: once straight after a consent is approved, and once more on the nightly sweep, so it repairs itself whether it went missing through a consent or was removed by hand. Nothing about what your customers approve has changed, and no new credential is created in the process."
+      "Serves the pending Microsoft 365 invite that the Customers list reads. Install this before the portal update — the portal shows the field either way, but until this is in place an address typed there is accepted and never recorded. When a customer approves, their invite is matched against every domain their tenant has verified rather than only its default one, and cleared automatically, because an operator who wrote to admin@customer.com has named a domain that is frequently not the one the directory reports first."
     ],
     "history": [
+      {
+        "tag": "backend-v20260815.211000",
+        "releasedAt": "2026-08-15",
+        "notes": [
+          "Serves the pending Microsoft 365 invite that the Customers list reads. Install this before the portal update — the portal shows the field either way, but until this is in place an address typed there is accepted and never recorded. When a customer approves, their invite is matched against every domain their tenant has verified rather than only its default one, and cleared automatically, because an operator who wrote to admin@customer.com has named a domain that is frequently not the one the directory reports first."
+        ]
+      },
       {
         "tag": "backend-v20260815.193927",
         "releasedAt": "2026-08-15",
