@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260815.211000",
-    "releasedAt": "2026-08-15",
+    "tag": "portal-v20260816.222831",
+    "releasedAt": "2026-08-16",
     "notes": [
-      "A customer you have invited to Microsoft 365 but who has not approved yet now has a row of their own. Until now they had none — the approval link is the same for every customer, so nothing about handing it over recorded who it went to, and a customer only exists once they approve, leaving days in which the portal showed nothing at all. Type their address when you hand the link over and they appear under Invited on the Customers list, with how long they have been waiting and who sent it. The row clears itself when they approve, and Dismiss is there for one that landed somewhere it could not see. The address stays optional — leave it blank and you get the same link and the same three actions, with nothing recorded. Install the backend update first: without it the address is accepted and quietly not kept."
+      "Proposals no longer print a garbled scope line. Every item of included scope now carries its own written sentence, or is deliberately left out because the project's standing scope already promises it. Previously the line was assembled at print time by cutting a phrase off the observation and appending to it, which composed a readable sentence only for the two Conditional Access lines it was built around — the Azure waste proposal reached a customer as three clauses run together.",
+      "The connection overlay's verdict now reads each half of a connection on its own. It previously answered \"is there work left\" and reported the answer as \"not connected yet\", so a customer who was connected but incomplete, or connected and since removed, read the same as one who had never started. Four states were wrong; three of nine sample customers rendered incorrectly.",
+      "Install the backend update alongside this one. Without it the portal still works, but falls back to printing the raw observation for an included-scope line rather than the written sentence — which is the garbled line the first note describes."
     ],
     "history": [
+      {
+        "tag": "portal-v20260816.222831",
+        "releasedAt": "2026-08-16",
+        "notes": [
+          "Proposals no longer print a garbled scope line. Every item of included scope now carries its own written sentence, or is deliberately left out because the project's standing scope already promises it. Previously the line was assembled at print time by cutting a phrase off the observation and appending to it, which composed a readable sentence only for the two Conditional Access lines it was built around — the Azure waste proposal reached a customer as three clauses run together.",
+          "The connection overlay's verdict now reads each half of a connection on its own. It previously answered \"is there work left\" and reported the answer as \"not connected yet\", so a customer who was connected but incomplete, or connected and since removed, read the same as one who had never started. Four states were wrong; three of nine sample customers rendered incorrectly.",
+          "Install the backend update alongside this one. Without it the portal still works, but falls back to printing the raw observation for an included-scope line rather than the written sentence — which is the garbled line the first note describes."
+        ]
+      },
       {
         "tag": "portal-v20260815.211000",
         "releasedAt": "2026-08-15",
@@ -1045,12 +1056,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260815.211000",
-    "releasedAt": "2026-08-15",
+    "tag": "backend-v20260816.222831",
+    "releasedAt": "2026-08-16",
     "notes": [
-      "Serves the pending Microsoft 365 invite that the Customers list reads. Install this before the portal update — the portal shows the field either way, but until this is in place an address typed there is accepted and never recorded. When a customer approves, their invite is matched against every domain their tenant has verified rather than only its default one, and cleared automatically, because an operator who wrote to admin@customer.com has named a domain that is frequently not the one the directory reports first."
+      "Serves a written scope sentence for every included-scope line on an opportunity, instead of leaving the portal to assemble one from the observation text. The field is required, so a new opportunity type cannot ship a scope line the proposal has no wording for — it fails to build rather than reaching a customer as broken prose.",
+      "Operator-facing evidence on the Conditional Access baseline now names Guard. Two lines read as observations about the customer's Microsoft tenant when both were describing Guard's own state on our side — one had already been mistaken for a tenant misconfiguration and written into a draft proposal as one.",
+      "Install this before or with the portal update. The portal degrades gracefully without it rather than breaking, but the proposal scope lines it prints are the unfixed ones."
     ],
     "history": [
+      {
+        "tag": "backend-v20260816.222831",
+        "releasedAt": "2026-08-16",
+        "notes": [
+          "Serves a written scope sentence for every included-scope line on an opportunity, instead of leaving the portal to assemble one from the observation text. The field is required, so a new opportunity type cannot ship a scope line the proposal has no wording for — it fails to build rather than reaching a customer as broken prose.",
+          "Operator-facing evidence on the Conditional Access baseline now names Guard. Two lines read as observations about the customer's Microsoft tenant when both were describing Guard's own state on our side — one had already been mistaken for a tenant misconfiguration and written into a draft proposal as one.",
+          "Install this before or with the portal update. The portal degrades gracefully without it rather than breaking, but the proposal scope lines it prints are the unfixed ones."
+        ]
+      },
       {
         "tag": "backend-v20260815.211000",
         "releasedAt": "2026-08-15",
