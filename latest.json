@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260816.222831",
-    "releasedAt": "2026-08-16",
+    "tag": "portal-v20260817.151417",
+    "releasedAt": "2026-08-17",
     "notes": [
-      "Proposals no longer print a garbled scope line. Every item of included scope now carries its own written sentence, or is deliberately left out because the project's standing scope already promises it. Previously the line was assembled at print time by cutting a phrase off the observation and appending to it, which composed a readable sentence only for the two Conditional Access lines it was built around — the Azure waste proposal reached a customer as three clauses run together.",
-      "The connection overlay's verdict now reads each half of a connection on its own. It previously answered \"is there work left\" and reported the answer as \"not connected yet\", so a customer who was connected but incomplete, or connected and since removed, read the same as one who had never started. Four states were wrong; three of nine sample customers rendered incorrectly.",
-      "Install the backend update alongside this one. Without it the portal still works, but falls back to printing the raw observation for an included-scope line rather than the written sentence — which is the garbled line the first note describes."
+      "An opportunity whose evidence can no longer be read now stays in your pipeline instead of moving to Delivered & resolved. Losing sight of a deal is not the customer fixing it, and work you are actively selling should not file itself away because a sweep failed. It carries no value while the evidence is out of reach — counted as open, left out of the pipeline total — unless you have quoted it by hand, in which case your own price is kept.",
+      "A won project whose evidence went dark stays in Delivered & resolved, but is badged Unconfirmed rather than Delivered and now shows its price. Won this quarter was already counting that deal while the row itself showed no money, so the tile and the list disagreed about the same project. Both kinds of unconfirmed row now link straight to that customer's connection, which is where the cause is, and neither can be turned into a proposal — the document would carry no findings and no price.",
+      "Install this before or with the backend update. In the other order an older portal reads a won project whose evidence went dark as a plain Delivered with its evidence cleared, which is the claim this release exists to stop."
     ],
     "history": [
+      {
+        "tag": "portal-v20260817.151417",
+        "releasedAt": "2026-08-17",
+        "notes": [
+          "An opportunity whose evidence can no longer be read now stays in your pipeline instead of moving to Delivered & resolved. Losing sight of a deal is not the customer fixing it, and work you are actively selling should not file itself away because a sweep failed. It carries no value while the evidence is out of reach — counted as open, left out of the pipeline total — unless you have quoted it by hand, in which case your own price is kept.",
+          "A won project whose evidence went dark stays in Delivered & resolved, but is badged Unconfirmed rather than Delivered and now shows its price. Won this quarter was already counting that deal while the row itself showed no money, so the tile and the list disagreed about the same project. Both kinds of unconfirmed row now link straight to that customer's connection, which is where the cause is, and neither can be turned into a proposal — the document would carry no findings and no price.",
+          "Install this before or with the backend update. In the other order an older portal reads a won project whose evidence went dark as a plain Delivered with its evidence cleared, which is the claim this release exists to stop."
+        ]
+      },
       {
         "tag": "portal-v20260816.222831",
         "releasedAt": "2026-08-16",
@@ -1056,14 +1065,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260816.222831",
-    "releasedAt": "2026-08-16",
+    "tag": "backend-v20260817.151417",
+    "releasedAt": "2026-08-17",
     "notes": [
       "Serves a written scope sentence for every included-scope line on an opportunity, instead of leaving the portal to assemble one from the observation text. The field is required, so a new opportunity type cannot ship a scope line the proposal has no wording for — it fails to build rather than reaching a customer as broken prose.",
       "Operator-facing evidence on the Conditional Access baseline now names Guard. Two lines read as observations about the customer's Microsoft tenant when both were describing Guard's own state on our side — one had already been mistaken for a tenant misconfiguration and written into a draft proposal as one.",
       "Install this before or with the portal update. The portal degrades gracefully without it rather than breaking, but the proposal scope lines it prints are the unfixed ones."
     ],
     "history": [
+      {
+        "tag": "backend-v20260817.151417",
+        "releasedAt": "2026-08-17",
+        "notes": [
+          "Splits the case where an opportunity's evidence can no longer be read, by whether the project was won. A won one stays in the resolved list and keeps its price; anything still open goes back into the active pipeline with no derived value. Previously both went to the resolved list, so a deal an operator was working migrated into history because a sweep failed.",
+          "A row whose evidence could not be re-read no longer reports an outcome that claims the evidence cleared. It reports the delivery it can stand behind and flags the unreadable evidence separately, so nothing downstream has to infer the difference from one field.",
+          "Install the portal update first, or with this one. On its own, an older portal renders a won project whose evidence went dark as a plain Delivered with its evidence cleared."
+        ]
+      },
       {
         "tag": "backend-v20260816.222831",
         "releasedAt": "2026-08-16",
