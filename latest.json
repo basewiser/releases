@@ -1074,14 +1074,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260821.190620",
+    "tag": "backend-v20260821.200344",
     "releasedAt": "2026-08-21",
     "notes": [
-      "Keeps a durable record of what closed. A daily per-tenant score is snapshotted per category, and every finding that stops firing leaves a dated Resolution saying why it closed — fixed, the check retired, or the tenant offboarded. A check that could not be evaluated no longer closes its finding as resolved, so a licence gap or a failed read is never reported to a customer as work they completed.",
-      "All 69 checks now live in one registry that is validated when the service starts, and each one states what it measures and where its bar sits. Findings and priced opportunities cite the checks behind them. Two checks were retitled and one dropped from medium to low in that pass, so scores move slightly on the next sweep for a reason on our side — which is exactly the movement the portal's documents now mark on the trend.",
-      "Install this before or with the portal update."
+      "Fixes a false “could not be read” on the Azure posture card. A tenant whose Azure score history had not been written yet — which is every tenant until its first Azure sweep after the previous update — made the assessment document print that the history could not be read and that this was a fault on our side. It was not: there was simply nothing there yet. An empty history now reads as an empty history, and a genuinely failed read still says so. A tenant that has already been swept was never affected, and any tenant that shows the wrong panel today is corrected by its next sweep with or without this update.",
+      "Backend only. Your portal is unchanged by this release and needs no update alongside it."
     ],
     "history": [
+      {
+        "tag": "backend-v20260821.200344",
+        "releasedAt": "2026-08-21",
+        "notes": [
+          "Fixes a false “could not be read” on the Azure posture card. A tenant whose Azure score history had not been written yet — which is every tenant until its first Azure sweep after the previous update — made the assessment document print that the history could not be read and that this was a fault on our side. It was not: there was simply nothing there yet. An empty history now reads as an empty history, and a genuinely failed read still says so. A tenant that has already been swept was never affected, and any tenant that shows the wrong panel today is corrected by its next sweep with or without this update.",
+          "Backend only. Your portal is unchanged by this release and needs no update alongside it."
+        ]
+      },
       {
         "tag": "backend-v20260821.190620",
         "releasedAt": "2026-08-21",
