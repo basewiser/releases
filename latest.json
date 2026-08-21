@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260821.190620",
+    "tag": "portal-v20260821.224744",
     "releasedAt": "2026-08-21",
     "notes": [
-      "Download PDF works in an installed portal. The assessment artifact — the document you hand a customer, with what we found, what it would take to fix and what it costs — prints on the server, so every operator on every device gets identical bytes rather than whatever their own browser would have produced. The browser that prints it now ships inside the portal image, which is about 300 MB larger and needs the resources the install docs state.",
-      "Posture is told per category and over time. Entra and Azure carry their own score, their own 30-day trend and their own count of what actually closed this period — never one blended number — and every finding names the check that produced it and what that check measures. The customer-facing documents carry the same story.",
-      "Where our check catalogue changed inside a trend window, both customer documents now mark that day on the chart and count movement from the mark onwards, so a re-grading on our side never reads as the customer's own improvement. Install the backend update first or with this one: until you do, the per-category trend, the closed count, the check citations and the catalogue stamp have nothing to draw on and are left out of the pages entirely."
+      "You can run an Azure sweep when you want one. Sweep Azure now sits on every Azure page for a customer — the theme pages and Subscriptions — and reads that one customer's subscriptions straight away instead of waiting for the nightly run. A customer you have just connected, or just fixed something for, can be made to show a posture number in a single click, from the page where its absence is visible. It tells you what it is doing while it runs and what came back, including a sweep that only partly succeeded.",
+      "Install the backend update first, or at the same time as this one. An older backend ignores the per-customer scope this button sends: the sweep would read every customer you have rather than the one whose page you are on, and would not be able to explain a sweep that found nothing to do."
     ],
     "history": [
+      {
+        "tag": "portal-v20260821.224744",
+        "releasedAt": "2026-08-21",
+        "notes": [
+          "You can run an Azure sweep when you want one. Sweep Azure now sits on every Azure page for a customer — the theme pages and Subscriptions — and reads that one customer's subscriptions straight away instead of waiting for the nightly run. A customer you have just connected, or just fixed something for, can be made to show a posture number in a single click, from the page where its absence is visible. It tells you what it is doing while it runs and what came back, including a sweep that only partly succeeded.",
+          "Install the backend update first, or at the same time as this one. An older backend ignores the per-customer scope this button sends: the sweep would read every customer you have rather than the one whose page you are on, and would not be able to explain a sweep that found nothing to do."
+        ]
+      },
       {
         "tag": "portal-v20260821.190620",
         "releasedAt": "2026-08-21",
@@ -1074,13 +1081,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260821.200344",
+    "tag": "backend-v20260821.224744",
     "releasedAt": "2026-08-21",
     "notes": [
-      "Fixes a false “could not be read” on the Azure posture card. A tenant whose Azure score history had not been written yet — which is every tenant until its first Azure sweep after the previous update — made the assessment document print that the history could not be read and that this was a fault on our side. It was not: there was simply nothing there yet. An empty history now reads as an empty history, and a genuinely failed read still says so. A tenant that has already been swept was never affected, and any tenant that shows the wrong panel today is corrected by its next sweep with or without this update.",
-      "Backend only. Your portal is unchanged by this release and needs no update alongside it."
+      "Install this before the matching portal update, or with it. Adds per-customer scope to the on-demand Azure sweep so the portal's new Sweep Azure now button reads one customer rather than every customer, and refuses a second sweep of the same customer while one is still running.",
+      "A sweep that found nothing to do now says why, instead of returning a bare zero: no Azure connection yet, a connection that is not connected, a customer whose seat is not active, or a connection made in the last five minutes that Azure Resource Graph has not caught up with.",
+      "The two on-demand sweep endpoints are now guarded by the backend itself rather than by the way the deployment happens to be configured. They were protected only by the sign-in layer in front of the Function App; a deployment configured without it would have had no protection at all, and the sweep's response names customers' subscriptions."
     ],
     "history": [
+      {
+        "tag": "backend-v20260821.224744",
+        "releasedAt": "2026-08-21",
+        "notes": [
+          "Install this before the matching portal update, or with it. Adds per-customer scope to the on-demand Azure sweep so the portal's new Sweep Azure now button reads one customer rather than every customer, and refuses a second sweep of the same customer while one is still running.",
+          "A sweep that found nothing to do now says why, instead of returning a bare zero: no Azure connection yet, a connection that is not connected, a customer whose seat is not active, or a connection made in the last five minutes that Azure Resource Graph has not caught up with.",
+          "The two on-demand sweep endpoints are now guarded by the backend itself rather than by the way the deployment happens to be configured. They were protected only by the sign-in layer in front of the Function App; a deployment configured without it would have had no protection at all, and the sweep's response names customers' subscriptions."
+        ]
+      },
       {
         "tag": "backend-v20260821.200344",
         "releasedAt": "2026-08-21",
