@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260817.151417",
-    "releasedAt": "2026-08-17",
+    "tag": "portal-v20260821.190620",
+    "releasedAt": "2026-08-21",
     "notes": [
-      "An opportunity whose evidence can no longer be read now stays in your pipeline instead of moving to Delivered & resolved. Losing sight of a deal is not the customer fixing it, and work you are actively selling should not file itself away because a sweep failed. It carries no value while the evidence is out of reach — counted as open, left out of the pipeline total — unless you have quoted it by hand, in which case your own price is kept.",
-      "A won project whose evidence went dark stays in Delivered & resolved, but is badged Unconfirmed rather than Delivered and now shows its price. Won this quarter was already counting that deal while the row itself showed no money, so the tile and the list disagreed about the same project. Both kinds of unconfirmed row now link straight to that customer's connection, which is where the cause is, and neither can be turned into a proposal — the document would carry no findings and no price.",
-      "Install this before or with the backend update. In the other order an older portal reads a won project whose evidence went dark as a plain Delivered with its evidence cleared, which is the claim this release exists to stop."
+      "Download PDF works in an installed portal. The assessment artifact — the document you hand a customer, with what we found, what it would take to fix and what it costs — prints on the server, so every operator on every device gets identical bytes rather than whatever their own browser would have produced. The browser that prints it now ships inside the portal image, which is about 300 MB larger and needs the resources the install docs state.",
+      "Posture is told per category and over time. Entra and Azure carry their own score, their own 30-day trend and their own count of what actually closed this period — never one blended number — and every finding names the check that produced it and what that check measures. The customer-facing documents carry the same story.",
+      "Where our check catalogue changed inside a trend window, both customer documents now mark that day on the chart and count movement from the mark onwards, so a re-grading on our side never reads as the customer's own improvement. Install the backend update first or with this one: until you do, the per-category trend, the closed count, the check citations and the catalogue stamp have nothing to draw on and are left out of the pages entirely."
     ],
     "history": [
+      {
+        "tag": "portal-v20260821.190620",
+        "releasedAt": "2026-08-21",
+        "notes": [
+          "Download PDF works in an installed portal. The assessment artifact — the document you hand a customer, with what we found, what it would take to fix and what it costs — prints on the server, so every operator on every device gets identical bytes rather than whatever their own browser would have produced. The browser that prints it now ships inside the portal image, which is about 300 MB larger and needs the resources the install docs state.",
+          "Posture is told per category and over time. Entra and Azure carry their own score, their own 30-day trend and their own count of what actually closed this period — never one blended number — and every finding names the check that produced it and what that check measures. The customer-facing documents carry the same story.",
+          "Where our check catalogue changed inside a trend window, both customer documents now mark that day on the chart and count movement from the mark onwards, so a re-grading on our side never reads as the customer's own improvement. Install the backend update first or with this one: until you do, the per-category trend, the closed count, the check citations and the catalogue stamp have nothing to draw on and are left out of the pages entirely."
+        ]
+      },
       {
         "tag": "portal-v20260817.151417",
         "releasedAt": "2026-08-17",
@@ -1065,14 +1074,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260817.151417",
-    "releasedAt": "2026-08-17",
+    "tag": "backend-v20260821.190620",
+    "releasedAt": "2026-08-21",
     "notes": [
-      "Serves a written scope sentence for every included-scope line on an opportunity, instead of leaving the portal to assemble one from the observation text. The field is required, so a new opportunity type cannot ship a scope line the proposal has no wording for — it fails to build rather than reaching a customer as broken prose.",
-      "Operator-facing evidence on the Conditional Access baseline now names Guard. Two lines read as observations about the customer's Microsoft tenant when both were describing Guard's own state on our side — one had already been mistaken for a tenant misconfiguration and written into a draft proposal as one.",
-      "Install this before or with the portal update. The portal degrades gracefully without it rather than breaking, but the proposal scope lines it prints are the unfixed ones."
+      "Keeps a durable record of what closed. A daily per-tenant score is snapshotted per category, and every finding that stops firing leaves a dated Resolution saying why it closed — fixed, the check retired, or the tenant offboarded. A check that could not be evaluated no longer closes its finding as resolved, so a licence gap or a failed read is never reported to a customer as work they completed.",
+      "All 69 checks now live in one registry that is validated when the service starts, and each one states what it measures and where its bar sits. Findings and priced opportunities cite the checks behind them. Two checks were retitled and one dropped from medium to low in that pass, so scores move slightly on the next sweep for a reason on our side — which is exactly the movement the portal's documents now mark on the trend.",
+      "Install this before or with the portal update."
     ],
     "history": [
+      {
+        "tag": "backend-v20260821.190620",
+        "releasedAt": "2026-08-21",
+        "notes": [
+          "Keeps a durable record of what closed. A daily per-tenant score is snapshotted per category, and every finding that stops firing leaves a dated Resolution saying why it closed — fixed, the check retired, or the tenant offboarded. A check that could not be evaluated no longer closes its finding as resolved, so a licence gap or a failed read is never reported to a customer as work they completed.",
+          "All 69 checks now live in one registry that is validated when the service starts, and each one states what it measures and where its bar sits. Findings and priced opportunities cite the checks behind them. Two checks were retitled and one dropped from medium to low in that pass, so scores move slightly on the next sweep for a reason on our side — which is exactly the movement the portal's documents now mark on the trend.",
+          "Install this before or with the portal update."
+        ]
+      },
       {
         "tag": "backend-v20260817.151417",
         "releasedAt": "2026-08-17",
