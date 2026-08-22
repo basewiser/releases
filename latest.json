@@ -1091,15 +1091,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260822.210435",
+    "tag": "backend-v20260822.224424",
     "releasedAt": "2026-08-22",
     "notes": [
-      "Install this before the matching portal update, or with it. Basewiser no longer changes Conditional Access in a customer's tenant. Drift is still detected and backups are still taken — both are reads — and the fix itself is now yours to apply in your own admin session, from a Guided restore plan that lists the exact changes to make.",
-      "A new install asks for less. The consent screen no longer offers to change Conditional Access; every permission a customer's Global Administrator grants is a read. An existing install keeps working with no migration: a customer stored as Auto-Restore is read as Monitor on every scan and the stored setting is left untouched, which is what keeps the change reversible.",
-      "Drift that keeps coming back is now sold as a project. Three or more non-allowlisted drift events across two or more distinct policies in thirty days adds a change-control scope to that customer's Conditional Access opportunity — a named owner per policy, an approval path, a restore runbook — because a baseline that keeps moving is work somebody has to be paid to do.",
-      "Guard now checks a tenant once a minute by default, rather than every thirty seconds. Drift is found within a minute of happening instead of within thirty seconds; nothing else about detection changes, and the per-deployment schedule is still yours to set."
+      "This update stands alone — no matching portal update is needed, and installing it does not require one.",
+      "A brand-new deployment's first customer document no longer says part of it is missing. Until now, a customer who had not yet had a finding close read “PART OF THIS DOCUMENT IS MISSING — a fault on our side” at the top of their assessment, and was told not to treat it as an all-clear. Nothing was wrong: the record of closed findings simply did not exist yet, and a record that has never been written is empty rather than unreadable. The document now says nothing closed this period, which is the truth.",
+      "The distinction it rests on is kept intact: a record we genuinely cannot read still says so, in those words, and is still named in the document. Only “never written” became “empty”."
     ],
     "history": [
+      {
+        "tag": "backend-v20260822.224424",
+        "releasedAt": "2026-08-22",
+        "notes": [
+          "This update stands alone — no matching portal update is needed, and installing it does not require one.",
+          "A brand-new deployment's first customer document no longer says part of it is missing. Until now, a customer who had not yet had a finding close read “PART OF THIS DOCUMENT IS MISSING — a fault on our side” at the top of their assessment, and was told not to treat it as an all-clear. Nothing was wrong: the record of closed findings simply did not exist yet, and a record that has never been written is empty rather than unreadable. The document now says nothing closed this period, which is the truth.",
+          "The distinction it rests on is kept intact: a record we genuinely cannot read still says so, in those words, and is still named in the document. Only “never written” became “empty”."
+        ]
+      },
       {
         "tag": "backend-v20260822.210435",
         "releasedAt": "2026-08-22",
