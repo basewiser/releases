@@ -1,14 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20260823.204311",
+    "tag": "portal-v20260823.221502",
     "releasedAt": "2026-08-23",
     "notes": [
-      "Install this one first, before the matching backend update. The other order is the one that breaks: a backend newer than the portal sends a backup status this portal has no label for.",
-      "Guard is gone as a separate thing to switch on. Every connected tenant is watched, and connecting one now takes its first backup straight away — there is no mode, no arming and no picker. If a tenant is connected, its Conditional Access is being watched. Telling us a change is expected is still the allowlist's job, and that has not changed.",
-      "A backup being held on purpose now reads as held rather than overdue. A tenant we are deliberately holding — because a change is outstanding and a backup would make it the new baseline — no longer wears the same badge as one whose backups are genuinely broken.",
-      "The word \"Guard\" has been retired across the portal. The inbox category that was \"Policy guard\" is now \"Policy change\", and the tenant activity filter reads \"Drift & backups\". Nothing moved but the words."
+      "Install this one first, before the matching backend update. That order matters more than usual this time: this backend drops the older names for two things the portal asks it for, so a portal older than it cannot read or edit a tenant's expected-drift allowlist at all.",
+      "Nothing you can see has changed. This pair finishes a rename that was deliberately split across two releases so that neither half could break the other on the way through — the portal now asks for things by the names the last backend release taught it, and the old names have been retired."
     ],
     "history": [
+      {
+        "tag": "portal-v20260823.221502",
+        "releasedAt": "2026-08-23",
+        "notes": [
+          "Install this one first, before the matching backend update. That order matters more than usual this time: this backend drops the older names for two things the portal asks it for, so a portal older than it cannot read or edit a tenant's expected-drift allowlist at all.",
+          "Nothing you can see has changed. This pair finishes a rename that was deliberately split across two releases so that neither half could break the other on the way through — the portal now asks for things by the names the last backend release taught it, and the old names have been retired."
+        ]
+      },
       {
         "tag": "portal-v20260823.204311",
         "releasedAt": "2026-08-23",
@@ -1112,14 +1118,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260823.204311",
+    "tag": "backend-v20260823.221502",
     "releasedAt": "2026-08-23",
     "notes": [
-      "Install this after the portal update, not before. If the portal is older than this backend, backup status on the portfolio table can render blank until you update it.",
-      "A scheduled backup that would be identical to the newest one is no longer written. Your backup list is now the distinct restore points rather than one row per day. \"Last backup\" still moves every time we read the live configuration and confirm it matches — so that date can be today while the number of backups stays where it was. A configuration nobody has touched for a fortnight is the best-protected kind, not an overdue one.",
-      "A tenant's record of Conditional Access changes no longer stops being written when it grows past a storage limit."
+      "Install this after the portal update, not before. If this backend is newer than your portal, the Conditional Access tab cannot load a tenant's expected-drift allowlist and every edit to it fails — the portal is still asking under names this release has retired. Updating the portal fixes it; nothing is lost in the meantime.",
+      "Nothing you can see has changed. This is the second half of a rename held open for one release so that both spellings worked at once, which is what made the pair safe to ship in either order last time. Your tenants' allowlists, drift history and backups are untouched — they were rewritten under the new names by the release you are on now.",
+      "A command posted under one retired name is now refused outright rather than accepted and quietly ignored. Only an out-of-date portal or a hand-written call can do that, and a clear error is the better answer."
     ],
     "history": [
+      {
+        "tag": "backend-v20260823.221502",
+        "releasedAt": "2026-08-23",
+        "notes": [
+          "Install this after the portal update, not before. If this backend is newer than your portal, the Conditional Access tab cannot load a tenant's expected-drift allowlist and every edit to it fails — the portal is still asking under names this release has retired. Updating the portal fixes it; nothing is lost in the meantime.",
+          "Nothing you can see has changed. This is the second half of a rename held open for one release so that both spellings worked at once, which is what made the pair safe to ship in either order last time. Your tenants' allowlists, drift history and backups are untouched — they were rewritten under the new names by the release you are on now.",
+          "A command posted under one retired name is now refused outright rather than accepted and quietly ignored. Only an out-of-date portal or a hand-written call can do that, and a clear error is the better answer."
+        ]
+      },
       {
         "tag": "backend-v20260823.204311",
         "releasedAt": "2026-08-23",
