@@ -1,13 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260822.210435",
-    "releasedAt": "2026-08-22",
+    "tag": "portal-v20260823.001736",
+    "releasedAt": "2026-08-23",
     "notes": [
-      "Auto-Restore is gone from the picker. A customer is Monitor or Off. Drift still raises a case, and the case now opens a Guided restore: the exact policy changes to make, in order, with the values, ready to follow in the Entra admin centre. The same guide sits on the backup drawer and inside the investigation, so it is reachable from wherever you noticed the drift.",
-      "Install the backend update first, or with this one. This portal reads the deployment's Conditional Access write setting from the backend, and a backend too old to send it is read as read-only — so the screens would tell you Basewiser does not write while an older backend still would.",
-      "The backup screens say backup. The Snapshots column is now Backups, and the customer report's tile with it; the word meant the same thing and the product had two names for one idea."
+      "Install this after the matching backend update, or with it. On its own it is harmless but incomplete — the backend half is what stops a scheduled backup capturing an unapproved change.",
+      "Taking a backup by hand while a Conditional Access change is outstanding now asks first, and says plainly that the change you have not restored becomes the baseline drift is measured against. It is still allowed, and it is still the right way to accept a change deliberately — it is no longer something you can do without being told what it means.",
+      "A held scheduled backup appears in the activity feed as its own entry, marked for attention rather than as a failure. Nothing failed: the baseline is being kept still on purpose until the outstanding change is restored or accepted.",
+      "The quiet-hours setting has been removed from the backup defaults. It was shown but never applied, and applying it would have been worse than dropping it: a backup runs at one time of day, so a quiet window containing that time would have meant no backups at all, from a setting that reads like a courtesy. Any value already stored is left alone and nothing else changes."
     ],
     "history": [
+      {
+        "tag": "portal-v20260823.001736",
+        "releasedAt": "2026-08-23",
+        "notes": [
+          "Install this after the matching backend update, or with it. On its own it is harmless but incomplete — the backend half is what stops a scheduled backup capturing an unapproved change.",
+          "Taking a backup by hand while a Conditional Access change is outstanding now asks first, and says plainly that the change you have not restored becomes the baseline drift is measured against. It is still allowed, and it is still the right way to accept a change deliberately — it is no longer something you can do without being told what it means.",
+          "A held scheduled backup appears in the activity feed as its own entry, marked for attention rather than as a failure. Nothing failed: the baseline is being kept still on purpose until the outstanding change is restored or accepted.",
+          "The quiet-hours setting has been removed from the backup defaults. It was shown but never applied, and applying it would have been worse than dropping it: a backup runs at one time of day, so a quiet window containing that time would have meant no backups at all, from a setting that reads like a courtesy. Any value already stored is left alone and nothing else changes."
+        ]
+      },
       {
         "tag": "portal-v20260822.210435",
         "releasedAt": "2026-08-22",
@@ -1091,14 +1102,25 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260822.224424",
-    "releasedAt": "2026-08-22",
+    "tag": "backend-v20260823.001736",
+    "releasedAt": "2026-08-23",
     "notes": [
-      "This update stands alone — no matching portal update is needed, and installing it does not require one.",
-      "A brand-new deployment's first customer document no longer says part of it is missing. Until now, a customer who had not yet had a finding close read “PART OF THIS DOCUMENT IS MISSING — a fault on our side” at the top of their assessment, and was told not to treat it as an all-clear. Nothing was wrong: the record of closed findings simply did not exist yet, and a record that has never been written is empty rather than unreadable. The document now says nothing closed this period, which is the truth.",
-      "The distinction it rests on is kept intact: a record we genuinely cannot read still says so, in those words, and is still named in the document. Only “never written” became “empty”."
+      "Install this before the matching portal update, or with it. The correction below lives entirely in this half; the portal update adds the warning and the wording that go with it.",
+      "A scheduled backup no longer runs while an unapproved Conditional Access change is still outstanding. A backup is two things at once — the copy you restore from, and the baseline drift is measured against — so a scheduled backup taken while a change was outstanding quietly captured that change and made it the new normal. Basewiser then reported that the drift had been resolved and that live policy matched the last backup. Both were true of the stored copy and false about the tenant: nobody had restored anything, and the change had simply become policy. The scheduled backup is now held instead, and the activity feed says which customer, and why.",
+      "Taking a backup by hand still works in that state, and is the one way to accept a change as the new normal. It is a deliberate act, so the portal now asks first and says what it will do.",
+      "A deployment that has never chosen a backup schedule now backs its customers up daily at 02:00 UTC. Until now it backed up only when someone pressed Backup, which left a deployment nobody had configured with no restore point at all. Any schedule you have saved — portfolio-wide, or for a single customer — is untouched. Daily is safe to default to now that a scheduled backup can no longer absorb a change you have not approved; before this correction, the interval was really a choice about how long an unapproved change took to become the baseline."
     ],
     "history": [
+      {
+        "tag": "backend-v20260823.001736",
+        "releasedAt": "2026-08-23",
+        "notes": [
+          "Install this before the matching portal update, or with it. The correction below lives entirely in this half; the portal update adds the warning and the wording that go with it.",
+          "A scheduled backup no longer runs while an unapproved Conditional Access change is still outstanding. A backup is two things at once — the copy you restore from, and the baseline drift is measured against — so a scheduled backup taken while a change was outstanding quietly captured that change and made it the new normal. Basewiser then reported that the drift had been resolved and that live policy matched the last backup. Both were true of the stored copy and false about the tenant: nobody had restored anything, and the change had simply become policy. The scheduled backup is now held instead, and the activity feed says which customer, and why.",
+          "Taking a backup by hand still works in that state, and is the one way to accept a change as the new normal. It is a deliberate act, so the portal now asks first and says what it will do.",
+          "A deployment that has never chosen a backup schedule now backs its customers up daily at 02:00 UTC. Until now it backed up only when someone pressed Backup, which left a deployment nobody had configured with no restore point at all. Any schedule you have saved — portfolio-wide, or for a single customer — is untouched. Daily is safe to default to now that a scheduled backup can no longer absorb a change you have not approved; before this correction, the interval was really a choice about how long an unapproved change took to become the baseline."
+        ]
+      },
       {
         "tag": "backend-v20260822.224424",
         "releasedAt": "2026-08-22",
