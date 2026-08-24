@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260823.221502",
-    "releasedAt": "2026-08-23",
+    "tag": "portal-v20260824.215745",
+    "releasedAt": "2026-08-24",
     "notes": [
-      "Install this one first, before the matching backend update. That order matters more than usual this time: this backend drops the older names for two things the portal asks it for, so a portal older than it cannot read or edit a tenant's expected-drift allowlist at all.",
-      "Nothing you can see has changed. This pair finishes a rename that was deliberately split across two releases so that neither half could break the other on the way through — the portal now asks for things by the names the last backend release taught it, and the old names have been retired."
+      "Update this together with the matching backend release, using Update now — it sequences both for you. For a few seconds after the portal swaps, while the backend is still restarting, the Plan page cannot read your subscription and looks empty. Reload once and it fills in.",
+      "Subscription and Billing is now Plan and Billing: which tier you are on, how much of your allowance is in use, when it renews, and upgrade or downgrade without leaving the portal.",
+      "The per-customer activate flow, the Not-active card and the size bands are gone. While your plan is live, every connected customer is scanned."
     ],
     "history": [
+      {
+        "tag": "portal-v20260824.215745",
+        "releasedAt": "2026-08-24",
+        "notes": [
+          "Update this together with the matching backend release, using Update now — it sequences both for you. For a few seconds after the portal swaps, while the backend is still restarting, the Plan page cannot read your subscription and looks empty. Reload once and it fills in.",
+          "Subscription and Billing is now Plan and Billing: which tier you are on, how much of your allowance is in use, when it renews, and upgrade or downgrade without leaving the portal.",
+          "The per-customer activate flow, the Not-active card and the size bands are gone. While your plan is live, every connected customer is scanned."
+        ]
+      },
       {
         "tag": "portal-v20260823.221502",
         "releasedAt": "2026-08-23",
@@ -1118,14 +1128,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260823.221502",
-    "releasedAt": "2026-08-23",
+    "tag": "backend-v20260824.215745",
+    "releasedAt": "2026-08-24",
     "notes": [
-      "Install this after the portal update, not before. If this backend is newer than your portal, the Conditional Access tab cannot load a tenant's expected-drift allowlist and every edit to it fails — the portal is still asking under names this release has retired. Updating the portal fixes it; nothing is lost in the meantime.",
-      "Nothing you can see has changed. This is the second half of a rename held open for one release so that both spellings worked at once, which is what made the pair safe to ship in either order last time. Your tenants' allowlists, drift history and backups are untouched — they were rewritten under the new names by the release you are on now.",
-      "A command posted under one retired name is now refused outright rather than accepted and quietly ignored. Only an out-of-date portal or a hand-written call can do that, and a clear error is the better answer."
+      "Update this together with the matching portal release, using Update now — it sequences both for you. Billing is now one plan for the whole deployment instead of a charge per customer, and this backend serves security data only while a plan is live: if you were billed per customer, expect empty screens until you buy a plan on the Plan page.",
+      "Pricing is three flat tiers in EUR: Starter, Growth and Scale, covering 3, 10 and 30 customers. The old per-customer size bands are retired. An existing per-customer subscription is not migrated for you and keeps billing until you cancel it in Stripe.",
+      "Connecting a customer beyond your plan's allowance is now refused with a clear message rather than quietly added to the bill."
     ],
     "history": [
+      {
+        "tag": "backend-v20260824.215745",
+        "releasedAt": "2026-08-24",
+        "notes": [
+          "Update this together with the matching portal release, using Update now — it sequences both for you. Billing is now one plan for the whole deployment instead of a charge per customer, and this backend serves security data only while a plan is live: if you were billed per customer, expect empty screens until you buy a plan on the Plan page.",
+          "Pricing is three flat tiers in EUR: Starter, Growth and Scale, covering 3, 10 and 30 customers. The old per-customer size bands are retired. An existing per-customer subscription is not migrated for you and keeps billing until you cancel it in Stripe.",
+          "Connecting a customer beyond your plan's allowance is now refused with a clear message rather than quietly added to the bill."
+        ]
+      },
       {
         "tag": "backend-v20260823.221502",
         "releasedAt": "2026-08-23",
