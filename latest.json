@@ -1139,15 +1139,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260830.130753",
+    "tag": "backend-v20260830.151328",
     "releasedAt": "2026-08-30",
     "notes": [
-      "The audit log records. AuditLog was created by nobody, so every write returned 404 and every fail-soft catch turned it into a warning — tenant renames, invites and offboardings have been lost on every Deployment since the feature was written.",
-      "Portfolio settings can be saved before the first nightly sweep. The tables are created by ensureTablesExist(), which never runs at install, so the Azure sweep cadence and the backup default returned 404 on a Deployment younger than one day.",
-      "Plan-gate and Stripe corrections (tier-billing 13, 16, 17, 19).",
-      "The AI writer flag exists and is off. Nothing generates or renders prose."
+      "The AI writer gains its store. A Draft — the plain-English prose the writer produces — is kept in its own table beside your Findings and never inside one, so the evidence your reports are built from is byte-for-byte what it was.",
+      "The two endpoints a drafting job uses refuse everything while the AI writer is off, which is still the default on every deployment. Nothing generates or renders prose yet, so this release changes nothing you can see."
     ],
     "history": [
+      {
+        "tag": "backend-v20260830.151328",
+        "releasedAt": "2026-08-30",
+        "notes": [
+          "The AI writer gains its store. A Draft — the plain-English prose the writer produces — is kept in its own table beside your Findings and never inside one, so the evidence your reports are built from is byte-for-byte what it was.",
+          "The two endpoints a drafting job uses refuse everything while the AI writer is off, which is still the default on every deployment. Nothing generates or renders prose yet, so this release changes nothing you can see."
+        ]
+      },
       {
         "tag": "backend-v20260830.130753",
         "releasedAt": "2026-08-30",
