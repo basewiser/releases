@@ -1,13 +1,24 @@
 {
   "portal": {
-    "tag": "portal-v20260824.215745",
-    "releasedAt": "2026-08-24",
+    "tag": "portal-v20260830.130753",
+    "releasedAt": "2026-08-30",
     "notes": [
       "Update this together with the matching backend release, using Update now — it sequences both for you. For a few seconds after the portal swaps, while the backend is still restarting, the Plan page cannot read your subscription and looks empty. Reload once and it fills in.",
-      "Subscription and Billing is now Plan and Billing: which tier you are on, how much of your allowance is in use, when it renews, and upgrade or downgrade without leaving the portal.",
-      "The per-customer activate flow, the Not-active card and the size bands are gone. While your plan is live, every connected customer is scanned."
+      "Your plan is now on every page, in the foot of the sidebar — which tier you are on and how much of your allowance is in use, without going to Billing.",
+      "A plan we cannot read no longer looks like a plan you do not have. A storage hiccup used to show an empty Billing page to a deployment that had paid; it now says we cannot read it right now, and says so where it matters.",
+      "Billing corrections behind the scenes: one buyer is one Stripe customer, and the leftover per-tenant subscriptions from the old size bands are cancelled."
     ],
     "history": [
+      {
+        "tag": "portal-v20260830.130753",
+        "releasedAt": "2026-08-30",
+        "notes": [
+          "Update this together with the matching backend release, using Update now — it sequences both for you. For a few seconds after the portal swaps, while the backend is still restarting, the Plan page cannot read your subscription and looks empty. Reload once and it fills in.",
+          "Your plan is now on every page, in the foot of the sidebar — which tier you are on and how much of your allowance is in use, without going to Billing.",
+          "A plan we cannot read no longer looks like a plan you do not have. A storage hiccup used to show an empty Billing page to a deployment that had paid; it now says we cannot read it right now, and says so where it matters.",
+          "Billing corrections behind the scenes: one buyer is one Stripe customer, and the leftover per-tenant subscriptions from the old size bands are cancelled."
+        ]
+      },
       {
         "tag": "portal-v20260824.215745",
         "releasedAt": "2026-08-24",
@@ -1128,14 +1139,25 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260824.215745",
-    "releasedAt": "2026-08-24",
+    "tag": "backend-v20260830.130753",
+    "releasedAt": "2026-08-30",
     "notes": [
-      "Update this together with the matching portal release, using Update now — it sequences both for you. Billing is now one plan for the whole deployment instead of a charge per customer, and this backend serves security data only while a plan is live: if you were billed per customer, expect empty screens until you buy a plan on the Plan page.",
-      "Pricing is three flat tiers in EUR: Starter, Growth and Scale, covering 3, 10 and 30 customers. The old per-customer size bands are retired. An existing per-customer subscription is not migrated for you and keeps billing until you cancel it in Stripe.",
-      "Connecting a customer beyond your plan's allowance is now refused with a clear message rather than quietly added to the bill."
+      "The audit log records. AuditLog was created by nobody, so every write returned 404 and every fail-soft catch turned it into a warning — tenant renames, invites and offboardings have been lost on every Deployment since the feature was written.",
+      "Portfolio settings can be saved before the first nightly sweep. The tables are created by ensureTablesExist(), which never runs at install, so the Azure sweep cadence and the backup default returned 404 on a Deployment younger than one day.",
+      "Plan-gate and Stripe corrections (tier-billing 13, 16, 17, 19).",
+      "The AI writer flag exists and is off. Nothing generates or renders prose."
     ],
     "history": [
+      {
+        "tag": "backend-v20260830.130753",
+        "releasedAt": "2026-08-30",
+        "notes": [
+          "The audit log records. AuditLog was created by nobody, so every write returned 404 and every fail-soft catch turned it into a warning — tenant renames, invites and offboardings have been lost on every Deployment since the feature was written.",
+          "Portfolio settings can be saved before the first nightly sweep. The tables are created by ensureTablesExist(), which never runs at install, so the Azure sweep cadence and the backup default returned 404 on a Deployment younger than one day.",
+          "Plan-gate and Stripe corrections (tier-billing 13, 16, 17, 19).",
+          "The AI writer flag exists and is off. Nothing generates or renders prose."
+        ]
+      },
       {
         "tag": "backend-v20260824.215745",
         "releasedAt": "2026-08-24",
