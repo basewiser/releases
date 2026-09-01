@@ -1139,13 +1139,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260830.151328",
-    "releasedAt": "2026-08-30",
+    "tag": "backend-v20260901.092008",
+    "releasedAt": "2026-09-01",
     "notes": [
-      "The AI writer gains its store. A Draft — the plain-English prose the writer produces — is kept in its own table beside your Findings and never inside one, so the evidence your reports are built from is byte-for-byte what it was.",
-      "The two endpoints a drafting job uses refuse everything while the AI writer is off, which is still the default on every deployment. Nothing generates or renders prose yet, so this release changes nothing you can see."
+      "The nightly sweep now writes the AI writer's prose. On a deployment with the writer switched on, findings are drafted overnight in the window the sweep already occupies, so the plain-English paragraph is there when you open the portal in the morning rather than after a wait.",
+      "The writer is still off unless you turned it on. A deployment with it off reads nothing, queues nothing and starts nothing — and one whose plan has lapsed drafts nothing either.",
+      "Legacy-authentication findings now record how many people actually signed in that way, counted once each rather than once per protocol. When the sign-in log cannot be read the number is left out rather than reported as none."
     ],
     "history": [
+      {
+        "tag": "backend-v20260901.092008",
+        "releasedAt": "2026-09-01",
+        "notes": [
+          "The nightly sweep now writes the AI writer's prose. On a deployment with the writer switched on, findings are drafted overnight in the window the sweep already occupies, so the plain-English paragraph is there when you open the portal in the morning rather than after a wait.",
+          "The writer is still off unless you turned it on. A deployment with it off reads nothing, queues nothing and starts nothing — and one whose plan has lapsed drafts nothing either.",
+          "Legacy-authentication findings now record how many people actually signed in that way, counted once each rather than once per protocol. When the sign-in log cannot be read the number is left out rather than reported as none."
+        ]
+      },
       {
         "tag": "backend-v20260830.151328",
         "releasedAt": "2026-08-30",
