@@ -1340,5 +1340,27 @@
         ]
       }
     ]
+  },
+  "aiBundle": {
+    "tag": "ai-bundle-v20260831.115351",
+    "releasedAt": "2026-08-31",
+    "notes": [
+      "The offline AI writer's bundle: the model, the prompt set and the runtime that produce a draft, versioned as one thing because a change to any of them changes the prose.",
+      "Updating it rewrites prose, never evidence. Every number in a draft is composed by the product and checked before the model ever sees the material, so a new bundle changes the sentences around the numbers and cannot change the numbers themselves.",
+      "Existing drafts are not thrown away. They stay readable and are rewritten as their findings change, rather than all at once — a portfolio-wide rewrite is hours of compute on your own Azure for prose that was already correct.",
+      "Nothing here runs unless the writer is switched on, under Settings."
+    ],
+    "history": [
+      {
+        "tag": "ai-bundle-v20260831.115351",
+        "releasedAt": "2026-08-31",
+        "notes": [
+          "The offline AI writer's bundle: the model, the prompt set and the runtime that produce a draft, versioned as one thing because a change to any of them changes the prose.",
+          "Updating it rewrites prose, never evidence. Every number in a draft is composed by the product and checked before the model ever sees the material, so a new bundle changes the sentences around the numbers and cannot change the numbers themselves.",
+          "Existing drafts are not thrown away. They stay readable and are rewritten as their findings change, rather than all at once — a portfolio-wide rewrite is hours of compute on your own Azure for prose that was already correct.",
+          "Nothing here runs unless the writer is switched on, under Settings."
+        ]
+      }
+    ]
   }
 }
