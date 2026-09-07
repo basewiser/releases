@@ -1364,7 +1364,7 @@
     "notes": [
       "Fallback wording is shorter, more specific and restrained when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose rather than product copy.",
       "Finding and tenant explanations continue to run through the bundled offline model; Opportunity explanations use reviewed copy directly to avoid an unnecessary model run and Azure compute cost.",
-      "The release was executed with networking disabled and passed the full draft evaluation. Numbers remain product-composed and outside the model's control."
+      "Updating this bundle rewrites prose, never evidence. The release was executed with networking disabled and passed the full draft evaluation; numbers remain product-composed and outside the model's control."
     ],
     "history": [
       {
@@ -1373,7 +1373,7 @@
         "notes": [
           "Fallback wording is shorter, more specific and restrained when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose rather than product copy.",
           "Finding and tenant explanations continue to run through the bundled offline model; Opportunity explanations use reviewed copy directly to avoid an unnecessary model run and Azure compute cost.",
-          "The release was executed with networking disabled and passed the full draft evaluation. Numbers remain product-composed and outside the model's control."
+          "Updating this bundle rewrites prose, never evidence. The release was executed with networking disabled and passed the full draft evaluation; numbers remain product-composed and outside the model's control."
         ]
       },
       {
