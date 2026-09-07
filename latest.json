@@ -1,14 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260830.130753",
-    "releasedAt": "2026-08-30",
+    "tag": "portal-v20260907.140743",
+    "releasedAt": "2026-09-07",
     "notes": [
-      "Update this together with the matching backend release, using Update now — it sequences both for you. For a few seconds after the portal swaps, while the backend is still restarting, the Plan page cannot read your subscription and looks empty. Reload once and it fills in.",
-      "Your plan is now on every page, in the foot of the sidebar — which tier you are on and how much of your allowance is in use, without going to Billing.",
-      "A plan we cannot read no longer looks like a plan you do not have. A storage hiccup used to show an empty Billing page to a deployment that had paid; it now says we cannot read it right now, and says so where it matters.",
-      "Billing corrections behind the scenes: one buyer is one Stripe customer, and the leftover per-tenant subscriptions from the old size bands are cancelled."
+      "The AI writer now explains findings and the tenant overview in plain language inside your own deployment. Every draft is labelled by whether it came from the local model, reviewed fallback copy or a reviewed template.",
+      "Update the portal, backend and AI writer together. Evidence and scores remain deterministic; the writer changes only the sentences around them and refuses to draft when the underlying read is incomplete.",
+      "Legacy authentication now lists each affected person once and shows all protocols they used, instead of making one person look like several findings."
     ],
     "history": [
+      {
+        "tag": "portal-v20260907.140743",
+        "releasedAt": "2026-09-07",
+        "notes": [
+          "The AI writer now explains findings and the tenant overview in plain language inside your own deployment. Every draft is labelled by whether it came from the local model, reviewed fallback copy or a reviewed template.",
+          "Update the portal, backend and AI writer together. Evidence and scores remain deterministic; the writer changes only the sentences around them and refuses to draft when the underlying read is incomplete.",
+          "Legacy authentication now lists each affected person once and shows all protocols they used, instead of making one person look like several findings."
+        ]
+      },
       {
         "tag": "portal-v20260830.130753",
         "releasedAt": "2026-08-30",
@@ -1139,14 +1147,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260901.092008",
-    "releasedAt": "2026-09-01",
+    "tag": "backend-v20260907.140743",
+    "releasedAt": "2026-09-07",
     "notes": [
-      "The nightly sweep now writes the AI writer's prose. On a deployment with the writer switched on, findings are drafted overnight in the window the sweep already occupies, so the plain-English paragraph is there when you open the portal in the morning rather than after a wait.",
-      "The writer is still off unless you turned it on. A deployment with it off reads nothing, queues nothing and starts nothing — and one whose plan has lapsed drafts nothing either.",
-      "Legacy-authentication findings now record how many people actually signed in that way, counted once each rather than once per protocol. When the sign-in log cannot be read the number is left out rather than reported as none."
+      "The backend now supplies grounded material for finding and tenant-overview drafts while keeping evidence, counts and scores outside the model's control.",
+      "Legacy-authentication findings count distinct people, combine their protocols into one row and sort them by most recent sign-in. The score impact is capped by the finding's existing severity.",
+      "Incomplete or capped sign-in reads are marked honestly and cannot produce confident AI prose; known people remain visible without being presented as the complete population."
     ],
     "history": [
+      {
+        "tag": "backend-v20260907.140743",
+        "releasedAt": "2026-09-07",
+        "notes": [
+          "The backend now supplies grounded material for finding and tenant-overview drafts while keeping evidence, counts and scores outside the model's control.",
+          "Legacy-authentication findings count distinct people, combine their protocols into one row and sort them by most recent sign-in. The score impact is capped by the finding's existing severity.",
+          "Incomplete or capped sign-in reads are marked honestly and cannot produce confident AI prose; known people remain visible without being presented as the complete population."
+        ]
+      },
       {
         "tag": "backend-v20260901.092008",
         "releasedAt": "2026-09-01",
@@ -1342,16 +1359,23 @@
     ]
   },
   "aiBundle": {
-    "tag": "ai-bundle-v20260906.185200",
-    "releasedAt": "2026-09-06",
+    "tag": "ai-bundle-v20260907.140743",
+    "releasedAt": "2026-09-07",
     "notes": [
-      "The tenant overview now gets a short explanation beneath its summary tiles, covering active alerts, Entra ID findings, Azure findings and Conditional Access without combining or ranking their counts.",
-      "The writer still runs entirely inside your own deployment. Finding and tenant explanations use the bundled local model; Opportunity explanations use reviewed Basewiser copy directly, avoiding an unnecessary model call and reducing runtime on your Azure bill.",
-      "Every draft now says whether its wording came from the local model, reviewed fallback copy or a reviewed template. Unsafe model answers are retried and then fall back to authored copy rather than leaving a blank or weakening a guard.",
-      "Updating the bundle rewrites prose, never evidence. Every number in a draft is composed by the product, and the model never receives the counts it writes around.",
-      "Nothing here runs unless the writer is switched on, under Settings."
+      "Fallback wording is shorter, more specific and restrained when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose rather than product copy.",
+      "Finding and tenant explanations continue to run through the bundled offline model; Opportunity explanations use reviewed copy directly to avoid an unnecessary model run and Azure compute cost.",
+      "The release was executed with networking disabled and passed the full draft evaluation. Numbers remain product-composed and outside the model's control."
     ],
     "history": [
+      {
+        "tag": "ai-bundle-v20260907.140743",
+        "releasedAt": "2026-09-07",
+        "notes": [
+          "Fallback wording is shorter, more specific and restrained when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose rather than product copy.",
+          "Finding and tenant explanations continue to run through the bundled offline model; Opportunity explanations use reviewed copy directly to avoid an unnecessary model run and Azure compute cost.",
+          "The release was executed with networking disabled and passed the full draft evaluation. Numbers remain product-composed and outside the model's control."
+        ]
+      },
       {
         "tag": "ai-bundle-v20260906.185200",
         "releasedAt": "2026-09-06",
