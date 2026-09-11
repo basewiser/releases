@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260911.003948",
+    "tag": "portal-v20260911.100705",
     "releasedAt": "2026-09-11",
     "notes": [
-      "A consistent dark design across customer workspaces, cases and reports, with aligned tables, uniform spacing and subtle motion that respects reduced-motion preferences.",
-      "Clearer customer connection and refresh controls, case evidence, backup status and emergency-access management use the existing live workflows.",
-      "Rate cards support consultant roles and per-service pricing. Install the matching backend first; older backends use legacy rate and connection data."
+      "Summary cards without history now show current seat and customer breakdowns. Missing savings data stays separate from customers without waste.",
+      "Filter controls no longer retain a bright outline after mouse clicks, while keyboard focus remains visible.",
+      "The collapsed Inbox count now matches the notification bell badge."
     ],
     "history": [
+      {
+        "tag": "portal-v20260911.100705",
+        "releasedAt": "2026-09-11",
+        "notes": [
+          "Summary cards without history now show current seat and customer breakdowns. Missing savings data stays separate from customers without waste.",
+          "Filter controls no longer retain a bright outline after mouse clicks, while keyboard focus remains visible.",
+          "The collapsed Inbox count now matches the notification bell badge."
+        ]
+      },
       {
         "tag": "portal-v20260911.003948",
         "releasedAt": "2026-09-11",
