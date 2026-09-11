@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260907.140743",
-    "releasedAt": "2026-09-07",
+    "tag": "portal-v20260911.003948",
+    "releasedAt": "2026-09-11",
     "notes": [
-      "The AI writer now explains findings and the tenant overview in plain language inside your own deployment. Every draft is labelled by whether it came from the local model, reviewed fallback copy or a reviewed template.",
-      "Update the portal, backend and AI writer together. Evidence and scores remain deterministic; the writer changes only the sentences around them and refuses to draft when the underlying read is incomplete.",
-      "Legacy authentication now lists each affected person once and shows all protocols they used, instead of making one person look like several findings."
+      "A consistent dark design across customer workspaces, cases and reports, with aligned tables, uniform spacing and subtle motion that respects reduced-motion preferences.",
+      "Clearer customer connection and refresh controls, case evidence, backup status and emergency-access management use the existing live workflows.",
+      "Rate cards support consultant roles and per-service pricing. Install the matching backend first; older backends use legacy rate and connection data."
     ],
     "history": [
+      {
+        "tag": "portal-v20260911.003948",
+        "releasedAt": "2026-09-11",
+        "notes": [
+          "A consistent dark design across customer workspaces, cases and reports, with aligned tables, uniform spacing and subtle motion that respects reduced-motion preferences.",
+          "Clearer customer connection and refresh controls, case evidence, backup status and emergency-access management use the existing live workflows.",
+          "Rate cards support consultant roles and per-service pricing. Install the matching backend first; older backends use legacy rate and connection data."
+        ]
+      },
       {
         "tag": "portal-v20260907.140743",
         "releasedAt": "2026-09-07",
@@ -1147,14 +1156,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260907.140743",
-    "releasedAt": "2026-09-07",
+    "tag": "backend-v20260911.003948",
+    "releasedAt": "2026-09-11",
     "notes": [
-      "The backend now supplies grounded material for finding and tenant-overview drafts while keeping evidence, counts and scores outside the model's control.",
-      "Legacy-authentication findings count distinct people, combine their protocols into one row and sort them by most recent sign-in. The score impact is capped by the finding's existing severity.",
-      "Incomplete or capped sign-in reads are marked honestly and cannot produce confident AI prose; known people remain visible without being presented as the complete population."
+      "Install this backend before the matching portal update so role and per-service rates are saved and used consistently in opportunity estimates and overrides.",
+      "Connection status distinguishes confirmed access from unavailable reads, and case evidence identifies policy edits versus group-membership changes.",
+      "Customer-overview draft generation is retired. Finding and opportunity drafting continue, and historical stored drafts are preserved."
     ],
     "history": [
+      {
+        "tag": "backend-v20260911.003948",
+        "releasedAt": "2026-09-11",
+        "notes": [
+          "Install this backend before the matching portal update so role and per-service rates are saved and used consistently in opportunity estimates and overrides.",
+          "Connection status distinguishes confirmed access from unavailable reads, and case evidence identifies policy edits versus group-membership changes.",
+          "Customer-overview draft generation is retired. Finding and opportunity drafting continue, and historical stored drafts are preserved."
+        ]
+      },
       {
         "tag": "backend-v20260907.140743",
         "releasedAt": "2026-09-07",
