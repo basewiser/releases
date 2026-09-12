@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260911.100705",
-    "releasedAt": "2026-09-11",
+    "tag": "portal-v20260912.001026",
+    "releasedAt": "2026-09-12",
     "notes": [
-      "Summary cards without history now show current seat and customer breakdowns. Missing savings data stays separate from customers without waste.",
-      "Filter controls no longer retain a bright outline after mouse clicks, while keyboard focus remains visible.",
-      "The collapsed Inbox count now matches the notification bell badge."
+      "A refreshed workspace tour now covers customer connections, daily work and setting your consultancy rates. Replay it from Help whenever you need it.",
+      "Entra ID and Azure onboarding now share the portal layout, with separate service tabs and clearer approval, access and next-step guidance.",
+      "The welcome no longer repeats after you have seen it. View options now live in the header, with aligned search and rate-card controls on Opportunities."
     ],
     "history": [
+      {
+        "tag": "portal-v20260912.001026",
+        "releasedAt": "2026-09-12",
+        "notes": [
+          "A refreshed workspace tour now covers customer connections, daily work and setting your consultancy rates. Replay it from Help whenever you need it.",
+          "Entra ID and Azure onboarding now share the portal layout, with separate service tabs and clearer approval, access and next-step guidance.",
+          "The welcome no longer repeats after you have seen it. View options now live in the header, with aligned search and rate-card controls on Opportunities."
+        ]
+      },
       {
         "tag": "portal-v20260911.100705",
         "releasedAt": "2026-09-11",
