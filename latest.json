@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260912.001026",
+    "tag": "portal-v20260912.195752",
     "releasedAt": "2026-09-12",
     "notes": [
-      "A refreshed workspace tour now covers customer connections, daily work and setting your consultancy rates. Replay it from Help whenever you need it.",
-      "Entra ID and Azure onboarding now share the portal layout, with separate service tabs and clearer approval, access and next-step guidance.",
-      "The welcome no longer repeats after you have seen it. View options now live in the header, with aligned search and rate-card controls on Opportunities."
+      "The portfolio overview now joins its four key metrics into one panel, with separate links and a two-by-two layout on smaller screens.",
+      "Improved page spacing, table headers, mobile filters, customer connection labels, and settings readability throughout the portal.",
+      "Clearer keyboard focus and skip navigation make the workspace easier to use. Overview summaries now use commas instead of dot separators."
     ],
     "history": [
+      {
+        "tag": "portal-v20260912.195752",
+        "releasedAt": "2026-09-12",
+        "notes": [
+          "The portfolio overview now joins its four key metrics into one panel, with separate links and a two-by-two layout on smaller screens.",
+          "Improved page spacing, table headers, mobile filters, customer connection labels, and settings readability throughout the portal.",
+          "Clearer keyboard focus and skip navigation make the workspace easier to use. Overview summaries now use commas instead of dot separators."
+        ]
+      },
       {
         "tag": "portal-v20260912.001026",
         "releasedAt": "2026-09-12",
