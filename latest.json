@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20260912.195752",
-    "releasedAt": "2026-09-12",
+    "tag": "portal-v20261003.213646",
+    "releasedAt": "2026-10-03",
     "notes": [
-      "The portfolio overview now joins its four key metrics into one panel, with separate links and a two-by-two layout on smaller screens.",
-      "Improved page spacing, table headers, mobile filters, customer connection labels, and settings readability throughout the portal.",
-      "Clearer keyboard focus and skip navigation make the workspace easier to use. Overview summaries now use commas instead of dot separators."
+      "Refreshed customer workspaces, dashboards, tables and reports provide clearer navigation, consistent summaries and more useful filtering.",
+      "Backup details now expose saved policies and named locations, with comparison views, recovery downloads and explicit guidance before restoring.",
+      "Guided customer setup connects Entra ID and Azure independently. Install the matching Backend first; older Backends cannot serve the new onboarding and comparison features. Invitation email requires separate private configuration."
     ],
     "history": [
+      {
+        "tag": "portal-v20261003.213646",
+        "releasedAt": "2026-10-03",
+        "notes": [
+          "Refreshed customer workspaces, dashboards, tables and reports provide clearer navigation, consistent summaries and more useful filtering.",
+          "Backup details now expose saved policies and named locations, with comparison views, recovery downloads and explicit guidance before restoring.",
+          "Guided customer setup connects Entra ID and Azure independently. Install the matching Backend first; older Backends cannot serve the new onboarding and comparison features. Invitation email requires separate private configuration."
+        ]
+      },
       {
         "tag": "portal-v20260912.195752",
         "releasedAt": "2026-09-12",
@@ -1183,14 +1192,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20260911.003948",
-    "releasedAt": "2026-09-11",
+    "tag": "backend-v20261003.213646",
+    "releasedAt": "2026-10-03",
     "notes": [
-      "Install this backend before the matching portal update so role and per-service rates are saved and used consistently in opportunity estimates and overrides.",
-      "Connection status distinguishes confirmed access from unavailable reads, and case evidence identifies policy edits versus group-membership changes.",
-      "Customer-overview draft generation is retired. Finding and opportunity drafting continue, and historical stored drafts are preserved."
+      "Install this Backend before the matching Portal update for guided Entra ID and Azure onboarding, independent access checks and guarded invitation-email support.",
+      "Conditional Access backups preserve named-location settings and provide policy comparison evidence for recovery; historic backups are not retroactively enriched.",
+      "Adds monitoring schedule and break-glass validation support. Invitation email stays disabled until configured; no new customer permissions are granted by this update."
     ],
     "history": [
+      {
+        "tag": "backend-v20261003.213646",
+        "releasedAt": "2026-10-03",
+        "notes": [
+          "Install this Backend before the matching Portal update for guided Entra ID and Azure onboarding, independent access checks and guarded invitation-email support.",
+          "Conditional Access backups preserve named-location settings and provide policy comparison evidence for recovery; historic backups are not retroactively enriched.",
+          "Adds monitoring schedule and break-glass validation support. Invitation email stays disabled until configured; no new customer permissions are granted by this update."
+        ]
+      },
       {
         "tag": "backend-v20260911.003948",
         "releasedAt": "2026-09-11",
