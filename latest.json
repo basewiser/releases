@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261003.213646",
+    "tag": "portal-v20261003.235534",
     "releasedAt": "2026-10-03",
     "notes": [
-      "Refreshed customer workspaces, dashboards, tables and reports provide clearer navigation, consistent summaries and more useful filtering.",
-      "Backup details now expose saved policies and named locations, with comparison views, recovery downloads and explicit guidance before restoring.",
-      "Guided customer setup connects Entra ID and Azure independently. Install the matching Backend first; older Backends cannot serve the new onboarding and comparison features. Invitation email requires separate private configuration."
+      "Fixed onboarding invitations being incorrectly blocked for signed-in operators behind Azure ingress, including custom portal domains.",
+      "Invitation errors now distinguish a sign-in problem from a request made outside the portal. Existing email safety checks remain in place."
     ],
     "history": [
+      {
+        "tag": "portal-v20261003.235534",
+        "releasedAt": "2026-10-03",
+        "notes": [
+          "Fixed onboarding invitations being incorrectly blocked for signed-in operators behind Azure ingress, including custom portal domains.",
+          "Invitation errors now distinguish a sign-in problem from a request made outside the portal. Existing email safety checks remain in place."
+        ]
+      },
       {
         "tag": "portal-v20261003.213646",
         "releasedAt": "2026-10-03",
