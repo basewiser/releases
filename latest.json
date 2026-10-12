@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261012.201539",
+    "tag": "portal-v20261012.234733",
     "releasedAt": "2026-10-12",
     "notes": [
-      "Text across the portal is rewritten in plain, consistent wording, including messages, errors and empty states.",
-      "Opportunity summaries read as full sentences.",
-      "Finding, Alert and Case wording changes with the matching Backend release. The two updates can be installed in either order."
+      "Severity is shown as a coloured square and a word, without a frame, in tables, lists, notifications and reports. Reds, greens and ambers come from one consistent set.",
+      "Conditional Access drift marks each change by direction: green for added or turned on, red for removed or turned off, and amber for a value replaced by another. An open finding stands apart from the findings around it.",
+      "The update notice and the What's new overlay are redesigned. Display preferences, toggles and switches share one design, and text is no longer separated with centred dots."
     ],
     "history": [
+      {
+        "tag": "portal-v20261012.234733",
+        "releasedAt": "2026-10-12",
+        "notes": [
+          "Severity is shown as a coloured square and a word, without a frame, in tables, lists, notifications and reports. Reds, greens and ambers come from one consistent set.",
+          "Conditional Access drift marks each change by direction: green for added or turned on, red for removed or turned off, and amber for a value replaced by another. An open finding stands apart from the findings around it.",
+          "The update notice and the What's new overlay are redesigned. Display preferences, toggles and switches share one design, and text is no longer separated with centred dots."
+        ]
+      },
       {
         "tag": "portal-v20261012.201539",
         "releasedAt": "2026-10-12",
@@ -20,14 +29,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261012.201539",
+    "tag": "backend-v20261012.234733",
     "releasedAt": "2026-10-12",
     "notes": [
-      "Finding descriptions and recommendations, Alert and Case text, invitation emails and error messages are rewritten in plain wording. No check was added or removed, and no severity changed.",
-      "Citations now read, for example, \"supports Art. 21(2)(i): access control\". The Azure check for Defender for Cloud plans is renamed to \"No paid Defender for Cloud plan is enabled on any subscription\".",
-      "Existing Alerts and Cases keep their original text. Findings show the new wording after the next scan."
+      "Guidance on how to fix a finding writes a path through a Microsoft portal with \">\" between its steps, for example \"App registrations > Authentication\".",
+      "Headlines for privileged role grants read, for example, \"Tier 0 role: Global Administrator\". Extra roles in the privileged access list are written \"(Permanent, Direct)\".",
+      "No check was added or removed, and no severity changed. This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261012.234733",
+        "releasedAt": "2026-10-12",
+        "notes": [
+          "Guidance on how to fix a finding writes a path through a Microsoft portal with \">\" between its steps, for example \"App registrations > Authentication\".",
+          "Headlines for privileged role grants read, for example, \"Tier 0 role: Global Administrator\". Extra roles in the privileged access list are written \"(Permanent, Direct)\".",
+          "No check was added or removed, and no severity changed. This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261012.201539",
         "releasedAt": "2026-10-12",
