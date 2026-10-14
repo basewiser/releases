@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261012.234733",
-    "releasedAt": "2026-10-12",
+    "tag": "portal-v20261014.214217",
+    "releasedAt": "2026-10-14",
     "notes": [
-      "Severity is shown as a coloured square and a word, without a frame, in tables, lists, notifications and reports. Reds, greens and ambers come from one consistent set.",
-      "Conditional Access drift marks each change by direction: green for added or turned on, red for removed or turned off, and amber for a value replaced by another. An open finding stands apart from the findings around it.",
-      "The update notice and the What's new overlay are redesigned. Display preferences, toggles and switches share one design, and text is no longer separated with centred dots."
+      "A case opens with three answers: what happened, what it means and what to do next. The evidence follows in numbered sections, in the same layout for every kind of case.",
+      "With the matching Backend release, cases show where a change was made from: the IP address, the city and country, and whether the account used MFA. Role grants and exclusions also show whether the affected account is a member or a guest, whether it is enabled, its sign-in methods and its last sign-in.",
+      "Help and Feedback open in one window, and screenshots can be pasted into feedback. Toggles and tabs look and move the same on every page, status tags have no frame, and the Azure summary shows findings by severity and category."
     ],
     "history": [
+      {
+        "tag": "portal-v20261014.214217",
+        "releasedAt": "2026-10-14",
+        "notes": [
+          "A case opens with three answers: what happened, what it means and what to do next. The evidence follows in numbered sections, in the same layout for every kind of case.",
+          "With the matching Backend release, cases show where a change was made from: the IP address, the city and country, and whether the account used MFA. Role grants and exclusions also show whether the affected account is a member or a guest, whether it is enabled, its sign-in methods and its last sign-in.",
+          "Help and Feedback open in one window, and screenshots can be pasted into feedback. Toggles and tabs look and move the same on every page, status tags have no frame, and the Azure summary shows findings by severity and category."
+        ]
+      },
       {
         "tag": "portal-v20261012.234733",
         "releasedAt": "2026-10-12",
@@ -29,14 +38,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261012.234733",
-    "releasedAt": "2026-10-12",
+    "tag": "backend-v20261014.214217",
+    "releasedAt": "2026-10-14",
     "notes": [
-      "Guidance on how to fix a finding writes a path through a Microsoft portal with \">\" between its steps, for example \"App registrations > Authentication\".",
-      "Headlines for privileged role grants read, for example, \"Tier 0 role: Global Administrator\". Extra roles in the privileged access list are written \"(Permanent, Direct)\".",
-      "No check was added or removed, and no severity changed. This update and the Portal update can be installed in either order."
+      "Role grants and changes to an excluded group keep the IP address the change was made from, as policy changes already did. About 20 minutes after a change, the Backend looks up the city and country and the affected account's details once, and stores them with the case.",
+      "The city, country and last sign-in require Entra ID P1 in the customer's tenant, and the case explains when they are missing. The update needs no new app permissions.",
+      "Sign-ins listed on a case show the full country name, such as \"Norway\" instead of \"NO\". This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261014.214217",
+        "releasedAt": "2026-10-14",
+        "notes": [
+          "Role grants and changes to an excluded group keep the IP address the change was made from, as policy changes already did. About 20 minutes after a change, the Backend looks up the city and country and the affected account's details once, and stores them with the case.",
+          "The city, country and last sign-in require Entra ID P1 in the customer's tenant, and the case explains when they are missing. The update needs no new app permissions.",
+          "Sign-ins listed on a case show the full country name, such as \"Norway\" instead of \"NO\". This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261012.234733",
         "releasedAt": "2026-10-12",
