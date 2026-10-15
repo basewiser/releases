@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261014.214217",
-    "releasedAt": "2026-10-14",
+    "tag": "portal-v20261015.110609",
+    "releasedAt": "2026-10-15",
     "notes": [
-      "A case opens with three answers: what happened, what it means and what to do next. The evidence follows in numbered sections, in the same layout for every kind of case.",
-      "With the matching Backend release, cases show where a change was made from: the IP address, the city and country, and whether the account used MFA. Role grants and exclusions also show whether the affected account is a member or a guest, whether it is enabled, its sign-in methods and its last sign-in.",
-      "Help and Feedback open in one window, and screenshots can be pasted into feedback. Toggles and tabs look and move the same on every page, status tags have no frame, and the Azure summary shows findings by severity and category."
+      "The By severity ring in the Inbox now shows only the number of active cases, so no text runs into the ring."
     ],
     "history": [
+      {
+        "tag": "portal-v20261015.110609",
+        "releasedAt": "2026-10-15",
+        "notes": [
+          "The By severity ring in the Inbox now shows only the number of active cases, so no text runs into the ring."
+        ]
+      },
       {
         "tag": "portal-v20261014.214217",
         "releasedAt": "2026-10-14",
