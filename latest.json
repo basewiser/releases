@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261016.184844",
+    "tag": "portal-v20261016.222346",
     "releasedAt": "2026-10-16",
     "notes": [
-      "Customer documents carry the Basewiser wordmark at the head of the cover, with the provider who prepared them named beneath. The wordmark matches the dark or light version of the document.",
-      "The Backups over time chart shows the number of backups each day on a whole-number scale, so a day with a backup is a full bar. The policy count is shown in the Latest backup panel beside the chart instead of as a line on it.",
-      "The controls at the top of each customer page sit on one row, and the Refresh button shows when the data was last synced. In a customer's menu, Opportunities is above Reports, as in the main menu."
+      "When the Portal installs a Backend update, it also gives the Backend the Portal's own sign-in identity, which the Backend uses to recognise requests from the Portal. This update and the Backend update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "portal-v20261016.222346",
+        "releasedAt": "2026-10-16",
+        "notes": [
+          "When the Portal installs a Backend update, it also gives the Backend the Portal's own sign-in identity, which the Backend uses to recognise requests from the Portal. This update and the Backend update can be installed in either order."
+        ]
+      },
       {
         "tag": "portal-v20261016.184844",
         "releasedAt": "2026-10-16",
@@ -63,12 +68,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261016.132252",
+    "tag": "backend-v20261016.222346",
     "releasedAt": "2026-10-16",
     "notes": [
-      "The findings listed under each proposed project read as plain sentences, with amounts and periods written out. This update and the Portal update can be installed in either order."
+      "The Backend accepts the name of the signed-in Operator only from the Portal itself. A request that names an Operator without signing in is refused, and anyone who signs in to the Backend directly is recorded as themselves.",
+      "Actions taken through the Portal, such as break-glass validations and notes on a Case, are recorded under the Operator who took them, as before. This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261016.222346",
+        "releasedAt": "2026-10-16",
+        "notes": [
+          "The Backend accepts the name of the signed-in Operator only from the Portal itself. A request that names an Operator without signing in is refused, and anyone who signs in to the Backend directly is recorded as themselves.",
+          "Actions taken through the Portal, such as break-glass validations and notes on a Case, are recorded under the Operator who took them, as before. This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261016.132252",
         "releasedAt": "2026-10-16",
