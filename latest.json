@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261015.110609",
-    "releasedAt": "2026-10-15",
+    "tag": "portal-v20261016.132252",
+    "releasedAt": "2026-10-16",
     "notes": [
-      "The By severity ring in the Inbox now shows only the number of active cases, so no text runs into the ring."
+      "Customer documents have a new design that leads with the figures that matter most, such as the price and the open findings. They report open findings per area instead of a 0 to 100 score, and every printed page carries the provider's name and a page number.",
+      "Assessments and proposals can be printed in NOK, SEK, DKK, EUR, USD or GBP. Amounts are converted at fixed rates, and the document states the rate it used.",
+      "The opportunity page shows how a project's price is built from its hours, the findings behind it by severity, and the customer's other open and delivered work."
     ],
     "history": [
+      {
+        "tag": "portal-v20261016.132252",
+        "releasedAt": "2026-10-16",
+        "notes": [
+          "Customer documents have a new design that leads with the figures that matter most, such as the price and the open findings. They report open findings per area instead of a 0 to 100 score, and every printed page carries the provider's name and a page number.",
+          "Assessments and proposals can be printed in NOK, SEK, DKK, EUR, USD or GBP. Amounts are converted at fixed rates, and the document states the rate it used.",
+          "The opportunity page shows how a project's price is built from its hours, the findings behind it by severity, and the customer's other open and delivered work."
+        ]
+      },
       {
         "tag": "portal-v20261015.110609",
         "releasedAt": "2026-10-15",
@@ -43,14 +54,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261014.214217",
-    "releasedAt": "2026-10-14",
+    "tag": "backend-v20261016.132252",
+    "releasedAt": "2026-10-16",
     "notes": [
-      "Role grants and changes to an excluded group keep the IP address the change was made from, as policy changes already did. About 20 minutes after a change, the Backend looks up the city and country and the affected account's details once, and stores them with the case.",
-      "The city, country and last sign-in require Entra ID P1 in the customer's tenant, and the case explains when they are missing. The update needs no new app permissions.",
-      "Sign-ins listed on a case show the full country name, such as \"Norway\" instead of \"NO\". This update and the Portal update can be installed in either order."
+      "The findings listed under each proposed project read as plain sentences, with amounts and periods written out. This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261016.132252",
+        "releasedAt": "2026-10-16",
+        "notes": [
+          "The findings listed under each proposed project read as plain sentences, with amounts and periods written out. This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261014.214217",
         "releasedAt": "2026-10-14",
