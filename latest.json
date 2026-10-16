@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261016.132252",
+    "tag": "portal-v20261016.184844",
     "releasedAt": "2026-10-16",
     "notes": [
-      "Customer documents have a new design that leads with the figures that matter most, such as the price and the open findings. They report open findings per area instead of a 0 to 100 score, and every printed page carries the provider's name and a page number.",
-      "Assessments and proposals can be printed in NOK, SEK, DKK, EUR, USD or GBP. Amounts are converted at fixed rates, and the document states the rate it used.",
-      "The opportunity page shows how a project's price is built from its hours, the findings behind it by severity, and the customer's other open and delivered work."
+      "Customer documents carry the Basewiser wordmark at the head of the cover, with the provider who prepared them named beneath. The wordmark matches the dark or light version of the document.",
+      "The Backups over time chart shows the number of backups each day on a whole-number scale, so a day with a backup is a full bar. The policy count is shown in the Latest backup panel beside the chart instead of as a line on it.",
+      "The controls at the top of each customer page sit on one row, and the Refresh button shows when the data was last synced. In a customer's menu, Opportunities is above Reports, as in the main menu."
     ],
     "history": [
+      {
+        "tag": "portal-v20261016.184844",
+        "releasedAt": "2026-10-16",
+        "notes": [
+          "Customer documents carry the Basewiser wordmark at the head of the cover, with the provider who prepared them named beneath. The wordmark matches the dark or light version of the document.",
+          "The Backups over time chart shows the number of backups each day on a whole-number scale, so a day with a backup is a full bar. The policy count is shown in the Latest backup panel beside the chart instead of as a line on it.",
+          "The controls at the top of each customer page sit on one row, and the Refresh button shows when the data was last synced. In a customer's menu, Opportunities is above Reports, as in the main menu."
+        ]
+      },
       {
         "tag": "portal-v20261016.132252",
         "releasedAt": "2026-10-16",
