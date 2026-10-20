@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261016.222346",
-    "releasedAt": "2026-10-16",
+    "tag": "portal-v20261020.210144",
+    "releasedAt": "2026-10-20",
     "notes": [
-      "When the Portal installs a Backend update, it also gives the Backend the Portal's own sign-in identity, which the Backend uses to recognise requests from the Portal. This update and the Backend update can be installed in either order."
+      "Line charts no longer stretch into tall blocks when they sit beside a taller card. They keep a height that suits their width and stay at the bottom of the card.",
+      "Large line charts use a light fill that fades out, so the line stays easy to read. In stacked charts each band is filled only down to the band below it, so the colours no longer overlap and mix.",
+      "On a Case, the time it was opened is written the same way as the other times on the card."
     ],
     "history": [
+      {
+        "tag": "portal-v20261020.210144",
+        "releasedAt": "2026-10-20",
+        "notes": [
+          "Line charts no longer stretch into tall blocks when they sit beside a taller card. They keep a height that suits their width and stay at the bottom of the card.",
+          "Large line charts use a light fill that fades out, so the line stays easy to read. In stacked charts each band is filled only down to the band below it, so the colours no longer overlap and mix.",
+          "On a Case, the time it was opened is written the same way as the other times on the card."
+        ]
+      },
       {
         "tag": "portal-v20261016.222346",
         "releasedAt": "2026-10-16",
