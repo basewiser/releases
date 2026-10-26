@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261020.210144",
-    "releasedAt": "2026-10-20",
+    "tag": "portal-v20261026.225702",
+    "releasedAt": "2026-10-26",
     "notes": [
-      "Line charts no longer stretch into tall blocks when they sit beside a taller card. They keep a height that suits their width and stay at the bottom of the card.",
-      "Large line charts use a light fill that fades out, so the line stays easy to read. In stacked charts each band is filled only down to the band below it, so the colours no longer overlap and mix.",
-      "On a Case, the time it was opened is written the same way as the other times on the card."
+      "A customer invitation is prepared in the portal and sent from your own mail program. Open in your mail app fills in the message, and Download gives the designed email. Send through Basewiser is offered only when email delivery is set up on your backend.",
+      "Wherever the portal points you to Basewiser for help, such as the help window, error pages and the update notice, the address is support@basewiser.com. Sales and general questions stay with contact@basewiser.com.",
+      "This update and the Backend update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "portal-v20261026.225702",
+        "releasedAt": "2026-10-26",
+        "notes": [
+          "A customer invitation is prepared in the portal and sent from your own mail program. Open in your mail app fills in the message, and Download gives the designed email. Send through Basewiser is offered only when email delivery is set up on your backend.",
+          "Wherever the portal points you to Basewiser for help, such as the help window, error pages and the update notice, the address is support@basewiser.com. Sales and general questions stay with contact@basewiser.com.",
+          "This update and the Backend update can be installed in either order."
+        ]
+      },
       {
         "tag": "portal-v20261020.210144",
         "releasedAt": "2026-10-20",
@@ -79,13 +88,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261016.222346",
-    "releasedAt": "2026-10-16",
+    "tag": "backend-v20261026.225702",
+    "releasedAt": "2026-10-26",
     "notes": [
-      "The Backend accepts the name of the signed-in Operator only from the Portal itself. A request that names an Operator without signing in is refused, and anyone who signs in to the Backend directly is recorded as themselves.",
-      "Actions taken through the Portal, such as break-glass validations and notes on a Case, are recorded under the Operator who took them, as before. This update and the Portal update can be installed in either order."
+      "Setting up the Basewiser app no longer fails with a Microsoft Graph error when Entra needs a few seconds before a new app registration can receive its secret. The backend waits and retries, as it already did for the other form of the same delay.",
+      "The personal invitation and other messages that point to Basewiser for help name support@basewiser.com.",
+      "Break-glass declarations are recorded under the operator who is signed in. This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261026.225702",
+        "releasedAt": "2026-10-26",
+        "notes": [
+          "Setting up the Basewiser app no longer fails with a Microsoft Graph error when Entra needs a few seconds before a new app registration can receive its secret. The backend waits and retries, as it already did for the other form of the same delay.",
+          "The personal invitation and other messages that point to Basewiser for help name support@basewiser.com.",
+          "Break-glass declarations are recorded under the operator who is signed in. This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261016.222346",
         "releasedAt": "2026-10-16",
