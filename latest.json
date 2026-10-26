@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261026.225702",
+    "tag": "portal-v20261026.230714",
     "releasedAt": "2026-10-26",
     "notes": [
-      "A customer invitation is prepared in the portal and sent from your own mail program. Open in your mail app fills in the message, and Download gives the designed email. Send through Basewiser is offered only when email delivery is set up on your backend.",
-      "Wherever the portal points you to Basewiser for help, such as the help window, error pages and the update notice, the address is support@basewiser.com. Sales and general questions stay with contact@basewiser.com.",
-      "This update and the Backend update can be installed in either order."
+      "The page shown after a payment speaks to a first buyer: every customer you connect streams from the moment it approves, and its button takes you to connect or view customers.",
+      "The banner on an empty portfolio says what to do next, connect your first customer, and leaves pricing to the plan page."
     ],
     "history": [
+      {
+        "tag": "portal-v20261026.230714",
+        "releasedAt": "2026-10-26",
+        "notes": [
+          "The page shown after a payment speaks to a first buyer: every customer you connect streams from the moment it approves, and its button takes you to connect or view customers.",
+          "The banner on an empty portfolio says what to do next, connect your first customer, and leaves pricing to the plan page."
+        ]
+      },
       {
         "tag": "portal-v20261026.225702",
         "releasedAt": "2026-10-26",
