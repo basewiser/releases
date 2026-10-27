@@ -184,25 +184,5 @@
         ]
       }
     ]
-  },
-  "aiBundle": {
-    "tag": "ai-bundle-v20260907.140743",
-    "releasedAt": "2026-09-07",
-    "notes": [
-      "Fallback wording is shorter and more specific when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose.",
-      "Finding and tenant explanations run through the bundled offline model. Opportunity explanations use reviewed copy directly, which avoids an unnecessary model run and its Azure compute cost.",
-      "Updating this bundle rewrites prose, never evidence. The release was run with networking disabled and passed the full draft evaluation. Numbers are composed by the product and stay outside the model's control."
-    ],
-    "history": [
-      {
-        "tag": "ai-bundle-v20260907.140743",
-        "releasedAt": "2026-09-07",
-        "notes": [
-          "Fallback wording is shorter and more specific when the local model cannot produce an acceptable answer, so a failed model attempt still leaves useful prose.",
-          "Finding and tenant explanations run through the bundled offline model. Opportunity explanations use reviewed copy directly, which avoids an unnecessary model run and its Azure compute cost.",
-          "Updating this bundle rewrites prose, never evidence. The release was run with networking disabled and passed the full draft evaluation. Numbers are composed by the product and stay outside the model's control."
-        ]
-      }
-    ]
   }
 }
