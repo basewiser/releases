@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261027.125656",
+    "tag": "portal-v20261027.142230",
     "releasedAt": "2026-10-27",
     "notes": [
-      "Before a purchase, the plan page shows the email address Checkout will use and lets you change it, so receipts go to the right place. Install the Backend update released with this one: without it the change is refused.",
-      "The plan page no longer mentions a free first month. No trial is offered: the amount shown is charged when you subscribe, and the 30-day money-back guarantee runs from that first payment."
+      "The AI writer is gone. Findings and opportunities show their written description only, the AI writer tab is removed from Settings, and the update notice lists the Portal and the Backend. Install the Backend update released with this one.",
+      "The portal uses no AI service, inside or outside your deployment, and nothing from your customers' tenants is sent to one."
     ],
     "history": [
+      {
+        "tag": "portal-v20261027.142230",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "The AI writer is gone. Findings and opportunities show their written description only, the AI writer tab is removed from Settings, and the update notice lists the Portal and the Backend. Install the Backend update released with this one.",
+          "The portal uses no AI service, inside or outside your deployment, and nothing from your customers' tenants is sent to one."
+        ]
+      },
       {
         "tag": "portal-v20261027.125656",
         "releasedAt": "2026-10-27",
@@ -112,12 +120,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261027.125656",
+    "tag": "backend-v20261027.142230",
     "releasedAt": "2026-10-27",
     "notes": [
-      "The billing email on file can be changed from the portal before a purchase, so receipts and payment reminders go to the right address. Install this with the Portal update released at the same time."
+      "The AI writer is removed: no drafts are written, stored or queued any more, and the two tables it used are no longer created. Install this with the Portal update released at the same time. A deployment that had the writer on keeps its job resource until it is deleted by hand, and that job never runs again."
     ],
     "history": [
+      {
+        "tag": "backend-v20261027.142230",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "The AI writer is removed: no drafts are written, stored or queued any more, and the two tables it used are no longer created. Install this with the Portal update released at the same time. A deployment that had the writer on keeps its job resource until it is deleted by hand, and that job never runs again."
+        ]
+      },
       {
         "tag": "backend-v20261027.125656",
         "releasedAt": "2026-10-27",
