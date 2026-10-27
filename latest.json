@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261027.120743",
+    "tag": "portal-v20261027.125656",
     "releasedAt": "2026-10-27",
     "notes": [
-      "Findings over time starts where your records start. A customer connected an hour ago shows one hour of history, and the moments before it are marked as no snapshot, instead of a flat day that never happened. Install the Backend update released with this one: with the older Backend the chart still repeats the first reading across the whole day.",
-      "The invitation wizard says, next to the administrator's email, that whoever opens the approval link connects their own tenant, so the invitation must go to an administrator in the customer's tenant.",
-      "The plan offers carry the guarantee from the terms: cancel at any time, and within 30 days of your first payment you can ask for that payment back in full."
+      "Before a purchase, the plan page shows the email address Checkout will use and lets you change it, so receipts go to the right place. Install the Backend update released with this one: without it the change is refused.",
+      "The plan page no longer mentions a free first month. No trial is offered: the amount shown is charged when you subscribe, and the 30-day money-back guarantee runs from that first payment."
     ],
     "history": [
+      {
+        "tag": "portal-v20261027.125656",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "Before a purchase, the plan page shows the email address Checkout will use and lets you change it, so receipts go to the right place. Install the Backend update released with this one: without it the change is refused.",
+          "The plan page no longer mentions a free first month. No trial is offered: the amount shown is charged when you subscribe, and the 30-day money-back guarantee runs from that first payment."
+        ]
+      },
       {
         "tag": "portal-v20261027.120743",
         "releasedAt": "2026-10-27",
@@ -105,12 +112,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261027.120743",
+    "tag": "backend-v20261027.125656",
     "releasedAt": "2026-10-27",
     "notes": [
-      "Findings history is recorded from the first reading on and never filled in before it. A series is shorter than the day or week it is shown in until the history covers it, and a moment without a reading repeats the last one. Install this with the Portal update released at the same time: with the older Portal the chart's time labels can be off until both are in."
+      "The billing email on file can be changed from the portal before a purchase, so receipts and payment reminders go to the right address. Install this with the Portal update released at the same time."
     ],
     "history": [
+      {
+        "tag": "backend-v20261027.125656",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "The billing email on file can be changed from the portal before a purchase, so receipts and payment reminders go to the right address. Install this with the Portal update released at the same time."
+        ]
+      },
       {
         "tag": "backend-v20261027.120743",
         "releasedAt": "2026-10-27",
