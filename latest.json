@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261027.142230",
+    "tag": "portal-v20261027.182403",
     "releasedAt": "2026-10-27",
     "notes": [
-      "The AI writer is gone. Findings and opportunities show their written description only, the AI writer tab is removed from Settings, and the update notice lists the Portal and the Backend. Install the Backend update released with this one.",
-      "The portal uses no AI service, inside or outside your deployment, and nothing from your customers' tenants is sent to one."
+      "Invitations you prepare show as pending on the Customers page, with the progress of each service, until the customer approves or you dismiss them. The mail-app link opens a short message with the approval links, and the designed download is the full invitation.",
+      "The Dashboard and the Customers page count findings the same way, connection meters read approved Azure access as connected, and invoice lines are named by plan in English. Install the Backend update released with this one, or pending invitations, invoice names and the renewal date after a purchase stay missing.",
+      "An approval given in a different organisation is refused with a page that says so. The Remove dialog says what removal does and leaves alone, every entry point says Add customer, and the setup wizard's controls are named for assistive technology."
     ],
     "history": [
+      {
+        "tag": "portal-v20261027.182403",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "Invitations you prepare show as pending on the Customers page, with the progress of each service, until the customer approves or you dismiss them. The mail-app link opens a short message with the approval links, and the designed download is the full invitation.",
+          "The Dashboard and the Customers page count findings the same way, connection meters read approved Azure access as connected, and invoice lines are named by plan in English. Install the Backend update released with this one, or pending invitations, invoice names and the renewal date after a purchase stay missing.",
+          "An approval given in a different organisation is refused with a page that says so. The Remove dialog says what removal does and leaves alone, every entry point says Add customer, and the setup wizard's controls are named for assistive technology."
+        ]
+      },
       {
         "tag": "portal-v20261027.142230",
         "releasedAt": "2026-10-27",
@@ -120,12 +130,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261027.142230",
+    "tag": "backend-v20261027.182403",
     "releasedAt": "2026-10-27",
     "notes": [
-      "The AI writer is removed: no drafts are written, stored or queued any more, and the two tables it used are no longer created. Install this with the Portal update released at the same time. A deployment that had the writer on keeps its job resource until it is deleted by hand, and that job never runs again."
+      "A new customer gets its first identity scan when it connects and its first Azure sweep within minutes, instead of waiting for the nightly runs. A first backup that did not land at connect is taken by the backup scheduler within a quarter of an hour.",
+      "The findings chart follows a removal, a first scan and a purchase at once, a purchase writes its renewal date, and invoice lines carry the plan behind them. Install this before the Portal update released with it.",
+      "Every refused registration is logged with its reason and attempt, the portal address becomes the customer's own domain at install, and the consent link carries the invited tenant so an approval in another organisation is refused."
     ],
     "history": [
+      {
+        "tag": "backend-v20261027.182403",
+        "releasedAt": "2026-10-27",
+        "notes": [
+          "A new customer gets its first identity scan when it connects and its first Azure sweep within minutes, instead of waiting for the nightly runs. A first backup that did not land at connect is taken by the backup scheduler within a quarter of an hour.",
+          "The findings chart follows a removal, a first scan and a purchase at once, a purchase writes its renewal date, and invoice lines carry the plan behind them. Install this before the Portal update released with it.",
+          "Every refused registration is logged with its reason and attempt, the portal address becomes the customer's own domain at install, and the consent link carries the invited tenant so an approval in another organisation is refused."
+        ]
+      },
       {
         "tag": "backend-v20261027.142230",
         "releasedAt": "2026-10-27",
