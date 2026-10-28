@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261028.005814",
+    "tag": "portal-v20261028.165853",
     "releasedAt": "2026-10-28",
     "notes": [
-      "A customer's own pages now count an Azure finding once per check, the way every other page already did: a check that fires in two subscriptions is one finding, and the rows per subscription stay as the list under it. The theme page says how many subscriptions its number spans.",
-      "The customer setup wizard names its service checkboxes, Azure coverage choices and email field for every screen reader."
+      "A customer with no enabled Conditional Access policy and no security defaults sees one finding for it, with the five gaps that follow listed under it, instead of six findings for one fact. A customer on security defaults is no longer told that legacy authentication is open or that administrators lack MFA. Install the Backend update released with this one, or the findings keep their old shape.",
+      "The saved named locations of a backup stay on screen while the panel reads them again, and Retry clears an earlier error before it tries."
     ],
     "history": [
+      {
+        "tag": "portal-v20261028.165853",
+        "releasedAt": "2026-10-28",
+        "notes": [
+          "A customer with no enabled Conditional Access policy and no security defaults sees one finding for it, with the five gaps that follow listed under it, instead of six findings for one fact. A customer on security defaults is no longer told that legacy authentication is open or that administrators lack MFA. Install the Backend update released with this one, or the findings keep their old shape.",
+          "The saved named locations of a backup stay on screen while the panel reads them again, and Retry clears an earlier error before it tries."
+        ]
+      },
       {
         "tag": "portal-v20261028.005814",
         "releasedAt": "2026-10-28",
@@ -137,14 +145,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261027.182403",
-    "releasedAt": "2026-10-27",
+    "tag": "backend-v20261028.165853",
+    "releasedAt": "2026-10-28",
     "notes": [
-      "A new customer gets its first identity scan when it connects and its first Azure sweep within minutes, instead of waiting for the nightly runs. A first backup that did not land at connect is taken by the backup scheduler within a quarter of an hour.",
-      "The findings chart follows a removal, a first scan and a purchase at once, a purchase writes its renewal date, and invoice lines carry the plan behind them. Install this before the Portal update released with it.",
-      "Every refused registration is logged with its reason and attempt, the portal address becomes the customer's own domain at install, and the consent link carries the invited tenant so an approval in another organisation is refused."
+      "A tenant with no enabled Conditional Access policy and no security defaults gets one critical finding, with legacy authentication, MFA for administrators, risk-based access, sign-in location and device requirements listed under it. Each reports on its own again as soon as a first policy is enforced or security defaults are turned on.",
+      "Security defaults now satisfy the legacy authentication and administrator MFA checks. A finding folded into the one above closes as superseded, never as fixed, so a customer's history stays honest. Install the Portal update released with this one."
     ],
     "history": [
+      {
+        "tag": "backend-v20261028.165853",
+        "releasedAt": "2026-10-28",
+        "notes": [
+          "A tenant with no enabled Conditional Access policy and no security defaults gets one critical finding, with legacy authentication, MFA for administrators, risk-based access, sign-in location and device requirements listed under it. Each reports on its own again as soon as a first policy is enforced or security defaults are turned on.",
+          "Security defaults now satisfy the legacy authentication and administrator MFA checks. A finding folded into the one above closes as superseded, never as fixed, so a customer's history stays honest. Install the Portal update released with this one."
+        ]
+      },
       {
         "tag": "backend-v20261027.182403",
         "releasedAt": "2026-10-27",
