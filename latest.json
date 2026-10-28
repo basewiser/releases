@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261027.182403",
-    "releasedAt": "2026-10-27",
+    "tag": "portal-v20261028.005814",
+    "releasedAt": "2026-10-28",
     "notes": [
-      "Invitations you prepare show as pending on the Customers page, with the progress of each service, until the customer approves or you dismiss them. The mail-app link opens a short message with the approval links, and the designed download is the full invitation.",
-      "The Dashboard and the Customers page count findings the same way, connection meters read approved Azure access as connected, and invoice lines are named by plan in English. Install the Backend update released with this one, or pending invitations, invoice names and the renewal date after a purchase stay missing.",
-      "An approval given in a different organisation is refused with a page that says so. The Remove dialog says what removal does and leaves alone, every entry point says Add customer, and the setup wizard's controls are named for assistive technology."
+      "A customer's own pages now count an Azure finding once per check, the way every other page already did: a check that fires in two subscriptions is one finding, and the rows per subscription stay as the list under it. The theme page says how many subscriptions its number spans.",
+      "The customer setup wizard names its service checkboxes, Azure coverage choices and email field for every screen reader."
     ],
     "history": [
+      {
+        "tag": "portal-v20261028.005814",
+        "releasedAt": "2026-10-28",
+        "notes": [
+          "A customer's own pages now count an Azure finding once per check, the way every other page already did: a check that fires in two subscriptions is one finding, and the rows per subscription stay as the list under it. The theme page says how many subscriptions its number spans.",
+          "The customer setup wizard names its service checkboxes, Azure coverage choices and email field for every screen reader."
+        ]
+      },
       {
         "tag": "portal-v20261027.182403",
         "releasedAt": "2026-10-27",
