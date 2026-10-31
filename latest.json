@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261028.165853",
-    "releasedAt": "2026-10-28",
+    "tag": "portal-v20261031.221257",
+    "releasedAt": "2026-10-31",
     "notes": [
-      "A customer with no enabled Conditional Access policy and no security defaults sees one finding for it, with the five gaps that follow listed under it, instead of six findings for one fact. A customer on security defaults is no longer told that legacy authentication is open or that administrators lack MFA. Install the Backend update released with this one, or the findings keep their old shape.",
-      "The saved named locations of a backup stay on screen while the panel reads them again, and Retry clears an earlier error before it tries."
+      "The Customers page now counts each customer's findings from the same rows as the dashboard, so the two pages show the same number.",
+      "The help window and the first setup page now say direct support."
     ],
     "history": [
+      {
+        "tag": "portal-v20261031.221257",
+        "releasedAt": "2026-10-31",
+        "notes": [
+          "The Customers page now counts each customer's findings from the same rows as the dashboard, so the two pages show the same number.",
+          "The help window and the first setup page now say direct support."
+        ]
+      },
       {
         "tag": "portal-v20261028.165853",
         "releasedAt": "2026-10-28",
