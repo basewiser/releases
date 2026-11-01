@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261031.221257",
-    "releasedAt": "2026-10-31",
+    "tag": "portal-v20261101.151539",
+    "releasedAt": "2026-11-01",
     "notes": [
-      "The Customers page now counts each customer's findings from the same rows as the dashboard, so the two pages show the same number.",
-      "The help window and the first setup page now say direct support."
+      "The portal no longer includes analytics scripts, and its security rules no longer allow them.",
+      "Unused code is removed from the portal. Nothing else you see changes. This update and the Backend update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "portal-v20261101.151539",
+        "releasedAt": "2026-11-01",
+        "notes": [
+          "The portal no longer includes analytics scripts, and its security rules no longer allow them.",
+          "Unused code is removed from the portal. Nothing else you see changes. This update and the Backend update can be installed in either order."
+        ]
+      },
       {
         "tag": "portal-v20261031.221257",
         "releasedAt": "2026-10-31",
@@ -153,13 +161,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261028.165853",
-    "releasedAt": "2026-10-28",
+    "tag": "backend-v20261101.151539",
+    "releasedAt": "2026-11-01",
     "notes": [
-      "A tenant with no enabled Conditional Access policy and no security defaults gets one critical finding, with legacy authentication, MFA for administrators, risk-based access, sign-in location and device requirements listed under it. Each reports on its own again as soon as a first policy is enforced or security defaults are turned on.",
-      "Security defaults now satisfy the legacy authentication and administrator MFA checks. A finding folded into the one above closes as superseded, never as fixed, so a customer's history stays honest. Install the Portal update released with this one."
+      "Basewiser's own backups and restores are no longer credited as the actor behind a Conditional Access change. The person or app that made the change is shown once Microsoft's audit log records it.",
+      "Unused routes and an email option that could never be turned on are removed. Nothing else changes. This update and the Portal update can be installed in either order."
     ],
     "history": [
+      {
+        "tag": "backend-v20261101.151539",
+        "releasedAt": "2026-11-01",
+        "notes": [
+          "Basewiser's own backups and restores are no longer credited as the actor behind a Conditional Access change. The person or app that made the change is shown once Microsoft's audit log records it.",
+          "Unused routes and an email option that could never be turned on are removed. Nothing else changes. This update and the Portal update can be installed in either order."
+        ]
+      },
       {
         "tag": "backend-v20261028.165853",
         "releasedAt": "2026-10-28",
