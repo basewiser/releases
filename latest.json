@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261101.151539",
-    "releasedAt": "2026-11-01",
+    "tag": "portal-v20261103.205501",
+    "releasedAt": "2026-11-03",
     "notes": [
-      "The portal no longer includes analytics scripts, and its security rules no longer allow them.",
-      "Unused code is removed from the portal. Nothing else you see changes. This update and the Backend update can be installed in either order."
+      "Clearer wording across the portal: the help pages, the tour, the Inbox, the customer and fleet pages, and the reports.",
+      "The invitation preview shows the new invitation design, pictures included. Install it together with the Backend update released with it."
     ],
     "history": [
+      {
+        "tag": "portal-v20261103.205501",
+        "releasedAt": "2026-11-03",
+        "notes": [
+          "Clearer wording across the portal: the help pages, the tour, the Inbox, the customer and fleet pages, and the reports.",
+          "The invitation preview shows the new invitation design, pictures included. Install it together with the Backend update released with it."
+        ]
+      },
       {
         "tag": "portal-v20261101.151539",
         "releasedAt": "2026-11-01",
@@ -161,13 +169,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261101.151539",
-    "releasedAt": "2026-11-01",
+    "tag": "backend-v20261103.205501",
+    "releasedAt": "2026-11-03",
     "notes": [
-      "Basewiser's own backups and restores are no longer credited as the actor behind a Conditional Access change. The person or app that made the change is shown once Microsoft's audit log records it.",
-      "Unused routes and an email option that could never be turned on are removed. Nothing else changes. This update and the Portal update can be installed in either order."
+      "Customer invitations have a new design and plainer wording, and they explain why Microsoft shows the app as unverified.",
+      "Finding descriptions are plainer, and some now say exactly what the check reads: a few claims the checks could not back up are removed, and the current Microsoft product names are used.",
+      "Install it together with the Portal update released with it."
     ],
     "history": [
+      {
+        "tag": "backend-v20261103.205501",
+        "releasedAt": "2026-11-03",
+        "notes": [
+          "Customer invitations have a new design and plainer wording, and they explain why Microsoft shows the app as unverified.",
+          "Finding descriptions are plainer, and some now say exactly what the check reads: a few claims the checks could not back up are removed, and the current Microsoft product names are used.",
+          "Install it together with the Portal update released with it."
+        ]
+      },
       {
         "tag": "backend-v20261101.151539",
         "releasedAt": "2026-11-01",
