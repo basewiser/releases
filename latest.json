@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261103.205501",
+    "tag": "portal-v20261103.220909",
     "releasedAt": "2026-11-03",
     "notes": [
-      "Clearer wording across the portal: the help pages, the tour, the Inbox, the customer and fleet pages, and the reports.",
-      "The invitation preview shows the new invitation design, pictures included. Install it together with the Backend update released with it."
+      "The FAQ now says plainly that Basewiser only reads a customer's tenant, and that you apply a Conditional Access restore yourself, from a guided plan.",
+      "A case that closed by itself now says Closed automatically. Automatically restored shows only when a restore really happened."
     ],
     "history": [
+      {
+        "tag": "portal-v20261103.220909",
+        "releasedAt": "2026-11-03",
+        "notes": [
+          "The FAQ now says plainly that Basewiser only reads a customer's tenant, and that you apply a Conditional Access restore yourself, from a guided plan.",
+          "A case that closed by itself now says Closed automatically. Automatically restored shows only when a restore really happened."
+        ]
+      },
       {
         "tag": "portal-v20261103.205501",
         "releasedAt": "2026-11-03",
