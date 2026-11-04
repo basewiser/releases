@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261103.220909",
-    "releasedAt": "2026-11-03",
+    "tag": "portal-v20261104.175818",
+    "releasedAt": "2026-11-04",
     "notes": [
-      "The FAQ now says plainly that Basewiser only reads a customer's tenant, and that you apply a Conditional Access restore yourself, from a guided plan.",
-      "A case that closed by itself now says Closed automatically. Automatically restored shows only when a restore really happened."
+      "Support is one click away. The Support button in the top bar sends your question, bug or idea straight to us from the portal and shows your ticket number.",
+      "The customer invitation explains how to send the downloaded email, and No customers onboarded yet goes away as soon as your first customer connects.",
+      "Toggles and tabs look as they should again."
     ],
     "history": [
+      {
+        "tag": "portal-v20261104.175818",
+        "releasedAt": "2026-11-04",
+        "notes": [
+          "Support is one click away. The Support button in the top bar sends your question, bug or idea straight to us from the portal and shows your ticket number.",
+          "The customer invitation explains how to send the downloaded email, and No customers onboarded yet goes away as soon as your first customer connects.",
+          "Toggles and tabs look as they should again."
+        ]
+      },
       {
         "tag": "portal-v20261103.220909",
         "releasedAt": "2026-11-03",
