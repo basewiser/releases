@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261104.175818",
-    "releasedAt": "2026-11-04",
+    "tag": "portal-v20261106.113527",
+    "releasedAt": "2026-11-06",
     "notes": [
-      "Support is one click away. The Support button in the top bar sends your question, bug or idea straight to us from the portal and shows your ticket number.",
-      "The customer invitation explains how to send the downloaded email, and No customers onboarded yet goes away as soon as your first customer connects.",
-      "Toggles and tabs look as they should again."
+      "The FAQ explains how to remove the portal. One command removes everything Basewiser set up in your Azure and Entra ID, asks first whether to keep your data and the Basewiser Operators group, and names each customer tenant to clean up."
     ],
     "history": [
+      {
+        "tag": "portal-v20261106.113527",
+        "releasedAt": "2026-11-06",
+        "notes": [
+          "The FAQ explains how to remove the portal. One command removes everything Basewiser set up in your Azure and Entra ID, asks first whether to keep your data and the Basewiser Operators group, and names each customer tenant to clean up."
+        ]
+      },
       {
         "tag": "portal-v20261104.175818",
         "releasedAt": "2026-11-04",
