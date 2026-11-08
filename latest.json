@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261106.113527",
-    "releasedAt": "2026-11-06",
+    "tag": "portal-v20261108.214303",
+    "releasedAt": "2026-11-08",
     "notes": [
-      "The FAQ explains how to remove the portal. One command removes everything Basewiser set up in your Azure and Entra ID, asks first whether to keep your data and the Basewiser Operators group, and names each customer tenant to clean up."
+      "Every page's summary is easier to read. The panels are flat cards that share one outline with the table under them, and rings sit beside the numbers they belong to.",
+      "Backup & Restore shows each customer's protection over the last seven days as a lane, and the default backup schedule is set on a clock you can drag or type into.",
+      "Licenses shows each day's cost as one bar with the part you can reclaim inside it. When an update needs the installer, the update notice says so and shows the two commands to run."
     ],
     "history": [
+      {
+        "tag": "portal-v20261108.214303",
+        "releasedAt": "2026-11-08",
+        "notes": [
+          "Every page's summary is easier to read. The panels are flat cards that share one outline with the table under them, and rings sit beside the numbers they belong to.",
+          "Backup & Restore shows each customer's protection over the last seven days as a lane, and the default backup schedule is set on a clock you can drag or type into.",
+          "Licenses shows each day's cost as one bar with the part you can reclaim inside it. When an update needs the installer, the update notice says so and shows the two commands to run."
+        ]
+      },
       {
         "tag": "portal-v20261106.113527",
         "releasedAt": "2026-11-06",
