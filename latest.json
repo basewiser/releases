@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261108.214303",
+    "tag": "portal-v20261108.220535",
     "releasedAt": "2026-11-08",
     "notes": [
-      "Every page's summary is easier to read. The panels are flat cards that share one outline with the table under them, and rings sit beside the numbers they belong to.",
-      "Backup & Restore shows each customer's protection over the last seven days as a lane, and the default backup schedule is set on a clock you can drag or type into.",
-      "Licenses shows each day's cost as one bar with the part you can reclaim inside it. When an update needs the installer, the update notice says so and shows the two commands to run."
+      "Checking for updates no longer relies on a copy of the release list taken when the portal was built. A portal that was just started or updated asks for the current list straight away."
     ],
     "history": [
+      {
+        "tag": "portal-v20261108.220535",
+        "releasedAt": "2026-11-08",
+        "notes": [
+          "Checking for updates no longer relies on a copy of the release list taken when the portal was built. A portal that was just started or updated asks for the current list straight away."
+        ]
+      },
       {
         "tag": "portal-v20261108.214303",
         "releasedAt": "2026-11-08",
