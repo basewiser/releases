@@ -208,14 +208,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261103.205501",
-    "releasedAt": "2026-11-03",
+    "tag": "backend-v20261109.144423",
+    "releasedAt": "2026-11-09",
     "notes": [
-      "Customer invitations have a new design and plainer wording, and they explain why Microsoft shows the app as unverified.",
-      "Finding descriptions are plainer, and some now say exactly what the check reads: a few claims the checks could not back up are removed, and the current Microsoft product names are used.",
-      "Install it together with the Portal update released with it."
+      "Azure access findings now say who holds the role: the person with their sign-in name, the group or the app, instead of a bare ID.",
+      "When a role points at something your directory no longer has, the finding says so. If the directory can't be read, the ID stays with a note and the next check tries again.",
+      "No Portal update is needed for this one."
     ],
     "history": [
+      {
+        "tag": "backend-v20261109.144423",
+        "releasedAt": "2026-11-09",
+        "notes": [
+          "Azure access findings now say who holds the role: the person with their sign-in name, the group or the app, instead of a bare ID.",
+          "When a role points at something your directory no longer has, the finding says so. If the directory can't be read, the ID stays with a note and the next check tries again.",
+          "No Portal update is needed for this one."
+        ]
+      },
       {
         "tag": "backend-v20261103.205501",
         "releasedAt": "2026-11-03",
