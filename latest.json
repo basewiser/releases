@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261108.220535",
-    "releasedAt": "2026-11-08",
+    "tag": "portal-v20261112.204545",
+    "releasedAt": "2026-11-12",
     "notes": [
-      "Checking for updates no longer relies on a copy of the release list taken when the portal was built. A portal that was just started or updated asks for the current list straight away."
+      "The whole portal has a new look: one blue on greys, square corners and far less text. Dashboard, Customers, Inbox, Entra ID, Conditional Access, Azure, Licenses, Backup & Restore, Opportunities, Reports, Billing, Help and Settings are redesigned.",
+      "Customer health is counted from what you can see. Any critical finding or case, or five highs, is Critical. Any high, or five mediums, is Warning. The risk score is gone, and a customer that has not been scanned yet says so.",
+      "Install the backend update first. With the older backend, customer health still follows the old rule and the license cost cards are incomplete."
     ],
     "history": [
+      {
+        "tag": "portal-v20261112.204545",
+        "releasedAt": "2026-11-12",
+        "notes": [
+          "The whole portal has a new look: one blue on greys, square corners and far less text. Dashboard, Customers, Inbox, Entra ID, Conditional Access, Azure, Licenses, Backup & Restore, Opportunities, Reports, Billing, Help and Settings are redesigned.",
+          "Customer health is counted from what you can see. Any critical finding or case, or five highs, is Critical. Any high, or five mediums, is Warning. The risk score is gone, and a customer that has not been scanned yet says so.",
+          "Install the backend update first. With the older backend, customer health still follows the old rule and the license cost cards are incomplete."
+        ]
+      },
       {
         "tag": "portal-v20261108.220535",
         "releasedAt": "2026-11-08",
@@ -208,14 +219,23 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261109.144423",
-    "releasedAt": "2026-11-09",
+    "tag": "backend-v20261112.204545",
+    "releasedAt": "2026-11-12",
     "notes": [
-      "Azure access findings now say who holds the role: the person with their sign-in name, the group or the app, instead of a bare ID.",
-      "When a role points at something your directory no longer has, the finding says so. If the directory can't be read, the ID stays with a note and the next check tries again.",
-      "No Portal update is needed for this one."
+      "Install this before the portal update. The new portal needs it for customer health from finding counts and for license costs by month.",
+      "A customer is no longer marked healthy when a scan could not read it. It stays Not scanned until a scan gets an answer. Jobs that update a customer at the same time no longer overwrite each other, and a deleted customer stays deleted.",
+      "A backup every 2 days is no longer offered, because it always ran daily. A saved every 2 days setting now reads Daily."
     ],
     "history": [
+      {
+        "tag": "backend-v20261112.204545",
+        "releasedAt": "2026-11-12",
+        "notes": [
+          "Install this before the portal update. The new portal needs it for customer health from finding counts and for license costs by month.",
+          "A customer is no longer marked healthy when a scan could not read it. It stays Not scanned until a scan gets an answer. Jobs that update a customer at the same time no longer overwrite each other, and a deleted customer stays deleted.",
+          "A backup every 2 days is no longer offered, because it always ran daily. A saved every 2 days setting now reads Daily."
+        ]
+      },
       {
         "tag": "backend-v20261109.144423",
         "releasedAt": "2026-11-09",
