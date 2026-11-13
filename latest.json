@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261113.200139",
+    "tag": "portal-v20261113.203214",
     "releasedAt": "2026-11-13",
     "notes": [
-      "Your first plan is bought where it is asked for. Connect a customer shows the three plans when you have none, instead of sending you to Settings and back.",
-      "Connect a customer reads shorter and is as wide as every other page, and the prompt to add your first customer now takes you straight there."
+      "The update notice is gone when the page comes back. An update now waits for the new build to answer before it finishes, instead of reloading on an estimate and sometimes landing on the old one."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.203214",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "The update notice is gone when the page comes back. An update now waits for the new build to answer before it finishes, instead of reloading on an estimate and sometimes landing on the old one."
+        ]
+      },
       {
         "tag": "portal-v20261113.200139",
         "releasedAt": "2026-11-13",
