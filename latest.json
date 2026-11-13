@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261113.020435",
+    "tag": "portal-v20261113.171833",
     "releasedAt": "2026-11-13",
     "notes": [
-      "Potential license savings is one number on every page: the seats of inactive people plus the seats nobody has. The Dashboard used to count inactive seats only, so it showed less than Licenses for the same customers.",
-      "The Licenses table shows Inactive, Unassigned and Savings for each customer, with a total row. The Licenses report holds both parts and their sum.",
-      "Install the backend update first. With the older backend, the savings number counts inactive seats only."
+      "Setting up the portal reads shorter. Every step shows how far along you are, and each one says only what that step needs.",
+      "The step that creates the Basewiser app gives its permissions room to read. What the app may read has not changed: it reads, and never changes anything in a customer's tenant."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.171833",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Setting up the portal reads shorter. Every step shows how far along you are, and each one says only what that step needs.",
+          "The step that creates the Basewiser app gives its permissions room to read. What the app may read has not changed: it reads, and never changes anything in a customer's tenant."
+        ]
+      },
       {
         "tag": "portal-v20261113.020435",
         "releasedAt": "2026-11-13",
