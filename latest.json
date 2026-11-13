@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261112.204545",
-    "releasedAt": "2026-11-12",
+    "tag": "portal-v20261113.020435",
+    "releasedAt": "2026-11-13",
     "notes": [
-      "The whole portal has a new look: one blue on greys, square corners and far less text. Dashboard, Customers, Inbox, Entra ID, Conditional Access, Azure, Licenses, Backup & Restore, Opportunities, Reports, Billing, Help and Settings are redesigned.",
-      "Customer health is counted from what you can see. Any critical finding or case, or five highs, is Critical. Any high, or five mediums, is Warning. The risk score is gone, and a customer that has not been scanned yet says so.",
-      "Install the backend update first. With the older backend, customer health still follows the old rule and the license cost cards are incomplete."
+      "Potential license savings is one number on every page: the seats of inactive people plus the seats nobody has. The Dashboard used to count inactive seats only, so it showed less than Licenses for the same customers.",
+      "The Licenses table shows Inactive, Unassigned and Savings for each customer, with a total row. The Licenses report holds both parts and their sum.",
+      "Install the backend update first. With the older backend, the savings number counts inactive seats only."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.020435",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Potential license savings is one number on every page: the seats of inactive people plus the seats nobody has. The Dashboard used to count inactive seats only, so it showed less than Licenses for the same customers.",
+          "The Licenses table shows Inactive, Unassigned and Savings for each customer, with a total row. The Licenses report holds both parts and their sum.",
+          "Install the backend update first. With the older backend, the savings number counts inactive seats only."
+        ]
+      },
       {
         "tag": "portal-v20261112.204545",
         "releasedAt": "2026-11-12",
@@ -219,14 +228,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261112.204545",
-    "releasedAt": "2026-11-12",
+    "tag": "backend-v20261113.020435",
+    "releasedAt": "2026-11-13",
     "notes": [
-      "Install this before the portal update. The new portal needs it for customer health from finding counts and for license costs by month.",
-      "A customer is no longer marked healthy when a scan could not read it. It stays Not scanned until a scan gets an answer. Jobs that update a customer at the same time no longer overwrite each other, and a deleted customer stays deleted.",
-      "A backup every 2 days is no longer offered, because it always ran daily. A saved every 2 days setting now reads Daily."
+      "Install this before the portal update. The new portal reads what the unassigned seats cost from it.",
+      "What the unassigned seats cost is recorded every day, next to the cost of inactive seats. The change beside potential license savings starts once both have been recorded."
     ],
     "history": [
+      {
+        "tag": "backend-v20261113.020435",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Install this before the portal update. The new portal reads what the unassigned seats cost from it.",
+          "What the unassigned seats cost is recorded every day, next to the cost of inactive seats. The change beside potential license savings starts once both have been recorded."
+        ]
+      },
       {
         "tag": "backend-v20261112.204545",
         "releasedAt": "2026-11-12",
