@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261113.221516",
+    "tag": "portal-v20261113.224856",
     "releasedAt": "2026-11-13",
     "notes": [
-      "Plans are chosen in one place, under Settings and Billing. Connect a customer asks for a plan and takes you there."
+      "Before you have a plan, Add customer offers the plans instead. It used to open the connect screen, which only said a plan comes first and sent you on again."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.224856",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Before you have a plan, Add customer offers the plans instead. It used to open the connect screen, which only said a plan comes first and sent you on again."
+        ]
+      },
       {
         "tag": "portal-v20261113.221516",
         "releasedAt": "2026-11-13",
