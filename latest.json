@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261113.171833",
+    "tag": "portal-v20261113.200139",
     "releasedAt": "2026-11-13",
     "notes": [
-      "Setting up the portal reads shorter. Every step shows how far along you are, and each one says only what that step needs.",
-      "The step that creates the Basewiser app gives its permissions room to read. What the app may read has not changed: it reads, and never changes anything in a customer's tenant."
+      "Your first plan is bought where it is asked for. Connect a customer shows the three plans when you have none, instead of sending you to Settings and back.",
+      "Connect a customer reads shorter and is as wide as every other page, and the prompt to add your first customer now takes you straight there."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.200139",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Your first plan is bought where it is asked for. Connect a customer shows the three plans when you have none, instead of sending you to Settings and back.",
+          "Connect a customer reads shorter and is as wide as every other page, and the prompt to add your first customer now takes you straight there."
+        ]
+      },
       {
         "tag": "portal-v20261113.171833",
         "releasedAt": "2026-11-13",
