@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261113.211009",
+    "tag": "portal-v20261113.221516",
     "releasedAt": "2026-11-13",
     "notes": [
-      "A service nobody has connected yet says so. Entra ID, Conditional Access and Azure used to show no findings and nothing to fix before a single customer was connected, which read as a clean result for something never looked at."
+      "Plans are chosen in one place, under Settings and Billing. Connect a customer asks for a plan and takes you there."
     ],
     "history": [
+      {
+        "tag": "portal-v20261113.221516",
+        "releasedAt": "2026-11-13",
+        "notes": [
+          "Plans are chosen in one place, under Settings and Billing. Connect a customer asks for a plan and takes you there."
+        ]
+      },
       {
         "tag": "portal-v20261113.211009",
         "releasedAt": "2026-11-13",
