@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261114.001749",
+    "tag": "portal-v20261114.114800",
     "releasedAt": "2026-11-14",
     "notes": [
-      "The portal catches up the moment a plan goes live. The page that confirms your purchase used to keep the prompt to choose a plan beside it until you reloaded."
+      "One button opens an invitation in your mail. Outlook starts the message with the address, the subject and the whole designed invitation in place, and Copy the message is there for webmail."
     ],
     "history": [
+      {
+        "tag": "portal-v20261114.114800",
+        "releasedAt": "2026-11-14",
+        "notes": [
+          "One button opens an invitation in your mail. Outlook starts the message with the address, the subject and the whole designed invitation in place, and Copy the message is there for webmail."
+        ]
+      },
       {
         "tag": "portal-v20261114.001749",
         "releasedAt": "2026-11-14",
