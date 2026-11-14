@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261114.114800",
+    "tag": "portal-v20261114.185332",
     "releasedAt": "2026-11-14",
     "notes": [
-      "One button opens an invitation in your mail. Outlook starts the message with the address, the subject and the whole designed invitation in place, and Copy the message is there for webmail."
+      "Inviting a customer is now one short email from your own mailbox. Write the email opens your mail program with a few lines, a link and a 6-digit code, and the link opens the full invitation on your portal once the code is entered.",
+      "The invitation page shows what each service lets you see, who approves, and what is already connected. Links work for 7 days and lock after five wrong codes."
     ],
     "history": [
+      {
+        "tag": "portal-v20261114.185332",
+        "releasedAt": "2026-11-14",
+        "notes": [
+          "Inviting a customer is now one short email from your own mailbox. Write the email opens your mail program with a few lines, a link and a 6-digit code, and the link opens the full invitation on your portal once the code is entered.",
+          "The invitation page shows what each service lets you see, who approves, and what is already connected. Links work for 7 days and lock after five wrong codes."
+        ]
+      },
       {
         "tag": "portal-v20261114.114800",
         "releasedAt": "2026-11-14",
@@ -284,13 +293,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261113.020435",
-    "releasedAt": "2026-11-13",
+    "tag": "backend-v20261114.185332",
+    "releasedAt": "2026-11-14",
     "notes": [
-      "Install this before the portal update. The new portal reads what the unassigned seats cost from it.",
-      "What the unassigned seats cost is recorded every day, next to the cost of inactive seats. The change beside potential license savings starts once both have been recorded."
+      "Prepared invitations now come with a page link and a 6-digit code, kept only as hashes. The invitation page checks both, locks after five wrong codes, and ends a link after 7 days or when the invitation is dismissed."
     ],
     "history": [
+      {
+        "tag": "backend-v20261114.185332",
+        "releasedAt": "2026-11-14",
+        "notes": [
+          "Prepared invitations now come with a page link and a 6-digit code, kept only as hashes. The invitation page checks both, locks after five wrong codes, and ends a link after 7 days or when the invitation is dismissed."
+        ]
+      },
       {
         "tag": "backend-v20261113.020435",
         "releasedAt": "2026-11-13",
