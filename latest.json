@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261113.224856",
-    "releasedAt": "2026-11-13",
+    "tag": "portal-v20261114.001749",
+    "releasedAt": "2026-11-14",
     "notes": [
-      "Before you have a plan, Add customer offers the plans instead. It used to open the connect screen, which only said a plan comes first and sent you on again."
+      "The portal catches up the moment a plan goes live. The page that confirms your purchase used to keep the prompt to choose a plan beside it until you reloaded."
     ],
     "history": [
+      {
+        "tag": "portal-v20261114.001749",
+        "releasedAt": "2026-11-14",
+        "notes": [
+          "The portal catches up the moment a plan goes live. The page that confirms your purchase used to keep the prompt to choose a plan beside it until you reloaded."
+        ]
+      },
       {
         "tag": "portal-v20261113.224856",
         "releasedAt": "2026-11-13",
