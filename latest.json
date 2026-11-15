@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261115.122753",
+    "tag": "portal-v20261115.144806",
     "releasedAt": "2026-11-15",
     "notes": [
-      "Open in Outlook copies the designed invitation and opens a new message with the address and subject. Press Ctrl+V in the message and send it from your own mailbox. Nothing is downloaded.",
-      "The Connect step is shorter, and the invitation keeps its dark design in Outlook, with a small note that it reads best in dark mode. Copy link and code is there for webmail or Teams.",
-      "Install the backend update first. Until it is in, Open in Outlook has no invitation to paste."
+      "A customer's Connection page now sends the same invitation as Connect a customer. Enter the address, choose Create invitation, then Open in Outlook or Copy link and code.",
+      "Removed the trial Inbox and case page layouts that were never switched on."
     ],
     "history": [
+      {
+        "tag": "portal-v20261115.144806",
+        "releasedAt": "2026-11-15",
+        "notes": [
+          "A customer's Connection page now sends the same invitation as Connect a customer. Enter the address, choose Create invitation, then Open in Outlook or Copy link and code.",
+          "Removed the trial Inbox and case page layouts that were never switched on."
+        ]
+      },
       {
         "tag": "portal-v20261115.122753",
         "releasedAt": "2026-11-15",
