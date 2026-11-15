@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261114.185332",
-    "releasedAt": "2026-11-14",
+    "tag": "portal-v20261115.122753",
+    "releasedAt": "2026-11-15",
     "notes": [
-      "Inviting a customer is now one short email from your own mailbox. Write the email opens your mail program with a few lines, a link and a 6-digit code, and the link opens the full invitation on your portal once the code is entered.",
-      "The invitation page shows what each service lets you see, who approves, and what is already connected. Links work for 7 days and lock after five wrong codes."
+      "Open in Outlook copies the designed invitation and opens a new message with the address and subject. Press Ctrl+V in the message and send it from your own mailbox. Nothing is downloaded.",
+      "The Connect step is shorter, and the invitation keeps its dark design in Outlook, with a small note that it reads best in dark mode. Copy link and code is there for webmail or Teams.",
+      "Install the backend update first. Until it is in, Open in Outlook has no invitation to paste."
     ],
     "history": [
+      {
+        "tag": "portal-v20261115.122753",
+        "releasedAt": "2026-11-15",
+        "notes": [
+          "Open in Outlook copies the designed invitation and opens a new message with the address and subject. Press Ctrl+V in the message and send it from your own mailbox. Nothing is downloaded.",
+          "The Connect step is shorter, and the invitation keeps its dark design in Outlook, with a small note that it reads best in dark mode. Copy link and code is there for webmail or Teams.",
+          "Install the backend update first. Until it is in, Open in Outlook has no invitation to paste."
+        ]
+      },
       {
         "tag": "portal-v20261114.185332",
         "releasedAt": "2026-11-14",
@@ -293,12 +303,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261114.185332",
-    "releasedAt": "2026-11-14",
+    "tag": "backend-v20261115.122753",
+    "releasedAt": "2026-11-15",
     "notes": [
-      "Prepared invitations now come with a page link and a 6-digit code, kept only as hashes. The invitation page checks both, locks after five wrong codes, and ends a link after 7 days or when the invitation is dismissed."
+      "Install this before the portal update. Prepared invitations now include the designed email, so the portal can put it in your Outlook."
     ],
     "history": [
+      {
+        "tag": "backend-v20261115.122753",
+        "releasedAt": "2026-11-15",
+        "notes": [
+          "Install this before the portal update. Prepared invitations now include the designed email, so the portal can put it in your Outlook."
+        ]
+      },
       {
         "tag": "backend-v20261114.185332",
         "releasedAt": "2026-11-14",
