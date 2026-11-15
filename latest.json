@@ -1,12 +1,26 @@
 {
   "portal": {
-    "tag": "portal-v20261115.144806",
+    "tag": "portal-v20261115.174546",
     "releasedAt": "2026-11-15",
     "notes": [
-      "A customer's Connection page now sends the same invitation as Connect a customer. Enter the address, choose Create invitation, then Open in Outlook or Copy link and code.",
-      "Removed the trial Inbox and case page layouts that were never switched on."
+      "Only people in your Basewiser Operators group can open the portal. Anyone else in your Microsoft tenant who signs in sees a page saying they have no access.",
+      "Run the installer once to switch this on. It gives the Operator role to the group and keeps everything it made before."
     ],
+    "requiresSetup": {
+      "reason": "Only people in your Basewiser Operators group can open the portal after this update, and only the installer can switch that on."
+    },
     "history": [
+      {
+        "tag": "portal-v20261115.174546",
+        "releasedAt": "2026-11-15",
+        "notes": [
+          "Only people in your Basewiser Operators group can open the portal. Anyone else in your Microsoft tenant who signs in sees a page saying they have no access.",
+          "Run the installer once to switch this on. It gives the Operator role to the group and keeps everything it made before."
+        ],
+        "requiresSetup": {
+          "reason": "Only people in your Basewiser Operators group can open the portal after this update, and only the installer can switch that on."
+        }
+      },
       {
         "tag": "portal-v20261115.144806",
         "releasedAt": "2026-11-15",
