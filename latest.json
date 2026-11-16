@@ -1,11 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261116.123653",
+    "tag": "portal-v20261116.131529",
     "releasedAt": "2026-11-16",
     "notes": [
-      "After Update now, the fixes the portal makes to its own Azure settings run right away instead of on your next visit."
+      "Update now no longer fails when Azure is still applying another change to the portal. It waits up to about a minute and a half and then goes ahead."
     ],
     "history": [
+      {
+        "tag": "portal-v20261116.131529",
+        "releasedAt": "2026-11-16",
+        "notes": [
+          "Update now no longer fails when Azure is still applying another change to the portal. It waits up to about a minute and a half and then goes ahead."
+        ]
+      },
       {
         "tag": "portal-v20261116.123653",
         "releasedAt": "2026-11-16",
