@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261116.112922",
+    "tag": "portal-v20261116.123653",
     "releasedAt": "2026-11-16",
     "notes": [
-      "The portal now keeps one copy running, so it opens at once instead of taking up to half a minute after a quiet spell.",
-      "It switches on by itself the first time an admin opens the portal after this update. It adds about 9 to 10 EUR a month to your Azure bill."
+      "After Update now, the fixes the portal makes to its own Azure settings run right away instead of on your next visit."
     ],
     "history": [
+      {
+        "tag": "portal-v20261116.123653",
+        "releasedAt": "2026-11-16",
+        "notes": [
+          "After Update now, the fixes the portal makes to its own Azure settings run right away instead of on your next visit."
+        ]
+      },
       {
         "tag": "portal-v20261116.112922",
         "releasedAt": "2026-11-16",
