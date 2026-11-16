@@ -1,11 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261116.014041",
+    "tag": "portal-v20261116.112922",
     "releasedAt": "2026-11-16",
     "notes": [
-      "The page people outside your Basewiser Operators group see when they sign in now shows the Basewiser logo."
+      "The portal now keeps one copy running, so it opens at once instead of taking up to half a minute after a quiet spell.",
+      "It switches on by itself the first time an admin opens the portal after this update. It adds about 9 to 10 EUR a month to your Azure bill."
     ],
     "history": [
+      {
+        "tag": "portal-v20261116.112922",
+        "releasedAt": "2026-11-16",
+        "notes": [
+          "The portal now keeps one copy running, so it opens at once instead of taking up to half a minute after a quiet spell.",
+          "It switches on by itself the first time an admin opens the portal after this update. It adds about 9 to 10 EUR a month to your Azure bill."
+        ]
+      },
       {
         "tag": "portal-v20261116.014041",
         "releasedAt": "2026-11-16",
