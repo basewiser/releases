@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261117.195754",
+    "tag": "portal-v20261117.205524",
     "releasedAt": "2026-11-17",
     "notes": [
-      "The account menu ends with the versions this install runs, the portal and the backend, so you can see what you are on after an update."
+      "The Azure page shown when no access was granted now has a Try again button and says in two paragraphs who can approve and how.",
+      "The invitation page and the approval pages show the Basewiser icon in the browser tab.",
+      "When Update now is refused, the message names the role it needs: Contributor or Owner on the resource group."
     ],
     "history": [
+      {
+        "tag": "portal-v20261117.205524",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "The Azure page shown when no access was granted now has a Try again button and says in two paragraphs who can approve and how.",
+          "The invitation page and the approval pages show the Basewiser icon in the browser tab.",
+          "When Update now is refused, the message names the role it needs: Contributor or Owner on the resource group."
+        ]
+      },
       {
         "tag": "portal-v20261117.195754",
         "releasedAt": "2026-11-17",
