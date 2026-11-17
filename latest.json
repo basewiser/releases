@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261116.131529",
-    "releasedAt": "2026-11-16",
+    "tag": "portal-v20261117.111318",
+    "releasedAt": "2026-11-17",
     "notes": [
-      "Update now no longer fails when Azure is still applying another change to the portal. It waits up to about a minute and a half and then goes ahead."
+      "Invitations can also be downloaded as an email file. Outlook opens it as a new message, ready to send, with the full design.",
+      "The first-run window shows once per person. Someone joining a portal that is already set up only picks their display preferences.",
+      "The notice about setting up the Basewiser app before your first invitation now opens that setting directly."
     ],
     "history": [
+      {
+        "tag": "portal-v20261117.111318",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "Invitations can also be downloaded as an email file. Outlook opens it as a new message, ready to send, with the full design.",
+          "The first-run window shows once per person. Someone joining a portal that is already set up only picks their display preferences.",
+          "The notice about setting up the Basewiser app before your first invitation now opens that setting directly."
+        ]
+      },
       {
         "tag": "portal-v20261116.131529",
         "releasedAt": "2026-11-16",
@@ -349,12 +360,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261115.122753",
-    "releasedAt": "2026-11-15",
+    "tag": "backend-v20261117.111318",
+    "releasedAt": "2026-11-17",
     "notes": [
-      "Install this before the portal update. Prepared invitations now include the designed email, so the portal can put it in your Outlook."
+      "Customer invitations now carry one link to the invitation page and a code. Microsoft's approval links are on that page, not in the email, because mail filters can take them for phishing."
     ],
     "history": [
+      {
+        "tag": "backend-v20261117.111318",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "Customer invitations now carry one link to the invitation page and a code. Microsoft's approval links are on that page, not in the email, because mail filters can take them for phishing."
+        ]
+      },
       {
         "tag": "backend-v20261115.122753",
         "releasedAt": "2026-11-15",
