@@ -1,13 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261117.111318",
+    "tag": "portal-v20261117.130917",
     "releasedAt": "2026-11-17",
     "notes": [
-      "Invitations can also be downloaded as an email file. Outlook opens it as a new message, ready to send, with the full design.",
-      "The first-run window shows once per person. Someone joining a portal that is already set up only picks their display preferences.",
-      "The notice about setting up the Basewiser app before your first invitation now opens that setting directly."
+      "A new release now shows after a normal reload. It used to take an extra reload, which looked like it needed a hard refresh."
     ],
     "history": [
+      {
+        "tag": "portal-v20261117.130917",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "A new release now shows after a normal reload. It used to take an extra reload, which looked like it needed a hard refresh."
+        ]
+      },
       {
         "tag": "portal-v20261117.111318",
         "releasedAt": "2026-11-17",
