@@ -360,12 +360,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261117.111318",
+    "tag": "backend-v20261117.125251",
     "releasedAt": "2026-11-17",
     "notes": [
-      "Customer invitations now carry one link to the invitation page and a code. Microsoft's approval links are on that page, not in the email, because mail filters can take them for phishing."
+      "The link in a customer invitation now goes to basewiser.com, which takes your customer on to the invitation on your portal. Microsoft quarantined invitations that carried your portal's own address as phishing."
     ],
     "history": [
+      {
+        "tag": "backend-v20261117.125251",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "The link in a customer invitation now goes to basewiser.com, which takes your customer on to the invitation on your portal. Microsoft quarantined invitations that carried your portal's own address as phishing."
+        ]
+      },
       {
         "tag": "backend-v20261117.111318",
         "releasedAt": "2026-11-17",
