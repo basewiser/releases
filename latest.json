@@ -1,11 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261117.130917",
+    "tag": "portal-v20261117.184420",
     "releasedAt": "2026-11-17",
     "notes": [
-      "A new release now shows after a normal reload. It used to take an extra reload, which looked like it needed a hard refresh."
+      "Download email is now the first way to send a customer invitation. The file opens in Outlook as a new message in the full design. Open in Outlook stays as the second way.",
+      "The customer's invitation page says beside each approval which role Microsoft needs and why, and how one Global Administrator can approve both Entra ID and Azure.",
+      "The invitation's link opens basewiser.com, where the customer enters the code once. The portal's own code page is only the fallback."
     ],
     "history": [
+      {
+        "tag": "portal-v20261117.184420",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "Download email is now the first way to send a customer invitation. The file opens in Outlook as a new message in the full design. Open in Outlook stays as the second way.",
+          "The customer's invitation page says beside each approval which role Microsoft needs and why, and how one Global Administrator can approve both Entra ID and Azure.",
+          "The invitation's link opens basewiser.com, where the customer enters the code once. The portal's own code page is only the fallback."
+        ]
+      },
       {
         "tag": "portal-v20261117.130917",
         "releasedAt": "2026-11-17",
