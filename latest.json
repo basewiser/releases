@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261117.205524",
+    "tag": "portal-v20261117.221057",
     "releasedAt": "2026-11-17",
     "notes": [
-      "The Azure page shown when no access was granted now has a Try again button and says in two paragraphs who can approve and how.",
-      "The invitation page and the approval pages show the Basewiser icon in the browser tab.",
-      "When Update now is refused, the message names the role it needs: Contributor or Owner on the resource group."
+      "The Approve buttons on the invitation page open Microsoft in a new tab, the page says what to expect there (an administrator sign-in and the permissions to accept), and the Connected pages send the reader back to the invitation, which shows what is still to approve.",
+      "The 6-digit code is entered on basewiser.com only. A wrong code, a locked link or an expired one are explained there, and the portal no longer draws its own code page.",
+      "The Azure page shown when no access was granted reads in order: what happened, what Azure answered, who can grant the role and how, with menu and setting names in bold. The Azure CLI way is two commands behind a fold."
     ],
     "history": [
+      {
+        "tag": "portal-v20261117.221057",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "The Approve buttons on the invitation page open Microsoft in a new tab, the page says what to expect there (an administrator sign-in and the permissions to accept), and the Connected pages send the reader back to the invitation, which shows what is still to approve.",
+          "The 6-digit code is entered on basewiser.com only. A wrong code, a locked link or an expired one are explained there, and the portal no longer draws its own code page.",
+          "The Azure page shown when no access was granted reads in order: what happened, what Azure answered, who can grant the role and how, with menu and setting names in bold. The Azure CLI way is two commands behind a fold."
+        ]
+      },
       {
         "tag": "portal-v20261117.205524",
         "releasedAt": "2026-11-17",
@@ -392,12 +401,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261117.125251",
+    "tag": "backend-v20261117.221057",
     "releasedAt": "2026-11-17",
     "notes": [
-      "The link in a customer invitation now goes to basewiser.com, which takes your customer on to the invitation on your portal. Microsoft quarantined invitations that carried your portal's own address as phishing."
+      "The invitation email names the same roles as the invitation page: a Global Administrator or Privileged Role Administrator for Entra ID, an Owner or User Access Administrator at the Tenant Root Management Group for Azure, with the steps a Global Administrator follows."
     ],
     "history": [
+      {
+        "tag": "backend-v20261117.221057",
+        "releasedAt": "2026-11-17",
+        "notes": [
+          "The invitation email names the same roles as the invitation page: a Global Administrator or Privileged Role Administrator for Entra ID, an Owner or User Access Administrator at the Tenant Root Management Group for Azure, with the steps a Global Administrator follows."
+        ]
+      },
       {
         "tag": "backend-v20261117.125251",
         "releasedAt": "2026-11-17",
