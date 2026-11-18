@@ -1,12 +1,18 @@
 {
   "portal": {
-    "tag": "portal-v20261118.185317",
+    "tag": "portal-v20261118.213515",
     "releasedAt": "2026-11-18",
     "notes": [
-      "The welcome window shows once per operator on any browser or machine, and the timezone, currency and cursor you pick follow your sign-in instead of the browser.",
-      "Until the backend update is installed as well, the portal keeps these in the browser as before."
+      "A customer's Connection page now offers the approval link directly. Under the email field on the Microsoft 365 and Azure tiles, Open the link opens it in a new tab and Copy link copies it, for an operator who can approve the connection themselves. No address or email is needed."
     ],
     "history": [
+      {
+        "tag": "portal-v20261118.213515",
+        "releasedAt": "2026-11-18",
+        "notes": [
+          "A customer's Connection page now offers the approval link directly. Under the email field on the Microsoft 365 and Azure tiles, Open the link opens it in a new tab and Copy link copies it, for an operator who can approve the connection themselves. No address or email is needed."
+        ]
+      },
       {
         "tag": "portal-v20261118.185317",
         "releasedAt": "2026-11-18",
