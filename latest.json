@@ -1,13 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261118.165815",
+    "tag": "portal-v20261118.185317",
     "releasedAt": "2026-11-18",
     "notes": [
-      "The menu, the toggles and the filter lists mark where you are with a filled tile, and nothing slides or flashes any more.",
-      "Buttons, fields and filters share one height and one outline on every row, and the account menu shows the portal and backend versions.",
-      "Opportunity totals show on default rates until a rate card is saved, and the Azure pages link to the Connection page."
+      "The welcome window shows once per operator on any browser or machine, and the timezone, currency and cursor you pick follow your sign-in instead of the browser.",
+      "Until the backend update is installed as well, the portal keeps these in the browser as before."
     ],
     "history": [
+      {
+        "tag": "portal-v20261118.185317",
+        "releasedAt": "2026-11-18",
+        "notes": [
+          "The welcome window shows once per operator on any browser or machine, and the timezone, currency and cursor you pick follow your sign-in instead of the browser.",
+          "Until the backend update is installed as well, the portal keeps these in the browser as before."
+        ]
+      },
       {
         "tag": "portal-v20261118.165815",
         "releasedAt": "2026-11-18",
@@ -410,12 +417,19 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261117.221057",
-    "releasedAt": "2026-11-17",
+    "tag": "backend-v20261118.185317",
+    "releasedAt": "2026-11-18",
     "notes": [
-      "The invitation email names the same roles as the invitation page: a Global Administrator or Privileged Role Administrator for Entra ID, an Owner or User Access Administrator at the Tenant Root Management Group for Azure, with the steps a Global Administrator follows."
+      "Install this before the portal update. It keeps each operator's welcome and display preferences with their sign-in, so they follow them to every browser and machine."
     ],
     "history": [
+      {
+        "tag": "backend-v20261118.185317",
+        "releasedAt": "2026-11-18",
+        "notes": [
+          "Install this before the portal update. It keeps each operator's welcome and display preferences with their sign-in, so they follow them to every browser and machine."
+        ]
+      },
       {
         "tag": "backend-v20261117.221057",
         "releasedAt": "2026-11-17",
