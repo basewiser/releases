@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261117.221057",
-    "releasedAt": "2026-11-17",
+    "tag": "portal-v20261118.165815",
+    "releasedAt": "2026-11-18",
     "notes": [
-      "The Approve buttons on the invitation page open Microsoft in a new tab, the page says what to expect there (an administrator sign-in and the permissions to accept), and the Connected pages send the reader back to the invitation, which shows what is still to approve.",
-      "The 6-digit code is entered on basewiser.com only. A wrong code, a locked link or an expired one are explained there, and the portal no longer draws its own code page.",
-      "The Azure page shown when no access was granted reads in order: what happened, what Azure answered, who can grant the role and how, with menu and setting names in bold. The Azure CLI way is two commands behind a fold."
+      "The menu, the toggles and the filter lists mark where you are with a filled tile, and nothing slides or flashes any more.",
+      "Buttons, fields and filters share one height and one outline on every row, and the account menu shows the portal and backend versions.",
+      "Opportunity totals show on default rates until a rate card is saved, and the Azure pages link to the Connection page."
     ],
     "history": [
+      {
+        "tag": "portal-v20261118.165815",
+        "releasedAt": "2026-11-18",
+        "notes": [
+          "The menu, the toggles and the filter lists mark where you are with a filled tile, and nothing slides or flashes any more.",
+          "Buttons, fields and filters share one height and one outline on every row, and the account menu shows the portal and backend versions.",
+          "Opportunity totals show on default rates until a rate card is saved, and the Azure pages link to the Connection page."
+        ]
+      },
       {
         "tag": "portal-v20261117.221057",
         "releasedAt": "2026-11-17",
