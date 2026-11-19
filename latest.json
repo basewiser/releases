@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261119.103616",
+    "tag": "portal-v20261119.154026",
     "releasedAt": "2026-11-19",
     "notes": [
-      "The Azure approval page: after the sign-in, the approver sees what Approve grants before anything is written, and can cancel. With an older backend, the approval goes through in one step as before.",
-      "In the Connect a customer wizard, an operator who can approve the connection themselves can open or copy the link under the administrator email. No address is needed."
+      "The opportunity page is drawn in the portal's style: one blue on grey, severities as number cards, a key for every colour, and much less text. The proposal text is shorter too.",
+      "Finding tables show each person's account under the name, and an account that never signed in says so instead of showing -1.",
+      "Install the backend update with this one, so your saved rates price the opportunities and the plainer How to fix text shows."
     ],
     "history": [
+      {
+        "tag": "portal-v20261119.154026",
+        "releasedAt": "2026-11-19",
+        "notes": [
+          "The opportunity page is drawn in the portal's style: one blue on grey, severities as number cards, a key for every colour, and much less text. The proposal text is shorter too.",
+          "Finding tables show each person's account under the name, and an account that never signed in says so instead of showing -1.",
+          "Install the backend update with this one, so your saved rates price the opportunities and the plainer How to fix text shows."
+        ]
+      },
       {
         "tag": "portal-v20261119.103616",
         "releasedAt": "2026-11-19",
@@ -432,13 +442,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261119.103616",
+    "tag": "backend-v20261119.154026",
     "releasedAt": "2026-11-19",
     "notes": [
-      "Approving Azure now shows a page first: who is asking, who is signed in, and which subscriptions the read-only Reader role will cover, with Approve and Cancel. Nothing is written until Approve, and the Approve link works once, for that account, within an hour.",
-      "Install the portal update together with this one. An older portal cannot show the approval page, so an Azure approval would stop after the sign-in."
+      "The rates you save by role now price every opportunity. Each kind of project has a role by default, a rate card saved earlier picks them up on its own, and a role without a rate counts as the default rate until you set one.",
+      "The How to fix steps and the finding descriptions are written in plainer words. Every setting, path and threshold is the same as before."
     ],
     "history": [
+      {
+        "tag": "backend-v20261119.154026",
+        "releasedAt": "2026-11-19",
+        "notes": [
+          "The rates you save by role now price every opportunity. Each kind of project has a role by default, a rate card saved earlier picks them up on its own, and a role without a rate counts as the default rate until you set one.",
+          "The How to fix steps and the finding descriptions are written in plainer words. Every setting, path and threshold is the same as before."
+        ]
+      },
       {
         "tag": "backend-v20261119.103616",
         "releasedAt": "2026-11-19",
