@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261119.161723",
+    "tag": "portal-v20261119.205211",
     "releasedAt": "2026-11-19",
     "notes": [
-      "The Subscriptions tile on a customer's Connection page lists at most five subscriptions, the ones that need attention first, and links to the full list by its count when there are more.",
-      "The break-glass notice on the Privileged access page has the same outline as the cards around it."
+      "Every window in the portal has the same square corners as the cards: the support window, the customer picker, search and the update window.",
+      "The support window's button always says Send, its wait stays on one line, and the topic tabs line up with the fields below them."
     ],
     "history": [
+      {
+        "tag": "portal-v20261119.205211",
+        "releasedAt": "2026-11-19",
+        "notes": [
+          "Every window in the portal has the same square corners as the cards: the support window, the customer picker, search and the update window.",
+          "The support window's button always says Send, its wait stays on one line, and the topic tabs line up with the fields below them."
+        ]
+      },
       {
         "tag": "portal-v20261119.161723",
         "releasedAt": "2026-11-19",
