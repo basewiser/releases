@@ -457,13 +457,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261119.154026",
-    "releasedAt": "2026-11-19",
+    "tag": "backend-v20261120.100708",
+    "releasedAt": "2026-11-20",
     "notes": [
-      "The rates you save by role now price every opportunity. Each kind of project has a role by default, a rate card saved earlier picks them up on its own, and a role without a rate counts as the default rate until you set one.",
-      "The How to fix steps and the finding descriptions are written in plainer words. Every setting, path and threshold is the same as before."
+      "Your install no longer holds a Stripe key. Buying a plan, the Billing tabs and the daily plan check now go through Basewiser, with a billing pass that reaches only your own billing.",
+      "Nothing to do: an install that still has the old key moves over by itself the first time it needs billing after this update. The Billing page looks and works as before."
     ],
     "history": [
+      {
+        "tag": "backend-v20261120.100708",
+        "releasedAt": "2026-11-20",
+        "notes": [
+          "Your install no longer holds a Stripe key. Buying a plan, the Billing tabs and the daily plan check now go through Basewiser, with a billing pass that reaches only your own billing.",
+          "Nothing to do: an install that still has the old key moves over by itself the first time it needs billing after this update. The Billing page looks and works as before."
+        ]
+      },
       {
         "tag": "backend-v20261119.154026",
         "releasedAt": "2026-11-19",
