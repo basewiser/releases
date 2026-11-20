@@ -1,12 +1,20 @@
 {
   "portal": {
-    "tag": "portal-v20261119.205211",
-    "releasedAt": "2026-11-19",
+    "tag": "portal-v20261120.113701",
+    "releasedAt": "2026-11-20",
     "notes": [
-      "Every window in the portal has the same square corners as the cards: the support window, the customer picker, search and the update window.",
-      "The support window's button always says Send, its wait stays on one line, and the topic tabs line up with the fields below them."
+      "When a release needs the installer, the portal now says to run it in Azure Cloud Shell, the terminal in the Azure portal. Setup saves nothing on your computer.",
+      "If an earlier setup left .basewiser-config.json and .basewiser-deploy-config.json in the folder you installed from, you can delete them. Nothing needs them any more."
     ],
     "history": [
+      {
+        "tag": "portal-v20261120.113701",
+        "releasedAt": "2026-11-20",
+        "notes": [
+          "When a release needs the installer, the portal now says to run it in Azure Cloud Shell, the terminal in the Azure portal. Setup saves nothing on your computer.",
+          "If an earlier setup left .basewiser-config.json and .basewiser-deploy-config.json in the folder you installed from, you can delete them. Nothing needs them any more."
+        ]
+      },
       {
         "tag": "portal-v20261119.205211",
         "releasedAt": "2026-11-19",
