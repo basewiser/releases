@@ -1,12 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261120.113701",
-    "releasedAt": "2026-11-20",
+    "tag": "portal-v20261122.005217",
+    "releasedAt": "2026-11-22",
     "notes": [
-      "When a release needs the installer, the portal now says to run it in Azure Cloud Shell, the terminal in the Azure portal. Setup saves nothing on your computer.",
-      "If an earlier setup left .basewiser-config.json and .basewiser-deploy-config.json in the folder you installed from, you can delete them. Nothing needs them any more."
+      "Send invitations straight from the portal: Basewiser emails your customer in your company's name, in the full design, with replies and a copy to you. Until the backend is updated too, the invitation offers its link and code.",
+      "A welcome card comes before the tour, and the tour's arrow keys now work anywhere on the page.",
+      "See permissions under the Basewiser app explains each permission in plain words, and Billing shows the plans open when you have no plan yet."
     ],
     "history": [
+      {
+        "tag": "portal-v20261122.005217",
+        "releasedAt": "2026-11-22",
+        "notes": [
+          "Send invitations straight from the portal: Basewiser emails your customer in your company's name, in the full design, with replies and a copy to you. Until the backend is updated too, the invitation offers its link and code.",
+          "A welcome card comes before the tour, and the tour's arrow keys now work anywhere on the page.",
+          "See permissions under the Basewiser app explains each permission in plain words, and Billing shows the plans open when you have no plan yet."
+        ]
+      },
       {
         "tag": "portal-v20261120.113701",
         "releasedAt": "2026-11-20",
@@ -465,13 +475,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261120.100708",
-    "releasedAt": "2026-11-20",
+    "tag": "backend-v20261122.005217",
+    "releasedAt": "2026-11-22",
     "notes": [
-      "Your install no longer holds a Stripe key. Buying a plan, the Billing tabs and the daily plan check now go through Basewiser, with a billing pass that reaches only your own billing.",
-      "Nothing to do: an install that still has the old key moves over by itself the first time it needs billing after this update. The Billing page looks and works as before."
+      "Update the backend with this portal: it sends your invitations through Basewiser when you press Send.",
+      "Approve Azure answers as soon as Azure accepts the access, instead of waiting."
     ],
     "history": [
+      {
+        "tag": "backend-v20261122.005217",
+        "releasedAt": "2026-11-22",
+        "notes": [
+          "Update the backend with this portal: it sends your invitations through Basewiser when you press Send.",
+          "Approve Azure answers as soon as Azure accepts the access, instead of waiting."
+        ]
+      },
       {
         "tag": "backend-v20261120.100708",
         "releasedAt": "2026-11-20",
