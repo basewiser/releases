@@ -1,13 +1,22 @@
 {
   "portal": {
-    "tag": "portal-v20261122.005217",
+    "tag": "portal-v20261122.111152",
     "releasedAt": "2026-11-22",
     "notes": [
-      "Send invitations straight from the portal: Basewiser emails your customer in your company's name, in the full design, with replies and a copy to you. Until the backend is updated too, the invitation offers its link and code.",
-      "A welcome card comes before the tour, and the tour's arrow keys now work anywhere on the page.",
-      "See permissions under the Basewiser app explains each permission in plain words, and Billing shows the plans open when you have no plan yet."
+      "Cancel an onboarding from the Customers list: the portal asks first, the invitation link stops working, and an approval that arrives afterwards connects nothing.",
+      "Signing in from a new browser no longer brings back the welcome window, and dropdown lists inside windows open on top of them.",
+      "On laptop-size screens the customer Overview puts Connections beside Open cases, and the demo uses plain English sample names."
     ],
     "history": [
+      {
+        "tag": "portal-v20261122.111152",
+        "releasedAt": "2026-11-22",
+        "notes": [
+          "Cancel an onboarding from the Customers list: the portal asks first, the invitation link stops working, and an approval that arrives afterwards connects nothing.",
+          "Signing in from a new browser no longer brings back the welcome window, and dropdown lists inside windows open on top of them.",
+          "On laptop-size screens the customer Overview puts Connections beside Open cases, and the demo uses plain English sample names."
+        ]
+      },
       {
         "tag": "portal-v20261122.005217",
         "releasedAt": "2026-11-22",
@@ -475,13 +484,21 @@
     ]
   },
   "backend": {
-    "tag": "backend-v20261122.005217",
+    "tag": "backend-v20261122.111152",
     "releasedAt": "2026-11-22",
     "notes": [
-      "Update the backend with this portal: it sends your invitations through Basewiser when you press Send.",
-      "Approve Azure answers as soon as Azure accepts the access, instead of waiting."
+      "Update the backend with this portal: an approval that arrives after you cancelled the onboarding connects nothing, for Entra ID and Azure.",
+      "The invitation preview matches the email Basewiser sends: your company's name leads the subject."
     ],
     "history": [
+      {
+        "tag": "backend-v20261122.111152",
+        "releasedAt": "2026-11-22",
+        "notes": [
+          "Update the backend with this portal: an approval that arrives after you cancelled the onboarding connects nothing, for Entra ID and Azure.",
+          "The invitation preview matches the email Basewiser sends: your company's name leads the subject."
+        ]
+      },
       {
         "tag": "backend-v20261122.005217",
         "releasedAt": "2026-11-22",
